@@ -239,7 +239,7 @@ label:focus, input:focus, button:focus, textarea:focus {outline:none;}
  * article
  *********/
  article h1, article h2, article, h3, article h4, article h5 {margin:0.6em 0;}
- article h1, article h2 {border-bottom:1px solid #DDD;}
+ article h1, article h2 {padding-bottom:0.25em; border-bottom:1px solid #DDD;}
  article h1 {font-size:2em;}
  article h2 {font-size:1.5em;}
  article h3 {font-size:1.2em;}
