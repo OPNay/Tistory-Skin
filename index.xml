@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>Simple</name>
+		<version>1.0</version>
+		<description>
+			<![CDATA[ 아직 테스트버전입니다. ]]>
+		</description>
+		<license>
+			<![CDATA[자유롭 수정이 가능하며, 저작권 표시하에 재배포 가능합니다.]]>
+		</license>
+		<tags><tag>기본</tag><tag>심플</tag><tag>베이직</tag></tags>
+	</information>
+	<author>
+		<name>OPNay</name>
+		<homepage>http://opnay.tistory.com</homepage>
+		<email>opnayn@gmail.com</email>
+	</author>
+	<default>
+		<recentEntries>5</recentEntries>
+		<recentComments>5</recentComments>
+		<recentTrackbacks>5</recentTrackbacks>
+		<itemsOnGuestbook>10</itemsOnGuestbook>
+		<tagsInCloud>30</tagsInCloud>
+		<sortInCloud>3</sortInCloud>
+		<expandComment>0</expandComment>
+		<expandTrackback>0</expandTrackback>
+		<lengthOfRecentNotice>20</lengthOfRecentNotice>
+		<lengthOfRecentEntry>20</lengthOfRecentEntry>
+		<lengthOfRecentComment>20</lengthOfRecentComment>
+		<lengthOfRecentTrackback>20</lengthOfRecentTrackback>
+		<lengthOfLink>20</lengthOfLink>
+		<showListOnCategory>1</showListOnCategory>
+		<showListOnArchive>1</showListOnArchive>
+		<tree>
+			<color>666666</color>
+			<bgColor>f8f8f8</bgColor>
+			<activeColor>666666</activeColor>
+			<activeBgColor>f8f8f8</activeBgColor>
+			<labelLength>27</labelLength>
+			<showValue>1</showValue>
+		</tree>
+		<contentWidth>890</contentWidth>
+		<menuList>
+		</menuList>
+	</default>
+</skin>
