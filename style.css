@@ -12,7 +12,8 @@ label:focus, input:focus, button:focus, textarea:focus {outline:none;}
 
 .ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 
-#container > section, .sidebar .module, .bg_white {background:#FFF}
+
+.sidebar .module, .bg_white {background:#FFF}
 /*********
  * Header
  *********/
@@ -178,13 +179,13 @@ label:focus, input:focus, button:focus, textarea:focus {outline:none;}
 .comment .list {padding:18px;}
 }
 
-#EntryProtected .entryProtectedInfo {margin:0 20px; padding:20px; font-size:15pt;}
+#entry_protected .protect_info {margin:0 20px; padding:20px; font-size:15pt;}
 
-#Entry .tags {margin:0; padding:10px 0; border-bottom:1px solid #DDD; font-size:16px;}
-#Entry .tags p {margin:0; padding-right:10px; display:inline-block;}
+#entry .tags {margin:0; padding:10px 0; border-bottom:1px solid #DDD; font-size:16px;}
+#entry .tags p {margin:0; padding-right:10px; display:inline-block;}
 #entry .tags p:after {content:', ';}
 #entry .tags p:last-child:after {content:'';}
-#Entry h3 a {display:block;}
+#entry h3 a {display:block;}
 
 #page {position:relative; text-align:center; font-weight:lighter;}
 #page .btn {display:inline-block; padding:12px; font-size:16px; vertical-align:middle;}
@@ -194,6 +195,7 @@ label:focus, input:focus, button:focus, textarea:focus {outline:none;}
 #page .prev {left:0;}
 #page .next {right:0;}
 #page .prev.no-more-prev, #page .next.no-more-next {display:none;}
+
 #footer {text-align:center; line-height:1.5;}
 #footer p {margin:0;}
 #footer .visitor {padding:12px;}
