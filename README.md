@@ -44,5 +44,6 @@
 
 #### skin.html 설정 :
 skin.html을 메모장, notepad++등 편집기를 통해 열어주세요.
-- 검색을 통해 `<!--Side Link-->` 검색, github, twitter등 href에 적힌 주소를 바꿔주세요.
+- `<!--Side Link-->`를 찾아 github, twitter등 href에 적힌 주소를 변경해주시기 바랍니다.
   (필요 없으시다면 <a>태그를 삭제해주세요.)
+- `<!--Name Card-->`를 찾아 contact에 있는 이름과 주소를 변경해주시기 바랍니다.
