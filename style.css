@@ -205,6 +205,15 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Sidebar */
 
 #sidebar .module {background:#FFFFFF;}
+
+#sidebar .name_card {padding:10px;}
+#sidebar .name_card:after {content:""; display:block; clear:both;}
+#sidebar .name_card img {margin-right:10px; width:64px; border-radius:50%; float:left;}
+#sidebar .name_card p {margin:7px 0;}
+#sidebar .name_card .auther {font-size:18px;}
+#sidebar .name_card .contact {font-size:14px;}
+#sidebar .name_card .contact a {color:#AAA;}
+
 #sidebar .link {background:transparent; display:block; margin:0; padding:10px; border:1px solid transparent; font-size:24px; text-align:center; cursor:pointer; line-height:1em;}
 #sidebar .link:hover {color:white !important;}
 #sidebar .link .link-fa {margin-right:10px;}
