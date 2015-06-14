@@ -249,9 +249,9 @@ article h5 {font-size:0.8em;}
 article p {line-height:1.5;}
 
 article ol, article ul {padding-left:2em;}
-article ul li {line-height:1.5; list-style:disc !important;}
-article ol li {list-style:decimal !important;}
-article li ul li {list-style:circle !important;}
-article ul.no-style, aritcle ol.no-style {list-style:none !important;}
+article ul li {line-height:1.5; list-style:disc;}
+article ol li {list-style:decimal;}
+article li ul li {list-style:circle;}
+article ul.no-style, aritcle ol.no-style {list-style:none;}
 
 article img {max-width:100%;}
