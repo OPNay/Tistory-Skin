@@ -252,5 +252,6 @@ article ol, article ul {padding-left:2em;}
 article ul li {line-height:1.5; list-style:disc !important;}
 article ol li {list-style:decimal !important;}
 article li ul li {list-style:circle !important;}
+article ul.no-style, aritcle ol.no-style {list-style:none !important;}
 
 article img {max-width:100%;}
