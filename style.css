@@ -73,13 +73,13 @@ ol.no-style, ul.no-style {list-style:none;}
 #sidebar .module {margin:12px 0; padding:0; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3);}
 
 /* PC */
-@media (min-width:1192px) {
+@media (min-width:1216px) {
 #wrap {width:1192px; margin:0 auto; padding-bottom:15px;}
 #container {width:940px; margin:0 12px 0 0;}
 #sidebar {width:240px; margin:0;}
 }
 
-@media (min-width:1024px) and (max-width:1192px) {
+@media (min-width:1024px) and (max-width:1216px) {
 #wrap .cnt, #wrap .date {float:right;}
 #container {width:calc(100% - 276px); margin:0 12px;}
 #sidebar {width:240px; margin:0 12px 0 0;}
