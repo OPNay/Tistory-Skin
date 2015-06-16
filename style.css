@@ -158,22 +158,22 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .comment .list {padding:24px;}
 .comment .list p {margin:0; padding:0;}
-.comment .li {position:relative; padding:24px 24px 24px 75px; min-height:55px;}
-.comment .li + .li {border-top:1px solid #DDD;}
-.comment .li.reply {padding-left:95px;}
-.comment .li:after {content:""; display:block; clear:both;}
-.comment .tistoryProfileLayerTrigger {display:none;}
-.comment .control {position:absolute; right:0; width:20px; font-size:1.25em; text-align:center; line-height:1.5;}
-.comment .control a {color:#666666;}
-.comment .control a:hover {color:#222222;}
-.comment .name, .comment .name a {color:#444444;}
-.comment .name img, .comment .name .fa {position:absolute; width:64px; height:64px; margin-left:-70px; border-radius:50%; overflow:hidden;}
-.comment .name .fa {color:#DDD; font-size:64px; text-align:center;}
-.comment .name .fa:before {content:'\f007';/*fa-user*/}
+.comment .list .li {position:relative; padding:24px 24px 24px 75px; min-height:55px;}
+.comment .list .li + .li {border-top:1px solid #DDD;}
+.comment .list .li.reply {padding-left:95px;}
+.comment .list .li:after {content:""; display:block; clear:both;}
+.comment .list .tistoryProfileLayerTrigger {display:none;}
+.comment .list .control {position:absolute; right:0; width:20px; font-size:1.25em; text-align:center; line-height:1.5;}
+.comment .list .control a {color:#666666;}
+.comment .list .control a:hover {color:#222222;}
+.comment .list .name, .comment .list .name a {color:#444444;}
+.comment .list .name img, .comment .list .name .fa {position:absolute; width:64px; height:64px; margin-left:-70px; border-radius:50%; overflow:hidden;}
+.comment .list .name .fa {color:#DDD; font-size:64px; text-align:center;}
+.comment .list .name .fa:before {content:'\f007';/*fa-user*/}
 .rp_secret .name .fa:before, .guest_secret .name .fa:before {content:'\f21b';/*fa-user-secret*/}
 .rp_admin .name .fa:before, .guest_admin .name .fa:before {content:'\f085';/*fa-cogs*/}
-.comment .date {font-size:14px; color:#BBB;}
-.comment .desc {margin:5px 0; padding:0; line-height:1.5em;}
+.comment .list .date {font-size:14px; color:#BBB;}
+.comment .list .desc {margin:5px 0; padding:0; line-height:1.5em;}
 
 @media (max-width:768px) {
 .comment .list {padding:18px;}
