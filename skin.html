@@ -14,14 +14,9 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" defer src="./images/skin_layout.js"></script>
 	<script type="text/javascript" defer src="./images/skin_article.js"></script>
+	<script type="text/javascript" defer src="./images/skin_search.js"></script>
 	<script>
 		var blog_link = $(location).attr('protocol') + "//" + $(location).attr('host');
-		function t_search() {
-			var query = $('#query').val();
-			if (query != '') {
-				try { $(location).attr('href', blog_link + '/search/' + looseURIEncode(query)); } catch (e) { }
-			}
-		}
 	</script>
 </head>
 <body>
@@ -36,8 +31,8 @@
 				</div>[##_blog_menu_##]
 			</div>
 			<div class="search">
-				<input type="text" id="query" class="input" placeholder="Search" onKeyPress="if(event.keyCode == 13) { t_search() }"/>
-				<button type="button" class="button" onClick="t_search();" ><i class="fa fa-search"></i>검색</button>
+				<input type="text" id="query" class="input" placeholder="Search"/>
+				<button type="button" class="button"><i class="fa fa-search"></i>검색</button>
 			</div>
 		</nav>
 	</header>
