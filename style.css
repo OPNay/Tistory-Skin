@@ -204,6 +204,7 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Sidebar */
 
 #sidebar .module {background:#FFFFFF;}
+#sidebar .module h3 {margin:0; padding:15px 12px; font-size:1.2em;}
 
 #sidebar .name_card {padding:10px;}
 #sidebar .name_card:after {content:""; display:block; clear:both;}
@@ -229,7 +230,6 @@ ol.no-style, ul.no-style {list-style:none;}
 #sidebar .link .donate:hover {background-color:#363FAD;}
 
 #sidebar .list {margin-bottom:10px;}
-#sidebar .list h3 {margin:0; padding:15px 12px; font-size:1.2em;}
 #sidebar .list a {display:block; padding:12px; font-size:14px;}
 #sidebar .list a:hover {background:#DDD; color:#FFF;}
 #sidebar .list > ul > li > ul > li > ul a {padding-left:25px;}
