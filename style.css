@@ -215,18 +215,18 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #sidebar .link {background:none; display:block; margin:0; padding:10px; font-size:1.3em; text-align:center; cursor:pointer;}
 #sidebar .link:hover {color:white !important;}
-#sidebar .link .link-fa {margin-right:10px;}
-#sidebar .link.github {color:gray;}
-#sidebar .link.github:hover {background-color:gray;}
-#sidebar .link.twitter {color:#55acee;}
-#sidebar .link.twitter:hover {background-color:#55acee;}
-#sidebar .link.tistory .fa {font-family:Sans-serif; font-weight:bold;}
-#sidebar .link.tistory {color:#EB531F;}
-#sidebar .link.tistory:hover {background-color:#EB531F;}
-#sidebar .link.rss {color:orange;}
-#sidebar .link.rss:hover {background-color:orange;}
-#sidebar .link.donate {color:#363FAD; width:100%;}
-#sidebar .link.donate:hover {background-color:#363FAD;}
+#sidebar .link .fa {margin-right:10px;}
+#sidebar .link .github {color:gray;}
+#sidebar .link .github:hover {background-color:gray;}
+#sidebar .link .twitter {color:#55acee;}
+#sidebar .link .twitter:hover {background-color:#55acee;}
+#sidebar .link .tistory .fa {font-family:Sans-serif; font-weight:bold;}
+#sidebar .link .tistory {color:#EB531F;}
+#sidebar .link .tistory:hover {background-color:#EB531F;}
+#sidebar .link .rss {color:orange;}
+#sidebar .link .rss:hover {background-color:orange;}
+#sidebar .link .donate {color:#363FAD; width:100%;}
+#sidebar .link .donate:hover {background-color:#363FAD;}
 
 #sidebar .list {margin-bottom:10px;}
 #sidebar .list h3 {margin:0; padding:15px 12px; font-size:1.2em;}
