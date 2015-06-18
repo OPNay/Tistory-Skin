@@ -74,7 +74,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* PC */
 @media (min-width:1216px) {
-#wrap {width:1192px; margin:0 auto; padding-bottom:15px;}
+#wrap {width:1192px; margin:0 auto;}
 #container {width:940px; margin:0 12px 0 0;}
 #sidebar {width:240px; margin:0;}
 }
