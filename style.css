@@ -268,8 +268,8 @@ article h5 {font-size:0.8em;}
 article p {line-height:1.5;}
 
 article ol, article ul {padding-left:2em;}
-article ul li {line-height:1.5; list-style:disc;}
-article ol li {list-style:decimal;}
-article li ul li {list-style:circle;}
+article ul {line-height:1.5; list-style:disc;}
+article ol {list-style:decimal;}
+article li ul {list-style:circle;}
 
 article img {max-width:100%;}
