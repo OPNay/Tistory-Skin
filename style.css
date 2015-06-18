@@ -213,8 +213,8 @@ ol.no-style, ul.no-style {list-style:none;}
 #sidebar .name_card .contact {font-size:14px;}
 #sidebar .name_card .contact a {color:#AAA;}
 
-#sidebar .link {background:none; display:block; margin:0; padding:10px; font-size:1.3em; text-align:center; cursor:pointer;}
-#sidebar .link:hover {color:white !important;}
+#sidebar .link a {background:none; display:block; margin:0; padding:10px; font-size:1.3em; text-align:center; cursor:pointer;}
+#sidebar .link a:hover {color:white !important;}
 #sidebar .link .fa {margin-right:10px;}
 #sidebar .link .github {color:gray;}
 #sidebar .link .github:hover {background-color:gray;}
