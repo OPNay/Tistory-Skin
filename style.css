@@ -237,6 +237,13 @@ ol.no-style, ul.no-style {list-style:none;}
 #sidebar .list a:hover span {color:#FFF;}
 #sidebar .list p {margin:0;}
 
+#sidebar .calendar .tt-calendar {padding:0 12px 12px;}
+#sidebar .calendar .cal_month {display:none;}
+#sidebar .calendar thead, #sidebar .calendar tbody {text-align:center;}
+#sidebar .calendar thead {font-size:14px; line-height:1.5;}
+#sidebar .calendar tbody {font-size:12px; line-height:2;}
+#sidebar .calendar a {font-weight:bold;}
+
 /*********
  * Bottom button
  *********/
