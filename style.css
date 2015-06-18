@@ -233,7 +233,8 @@ ol.no-style, ul.no-style {list-style:none;}
 #sidebar .list a {display:block; padding:12px; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 #sidebar .list a:hover {background:#DDD; color:#FFF;}
 #sidebar .list > ul > li > ul > li > ul a {padding-left:25px;}
-
+#sidebar .list span {font-size:12px; color:#888}
+#sidebar .list a:hover span {color:#FFF;}
 
 /*********
  * Bottom button
