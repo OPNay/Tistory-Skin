@@ -56,7 +56,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #nav .search .input {background-color:rgba(255,255,255,0.75); width:0; margin:5px 0; padding:10px 0; border:none; line-height:15pt; transition:0.2s all linear; float:left;}
 #nav .search .input:focus {background-color:white; width:200px; padding:10px;}
 #nav .search:hover .input {width:200px; padding:10px;}
-#nav .search .button {background:none; margin:0; padding:15px; border:none; color:white; font-size:15pt; line-height:10px; font-family:'Nanum Gothic'; font-weight:lighter; float:right;}
+#nav .search .button {background:none; margin:0; padding:15px; border:none; color:white; font-size:15pt; line-height:10px; float:right;}
 #nav .search .button .fa {margin-right:5px;}
 #nav .search .button:active {color:#AAAAAA;}
 
@@ -90,7 +90,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #container {width:calc(100% - 12px); margin:0 6px;}
 #sidebar {display:none;}
 #wrap .h-title {line-height:1.5;}
-#wrap .h-title .cnt {display:block; font-size:14px; font-weight:normal;}
+#wrap .h-title .cnt {display:block; font-size:14px;}
 #wrap .h-title .cnt:before {content:'총 ';}
 #wrap .h-title .cnt:after {content:'를 찾았습니다.';}
 }
@@ -186,7 +186,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #entry .tags p:last-child:after {content:'';}
 #entry h3 a {display:block;}
 
-#page {position:relative; text-align:center; font-weight:lighter;}
+#page {position:relative; text-align:center;}
 #page .btn {display:inline-block; padding:12px; font-size:16px; vertical-align:middle;}
 #page .btn.selected {color:gray;}
 #page .btn:not(.selected):hover {background:#DDD; color:white;}
