@@ -52,13 +52,13 @@ ol.no-style, ul.no-style {list-style:none;}
 #nav .menu.active ul {transform:translateY(0); opacity:1;}
 }
 
-#nav .search {display:inline-block; position:absolute; top:0; right:0; float:right;}
-#nav .search .input {background-color:rgba(255,255,255,0.75); width:0; margin:5px 0; padding:10px 0; border:none; line-height:15pt; transition:0.2s all linear; float:left;}
-#nav .search .input:focus {background-color:white; width:200px; padding:10px;}
-#nav .search:hover .input {width:200px; padding:10px;}
-#nav .search .button {background:none; margin:0; padding:15px; border:none; color:white; font-size:15pt; line-height:10px; float:right;}
-#nav .search .button .fa {margin-right:5px;}
+#nav .search {position:absolute; top:0; right:0; float:right;}
+#nav button, #nav input {display:block; background:none; border:none;}
+#nav .search .input {background:rgba(255,255,255,0.75); margin:5px 0; padding:10px 0; width:0; line-height:15pt; transition:0.2s all linear; float:left;}
+#nav .search .input:focus {background:white; width:200px; padding:10px;}
+#nav .search .button {margin:0; padding:15px; color:white; font-size:15pt; line-height:10px; float:right;}
 #nav .search .button:active {color:#AAAAAA;}
+#nav .search:hover .input {width:200px; padding:10px;}
 
 
 /*********
