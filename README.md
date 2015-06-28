@@ -53,6 +53,12 @@
 
 #### skin.html 설정 :
 skin.html을 메모장, notepad++등 편집기를 통해 열어주세요.
-- `<!--Side Link-->`를 찾아 github, twitter등 href에 적힌 주소를 변경해주시기 바랍니다.<br>
-  (필요 없으시다면 `<a>`태그를 삭제해주세요.)
 - `<!--Name Card-->`를 찾아 contact에 있는 이름과 주소를 변경해주시기 바랍니다.
+
+#### 사이드바 링크 추가 :
+images폴더 내 side_link.js라는 파일을 열어주세요.
+-	`var link_data = [` 밑에<br>
+  `{"name": 이름, "fa": 아이콘 이름, "color": 링크 색상, "link":링크주소},`이 형식으로 추가해 주세요.<br>
+- 아이콘 이름은 [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons)에서 확인해 주세요.
+- 색상은 RGB코드`#FFFFFF, #0000FF` 또는 CSS 컬러 이름`black, white, gray 등...`으로 넣으시면 됩니다.
+- 각각 이름, 아이콘 이름, 링크 색상, 링크 주소는 `"`로 묶어주세요.
