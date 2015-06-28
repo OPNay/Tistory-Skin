@@ -17,6 +17,8 @@
 	<script type="text/javascript" defer src="./images/skin_search.js"></script>
 	<script>
 		var blog_link = $(location).attr('protocol') + "//" + $(location).attr('host');
+		var skin_link = "./images";
+		var rss_url = "[##_rss_url_##]";
 	</script>
 </head>
 <body>
@@ -239,10 +241,12 @@
 				</s_sidebar_element>
 				<s_sidebar_element><!--Side Link-->
 					<div class="module link">
-						<a class="github" href="https://github.com/OPNay" target="_new"><i class="fa fa-github-alt"></i>Github</a>
-						<a class="twitter" href="https://twitter.com/OP_Nay" target="_new"><i class="fa fa-twitter"></i>Twitter</a>
-						<a class="donate" href="" target="_new"><i class="fa fa-paypal"></i>Donate</a>
-						<a class="rss" href="[##_rss_url_##]" target="_new"><i class="fa fa-rss"></i>RSS</a>
+						<script type="text/javascript" defer src="./images/side_link.js"></script>
+						<style>
+#sidebar .link a {background:none; display:block; margin:0; padding:10px; font-size:1.3em; text-align:center;}
+#sidebar .link a:hover {color:white !important;}
+#sidebar .link .fa {margin-right:10px;}
+						</style>
 					</div>
 				</s_sidebar_element>
 				<s_sidebar_element><!--Notice-->
