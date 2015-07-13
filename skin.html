@@ -133,10 +133,12 @@
 			</s_notice_rep>
 			<s_article_protected>
 			<section id="entry_protected" class="bg_white">
-				<header class="title"><h2>비공개 글입니다.</h2></header>
-				<div class="protect_info">
-					<a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a><span class="date">[##_article_rep_date_##]</span>
-				</div>
+				<header class="title">
+					<h2>[##_article_rep_title_##]</h2>
+					<span class="info">[##_article_rep_date_##]</span>
+				</header>
+				<p><i class="fa fa-lock"></i> 비공개 게시물입니다.</p>
+				<p><input type="password" max-length="16" id="[##_article_password_##]" placeholder="비밀번호"><button class="fa fa-sign-in" onclick="[##_article_dissolve_##]"></button></p>
 			</section>
 			</s_article_protected>
 			<s_article_rep>

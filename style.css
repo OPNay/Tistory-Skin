@@ -178,7 +178,13 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .list {padding:0 18px 18px;}
 }
 
-#entry_protected .protect_info {margin:0 20px; padding:20px; font-size:15pt;}
+#entry_protected p {font-size:1.25em; text-align:center;}
+#entry_protected p:last-child {padding-bottom:24px;}
+#entry_protected input, #entry_protected button {background:none; border:none; border-bottom:1px solid #DDD; padding:10px;}
+#entry_protected input {width:260px;}
+#entry_protected button {color:#999; cursor:pointer;}
+#entry_protected button:hover {color:#BBB;}
+#entry_protected button:active {color:#666;}
 
 #entry .tags {margin:0; padding:10px 0; border-bottom:1px solid #DDD; font-size:16px;}
 #entry .tags p {margin:0; padding-right:10px; display:inline-block;}
