@@ -138,9 +138,9 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .write {margin:0 24px;}
 .comment .write:after {content:""; display:block; clear:both;}
 
-.comment .textarea, .comment .input {background:none; box-sizing:border-box; font-size:14px; line-height:1.5;}
-.comment .write .textarea {width:100%; height:120px; padding:10px; border:1px solid #AAA; border-radius:10px; resize:none;}
-.comment .write .input {margin:0 0 10px; padding:5px; width:50%; border:none; border-bottom:1px dashed #AAA;}
+.comment .textarea, .comment .input {background:none; box-sizing:border-box; font-size:0.8em; line-height:1.5;}
+.comment .write .textarea {width:100%; height:120px; padding:10px; border:1px solid #DDD; border-radius:10px; resize:none;}
+.comment .write .input {margin:0 0 10px; padding:5px 10px 10px; width:50%; border:none; border-bottom:1px solid #DDD;}
 .comment .write .btn {width:100%; margin:5px 0; text-align:right;}
 
 @media (max-width:768px) {
