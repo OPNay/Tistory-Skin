@@ -15,6 +15,7 @@
 	<script type="text/javascript" defer src="./images/skin_layout.js"></script>
 	<script type="text/javascript" defer src="./images/skin_article.js"></script>
 	<script type="text/javascript" defer src="./images/skin_search.js"></script>
+	<script type="text/javascript" defer src="./images/skin_settings.js"></script>
 	<script>
 		var blog_link = $(location).attr('protocol') + "//" + $(location).attr('host');
 		var skin_link = "./images";
@@ -234,9 +235,10 @@
 			<s_sidebar>
 				<s_sidebar_element><!--Name Card-->
 					<div class="module name_card">
+						<script defer>$('.module.name_card').find('.contact').append($('<a>@' + name_card_data.name + '</a>').attr('href',name_card_data.href));</script>
 						<img src="/index.gif" alt="[##_desc_##]" />
 						<p class="auther">[##_blogger_##]</p>
-						<p class="contact"><a href="https://twitter.com/OP_Nay">@OPNay</a></p>
+						<p class="contact"></p>
 					</div>
 				</s_sidebar_element>
 				<s_sidebar_element><!--Side Link-->
