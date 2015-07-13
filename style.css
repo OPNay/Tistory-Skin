@@ -171,8 +171,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .list .name .fa:before {content:'\f007';/*fa-user*/}
 .rp_secret .name .fa:before, .guest_secret .name .fa:before {content:'\f21b';/*fa-user-secret*/}
 .rp_admin .name .fa:before, .guest_admin .name .fa:before {content:'\f085';/*fa-cogs*/}
-.comment .list .date {font-size:14px; color:#BBB;}
-.comment .list .desc {margin:5px 0; padding:0; line-height:1.5em;}
+.comment .list .date {font-size:0.8em; color:#BBB;}
+.comment .list .desc {margin:5px 0; padding:0; line-height:1.5em; font-size:0.8em;}
 
 @media (max-width:768px) {
 .comment .list {padding:0 18px 18px;}
