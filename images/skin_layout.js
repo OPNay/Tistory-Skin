@@ -1,7 +1,7 @@
 // Nav
 function nav_transparent() {
 	var nav = $('#nav');
-	if (($(window).scrollTop() != 0 && nav.hasClass('transparent')) || ($(window).scrollTop() == 0 && !nav.hasClass('transparent')))
+	if (($(window).scrollTop() >= 100 && nav.hasClass('transparent')) || ($(window).scrollTop() < 100 && !nav.hasClass('transparent')))
 		nav.toggleClass('transparent');
 }
 $(document).ready(function () {
