@@ -201,10 +201,10 @@ ol.no-style, ul.no-style {list-style:none;}
 #page .next {right:0;}
 #page .prev.no-more-prev, #page .next.no-more-next {display:none;}
 
-#footer {text-align:center; line-height:1.5;}
+#footer {text-align:center; line-height:1.5; font-size:0.9em;}
 #footer p {margin:0;}
 #footer .visitor {padding:12px;}
-#footer .visitor .day {color:rgb(128,128,128); font-size:14px;}
+#footer .visitor .day {color:rgb(128,128,128); font-size:0.8em;}
 #footer .info {margin-top:20px;}
 
 /* Sidebar */
