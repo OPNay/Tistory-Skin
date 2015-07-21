@@ -135,7 +135,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 
 /* Commend / GustBook */
-.comment .write {margin:0 24px;}
+.comment .write {padding:24px;}
 .comment .write:after {content:""; display:block; clear:both;}
 
 .comment .textarea, .comment .input {background:none; box-sizing:border-box; font-size:0.8em; line-height:1.5;}
