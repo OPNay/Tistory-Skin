@@ -89,14 +89,14 @@ ol.no-style, ul.no-style {list-style:none;}
 @media (max-width:1023px) {
 #container {width:calc(100% - 12px); margin:0 6px;}
 #sidebar {display:none;}
-#wrap .h-title {line-height:1.5;}
-#wrap .h-title .cnt {display:block; font-size:14px;}
-#wrap .h-title .cnt:before {content:'총 ';}
-#wrap .h-title .cnt:after {content:'를 찾았습니다.';}
+#wrap .title {line-height:1.5;}
+#wrap .title .cnt {display:block; font-size:14px;}
+#wrap .title .cnt:before {content:'총 ';}
+#wrap .title .cnt:after {content:'를 찾았습니다.';}
 }
 
 #wrap .title {padding:24px;}
-#wrap .title h2. #wrap .title h3 {margin:0; line-height:1.25;}
+#wrap .title h2, #wrap .title h3 {margin:0; line-height:1.25;}
 #wrap .title .info {color:#888;}
 
 #entry {position:relative;}
@@ -113,7 +113,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #wrap .article p {margin:10px 0 !important;}
 
 @media (max-width:768px) {
-#wrap .h-title {padding:18px;}
+#wrap .title {padding:18px;}
 #wrap .article {padding:18px;}
 }
 
