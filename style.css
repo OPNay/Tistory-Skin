@@ -210,7 +210,7 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Sidebar */
 
 #sidebar .module {background:#FFFFFF;}
-#sidebar .module h3 {margin:0; padding:15px 12px; border-bottom:1px solid #DDD; font-size:1.2em; font-weight:normal;}
+#sidebar .module h3 {margin:0; padding:12px; border-bottom:1px solid #DDD; font-size:1.2em; font-weight:normal;}
 
 #sidebar .name_card {padding:10px;}
 #sidebar .name_card:after {content:""; display:block; clear:both;}
