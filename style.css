@@ -13,7 +13,7 @@ label:focus, input:focus, button:focus, textarea:focus {outline:none;}
 .ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 ol.no-style, ul.no-style {list-style:none;}
 
-.sidebar .module, .bg_white {background:#FFF}
+.sidebar .module, .bg_white {background:#FFF;}
 /*********
  * Header
  *********/
@@ -24,8 +24,8 @@ ol.no-style, ul.no-style {list-style:none;}
 #nav.transparent {background:transparent; box-shadow:none;}
 #nav.transparent:before {opacity:0;}
 
-#nav .icon {width:50px; height:50px; position:fixed; top:0; left:0; font-size:1.5em; line-height:50px; text-align:center; cursor:pointer; color:white;}
-#nav .icon .fa {position:absolute; top:0; left:0; width:50px; height:50px; box-sizing:border-box; line-height:50px; transition:all 0.3s linear;}
+#nav .icon {font-size:1.5em; line-height:50px; text-align:center; cursor:pointer; color:white;}
+#nav .icon .fa {position:absolute; top:0; left:0; width:50px; height:50px; line-height:50px; transition:all 0.3s linear;}
 #nav .menu.active .fa {transform:rotate(45deg);}
 .menu.active .fa-bars, .menu .fa-plus {opacity:0;}
 .menu.active .fa-plus, .menu .fa-bars {opacity:1;}
@@ -34,8 +34,8 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* PC */
 @media (min-width:768px) {
-#nav .menu ul li {line-height:30px; float:left;}
-#nav .menu ul a {display:inline-block; padding:10px; font-size:1.1em;}
+#nav .menu ul li {line-height:50px; float:left;}
+#nav .menu ul a {display:inline-block; padding:0 10px; font-size:1.1em;}
 #nav .menu ul a:hover {background:#888}
 #nav .menu.show ul {display:inline-block;}
 #nav .menu.active ul {transform:translateX(50px); opacity:1;}
@@ -67,8 +67,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #wrap {z-index:-10; width:100%; padding:0;}
 #wrap:after {content:""; display:block; clear:both;}
 #container {float:left; margin:0 12px;}
-#sidebar {float:right; margin:0 12px;}
-#container > section,
+#sidebar {float:right; margin:0 12px; width:240px;}
 #container .bg_white,
 #sidebar .module {margin:12px 0; padding:0; border-radius:2px; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3);}
 
@@ -76,27 +75,23 @@ ol.no-style, ul.no-style {list-style:none;}
 @media (min-width:1216px) {
 #wrap {width:1192px; margin:0 auto;}
 #container {width:940px; margin:0 12px 0 0;}
-#sidebar {width:240px; margin:0;}
+#sidebar {margin:0;}
 }
 
 @media (min-width:1024px) and (max-width:1215px) {
-#wrap .cnt, #wrap .date {float:right;}
 #container {width:calc(100% - 276px); margin:0 12px;}
-#sidebar {width:240px; margin:0 12px 0 0;}
+#sidebar {margin:0 12px 0 0;}
 }
 
 /* Mobile */
 @media (max-width:1023px) {
 #container {width:calc(100% - 12px); margin:0 6px;}
 #sidebar {display:none;}
-#wrap .title {line-height:1.5;}
-#wrap .title .cnt {display:block; font-size:14px;}
-#wrap .title .cnt:before {content:'총 ';}
-#wrap .title .cnt:after {content:'를 찾았습니다.';}
 }
 
 #wrap .title {padding:24px;}
-#wrap .title h2, #wrap .title h3 {margin:0; line-height:1.25;}
+#wrap .title h2,
+#wrap .title h3 {margin:0; line-height:1.25;}
 #wrap .title .info {color:#888;}
 
 #entry {position:relative;}
