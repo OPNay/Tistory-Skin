@@ -207,10 +207,10 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #sidebar .name_card {padding:10px;}
 #sidebar .name_card:after {content:""; display:block; clear:both;}
-#sidebar .name_card img {margin-right:10px; width:64px; border-radius:50%; float:left;}
+#sidebar .name_card img {margin-right:15px; width:64px; border-radius:50%; float:left;}
 #sidebar .name_card p {margin:7px 0;}
-#sidebar .name_card .auther {font-size:18px;}
-#sidebar .name_card .contact {font-size:14px;}
+#sidebar .name_card .auther {font-size:1.2em;}
+#sidebar .name_card .contact {font-size:0.8em;}
 #sidebar .name_card .contact a {color:#AAA;}
 
 #sidebar .link a {background:none; display:block; margin:0; padding:10px; font-size:1.3em; text-align:center;}
