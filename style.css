@@ -105,7 +105,6 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* Article */
 #wrap .article {margin:0; padding:0 24px 24px; font-size:14px;}
-#wrap .article p {margin:10px 0 !important;}
 
 @media (max-width:768px) {
 #wrap .title {padding:18px;}
