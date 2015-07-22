@@ -182,9 +182,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #entry_protected button:active {color:#666;}
 
 #entry .tags {margin:0; padding:10px 0; border-bottom:1px solid #DDD; font-size:16px;}
-#entry .tags p {margin:0; padding-right:10px; display:inline-block;}
-#entry .tags p:after {content:', ';}
-#entry .tags p:last-child:after {content:'';}
+#entry .tags a:not(:last-child):after {content:', ';}
 #entry h3 a {display:block;}
 
 #page {position:relative; text-align:center;}
