@@ -254,7 +254,7 @@ ol.no-style, ul.no-style {list-style:none;}
  * article
  *********/
 article h1, article h2, article h3, article h4, article h5 {margin:0.75em 0;}
-article h1, article h2 {padding-bottom:0.5em; border-bottom:1px solid #DDD;}
+article h1, article h2 {margin:0.8em 0; padding-bottom:0.5em; border-bottom:1px solid #DDD;}
 article h1 {font-size:2em;}
 article h2 {font-size:1.5em;}
 article h3 {font-size:1.2em;}
@@ -263,7 +263,7 @@ article h5 {font-size:0.8em;}
 
 article p {line-height:1.5;}
 
-article ol, article ul {padding-left:1.25em;}
+article ol, article ul {margin:0.5em 0; padding-left:1.25em;}
 article ul {line-height:1.5; list-style:disc;}
 article ol {list-style:decimal;}
 article li ul {list-style:circle;}
