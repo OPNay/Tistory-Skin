@@ -269,3 +269,9 @@ article ol {list-style:decimal;}
 article li ul {list-style:circle;}
 
 article img {max-width:100%;}
+
+/* Download Button */
+article .imageblock img[src*='.gif'] {display:none;}
+article .imageblock > a {background:rgba(0,0,0,0.1); display:inline-block; position:relative; height:50px; line-height:50px; padding:0 15px; padding-left:65px; font-weight:bold; transition:all 0.15s linear;}
+article .imageblock > a:hover {background:rgba(0,0,0,0.3); color:white;}
+article .imageblock > a:before {font:normal normal normal 2em/50px FontAwesome; content:'\f019'; background:rgba(0,0,0,0.5); position:absolute; top:0; left:0; width:50px; height:50px; line-height:50px; text-align:center; color:white;}
