@@ -104,7 +104,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .admin .a_l_btn .fa {padding:5px; width:20px; text-align:center;}
 
 /* Article */
-#wrap .article {margin:0; padding:0 24px 24px; font-size:14px;}
+#wrap .article {margin:0; padding:24px; font-size:14px; border-bottom:1px solid #DDD;}
 
 @media (max-width:768px) {
 #wrap .title {padding:18px;}
@@ -180,7 +180,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #entry_protected button:hover {color:#BBB;}
 #entry_protected button:active {color:#666;}
 
-#entry .tags {margin:0; padding:10px 0; border-bottom:1px solid #DDD; font-size:16px;}
+#entry .tags {margin:0; padding:10px 0 0; font-size:16px;}
 #entry .tags a:not(:last-child):after {content:', ';}
 #entry h3 a {display:block;}
 
