@@ -24,8 +24,10 @@ ol.no-style, ul.no-style {list-style:none;}
 #nav.transparent {background:transparent; box-shadow:none;}
 #nav.transparent:before {opacity:0;}
 
-#nav .icon {font-size:1.5em; line-height:50px; text-align:center; cursor:pointer; color:white;}
-#nav .icon .fa {position:absolute; top:0; left:0; width:50px; height:50px; line-height:50px; transition:all 0.3s linear;}
+#nav .fa {position:absolute; width:50px; line-height:50px; font-size:1.5em; color:white;}
+
+#nav .icon {line-height:50px; text-align:center; cursor:pointer;}
+#nav .icon .fa {top:0; left:0; transition:all 0.3s linear;}
 #nav .menu.active .fa {transform:rotate(45deg);}
 .menu.active .fa-bars, .menu .fa-plus {opacity:0;}
 .menu.active .fa-plus, .menu .fa-bars {opacity:1;}
@@ -54,9 +56,9 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #nav .search {position:absolute; top:0; right:0; float:right;}
 #nav button, #nav input {display:block; background:none; border:none;}
-#nav .search .input {background:rgba(255,255,255,0.75); margin:5px 0; padding:10px 0; width:0; line-height:15pt; transition:0.2s all linear; float:left;}
+#nav .search .input {background:rgba(255,255,255,0.75); position:absolute; top:0; right:50px; margin:5px 0; padding:10px 0; width:0; line-height:15pt; transition:0.2s all linear; float:left;}
 #nav .search .input:focus {background:white; width:200px; padding:10px;}
-#nav .search .button {margin:0; padding:15px; color:white; font-size:15pt; line-height:10px; float:right;}
+#nav .search .button .fa {top:0; right:0;}
 #nav .search .button:active {color:#AAAAAA;}
 #nav .search:hover .input {width:200px; padding:10px;}
 
