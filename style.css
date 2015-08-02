@@ -176,8 +176,10 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .list {padding:0 18px 18px;}
 }
 
-#entry_protected p {font-size:1.25em; text-align:center;}
-#entry_protected p:last-child {padding-bottom:24px;}
+#entry_protected article {padding:12px;}
+#entry_protected p {margin:12px 0; font-size:1.25em; text-align:center;}
+#entry_protected p:first-child {margin:0 0 12px; padding-top:12px;}
+#entry_protected p:last-child {margin:12px 0 0; padding-bottom:12px;}
 #entry_protected input, #entry_protected button {background:none; border:none; border-bottom:1px solid #DDD; padding:10px;}
 #entry_protected input {width:260px;}
 #entry_protected button {color:#999; cursor:pointer;}
