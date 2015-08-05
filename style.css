@@ -14,14 +14,15 @@ label:focus, input:focus, button:focus, textarea:focus {outline:none;}
 ol.no-style, ul.no-style {list-style:none;}
 
 .sidebar .module, .bg_white {background:#FFF;}
+
 /*********
  * Header
  *********/
-#header {z-index:-30; background:#AAA; width:100%;}
+#header {z-index:-30; background:rgb(160,160,160); width:100%;}
 #header .link {width:100%; display:block; font-size:3.5em; color:white; text-align:center; line-height:150px;}
 
-#nav {z-index:10; background:rgba(128,128,128,0.75); height:50px; width:100%; top:0; left:0; position:fixed; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3); transition:all 0.3s linear;}
-#nav.transparent {background:transparent; box-shadow:none;}
+#nav {z-index:10; height:50px; width:100%; top:0; left:0; position:fixed;}
+#nav:not(.transparent) {background:rgb(160,160,160); box-shadow:0 2px 5px 0 rgba(0,0,0,0.3);}
 #nav.transparent:before {opacity:0;}
 
 #nav .fa {position:absolute; width:50px; line-height:50px; font-size:1.5em; color:white;}
@@ -251,8 +252,8 @@ ol.no-style, ul.no-style {list-style:none;}
  *********/
 #bot-btn {z-index:100; position:fixed; bottom:0; right:0; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3); transition:all 0.2s ease-in-out; transform:translateY(0); font-size:2em; cursor:pointer;}
 #bot-btn.hidden {transform:translateY(200px);}
-#bot-btn .fa {color:white; padding:10px; background:rgba(0,0,0,0.25); transition:all 0.2s ease-in-out}
-#bot-btn .fa:hover {background:rgba(0,0,0,0.5);}
+#bot-btn .fa {color:white; padding:10px; background:rgb(192,192,192); transition:all 0.2s ease-in-out}
+#bot-btn .fa:hover {background:rgb(128,128,128);}
 #bot-btn .fa.hidden {display:none;}
 
 
