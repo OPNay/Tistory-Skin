@@ -143,9 +143,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .write .btn {width:100%; margin:5px 0; text-align:right;}
 
 @media (max-width:768px) {
-.comment .write {margin:0 18px;}
-.comment .write .input {width:100%;}
-.comment .write .btn {width:100%;}
+.comment .write {padding:18px;}
 }
 
 .comment .write .btn .fa {background:none; margin:0 5px; padding:5px; border:none; font-size:1.5em; text-align:center; color:#444; cursor:pointer;}
