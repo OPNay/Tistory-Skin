@@ -145,75 +145,79 @@
 			</s_article_protected>
 			<s_article_rep>
 			<section id="entry" class="card">
-				<header class="title">
-					<h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
-					<span class="info">[##_article_rep_date_##]</span>
-				</header>
-				<s_ad_div>
-					<div class="admin">
-						<i class="fa fa-bars c_pointer"></i>
-						<div class="a_list">
-							<a href="[##_s_ad_m_link_##]" class="a_l_btn"><i class="fa fa-pencil"></i>수정</a>
-							<a href="#" class="a_l_btn" onclick="[##_s_ad_m_onclick_##]"><i class="fa fa-pencil-square-o"></i>수정(창으로)</a>
-							<a href="#" class="a_l_btn" onclick="[##_s_ad_s2_onclick_##]"><i class="fa fa-unlock-alt"></i>[##_s_ad_s2_label_##]</a>
-							<a href="#" class="a_l_btn" onclick="[##_s_ad_t_onclick_##]"><i class="fa fa-link"></i>관련글(트랙백)</a>
-							<a href="#" class="a_l_btn" onclick="[##_s_ad_d_onclick_##]"><i class="fa fa-trash"></i>삭제</a>
+				<div class="card-content">
+					<header class="title">
+						<h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+						<span class="info">[##_article_rep_date_##]</span>
+					</header>
+					<s_ad_div>
+						<div class="admin">
+							<i class="fa fa-bars c_pointer"></i>
+							<div class="a_list">
+								<a href="[##_s_ad_m_link_##]" class="a_l_btn"><i class="fa fa-pencil"></i>수정</a>
+								<a href="#" class="a_l_btn" onclick="[##_s_ad_m_onclick_##]"><i class="fa fa-pencil-square-o"></i>수정(창으로)</a>
+								<a href="#" class="a_l_btn" onclick="[##_s_ad_s2_onclick_##]"><i class="fa fa-unlock-alt"></i>[##_s_ad_s2_label_##]</a>
+								<a href="#" class="a_l_btn" onclick="[##_s_ad_t_onclick_##]"><i class="fa fa-link"></i>관련글(트랙백)</a>
+								<a href="#" class="a_l_btn" onclick="[##_s_ad_d_onclick_##]"><i class="fa fa-trash"></i>삭제</a>
+							</div>
 						</div>
-					</div>
-					<script>$('#entry .admin a:contains("비공개") .fa').toggleClass('fa-unlock-alt fa-lock');</script>
-				</s_ad_div>
-				<article class="article">[##_article_rep_desc_##]
-					<s_tag_label><section class="tags"><i class="fa fa-tags"></i> [##_tag_label_rep_##]</section></s_tag_label>
-				</article>
-				<section id="comment" class="comment">
-					<header class="title"><h3>[##_article_rep_rp_cnt_##]개의 댓글이 있습니다.</h3></header>
-					<s_rp>
-					<section class="write">
-						<s_rp_input_form>
-						<s_rp_member>
-						<s_rp_guest>
-							<input id="name" class="input" type="text" placeholder="이름" name="[##_rp_input_name_##]" />
-							<input id="password" class="input" type="password" placeholder="비밀번호" maxlength="8" name="[##_rp_input_password_##]" />
-						</s_rp_guest>
-						</s_rp_member>
-						<textarea id="comment" class="textarea" name="[##_rp_input_comment_##]" placeholder="댓글을 적어주세요." rows="10" cols="50"></textarea>
-						<p class="btn">
-							<input id="secret" name="secret" type="checkbox" hidden="hidden"/>
-							<label for="secret" class="fa"></label><button class="fa fa-pencil" onClick="[##_rp_onclick_submit_##]"></button>
-						</p>
-						</s_rp_input_form>
+						<script>$('#entry .admin a:contains("비공개") .fa').toggleClass('fa-unlock-alt fa-lock');</script>
+					</s_ad_div>
+					<article class="article">[##_article_rep_desc_##]
+						<s_tag_label><section class="tags"><i class="fa fa-tags"></i> [##_tag_label_rep_##]</section></s_tag_label>
+					</article>
+				</div>
+				<div class="card-content">
+					<section id="comment" class="comment">
+						<header class="title"><h3>[##_article_rep_rp_cnt_##]개의 댓글이 있습니다.</h3></header>
+						<s_rp>
+						<section class="write">
+							<s_rp_input_form>
+							<s_rp_member>
+							<s_rp_guest>
+								<input id="name" class="input" type="text" placeholder="이름" name="[##_rp_input_name_##]" />
+								<input id="password" class="input" type="password" placeholder="비밀번호" maxlength="8" name="[##_rp_input_password_##]" />
+							</s_rp_guest>
+							</s_rp_member>
+							<textarea id="comment" class="textarea" name="[##_rp_input_comment_##]" placeholder="댓글을 적어주세요." rows="10" cols="50"></textarea>
+							<p class="btn">
+								<input id="secret" name="secret" type="checkbox" hidden="hidden"/>
+								<label for="secret" class="fa"></label><button class="fa fa-pencil" onClick="[##_rp_onclick_submit_##]"></button>
+							</p>
+							</s_rp_input_form>
+						</section>
+						<s_rp_container>
+						<section class="list">
+							<ul class="ul no-style">
+								<s_rp_rep>
+									<li id="[##_rp_rep_id_##]" class="li [##_rp_rep_class_##]">
+										<span class="control">
+											<a href="#" onClick="[##_rp_rep_onclick_reply_##]"><i class="fa fa-plus-square-o"></i></a>
+											<a href="#" onClick="[##_rp_rep_onclick_delete_##]"><i class="fa fa-minus-square-o"></i></a>
+										</span>
+										<span class="name"><i class="fa"></i>[##_rp_rep_name_##]</span>
+										<span class="date">[##_rp_rep_date_##]</span>
+										<p class="desc">[##_rp_rep_desc_##]</p>
+									</li>
+									<s_rp2_container>
+									<s_rp2_rep>
+									<li id="[##_rp_rep_id_##]" class="li reply [##_rp_rep_class_##]">
+										<p class="control">
+											<a href="#" onClick="[##_rp_rep_onclick_delete_##]"><i class="fa fa-minus-square-o"></i></a>
+										</p>
+										<span class="name"><i class="fa"></i>[##_rp_rep_name_##]</span>
+										<span class="date"> [##_rp_rep_date_##]</span>
+										<p class="desc">[##_rp_rep_desc_##]</p>
+									</li>
+									</s_rp2_rep>
+									</s_rp2_container>
+								</s_rp_rep>
+							</ul>
+						</section>
+						</s_rp_container>
+						</s_rp>
 					</section>
-					<s_rp_container>
-					<section class="list">
-						<ul class="ul no-style">
-							<s_rp_rep>
-								<li id="[##_rp_rep_id_##]" class="li [##_rp_rep_class_##]">
-									<span class="control">
-										<a href="#" onClick="[##_rp_rep_onclick_reply_##]"><i class="fa fa-plus-square-o"></i></a>
-										<a href="#" onClick="[##_rp_rep_onclick_delete_##]"><i class="fa fa-minus-square-o"></i></a>
-									</span>
-									<span class="name"><i class="fa"></i>[##_rp_rep_name_##]</span>
-									<span class="date">[##_rp_rep_date_##]</span>
-									<p class="desc">[##_rp_rep_desc_##]</p>
-								</li>
-								<s_rp2_container>
-								<s_rp2_rep>
-								<li id="[##_rp_rep_id_##]" class="li reply [##_rp_rep_class_##]">
-									<p class="control">
-										<a href="#" onClick="[##_rp_rep_onclick_delete_##]"><i class="fa fa-minus-square-o"></i></a>
-									</p>
-									<span class="name"><i class="fa"></i>[##_rp_rep_name_##]</span>
-									<span class="date"> [##_rp_rep_date_##]</span>
-									<p class="desc">[##_rp_rep_desc_##]</p>
-								</li>
-								</s_rp2_rep>
-								</s_rp2_container>
-							</s_rp_rep>
-						</ul>
-					</section>
-					</s_rp_container>
-					</s_rp>
-				</section>
+				</div>
 			</section><!-- entry close -->
 			</s_article_rep>
 			<s_paging>
