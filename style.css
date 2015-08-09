@@ -167,7 +167,6 @@ ol.no-style, ul.no-style {list-style:none;}
 #entry_protected button:hover {color:#BBB;}
 #entry_protected button:active {color:#666;}
 
-#entry .tags a:not(:last-child):after {content:', ';}
 #entry .tags .fa {margin-right:8px;}
 #entry h3 a {display:block;}
 
