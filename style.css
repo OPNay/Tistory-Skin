@@ -177,8 +177,8 @@ ol.no-style, ul.no-style {list-style:none;}
 #entry_protected button:hover {color:#BBB;}
 #entry_protected button:active {color:#666;}
 
-#entry .tags {margin:0; padding:10px 0 0; font-size:16px;}
 #entry .tags a:not(:last-child):after {content:', ';}
+#entry .tags .fa {margin-right:8px;}
 #entry h3 a {display:block;}
 
 #page {position:relative; text-align:center;}
