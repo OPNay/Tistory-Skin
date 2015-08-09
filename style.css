@@ -17,6 +17,10 @@ ol.no-style, ul.no-style {list-style:none;}
 .card-content {padding:32px;}
 .card-content:not(:last-child) {border-bottom:1px solid #EEE;}
 
+.card .title:not(:last-child) {margin-bottom:24px;}
+.card .title h2, .card .title h3 {margin:0; line-height:1.5;}
+.card .title .info {color:#888; font-size:0.9em;}
+
 /*********
  * Header
  *********/
@@ -94,11 +98,6 @@ ol.no-style, ul.no-style {list-style:none;}
 #container {width:calc(100% - 12px); margin:0 6px;}
 #sidebar {display:none;}
 }
-
-#wrap .title {padding:24px; border-bottom:1px solid #DDD;}
-#wrap .title h2,
-#wrap .title h3 {margin:0; line-height:1.5;}
-#wrap .title .info {color:#888; font-size:0.9em;}
 
 #entry {position:relative;}
 
