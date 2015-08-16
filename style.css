@@ -13,7 +13,7 @@ label:focus, input:focus, button:focus, textarea:focus {outline:none;}
 .ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 ol.no-style, ul.no-style {list-style:none;}
 
-.card, #sidebar .module {background:#FFF;}
+.card, #sidebar .module {background:#FFF; margin:12px 0; padding:0; border-radius:2px; box-shadow:0 2px 3px rgba(0,0,0,0.2);}
 .card-content {padding:32px;}
 .card-content:not(:last-child) {border-bottom:1px solid #EEE;}
 
@@ -82,7 +82,6 @@ ol.no-style, ul.no-style {list-style:none;}
 #wrap:after {content:""; display:block; clear:both;}
 #container {float:left; margin:0 12px;}
 #sidebar {float:right; margin:0 12px; width:240px;}
-#sidebar .module, .card {margin:12px 0; padding:0; border-radius:2px; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3);}
 
 /* PC */
 @media (min-width:1216px) {
