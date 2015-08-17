@@ -19,6 +19,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .card-content {padding:32px;}
 .card-content:not(:last-child) {border-bottom:1px solid #EEE;}
 
+.card-border:not(:last-child) {border-bottom:1px solid #EEE;}
+
 .card .title:not(:last-child) {margin-bottom:24px;}
 .card .title h2, .card .title h3 {margin:0; line-height:1.5;}
 .card .title .info {color:#888; font-size:0.9em;}
