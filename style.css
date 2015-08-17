@@ -13,6 +13,8 @@ label:focus, input:focus, button:focus, textarea:focus {outline:none;}
 .ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 ol.no-style, ul.no-style {list-style:none;}
 
+.flex {display:flex;}
+
 .card, #sidebar .module {background:#FFF; margin:12px 0; padding:0; border-radius:2px; box-shadow:0 2px 3px rgba(0,0,0,0.2);}
 .card-content {padding:32px;}
 .card-content:not(:last-child) {border-bottom:1px solid #EEE;}
