@@ -80,17 +80,6 @@ ol.no-style, ul.no-style {list-style:none;}
 #nav .menu.active ul {transform:translateY(0); opacity:1;}
 }
 
-#nav button, #nav input {display:block; background:none; border:none;}
-#nav .search .input {background:rgba(255,255,255,0.3); position:absolute; top:0; right:50px; margin:5px 0; padding:10px; width:250px; height:40px; box-sizing:border-box; color:white; transition:0.2s all linear;}
-#nav .search .input::-webkit-input-placeholder {color:white;}
-#nav .serach .input::-moz-placeholder {color:white;}
-#nav .search .input:hover {background:rgba(255,255,255,0.5);}
-#nav .search .input:focus {background:rgba(255,255,255,0.75); color:rgba(0,0,0,0.75);}
-#nav .search .input:focus::-webkit-input-placeholder {color:rgba(0,0,0,0.5);}
-#nav .serach .input:focus::-moz-placeholder {color:rgba(0,0,0,0.5);}
-#nav .search .button .fa {top:0; right:0;}
-
-
 /*********
  * Container
  *********/
@@ -118,6 +107,11 @@ ol.no-style, ul.no-style {list-style:none;}
 }
 
 #entry {position:relative;}
+
+#search {position:relative;}
+#search .input, #search .button {background:none; border:none; font-size:16px; line-height:20px;}
+#search .input {padding:16px 50px 16px 24px; width:100%; box-sizing:border-box;}
+#search .button {position:absolute; top:0; right:0; padding:16px; cursor:pointer;}
 
 .admin .fa-bars {position:absolute; right:24px; top:24px; padding:10px; box-sizing:border-box; font-size:1.5em; cursor:pointer;}
 .admin .a_list {background:white; display:none; position:absolute; top:70px; right:24px; width:200px; border:1px solid gray;}
