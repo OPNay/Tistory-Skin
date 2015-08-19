@@ -151,7 +151,9 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .write .btn .fa:active {color:black;}
 #secret + .fa:before {content:'\f09c';}
 #secret:checked + .fa:before {content:'\f023'; color:red;}
-
+@media (max-width:758px) {
+.comment .write .input {width:100%;}
+}
 .comment .list p {margin:0; padding:0;}
 .comment .list .li {position:relative; padding:24px 24px 24px 75px; min-height:55px;}
 .comment .list .li + .li {border-top:1px solid #DDD;}
