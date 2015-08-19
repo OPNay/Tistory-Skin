@@ -32,6 +32,14 @@ ol.no-style, ul.no-style {list-style:none;}
 .card .article {font-size:12px;}
 .card .article:not(:last-child) {margin-bottom:24px;}
 
+/* Mobile */
+@media (max-width:768px) {
+	.card-content {padding:24px;}
+	.card-list a {padding:24px;}
+	.card-list .date {flex:1;} 
+	.card-list .title {flex:2;}
+}
+
 /*********
  * Header
  *********/
@@ -186,8 +194,8 @@ ol.no-style, ul.no-style {list-style:none;}
 #page .next {right:0;}
 #page .prev.no-more-prev, #page .next.no-more-next {display:none;}
 
-#footer {text-align:center; line-height:1.5; font-size:0.9em;}
-#footer p {margin:0;}
+#footer {margin-bottom:12px; text-align:center; line-height:1.5; font-size:0.9em;}
+#footer p {margin:8px 0;}
 #footer .visitor {padding:12px;}
 #footer .visitor .day {color:rgb(128,128,128); font-size:0.8em;}
 #footer .info {margin-top:20px;}
