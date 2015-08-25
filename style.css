@@ -156,7 +156,6 @@ ol.no-style, ul.no-style {list-style:none;}
 }
 .comment .list p {margin:0; padding:0;}
 .comment .list .li {position:relative; padding:24px 24px 24px 96px; min-height:55px;}
-.comment .list .li + .li {border-top:1px solid #DDD;}
 .comment .list .li.reply {background:#F4F4F4;}
 .comment .list .li:after {content:""; display:block; clear:both;}
 .comment .list .tistoryProfileLayerTrigger {display:none;}
