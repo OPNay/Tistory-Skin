@@ -169,7 +169,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .list .date {font-size:0.8em; color:#BBB;}
 .comment .list .desc {margin:15px 0; padding:0; line-height:1.5em; font-size:0.8em;}
 .comment .list .control {font-size:0.8em; line-height:1.5;}
-.comment .list .control a {color:#666;}
+.comment .list .control a {color:#666; padding-right:10px;}
 .comment .list .control a:hover {color:#222;}
 
 #entry_protected p {margin:12px 0; font-size:1.25em; text-align:center;}
