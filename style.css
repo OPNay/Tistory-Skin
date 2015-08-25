@@ -155,13 +155,13 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .write .input {width:100%;}
 }
 .comment .list p {margin:0; padding:0;}
-.comment .list .li {position:relative; padding:24px 24px 24px 75px; min-height:55px;}
+.comment .list .li {position:relative; padding:24px 24px 24px 96px; min-height:55px;}
 .comment .list .li + .li {border-top:1px solid #DDD;}
-.comment .list .li.reply {padding-left:95px;}
+.comment .list .li.reply {background:#F4F4F4;}
 .comment .list .li:after {content:""; display:block; clear:both;}
 .comment .list .tistoryProfileLayerTrigger {display:none;}
 .comment .list .name, .comment .list .name a {color:#444444;}
-.comment .list .name img, .comment .list .name .fa {position:absolute; width:64px; height:64px; margin-left:-70px; border-radius:50%; overflow:hidden;}
+.comment .list .name img, .comment .list .name .fa {position:absolute; width:64px; height:64px; margin-left:-82px; border-radius:50%; overflow:hidden;}
 .comment .list .name .fa {color:#DDD; font-size:64px; text-align:center;}
 .comment .list .name .fa:before {content:'\f007';/*fa-user*/}
 .rp_secret .name .fa:before, .guest_secret .name .fa:before {content:'\f21b';/*fa-user-secret*/}
