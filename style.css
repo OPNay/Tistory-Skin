@@ -212,14 +212,6 @@ ol.no-style, ul.no-style {list-style:none;}
 #sidebar .link a {background:none; display:block; margin:0; padding:10px; font-size:1.3em; text-align:center;}
 #sidebar .link a:hover {color:white !important;}
 #sidebar .link .fa {margin-right:10px;}
-#sidebar .link .github {color:gray;}
-#sidebar .link .github:hover {background-color:gray;}
-#sidebar .link .twitter {color:#55acee;}
-#sidebar .link .twitter:hover {background-color:#55acee;}
-#sidebar .link .rss {color:orange;}
-#sidebar .link .rss:hover {background-color:orange;}
-#sidebar .link .donate {color:#363FAD;}
-#sidebar .link .donate:hover {background-color:#363FAD;}
 
 #sidebar .list {margin-bottom:10px;}
 #sidebar .list a {display:block; padding:12px; font-size:0.8em;}
