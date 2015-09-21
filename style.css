@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {background:#EEE; margin:0; padding:0;}
-body, button, input, textarea {font-family:'맑은 고딕',MalgunGothic,'나눔 고딕','Nanum Gothic';}
+body, button, input, textarea {font-family:Roboto,RobotoDraft,arial,sans-serif;}
 a {text-decoration:none; color:black; cursor:pointer;}
 a:hover {color:red;}
 ul, li {margin:0; padding:0;}
