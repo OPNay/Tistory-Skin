@@ -21,8 +21,9 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .card-border:not(:last-child) {border-bottom:1px solid #EEE;}
 
-.card-list a {padding:24px 32px;}
-.card-list .date {flex:1;}
+.card-list a {padding:24px 32px; color:black; transition:background 0.05s linear;}
+.card-list a:hover {background:#EEE;}
+.card-list .date {flex:1; color:#444;}
 .card-list .title {flex:4;}
 
 .card .title:not(:last-child) {margin-bottom:24px;}
