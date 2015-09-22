@@ -1,7 +1,9 @@
 // Nav
 function nav_transparent() {
 	var nav = $('#nav');
-	if (($(window).scrollTop() >= 100 && nav.hasClass('transparent')) || ($(window).scrollTop() < 100 && !nav.hasClass('transparent')))
+	if (($(window).scrollTop() >= 100 && nav.hasClass('transparent'))
+		|| ($(window).scrollTop() < 100 && !nav.hasClass('transparent'))
+		&& !$('#side').hasClass('active'))
 		nav.toggleClass('transparent');
 }
 $(document).ready(function () {
@@ -11,18 +13,13 @@ $(document).ready(function () {
 
 // Nav menu
 $(document).ready(function () {
-	// Mobile
-	var menu = $('.menu');
-	var menuIcon = $('.icon');
-	menuIcon.click(function () {
-		if (menu.hasClass('active')) {
-			menu.removeClass('active');
-			setTimeout(function () {menu.removeClass('show');}, 300);
-		} else {
-			menu.addClass('show');
-			setTimeout(function () {menu.addClass('active');}, 100);
-		}
+	$('.icon, #cover').click(function () {
+		$('.icon, #side, #cover').toggleClass('active');
+		$('body').toggleClass('scroll-hidden');
+		if($(window).scrollTop() < 100)
+			$('#nav').toggleClass('transparent');
 	});
+	$('#side ul ~ ul').before('<hr>');
 });
 
 $(document).ready(function () {

@@ -25,13 +25,17 @@
 	<a class="link ellipsis" href="[##_blog_link_##]">[##_title_##]</a>
 </header>
 <nav id="nav" class="transparent">
-	<div class="menu">
-		<div class="icon">
-			<i class="fa fa-bars"></i>
-			<i class="fa fa-plus"></i>
-		</div>[##_blog_menu_##]
+	<div class="icon">
+		<i class="fa fa-bars"></i>
+		<i class="fa fa-plus"></i>
 	</div>
 </nav>
+<section id="side">
+	<s_sidebar>
+		<s_sidebar_element><!--Blog Menu-->[##_blog_menu_##]</s_sidebar_element>
+		<s_sidebar_element><!--Category-->[##_category_list_##]</s_sidebar_element>
+	</s_sidebar>
+</section>
 <section id="wrap">
 	<section id="container">
 		<section id="search" class="card">
@@ -310,6 +314,7 @@
 		</s_sidebar>
 	</aside>
 </section>
+<div id="cover"></div>
 <div id="bot-btn" class="hidden"><i class="fa fa-arrow-up"></i></div>
 </s_t3>
 </body>
