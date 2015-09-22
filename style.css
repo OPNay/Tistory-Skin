@@ -1,9 +1,11 @@
 @charset "utf-8";
 
 ::-webkit-scrollbar {width:10px; background-color:#EEE;}
-::-webkit-scrollbar-button {visibility:hidden;}
+::-webkit-scrollbar-button {display:none;}
 ::-webkit-scrollbar-track {background:#EEE; border-left:1px solid #DDD;}
-::-webkit-scrollbar-thumb {background:#DDD;}
+::-webkit-scrollbar-thumb {background:#CCC;}
+::-webkit-scrollbar-thumb:hover {background:#BBB;}
+::-webkit-scrollbar-thumb:active {background:#888;}
 
 body {background:#EEE; margin:0; padding:0;}
 body, button, input, textarea {-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; font-family:Roboto,RobotoDraft,arial,sans-serif;}
