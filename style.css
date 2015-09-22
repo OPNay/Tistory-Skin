@@ -207,7 +207,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #sidebar .list {margin-bottom:10px;}
 #sidebar .list a {display:block; padding:12px; font-size:0.8em;}
 #sidebar .list a:hover {background:#DDD; color:#FFF;}
-#sidebar .list > ul > li > ul > li > ul a {padding-left:25px;}
+#sidebar .list ul ul ul a {padding-left:25px;}
 #sidebar .list span {font-size:0.75em; color:#888}
 #sidebar .list a:hover span {color:#FFF;}
 #sidebar .list p {margin:0;}
