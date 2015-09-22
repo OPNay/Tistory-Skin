@@ -183,9 +183,11 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #footer {margin-bottom:12px; text-align:center; line-height:1.5; font-size:0.9em;}
 #footer p {margin:8px 0;}
+#footer p:first-child {margin-top:0;}
+#footer p:last-child {margin-bottom:0;}
 #footer .visitor {padding:12px;}
-#footer .visitor .day {color:rgb(128,128,128); font-size:0.8em;}
-#footer .info {margin-top:20px;}
+#footer .visitor .day {color:#888; font-size:0.9em;}
+#footer .copy {margin:18px 0; color:#444;}
 
 /* Sidebar */
 
