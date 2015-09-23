@@ -1,9 +1,19 @@
+function toggleActive(a,b) {
+	$(a).toggleClass('active',b);
+}
+function isActive(a) {
+	return $(a).hasClass('active');
+}
+function disableScroll(a) {
+	$('body').toggleClass('scroll-hidden',a);
+}
+
 // Nav
 function nav_transparent() {
 	var nav = $('#nav');
 	if (($(window).scrollTop() >= 100 && nav.hasClass('transparent'))
 		|| ($(window).scrollTop() < 100 && !nav.hasClass('transparent'))
-		&& !$('#side').hasClass('active'))
+		&& !isActive('#side'))
 		nav.toggleClass('transparent');
 }
 $(document).ready(function () {
@@ -11,21 +21,52 @@ $(document).ready(function () {
 	nav_transparent();
 });
 
-// Nav menu
-$(document).ready(function () {
-	$('.icon, #cover').click(function () {
-		$('.icon, #side, #cover').toggleClass('active');
-		$('body').toggleClass('scroll-hidden');
-		if($(window).scrollTop() < 100)
-			$('#nav').toggleClass('transparent');
-	});
-	$('#side ul ~ ul').before('<hr>');
-});
+function updateCover() {
+	var cover = $('#cover')
+	disableScroll(false);
+	toggleActive('#cover, .icon, #side, .card.floating', false);
+	$('.card.floating').html('');
 
-// Article Admin
+	if($(window).scrollTop() < 100)
+		$('#nav').toggleClass('transparent',true);
+
+	switch(cover.data('active')) {
+	case 'side':
+		disableScroll(true);
+		toggleActive('#cover, #side, .icon', true);
+		$('#nav').toggleClass('transparent',false);
+		break;
+	case 'floating':
+		disableScroll(true);
+		toggleActive('#cover, .card.floating', true);
+		$('.card.floating').html(cover.data('floating'));
+		break;
+	}
+};
+
 $(document).ready(function () {
+// Nav menu
+	var cover = $('#cover');
+	$('#nav .icon').click(function () {
+		if(cover.data('active') != 'side')
+			cover.data('active','side') && updateCover();
+		else
+			cover.removeData('active') && updateCover();
+	});
+	cover.click(function () {
+		$(this).removeData('active') && updateCover();
+	});
+
+	$('#side ul ~ ul').before('<hr>');
+
+// Floating
 	$('.admin .fa-bars').click(function () {
-		$('.card.floating').html($(this).parent().find('.floating-data').clone().removeClass('floating-data'));
+		if(cover.data('active') != 'floating')
+			cover.data('active','floating')
+				.data('floating',$(this).parent().find('.floating-data').clone().removeClass('floating-data'))
+				&& updateCover();
+		else
+			cover.removeData('active') && updateCover();
 	});
 });
 
