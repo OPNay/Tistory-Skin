@@ -240,7 +240,7 @@ ol.no-style, ul.no-style {list-style:none;}
 /*********
  * Bottom button
  *********/
-#bot-btn {z-index:100; position:fixed; bottom:0; right:0; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3); transition:all 0.2s ease-in-out; transform:translateY(0); font-size:2em; cursor:pointer;}
+#bot-btn {z-index:40; position:fixed; bottom:0; right:0; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3); transition:all 0.2s ease-in-out; transform:translateY(0); font-size:2em; cursor:pointer;}
 #bot-btn.hidden {transform:translateY(200px);}
 #bot-btn .fa {color:white; padding:10px; background:rgb(192,192,192); transition:all 0.2s ease-in-out}
 #bot-btn .fa:hover {background:rgb(128,128,128);}
