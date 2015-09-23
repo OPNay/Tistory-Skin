@@ -44,6 +44,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .card.floating {z-index:90; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); box-shadow:0 0 15px rgba(0,0,0,0.25);}
 .floating-data {display:none;}
 
+#cover {z-index:50; background:rgba(0,0,0,0.25); position:fixed; top:0; bottom:0; left:0; right:0; visibility:hidden; opacity:0; transition:all 0.2s ease-in;}
+#cover.active {visibility:visible; opacity:1;}
 /* Mobile */
 @media (max-width:768px) {
 	.card-content {padding:24px;}
@@ -234,8 +236,6 @@ ol.no-style, ul.no-style {list-style:none;}
 #sidebar .calendar td:first-child {color:#F44;}
 
 
-#cover {z-index:50; background:rgba(0,0,0,0.25); position:fixed; top:0; bottom:0; left:0; right:0; visibility:hidden; opacity:0; transition:all 0.2s ease-in;}
-#cover.active {visibility:visible; opacity:1;}
 /*********
  * Bottom button
  *********/
