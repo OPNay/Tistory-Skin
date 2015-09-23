@@ -34,11 +34,13 @@ function updateCover() {
 	case 'side':
 		disableScroll(true);
 		toggleActive('#cover, #side, .icon', true);
+		cover.toggleClass('nav-over',false);
 		$('#nav').toggleClass('transparent',false);
 		break;
 	case 'floating':
 		disableScroll(true);
 		toggleActive('#cover, .card.floating', true);
+		cover.toggleClass('nav-over',true);
 		$('.card.floating').html(cover.data('floating'));
 		break;
 	}
