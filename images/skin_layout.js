@@ -22,9 +22,11 @@ $(document).ready(function () {
 	$('#side ul ~ ul').before('<hr>');
 });
 
+// Article Admin
 $(document).ready(function () {
-	var entry = $('#entry'), admin = entry.find('.admin');
-	admin.find('.fa-bars').click(function () {admin.find('.a_list').toggleClass('active');});
+	$('.admin .fa-bars').click(function () {
+		$('.card.floating').html($(this).parent().find('.floating-data').clone().removeClass('floating-data'));
+	});
 });
 
 // Page
