@@ -41,6 +41,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .card .article {font-size:12px;}
 .card .article:not(:last-child) {margin-bottom:24px;}
 
+.card.floating {z-index:90; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); box-shadow:0 0 15px rgba(0,0,0,0.25);}
+
 /* Mobile */
 @media (max-width:768px) {
 	.card-content {padding:24px;}
