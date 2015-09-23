@@ -118,13 +118,11 @@ ol.no-style, ul.no-style {list-style:none;}
 #search .button {position:absolute; top:0; right:0; padding:16px; cursor:pointer;}
 
 .admin .fa-bars {position:absolute; right:24px; top:24px; padding:10px; box-sizing:border-box; font-size:1.5em; cursor:pointer;}
-/*
-.admin .a_list {background:white; display:none; position:absolute; top:70px; right:24px; width:200px; border:1px solid gray;}
-.admin .a_list.active {display:block;}
-.admin .a_list:before {content:""; background:white; position:absolute; right:14px; top:-6px; width:10px; height:10px; border-top:1px solid gray; border-left:1px solid gray; transform:rotate(45deg);}
-*/
-.a_list .a_l_btn {display:block; padding:5px;}
-.a_list .a_l_btn .fa {padding:5px; width:20px; text-align:center;}
+
+.a_list {margin:6px 0;}
+.a_list .a_l_btn {display:block; padding:16px 16px 16px 52px; width:160px; line-height:18px; color:black; transition:background 0.05s linear;}
+.a_list .a_l_btn:hover {background:#EEE;}
+.a_list .a_l_btn .fa {position:absolute; margin-left:-36px; width:20px; text-align:center; font-size:1.1em;}
 
 .search-ul {margin:0;}
 .search-li:hover {background:#BBB; color:#FFFFFF}
