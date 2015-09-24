@@ -153,23 +153,25 @@
 		<s_article_rep>
 		<section id="entry" class="card">
 			<div class="card-content">
-				<header class="title">
-					<h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
-					<span class="info">[##_article_rep_date_##]</span>
-				</header>
-				<s_ad_div>
-					<div class="admin">
-						<i class="fa fa-bars c_pointer"></i>
-						<div class="a_list floating-data">
-							<a href="[##_s_ad_m_link_##]" class="a_l_btn"><i class="fa fa-pencil"></i>수정</a>
-							<a href="#" class="a_l_btn" onclick="[##_s_ad_m_onclick_##]"><i class="fa fa-pencil-square-o"></i>수정(창으로)</a>
-							<a href="#" class="a_l_btn" onclick="[##_s_ad_s2_onclick_##]"><i class="fa fa-unlock-alt"></i>[##_s_ad_s2_label_##]</a>
-							<a href="#" class="a_l_btn" onclick="[##_s_ad_t_onclick_##]"><i class="fa fa-link"></i>관련글(트랙백)</a>
-							<a href="#" class="a_l_btn" onclick="[##_s_ad_d_onclick_##]"><i class="fa fa-trash"></i>삭제</a>
-						</div>
+				<header class="title flex">
+					<div class="flex-1">
+						<h2 class="ellipsis"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+						<span class="info ellipsis">[##_article_rep_date_##]</span>
 					</div>
-					<script>$('#entry .admin a:contains("비공개") .fa').toggleClass('fa-unlock-alt fa-lock');</script>
-				</s_ad_div>
+					<s_ad_div>
+						<div class="admin">
+							<i class="fa fa-bars c_pointer"></i>
+							<div class="a_list floating-data">
+								<a href="[##_s_ad_m_link_##]" class="a_l_btn"><i class="fa fa-pencil"></i>수정</a>
+								<a href="#" class="a_l_btn" onclick="[##_s_ad_m_onclick_##]"><i class="fa fa-pencil-square-o"></i>수정(창으로)</a>
+								<a href="#" class="a_l_btn" onclick="[##_s_ad_s2_onclick_##]"><i class="fa fa-unlock-alt"></i>[##_s_ad_s2_label_##]</a>
+								<a href="#" class="a_l_btn" onclick="[##_s_ad_t_onclick_##]"><i class="fa fa-link"></i>관련글(트랙백)</a>
+								<a href="#" class="a_l_btn" onclick="[##_s_ad_d_onclick_##]"><i class="fa fa-trash"></i>삭제</a>
+							</div>
+						</div>
+						<script>$('#entry .admin a:contains("비공개") .fa').toggleClass('fa-unlock-alt fa-lock');</script>
+					</s_ad_div>
+				</header>
 				<article class="article">[##_article_rep_desc_##]</article>
 				<s_tag_label><section class="tags"><i class="fa fa-tags"></i>[##_tag_label_rep_##]</section></s_tag_label>
 			</div>

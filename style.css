@@ -125,7 +125,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #search .input {padding:16px 50px 16px 24px; width:100%; box-sizing:border-box;}
 #search .button {position:absolute; top:0; right:0; padding:16px; cursor:pointer;}
 
-.admin .fa-bars {position:absolute; right:24px; top:24px; padding:10px; box-sizing:border-box; font-size:1.5em; cursor:pointer;}
+.admin .fa-bars {width:50px; line-height:50px; padding:0 10px; box-sizing:border-box; font-size:1.5em; text-align:center;cursor:pointer;}
 
 .a_list {margin:6px 0;}
 .a_list .a_l_btn {display:block; padding:16px 16px 16px 52px; width:160px; line-height:18px; color:black; transition:background 0.05s linear;}
