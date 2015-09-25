@@ -35,8 +35,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .card-list a {padding:24px 32px; color:black; transition:background 0.05s linear;}
 .card-list a:hover {background:#EEE;}
-.card-list .date {flex:1; color:#444;}
-.card-list .title {flex:4;}
+.card-list .date {width:120px; color:#444;}
 
 .card .title:not(:last-child) {margin-bottom:24px;}
 .card .title h2, .card .title h3 {margin:0; line-height:1.5;}
