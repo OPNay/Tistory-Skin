@@ -131,14 +131,6 @@ ol.no-style, ul.no-style {list-style:none;}
 .a_list .a_l_btn:hover {background:#EEE;}
 .a_list .a_l_btn .fa {position:absolute; margin-left:-36px; width:20px; text-align:center; font-size:1.1em;}
 
-.search-ul {margin:0;}
-.search-li:hover {background:#BBB; color:#FFFFFF}
-.search-li a {display:block; padding:16px 24px; color:#444;}
-.search-li a:hover {color:white;}
-.search-li p, .search-li span {margin:0;}
-.search-li .date {display:block; font-size:14px; color:#888}
-.search-li:hover .date {color:rgba(255,255,255,0.75);}
-
 #tag .tag-ul {margin:0; font-size:14px;}
 #tag .tag-li {width:31%; display:inline-block; padding-bottom:10px;}
 #tag .cloud5 {font-size:1em;}
