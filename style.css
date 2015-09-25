@@ -269,7 +269,7 @@ article ul {line-height:1.5; list-style:disc;}
 article ol {list-style:decimal;}
 article li ul {list-style:circle;}
 
-article img {max-width:100%;}
+article img {max-width:100%; height:auto;}
 
 /* Download Button */
 article .imageblock img[src*='.gif'] {display:none;}
