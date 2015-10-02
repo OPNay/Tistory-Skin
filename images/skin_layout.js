@@ -12,16 +12,15 @@ function nav_transparent() {
 		nav.toggleClass('transparent');
 }
 
-function updateCover() {
+function updateCover(a) {
 	disableScroll(false);
 	body.toggleClass('active side floating', false);
 	cover.toggleClass('active nav-over', false);
-	$('.card.floating').html('');
 
 	if($(window).scrollTop() < 100)
 		nav.toggleClass('transparent',true);
 		
-	switch(cover.data('active')) {
+	switch(a) {
 	case 'side':
 		disableScroll(true);
 		body.toggleClass('active side',true);
@@ -32,8 +31,11 @@ function updateCover() {
 		disableScroll(true);
 		body.toggleClass('active floating',true);
 		cover.toggleClass('active nav-over',true);
-		$('.card.floating').html(cover.data('floating'));
+		$('.card.floating').html($('.floating-data.use').clone().removeClass('floating-data'));
 		break;
+	default:
+		$('.card.floating').html('');
+		$('.floating-data.use').removeClass('use');
 	}
 };
 
@@ -43,25 +45,22 @@ $(document).ready(function () {
 	nav_transparent();
 // Nav menu
 	$('#nav .icon').click(function () {
-		if(cover.data('active') != 'side')
-			cover.data('active','side') && updateCover();
+		if(!body.hasClass('active side'))
+			updateCover('side');
 		else
-			cover.removeData('active') && updateCover();
+			updateCover('off');
 	});
-	cover.click(function () {
-		$(this).removeData('active') && updateCover();
-	});
+	cover.click(function () {updateCover('off')});
 
 	$('#side ul ~ ul').before('<hr>');
 
 // Floating
 	$('.admin .fa-bars').click(function () {
-		if(cover.data('active') != 'floating')
-			cover.data('active','floating')
-				.data('floating',$(this).parent().find('.floating-data').clone().removeClass('floating-data'))
-				&& updateCover();
-		else
-			cover.removeData('active') && updateCover();
+		if(!body.hasClass('active floating')) {
+			$(this).parent().find('.floating-data').addClass('use')
+			updateCover('floating');
+		} else
+			updateCover('off');
 	});
 });
 
