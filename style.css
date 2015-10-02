@@ -47,7 +47,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .card.floating {z-index:150; position:fixed; top:50%; left:50%; box-shadow:0 0 15px rgba(0,0,0,0.25);
 	transition:opacity 0.2s linear, transform 0.2s linear;
 	transform:translate(-50%, -50%) scale(0.5); opacity:0;}
-.card.floating.active {transform:translate(-50%, -50%) scale(1); opacity:1;}
+.active .card.floating {transform:translate(-50%, -50%) scale(1); opacity:1;}
 .floating-data {display:none;}
 
 #cover {z-index:50; background:rgba(0,0,0,0.25); position:fixed; top:0; bottom:0; left:0; right:0; visibility:hidden; opacity:0; transition:all 0.2s ease-in;}
@@ -76,13 +76,13 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #nav .icon {line-height:50px; text-align:center; cursor:pointer;}
 #nav .icon .fa {top:0; left:0; transition:all 0.3s linear;}
-#nav .icon.active .fa {transform:rotate(45deg);}
-.icon.active .fa-bars, .icon .fa-plus {opacity:0;}
-.icon.active .fa-plus, .icon .fa-bars {opacity:1;}
+.active.side .icon .fa {transform:rotate(45deg);}
+.active.side .icon .fa-bars, .icon .fa-plus {opacity:0;}
+.active.side .icon .fa-plus, .icon .fa-bars {opacity:1;}
 
 #side {z-index:90; background:white; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3); position:fixed; top:50px; left:0; width:280px; height:calc(100% - 50px);
 	overflow-x:hidden; overflow-y:scroll; transition:all 0.2s ease-in; transform:translateX(-100%);}
-#side.active {transform:translateX(0);}
+.active.side #side {transform:translateX(0);}
 
 #side > ul, #side > ol {margin:0.8em 0;}
 #side li a {display:block; padding:16px 24px; color:black; transition:background 0.05s linear;}

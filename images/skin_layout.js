@@ -1,9 +1,3 @@
-function toggleActive(a,b) {
-	$(a).toggleClass('active',b);
-}
-function isActive(a) {
-	return $(a).hasClass('active');
-}
 function disableScroll(a) {
 	$('body').toggleClass('scroll-hidden',a);
 }
@@ -12,8 +6,7 @@ function disableScroll(a) {
 function nav_transparent() {
 	var nav = $('#nav');
 	if (($(window).scrollTop() >= 100 && nav.hasClass('transparent'))
-		|| ($(window).scrollTop() < 100 && !nav.hasClass('transparent'))
-		&& !isActive('#side'))
+		|| ($(window).scrollTop() < 100 && !nav.hasClass('transparent')))
 		nav.toggleClass('transparent');
 }
 $(document).ready(function () {
@@ -21,26 +14,29 @@ $(document).ready(function () {
 	nav_transparent();
 });
 
+var body = $('body');
+
 function updateCover() {
 	var cover = $('#cover')
 	disableScroll(false);
-	toggleActive('#cover, .icon, #side, .card.floating', false);
+	body.toggleClass('active side floating', false);
+	cover.toggleClass('active nav-over', false);
 	$('.card.floating').html('');
 
 	if($(window).scrollTop() < 100)
 		$('#nav').toggleClass('transparent',true);
-
+		
 	switch(cover.data('active')) {
 	case 'side':
 		disableScroll(true);
-		toggleActive('#cover, #side, .icon', true);
-		cover.toggleClass('nav-over',false);
+		body.toggleClass('active side',true);
+		cover.toggleClass('active',true);
 		$('#nav').toggleClass('transparent',false);
 		break;
 	case 'floating':
 		disableScroll(true);
-		toggleActive('#cover, .card.floating', true);
-		cover.toggleClass('nav-over',true);
+		body.toggleClass('active floating',true);
+		cover.toggleClass('active nav-over',true);
 		$('.card.floating').html(cover.data('floating'));
 		break;
 	}
