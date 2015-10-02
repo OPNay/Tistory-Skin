@@ -2,36 +2,31 @@ function disableScroll(a) {
 	$('body').toggleClass('scroll-hidden',a);
 }
 
-// Nav
+var body = $('body');
+var cover = $('#cover');
+var nav = $('#nav');
+
 function nav_transparent() {
-	var nav = $('#nav');
 	if (($(window).scrollTop() >= 100 && nav.hasClass('transparent'))
 		|| ($(window).scrollTop() < 100 && !nav.hasClass('transparent')))
 		nav.toggleClass('transparent');
 }
-$(document).ready(function () {
-	$(window).scroll(nav_transparent);
-	nav_transparent();
-});
-
-var body = $('body');
 
 function updateCover() {
-	var cover = $('#cover')
 	disableScroll(false);
 	body.toggleClass('active side floating', false);
 	cover.toggleClass('active nav-over', false);
 	$('.card.floating').html('');
 
 	if($(window).scrollTop() < 100)
-		$('#nav').toggleClass('transparent',true);
+		nav.toggleClass('transparent',true);
 		
 	switch(cover.data('active')) {
 	case 'side':
 		disableScroll(true);
 		body.toggleClass('active side',true);
 		cover.toggleClass('active',true);
-		$('#nav').toggleClass('transparent',false);
+		nav.toggleClass('transparent',false);
 		break;
 	case 'floating':
 		disableScroll(true);
@@ -43,8 +38,10 @@ function updateCover() {
 };
 
 $(document).ready(function () {
+// nav
+	$(window).scroll(nav_transparent);
+	nav_transparent();
 // Nav menu
-	var cover = $('#cover');
 	$('#nav .icon').click(function () {
 		if(cover.data('active') != 'side')
 			cover.data('active','side') && updateCover();
