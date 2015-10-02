@@ -186,10 +186,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #page .btn {display:inline-block; padding:12px; color:#444; font-size:16px; vertical-align:middle;}
 #page .btn.selected {font-weight:bold; text-decoration:underline;}
 #page .btn:not(.selected):hover {background:#EEE;}
-#page .prev, #page .next {position:absolute;}
-#page .prev {left:0;}
-#page .next {right:0;}
-#page .prev.no-more-prev, #page .next.no-more-next {display:none;}
+#page .no-more-prev, #page .no-more-next {visibility:hidden;}
 
 #footer {margin-bottom:12px; text-align:center; line-height:1.5; font-size:0.9em;}
 #footer p {margin:8px 0;}
