@@ -52,8 +52,6 @@ $(document).ready(function () {
 	});
 	cover.click(function () {updateCover('off')});
 
-	$('#side ul ~ ul').before('<hr>');
-
 // Floating
 	$('.admin .fa-bars').click(function () {
 		if(!body.hasClass('active floating')) {
