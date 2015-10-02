@@ -183,9 +183,9 @@ ol.no-style, ul.no-style {list-style:none;}
 #entry h3 a {display:block;}
 
 #page {position:relative; text-align:center;}
-#page .btn {display:inline-block; padding:12px; font-size:16px; vertical-align:middle;}
-#page .btn.selected {color:gray;}
-#page .btn:not(.selected):hover {background:#DDD; color:white;}
+#page .btn {display:inline-block; padding:12px; color:#444; font-size:16px; vertical-align:middle;}
+#page .btn.selected {font-weight:bold; text-decoration:underline;}
+#page .btn:not(.selected):hover {background:#EEE;}
 #page .prev, #page .next {position:absolute;}
 #page .prev {left:0;}
 #page .next {right:0;}
