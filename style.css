@@ -156,18 +156,18 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .write .input {width:100%;}
 }
 .comment .list p {margin:0; padding:0;}
-.comment .list .li {position:relative; padding:24px 24px 24px 96px; min-height:55px;}
+.comment .list .li {position:relative; padding:18px 24px 18px 96px; min-height:55px;}
 .comment .list .li.reply {background:#F4F4F4;}
 .comment .list .li:after {content:""; display:block; clear:both;}
 .comment .list .tistoryProfileLayerTrigger {display:none;}
 .comment .list .name, .comment .list .name a {color:#444444;}
-.comment .list .name img, .comment .list .name .fa {position:absolute; width:64px; height:64px; margin-left:-82px; border-radius:50%; overflow:hidden;}
+.comment .list .name img, .comment .list .name .fa {position:absolute; width:64px; height:64px; margin-left:-80px; border-radius:50%; overflow:hidden;}
 .comment .list .name .fa {color:#DDD; font-size:64px; text-align:center;}
 .comment .list .name .fa:before {content:'\f007';/*fa-user*/}
 .rp_secret .name .fa:before, .guest_secret .name .fa:before {content:'\f21b';/*fa-user-secret*/}
 .rp_admin .name .fa:before, .guest_admin .name .fa:before {content:'\f085';/*fa-cogs*/}
 .comment .list .date {font-size:0.8em; color:#BBB;}
-.comment .list .desc {margin:15px 0; padding:0; line-height:1.5em; font-size:0.8em;}
+.comment .list .desc {margin:12px 0; padding:0; line-height:1.5; font-size:0.8em;}
 .comment .list .control {font-size:0.8em; line-height:1.5;}
 .comment .list .control a {color:#666; padding-right:10px;}
 .comment .list .control a:hover {color:#222;}
