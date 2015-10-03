@@ -5,12 +5,13 @@
 계속해서 수정하여서 더 좋은 스킨을 만들도록 하겠습니다.
 
 ## About
-- 폰트 : 맑은고딕, 나눔고딕(구글 웹폰트), FontAwesome
+- 폰트 : Roboto, RobotoDraft, arial, sans-serif, FontAwesome
 - 단축키 : 추가 예정. (Tistory 기본 단축키 사용가능)
 - 반응형 지원
 - 본문 전용 태그 스타일 적용. (Tistory앱에선 적용안됨)
  - p 태그 기본 높이 1.5배.
- - img 태그 원본 이미지 크기 적용. 단, 실제 본문 넓이 보다 클경우 본문 넓이로 지정.
+ - img 태그 자동 비율 맞춤.
+ - Tistory 다운로드 버튼 스타일.
 - 이미지 대신 [FontAwesome](http://fortawesome.github.io/Font-Awesome/) 폰트를 사용.
 
 ## Known Issue
@@ -22,12 +23,32 @@
 
 ## How to apply
 [다운로드 (v1.0)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.0.zip)<br>
-[다운로드 (v1.1)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.1.zip)
+[다운로드 (v1.1)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.1.zip)<br>
+[다운로드 (v1.2)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.2.zip)
 
 1. 다운받은 스킨을 압축 해제 합니다.
 2. Tistory 블로그 관리자 페이지로 갑니다.
 3. 스킨 - 스킨 등록 버튼을 눌러 업로드 페이지로 이동합니다.
 4. 업로드 페이지에서 하단에 추가 버튼을 눌러서 압축 해제한 스킨 파일들을 전부 업로드 해줍니다. 
+
+## Changelog (v1.2)
+- FontAwesome 4.4.0으로 업데이트.
+- jquery 2.1.4로 업데이트
+- 폰트 변경 (맑은고딕, 나눔고딕 -> roboto, arial, sans-serif)
+- Webkit사용하는 브라우저의 스크롤바 스타일 추가.
+- 검색 위치 변경.
+- img태그를 강제로 원본 사이즈로 변경하는 기능 삭제.
+- 상단 메뉴를 좌측 슬라이딩 형식의 사이드 메뉴로 변경. (모바일에서 카테고리 문제 해결)
+- 글 관리 메뉴에 새로운 스타일 적용. (카드 플로팅)
+- 글목록에서 글이 없을때 "죄송합니다. 글을 찾을수 없습니다."문구 출력.
+- 카드 스타일 업데이트
+ - 각 항목의 제목 부분 ellipsis 스타일 적용.
+ - 일부 스타일 absolute 위치 지정대신 flex 형식의 블록으로 변경.
+ - 전체적인 색상 조절.
+- 댓글 스타일 업데이트
+ - 댓글 관련 버튼을 각 댓글의 하단으로 변경.
+ - 댓글의 댓글 스타일 변경. (배경이 회색으로 나타남)
+- 일부 오류 수정.
 
 ## Settings
 
@@ -57,7 +78,7 @@ images폴더 내 skin_settings.js 파일을 메모장, notepad++등 편집기를
 
 #### 사이드바 링크 추가 :
 images폴더 내 side_link.js라는 파일을 열어주세요.
--	`var link_data = [` 밑에<br>
+- `var link_data = [` 밑에<br>
   `{"name": 이름, "fa": 아이콘 이름, "color": 링크 색상, "link":링크주소},`이 형식으로 추가해 주세요.<br>
 - 아이콘 이름은 [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons)에서 확인해 주세요.
 - 색상은 RGB코드`#FFFFFF, #0000FF` 또는 CSS 컬러 이름`black, white, gray 등...`으로 넣으시면 됩니다.
