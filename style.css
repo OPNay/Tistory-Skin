@@ -32,7 +32,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .card-list a {padding:24px 32px; color:black; transition:background 0.05s linear;}
 .card-list a:hover {background:#EEE;}
-.card-list .date {width:120px; color:#444;}
+.card-list .date {width:120px;}
 
 .card .title:not(:last-child) {margin-bottom:24px;}
 .card .title h2, .card .title h3 {margin:0; line-height:1.5;}
@@ -54,10 +54,10 @@ ol.no-style, ul.no-style {list-style:none;}
 @media (max-width:768px) {
 	.card {margin:8px 0;}
 	.card-content {padding:18px;}
-	.card-list a {padding:18px;}
+	.card-list a {padding:16px 18px;}
 	.card-list .flex {flex-direction:column-reverse;}
-	.card-list .date {flex:1; font-size:0.8em;}
-	.card-list .title {flex:2;}
+	.card-list .date {flex:1; color:#888; font-size:0.8em;}
+	.card-list .title {flex:2; line-height:1.5;}
 }
 
 /*********
