@@ -65,11 +65,11 @@ ol.no-style, ul.no-style {list-style:none;}
 /*********
  * Header
  *********/
-#header {z-index:-30; background:rgb(160,160,160); width:100%;}
+#header {z-index:-30; background:#AAA; width:100%;}
 #header .link {width:100%; display:block; font-size:3.5em; color:white; text-align:center; line-height:150px;}
 
 #nav {z-index:100; height:50px; width:100%; top:0; left:0; position:fixed;}
-#nav:not(.transparent) {background:rgb(160,160,160); box-shadow:0 2px 5px 0 rgba(0,0,0,0.3);}
+#nav:not(.transparent) {background:#AAA; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3);}
 #nav.transparent:before {opacity:0;}
 
 #nav .fa {position:absolute; width:50px; line-height:50px; font-size:1.5em; color:white;}
