@@ -24,7 +24,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .flex {display:-webkit-flex; display:flex; -webkit-flex-flow:row; flex-flow:row;}
 .flex-1 {-webkit-flex:1; -ms-flex:1; -moz-flex:1; flex:1;}
 
-.card, #sidebar .module {background:#FFF; margin:12px 0; padding:0; border-radius:2px; box-shadow:0 2px 3px rgba(0,0,0,0.2);}
+.card, #sidebar .module {background:#FFF; margin:12px 0; padding:0; border-radius:2px; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
 .card-content {padding:32px;}
 .card-content:not(:last-child) {border-bottom:1px solid #EEE;}
 
@@ -42,7 +42,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .card .article {font-size:12px;}
 .card .article:not(:last-child) {margin-bottom:24px;}
 
-.card.floating {z-index:150; position:fixed; top:50%; left:50%; box-shadow:0 0 15px rgba(0,0,0,0.25);
+.card.floating {z-index:150; position:fixed; top:50%; left:50%; box-shadow:0 12px 24px rgba(0,0,0,0.3);
 	transition:opacity 0.2s linear, transform 0.2s linear;
 	transform:translate(-50%, -50%) scale(0.5); opacity:0;}
 .active .card.floating {transform:translate(-50%, -50%) scale(1); opacity:1;}
@@ -69,7 +69,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #header .link {width:100%; display:block; font-size:3.5em; color:white; text-align:center; line-height:150px;}
 
 #nav {z-index:100; height:50px; width:100%; top:0; left:0; position:fixed;}
-#nav:not(.transparent) {background:#AAA; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3);}
+#nav:not(.transparent) {background:#AAA; box-shadow:0 2px 4px 0 rgba(0,0,0,0.3);}
 #nav.transparent:before {opacity:0;}
 
 #nav .fa {position:absolute; width:50px; line-height:50px; font-size:1.5em; color:white;}
@@ -80,7 +80,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .active.side .icon .fa-bars, .icon .fa-plus {opacity:0;}
 .active.side .icon .fa-plus, .icon .fa-bars {opacity:1;}
 
-#side {z-index:150; background:white; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3); position:fixed; top:0; left:0; width:280px; height:100%;
+#side {z-index:150; background:white; box-shadow:0 8px 16px 0 rgba(0,0,0,0.3); position:fixed; top:0; left:0; width:280px; height:100%;
 	overflow-x:hidden; overflow-y:scroll; transition:all 0.2s ease-in; transform:translateX(-100%);}
 .active.side #side {transform:translateX(0);}
 
