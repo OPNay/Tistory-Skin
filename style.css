@@ -24,6 +24,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .flex {display:-webkit-flex; display:flex; -webkit-flex-flow:row; flex-flow:row;}
 .flex-1 {-webkit-flex:1; -ms-flex:1; -moz-flex:1; flex:1;}
 
+/* card */
 .card, #sidebar .module {background:#FFF; margin:12px 0; padding:0; border-radius:2px; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
 .card-content {padding:32px;}
 .card-content:not(:last-child) {border-bottom:1px solid #EEE;}
@@ -62,9 +63,7 @@ ol.no-style, ul.no-style {list-style:none;}
 	.card-list .none {padding:18px;}
 }
 
-/*********
- * Header
- *********/
+/* header */
 #header {z-index:-30; background:#AAA; width:100%;}
 #header .link {width:100%; display:block; font-size:3.5em; color:white; text-align:center; line-height:150px;}
 
@@ -80,6 +79,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .active.side .icon .fa-bars, .icon .fa-plus {opacity:0;}
 .active.side .icon .fa-plus, .icon .fa-bars {opacity:1;}
 
+/* side drawer */
 #side {z-index:150; background:white; box-shadow:0 8px 16px 0 rgba(0,0,0,0.3); position:fixed; top:0; left:0; width:280px; height:100%;
 	overflow-x:hidden; overflow-y:scroll; transition:all 0.2s ease-in; transform:translateX(-100%);}
 .active.side #side {transform:translateX(0);}
@@ -91,9 +91,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #side hr {border:none; border-bottom:1px solid #EEE;}
 
-/*********
- * Container
- *********/
+/* Wrap */
 #wrap {z-index:-10; width:100%; padding:0;}
 #wrap:after {content:""; display:block; clear:both;}
 #container {float:left; margin:0 12px;}
@@ -138,8 +136,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #tag .cloud2 {font-size:1.6em;}
 #tag .cloud1 {font-size:1.8em;}
 
-
-/* Commend / GustBook */
+/* Comment */
 .comment .write:after {content:""; display:block; clear:both;}
 
 .comment .textarea, .comment .input {background:none; box-sizing:border-box; font-size:0.8em; line-height:1.5;}
@@ -196,8 +193,8 @@ ol.no-style, ul.no-style {list-style:none;}
 #footer .visitor .day {color:#888; font-size:0.9em;}
 #footer .copy {margin:18px 0; color:#444;}
 
-/* Sidebar */
 
+/* Sidebar */
 #sidebar .module {background:#FFFFFF;}
 #sidebar .module h3 {margin:0; padding:12px; border-bottom:1px solid #DDD; font-size:1.2em; font-weight:normal;}
 
@@ -228,10 +225,6 @@ ol.no-style, ul.no-style {list-style:none;}
 #sidebar .calendar a {font-weight:bold; text-decoration:underline;}
 #sidebar .calendar td:first-child {color:#F44;}
 
-
-/*********
- * Bottom button
- *********/
 #bot-btn {z-index:40; position:fixed; bottom:0; right:0; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3); transition:all 0.2s ease-in-out; transform:translateY(0); font-size:2em; cursor:pointer;}
 #bot-btn.hidden {transform:translateY(200px);}
 #bot-btn .fa {color:white; padding:10px; background:rgb(192,192,192); transition:all 0.2s ease-in-out}
@@ -239,9 +232,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #bot-btn .fa.hidden {display:none;}
 
 
-/*********
- * article
- *********/
+/* Article */
 article h1, article h2, article h3, article h4, article h5 {margin:0.75em 0;}
 article h1, article h2 {margin:0.8em 0; padding-bottom:0.5em; border-bottom:1px solid #DDD;}
 article h1 {font-size:2em;}
