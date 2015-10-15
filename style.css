@@ -250,6 +250,8 @@ article li ul {list-style:circle;}
 
 article img {max-width:100%; height:auto;}
 
+article blockquote {background:#F4F4F4; margin:0; padding:1em 25px;}
+
 /* Download Button */
 article .imageblock img[src*='.gif'] {display:none;}
 article .imageblock > a {background:#EEE; display:inline-block; position:relative; height:50px; line-height:50px; padding:0 15px; padding-left:65px; transition:all 0.15s linear; font-weight:bold; color:black;}
