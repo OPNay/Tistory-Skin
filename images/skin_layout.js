@@ -17,15 +17,11 @@ function updateCover(a) {
 	body.toggleClass('active side floating', false);
 	cover.toggleClass('active nav-over', false);
 
-	if($(window).scrollTop() < 100)
-		nav.toggleClass('transparent',true);
-		
 	switch(a) {
 	case 'side':
 		disableScroll(true);
 		body.toggleClass('active side',true);
-		cover.toggleClass('active',true);
-		nav.toggleClass('transparent',false);
+		cover.toggleClass('active nav-over',true);
 		break;
 	case 'floating':
 		disableScroll(true);

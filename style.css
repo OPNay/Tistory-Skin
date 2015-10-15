@@ -80,7 +80,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .active.side .icon .fa-bars, .icon .fa-plus {opacity:0;}
 .active.side .icon .fa-plus, .icon .fa-bars {opacity:1;}
 
-#side {z-index:90; background:white; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3); position:fixed; top:50px; left:0; width:280px; height:calc(100% - 50px);
+#side {z-index:150; background:white; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3); position:fixed; top:0; left:0; width:280px; height:100%;
 	overflow-x:hidden; overflow-y:scroll; transition:all 0.2s ease-in; transform:translateX(-100%);}
 .active.side #side {transform:translateX(0);}
 
