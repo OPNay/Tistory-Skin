@@ -7,8 +7,8 @@
 ::-webkit-scrollbar-thumb:hover {background:#BBB;}
 ::-webkit-scrollbar-thumb:active {background:#888;}
 
-body {background:#EEE; margin:0; padding:0; color:#212121;}
-body, button, input, textarea {-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; font-family:Roboto,RobotoDraft,arial,sans-serif;}
+body {background:#EEE; margin:0; padding:0;}
+body, button, input, textarea {-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; font-family:Roboto,RobotoDraft,arial,sans-serif; color:#212121;}
 a {text-decoration:none; color:black; cursor:pointer;}
 a:hover {color:red;}
 ul, li {margin:0; padding:0;}
@@ -38,7 +38,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .card .title:not(:last-child) {margin-bottom:24px;}
 .card .title h2, .card .title h3 {margin:0; line-height:1.5;}
-.card .title .info {color:#888; font-size:14px;}
+.card .title .info {color:#757575; font-size:14px;}
 
 .card .article:not(:last-child) {margin-bottom:24px;}
 
@@ -57,7 +57,7 @@ ol.no-style, ul.no-style {list-style:none;}
 	.card-content {padding:18px;}
 	.card-list a {padding:16px 18px;}
 	.card-list .flex {flex-direction:column-reverse;}
-	.card-list .date {flex:1; color:#888; font-size:13px;}
+	.card-list .date {flex:1; color:#757575; font-size:13px;}
 	.card-list .title {flex:2; line-height:1.5;}
 	.card-list .none {padding:18px;}
 }
@@ -143,9 +143,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .write .input {margin-bottom:12px; padding:0 12px 10px; width:50%; border:none; border-bottom:1px solid #DDD;}
 .comment .write .btn {width:100%; margin:5px 0; text-align:right;}
 
-.comment .write .btn .fa {background:none; margin:0 5px; padding:5px; border:none; font-size:24px; text-align:center; color:#444; cursor:pointer;}
-.comment .write .btn .fa:hover {color:#888;}
-.comment .write .btn .fa:active {color:black;}
+.comment .write .btn .fa {background:none; margin:0 5px; padding:5px; border:none; font-size:24px; text-align:center; color:#757575; cursor:pointer;}
+.comment .write .btn .fa:hover {color:#212121;}
 #secret + .fa:before {content:'\f09c';}
 #secret:checked + .fa:before {content:'\f023'; color:red;}
 @media (max-width:758px) {
@@ -156,30 +155,29 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .list .li.reply {background:#F4F4F4;}
 .comment .list .li:after {content:""; display:block; clear:both;}
 .comment .list .tistoryProfileLayerTrigger {display:none;}
-.comment .list .name, .comment .list .name a {color:#444444;}
+.comment .list .name, .comment .list .name a {color:#212121;}
 .comment .list .name img, .comment .list .name .fa {position:absolute; width:64px; height:64px; margin-left:-80px; border-radius:50%; overflow:hidden;}
 .comment .list .name .fa {color:#DDD; font-size:64px; text-align:center;}
 .comment .list .name .fa:before {content:'\f007';/*fa-user*/}
 .rp_secret .name .fa:before, .guest_secret .name .fa:before {content:'\f21b';/*fa-user-secret*/}
 .rp_admin .name .fa:before, .guest_admin .name .fa:before {content:'\f085';/*fa-cogs*/}
-.comment .list .date {font-size:14px; color:#BBB;}
-.comment .list .desc {margin:12px 0; padding:0; line-height:1.5; font-size:14px;}
+.comment .list .date {font-size:14px; color:#757575;}
+.comment .list .desc {margin:12px 0; padding:0; line-height:1.5; font-size:14px; color:#757575;}
 .comment .list .control {font-size:14px; line-height:1.5;}
-.comment .list .control a {color:#666; padding-right:10px;}
-.comment .list .control a:hover {color:#222;}
+.comment .list .control a {color:#757575; padding-right:10px;}
+.comment .list .control a:hover {color:#212121;}
 
 #entry_protected p {margin:12px 0; font-size:18px; text-align:center;}
 #entry_protected input, #entry_protected button {background:none; border:none; border-bottom:1px solid #DDD; padding:10px;}
 #entry_protected input {width:260px;}
-#entry_protected button {color:#999; cursor:pointer;}
-#entry_protected button:hover {color:#BBB;}
-#entry_protected button:active {color:#666;}
+#entry_protected button {color:#757575; cursor:pointer;}
+#entry_protected button:hover {color:#212121;}
 
 #entry .tags .fa {margin-right:8px;}
 #entry h3 a {display:block;}
 
 #page {position:relative; text-align:center;}
-#page .btn {display:inline-block; padding:12px; color:#444; font-size:16px; vertical-align:middle;}
+#page .btn {display:inline-block; padding:12px; font-size:16px; vertical-align:middle;}
 #page .btn.selected {font-weight:bold; text-decoration:underline;}
 #page .btn:not(.selected):hover {background:#EEE;}
 #page .no-more-prev, #page .no-more-next {visibility:hidden;}
@@ -189,8 +187,8 @@ ol.no-style, ul.no-style {list-style:none;}
 #footer p:first-child {margin-top:0;}
 #footer p:last-child {margin-bottom:0;}
 #footer .visitor {padding:12px;}
-#footer .visitor .day {color:#888;}
-#footer .copy {margin:18px 0; color:#444;}
+#footer .visitor .day {color:#757575;}
+#footer .copy {margin:18px 0; color:#757575;}
 
 
 /* Sidebar */
@@ -203,7 +201,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #sidebar .name_card p {margin:7px 0;}
 #sidebar .name_card .auther {font-size:18px;}
 #sidebar .name_card .contact {font-size:13px;}
-#sidebar .name_card .contact a {color:#AAA;}
+#sidebar .name_card .contact a {color:#757575;}
 
 #sidebar .link a {background:none; display:block; margin:0; padding:10px; font-size:22px; text-align:center;}
 #sidebar .link a:hover {color:white !important;}
@@ -213,14 +211,14 @@ ol.no-style, ul.no-style {list-style:none;}
 #sidebar .list a {display:block; padding:12px; font-size:13px; color:black;}
 #sidebar .list a:hover {background:#EEE;}
 #sidebar .list ul ul ul a {padding-left:25px;}
-#sidebar .list span {font-size:10px; color:#888}
+#sidebar .list span {font-size:10px; color:#757575}
 #sidebar .list p {margin:0;}
 
 #sidebar .calendar .tt-calendar {padding:12px;}
 #sidebar .calendar .cal_month {display:none;}
 #sidebar .calendar thead, #sidebar .calendar tbody {text-align:center;}
 #sidebar .calendar thead {font-size:14px; line-height:1.5;}
-#sidebar .calendar tbody {font-size:12px; line-height:2; color:#444;}
+#sidebar .calendar tbody {font-size:12px; line-height:2;}
 #sidebar .calendar a {font-weight:bold; text-decoration:underline;}
 #sidebar .calendar td:first-child {color:#F44;}
 
