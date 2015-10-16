@@ -232,7 +232,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 
 /* Article */
-article {font-size:14px; line-height:1.8;}
+article {font-size:14px; line-height:1.8; word-wrap:break-word;}
 
 article h1, article h2, article h3, article h4, article h5 {margin:0.75em 0;}
 article h1, article h2 {margin:0.8em 0; padding-bottom:0.5em; border-bottom:1px solid #DDD;}
