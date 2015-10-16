@@ -38,7 +38,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .card .title:not(:last-child) {margin-bottom:24px;}
 .card .title h2, .card .title h3 {margin:0; line-height:1.5;}
-.card .title .info {color:#888; font-size:0.9em;}
+.card .title .info {color:#888; font-size:14px;}
 
 .card .article:not(:last-child) {margin-bottom:24px;}
 
@@ -57,20 +57,20 @@ ol.no-style, ul.no-style {list-style:none;}
 	.card-content {padding:18px;}
 	.card-list a {padding:16px 18px;}
 	.card-list .flex {flex-direction:column-reverse;}
-	.card-list .date {flex:1; color:#888; font-size:0.8em;}
+	.card-list .date {flex:1; color:#888; font-size:13px;}
 	.card-list .title {flex:2; line-height:1.5;}
 	.card-list .none {padding:18px;}
 }
 
 /* header */
 #header {z-index:-30; background:#AAA; width:100%;}
-#header .link {width:100%; display:block; font-size:3.5em; color:white; text-align:center; line-height:150px;}
+#header .link {width:100%; display:block; font-size:48px; color:white; text-align:center; line-height:150px;}
 
 #nav {z-index:100; height:50px; width:100%; top:0; left:0; position:fixed;}
 #nav:not(.transparent) {background:#AAA; box-shadow:0 2px 4px 0 rgba(0,0,0,0.3);}
 #nav.transparent:before {opacity:0;}
 
-#nav .fa {position:absolute; width:50px; line-height:50px; font-size:1.5em; color:white;}
+#nav .fa {position:absolute; width:50px; line-height:50px; font-size:24px; color:white;}
 
 #nav .icon {line-height:50px; text-align:center; cursor:pointer;}
 #nav .icon .fa {top:0; left:0; transition:all 0.3s linear;}
@@ -79,12 +79,12 @@ ol.no-style, ul.no-style {list-style:none;}
 .active.side .icon .fa-plus, .icon .fa-bars {opacity:1;}
 
 /* side drawer */
-#side {z-index:150; background:white; box-shadow:0 8px 16px 0 rgba(0,0,0,0.3); position:fixed; top:0; left:0; width:280px; height:100%;
+#side {z-index:150; background:white; position:fixed; top:0; left:0; width:280px; height:100%;
 	overflow-x:hidden; overflow-y:scroll; transition:all 0.2s ease-in; transform:translateX(-100%);}
-.active.side #side {transform:translateX(0);}
+.active.side #side {transform:translateX(0); box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
 
 #side > ul, #side > ol {margin:0.8em 0;}
-#side li a {display:block; padding:12px 24px; color:black; font-size:0.9em; font-weight:bold; transition:background 0.05s linear;}
+#side li a {display:block; padding:12px 24px; color:black; font-size:15px; font-weight:bold; transition:background 0.05s linear;}
 #side li a:hover {background:#EEE;}
 #side ul ul ul a {padding-left:36px; font-weight:normal;}
 
@@ -120,30 +120,30 @@ ol.no-style, ul.no-style {list-style:none;}
 #search .input {padding:16px 0 16px 24px;}
 #search .button {padding:16px; cursor:pointer;}
 
-.admin .fa-bars {width:50px; line-height:50px; padding:0 10px; box-sizing:border-box; font-size:1.5em; text-align:center;cursor:pointer;}
+.admin .fa-bars {width:50px; line-height:50px; padding:0 10px; box-sizing:border-box; font-size:24px; text-align:center;cursor:pointer;}
 
 .a_list {margin:6px 0;}
 .a_list .a_l_btn {display:block; padding:16px 16px 16px 52px; width:160px; line-height:18px; color:black; transition:background 0.05s linear;}
 .a_list .a_l_btn:hover {background:#EEE;}
-.a_list .a_l_btn .fa {position:absolute; margin-left:-36px; width:20px; text-align:center; font-size:1.1em;}
+.a_list .a_l_btn .fa {position:absolute; margin-left:-36px; width:20px; text-align:center; font-size:18px;}
 
 #tag .tag-ul {margin:0; font-size:14px;}
 #tag .tag-li {width:31%; display:inline-block; padding-bottom:10px;}
-#tag .cloud5 {font-size:1em;}
-#tag .cloud4 {font-size:1.2em;}
-#tag .cloud3 {font-size:1.4em;}
-#tag .cloud2 {font-size:1.6em;}
-#tag .cloud1 {font-size:1.8em;}
+#tag .cloud5,
+#tag .cloud4,
+#tag .cloud3,
+#tag .cloud2,
+#tag .cloud1 {font-size:16px;}
 
 /* Comment */
 .comment .write:after {content:""; display:block; clear:both;}
 
-.comment .textarea, .comment .input {background:none; box-sizing:border-box; font-size:0.8em; line-height:1.5;}
+.comment .textarea, .comment .input {background:none; box-sizing:border-box; font-size:14px; line-height:1.5;}
 .comment .write .textarea {background:#F4F4F4; width:100%; height:120px; padding:10px; border:none; border-radius:4px; resize:none;}
 .comment .write .input {margin-bottom:12px; padding:0 12px 10px; width:50%; border:none; border-bottom:1px solid #DDD;}
 .comment .write .btn {width:100%; margin:5px 0; text-align:right;}
 
-.comment .write .btn .fa {background:none; margin:0 5px; padding:5px; border:none; font-size:1.5em; text-align:center; color:#444; cursor:pointer;}
+.comment .write .btn .fa {background:none; margin:0 5px; padding:5px; border:none; font-size:24px; text-align:center; color:#444; cursor:pointer;}
 .comment .write .btn .fa:hover {color:#888;}
 .comment .write .btn .fa:active {color:black;}
 #secret + .fa:before {content:'\f09c';}
@@ -162,13 +162,13 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .list .name .fa:before {content:'\f007';/*fa-user*/}
 .rp_secret .name .fa:before, .guest_secret .name .fa:before {content:'\f21b';/*fa-user-secret*/}
 .rp_admin .name .fa:before, .guest_admin .name .fa:before {content:'\f085';/*fa-cogs*/}
-.comment .list .date {font-size:0.8em; color:#BBB;}
-.comment .list .desc {margin:12px 0; padding:0; line-height:1.5; font-size:0.8em;}
-.comment .list .control {font-size:0.8em; line-height:1.5;}
+.comment .list .date {font-size:14px; color:#BBB;}
+.comment .list .desc {margin:12px 0; padding:0; line-height:1.5; font-size:14px;}
+.comment .list .control {font-size:14px; line-height:1.5;}
 .comment .list .control a {color:#666; padding-right:10px;}
 .comment .list .control a:hover {color:#222;}
 
-#entry_protected p {margin:12px 0; font-size:1.25em; text-align:center;}
+#entry_protected p {margin:12px 0; font-size:18px; text-align:center;}
 #entry_protected input, #entry_protected button {background:none; border:none; border-bottom:1px solid #DDD; padding:10px;}
 #entry_protected input {width:260px;}
 #entry_protected button {color:#999; cursor:pointer;}
@@ -184,36 +184,36 @@ ol.no-style, ul.no-style {list-style:none;}
 #page .btn:not(.selected):hover {background:#EEE;}
 #page .no-more-prev, #page .no-more-next {visibility:hidden;}
 
-#footer {margin-bottom:12px; text-align:center; line-height:1.5; font-size:0.9em;}
+#footer {margin-bottom:12px; text-align:center; line-height:1.5; font-size:14px;}
 #footer p {margin:8px 0;}
 #footer p:first-child {margin-top:0;}
 #footer p:last-child {margin-bottom:0;}
 #footer .visitor {padding:12px;}
-#footer .visitor .day {color:#888; font-size:0.9em;}
+#footer .visitor .day {color:#888;}
 #footer .copy {margin:18px 0; color:#444;}
 
 
 /* Sidebar */
 #sidebar .module {background:#FFFFFF;}
-#sidebar .module h3 {margin:0; padding:12px; border-bottom:1px solid #DDD; font-size:1.2em; font-weight:normal;}
+#sidebar .module h3 {margin:0; padding:12px; border-bottom:1px solid #DDD; font-size:18px; font-weight:normal;}
 
 #sidebar .name_card {padding:10px;}
 #sidebar .name_card:after {content:""; display:block; clear:both;}
 #sidebar .name_card img {margin-right:15px; width:64px; border-radius:50%; float:left;}
 #sidebar .name_card p {margin:7px 0;}
-#sidebar .name_card .auther {font-size:1.2em;}
-#sidebar .name_card .contact {font-size:0.8em;}
+#sidebar .name_card .auther {font-size:18px;}
+#sidebar .name_card .contact {font-size:13px;}
 #sidebar .name_card .contact a {color:#AAA;}
 
-#sidebar .link a {background:none; display:block; margin:0; padding:10px; font-size:1.3em; text-align:center;}
+#sidebar .link a {background:none; display:block; margin:0; padding:10px; font-size:22px; text-align:center;}
 #sidebar .link a:hover {color:white !important;}
 #sidebar .link .fa {margin-right:10px;}
 
 #sidebar .list {margin-bottom:10px;}
-#sidebar .list a {display:block; padding:12px; font-size:0.8em; color:black;}
+#sidebar .list a {display:block; padding:12px; font-size:13px; color:black;}
 #sidebar .list a:hover {background:#EEE;}
 #sidebar .list ul ul ul a {padding-left:25px;}
-#sidebar .list span {font-size:0.75em; color:#888}
+#sidebar .list span {font-size:10px; color:#888}
 #sidebar .list p {margin:0;}
 
 #sidebar .calendar .tt-calendar {padding:12px;}
@@ -224,7 +224,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #sidebar .calendar a {font-weight:bold; text-decoration:underline;}
 #sidebar .calendar td:first-child {color:#F44;}
 
-#bot-btn {z-index:40; position:fixed; bottom:0; right:0; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3); transition:all 0.2s ease-in-out; transform:translateY(0); font-size:2em; cursor:pointer;}
+#bot-btn {z-index:40; position:fixed; bottom:0; right:0; box-shadow:0 2px 5px 0 rgba(0,0,0,0.3); transition:all 0.2s ease-in-out; transform:translateY(0); font-size:36px; cursor:pointer;}
 #bot-btn.hidden {transform:translateY(200px);}
 #bot-btn .fa {color:white; padding:10px; background:rgb(192,192,192); transition:all 0.2s ease-in-out}
 #bot-btn .fa:hover {background:rgb(128,128,128);}
@@ -255,4 +255,4 @@ article a {text-decoration:underline; color:#757575; font-weight:bold;}
 article .imageblock img[src*='.gif'] {display:none;}
 article .imageblock > a {background:#EEE; display:inline-block; position:relative; height:50px; line-height:50px; padding:0 15px; padding-left:65px; transition:all 0.15s linear; font-weight:bold; color:black;}
 article .imageblock > a:hover {background:#DDD;}
-article .imageblock > a:before {font:normal normal normal 2em/50px FontAwesome; content:'\f019'; background:rgba(0,0,0,0.5); position:absolute; top:0; left:0; width:50px; height:50px; line-height:50px; text-align:center; color:white;}
+article .imageblock > a:before {font:normal normal normal 24px/50px FontAwesome; content:'\f019'; background:rgba(0,0,0,0.5); position:absolute; top:0; left:0; width:50px; height:50px; line-height:50px; text-align:center; color:white;}
