@@ -94,7 +94,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .active.side #side {transform:translateX(0); box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
 
 #side > ul, #side > ol {margin:0.8em 0;}
-#side li a {display:block; padding:12px 24px; font-size:15px; font-weight:bold; transition:background 0.05s linear;}
+#side li a {display:block; padding:12px 24px; font-size:14px; font-weight:bold; transition:background 0.05s linear;}
 #side li a:hover {background:#EEE;}
 #side ul ul ul a {padding-left:36px; font-weight:normal;}
 
