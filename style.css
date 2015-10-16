@@ -8,7 +8,7 @@
 ::-webkit-scrollbar-thumb:active {background:#888;}
 
 body {background:#EEE; margin:0; padding:0;}
-body, button, input, textarea {-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; font-family:Roboto,RobotoDraft,arial,sans-serif; color:#212121;}
+body, button, input, textarea {-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; font-family:Roboto,RobotoDraft,arial,sans-serif,'Nanum Gothic'; color:#212121;}
 a {text-decoration:none; color:#212121; cursor:pointer;}
 ul, li {margin:0; padding:0;}
 img {border:none;}
