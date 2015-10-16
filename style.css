@@ -93,12 +93,12 @@ ol.no-style, ul.no-style {list-style:none;}
 	overflow-x:hidden; overflow-y:scroll; transition:all 0.2s ease-in; transform:translateX(-100%);}
 .active.side #side {transform:translateX(0); box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
 
-#side > ul, #side > ol {margin:0.8em 0;}
-#side li a {display:block; padding:12px 24px; font-size:14px; font-weight:bold; transition:background 0.05s linear;}
+#side > ul, #side > ol {margin:8px 0;}
+#side li a {display:block; padding:15px 24px; font-size:14px; font-weight:bold; transition:background 0.05s linear;}
 #side li a:hover {background:#EEE;}
 #side ul ul ul a {padding-left:36px; font-weight:normal;}
 
-#side hr {border:none; border-bottom:1px solid #EEE;}
+#side hr {margin:8px 0; border:none; border-bottom:1px solid #EEE;}
 
 /* Wrap */
 #wrap {z-index:-10; width:100%; padding:0;}
