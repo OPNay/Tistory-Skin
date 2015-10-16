@@ -243,7 +243,7 @@ article h4 {font-size:1em;}
 article h5 {font-size:0.8em;}
 
 article ol, article ul {margin:0.5em 0; padding-left:1.25em;}
-article ul {line-height:1.5; list-style:disc;}
+article ul {list-style:disc;}
 article ol {list-style:decimal;}
 article li ul {list-style:circle;}
 
