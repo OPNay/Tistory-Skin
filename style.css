@@ -7,7 +7,7 @@
 ::-webkit-scrollbar-thumb:hover {background:#BBB;}
 ::-webkit-scrollbar-thumb:active {background:#888;}
 
-body {background:#EEE; margin:0; padding:0;}
+body {background:#EEE; margin:0; padding:0; color:#212121;}
 body, button, input, textarea {-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; font-family:Roboto,RobotoDraft,arial,sans-serif;}
 a {text-decoration:none; color:black; cursor:pointer;}
 a:hover {color:red;}
