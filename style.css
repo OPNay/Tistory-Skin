@@ -9,8 +9,7 @@
 
 body {background:#EEE; margin:0; padding:0;}
 body, button, input, textarea {-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; font-family:Roboto,RobotoDraft,arial,sans-serif; color:#212121;}
-a {text-decoration:none; color:black; cursor:pointer;}
-a:hover {color:red;}
+a {text-decoration:none; color:#212121; cursor:pointer;}
 ul, li {margin:0; padding:0;}
 img {border:none;}
 label:focus, input:focus, button:focus, textarea:focus {outline:none;}
@@ -31,7 +30,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .card-border:not(:last-child) {border-bottom:1px solid #EEE;}
 
-.card-list a {padding:24px 32px; color:black; transition:background 0.05s linear;}
+.card-list a {padding:24px 32px; transition:background 0.05s linear;}
 .card-list a:hover {background:#EEE;}
 .card-list .date {width:120px;}
 .card-list .none {display:block; padding:32px; color:#F44; line-height:1.75;}
@@ -84,7 +83,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .active.side #side {transform:translateX(0); box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
 
 #side > ul, #side > ol {margin:0.8em 0;}
-#side li a {display:block; padding:12px 24px; color:black; font-size:15px; font-weight:bold; transition:background 0.05s linear;}
+#side li a {display:block; padding:12px 24px; font-size:15px; font-weight:bold; transition:background 0.05s linear;}
 #side li a:hover {background:#EEE;}
 #side ul ul ul a {padding-left:36px; font-weight:normal;}
 
@@ -123,7 +122,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .admin .fa-bars {width:50px; line-height:50px; padding:0 10px; box-sizing:border-box; font-size:24px; text-align:center;cursor:pointer;}
 
 .a_list {margin:6px 0;}
-.a_list .a_l_btn {display:block; padding:16px 16px 16px 52px; width:160px; line-height:18px; color:black; transition:background 0.05s linear;}
+.a_list .a_l_btn {display:block; padding:16px 16px 16px 52px; width:160px; line-height:18px; transition:background 0.05s linear;}
 .a_list .a_l_btn:hover {background:#EEE;}
 .a_list .a_l_btn .fa {position:absolute; margin-left:-36px; width:20px; text-align:center; font-size:18px;}
 
@@ -155,7 +154,6 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .list .li.reply {background:#F4F4F4;}
 .comment .list .li:after {content:""; display:block; clear:both;}
 .comment .list .tistoryProfileLayerTrigger {display:none;}
-.comment .list .name, .comment .list .name a {color:#212121;}
 .comment .list .name img, .comment .list .name .fa {position:absolute; width:64px; height:64px; margin-left:-80px; border-radius:50%; overflow:hidden;}
 .comment .list .name .fa {color:#DDD; font-size:64px; text-align:center;}
 .comment .list .name .fa:before {content:'\f007';/*fa-user*/}
@@ -208,7 +206,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #sidebar .link .fa {margin-right:10px;}
 
 #sidebar .list {margin-bottom:10px;}
-#sidebar .list a {display:block; padding:12px; font-size:13px; color:black;}
+#sidebar .list a {display:block; padding:12px; font-size:13px;}
 #sidebar .list a:hover {background:#EEE;}
 #sidebar .list ul ul ul a {padding-left:25px;}
 #sidebar .list span {font-size:10px; color:#757575}
@@ -251,6 +249,6 @@ article a {text-decoration:underline; color:#757575; font-weight:bold;}
 
 /* Download Button */
 article .imageblock img[src*='.gif'] {display:none;}
-article .imageblock > a {background:#EEE; display:inline-block; position:relative; height:50px; line-height:50px; padding:0 15px; padding-left:65px; transition:all 0.15s linear; font-weight:bold; color:black;}
+article .imageblock > a {background:#EEE; display:inline-block; position:relative; height:50px; line-height:50px; padding:0 15px; padding-left:65px; transition:all 0.15s linear; font-weight:bold;}
 article .imageblock > a:hover {background:#DDD;}
 article .imageblock > a:before {font:normal normal normal 24px/50px FontAwesome; content:'\f019'; background:rgba(0,0,0,0.5); position:absolute; top:0; left:0; width:50px; height:50px; line-height:50px; text-align:center; color:white;}
