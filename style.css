@@ -74,7 +74,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #header {z-index:-30; width:100%;}
 #header .link {width:100%; display:block; font-size:48px; color:white; text-align:center; line-height:150px;}
 
-#nav {z-index:100; height:50px; width:100%; top:0; left:0; position:fixed;}
+#nav {z-index:100; height:50px; width:100%; top:0; left:0; position:fixed; overflow:hidden;}
 #nav:not(.transparent) {box-shadow:0 2px 4px 0 rgba(0,0,0,0.3);}
 #nav.transparent:before {opacity:0;}
 
@@ -85,6 +85,13 @@ ol.no-style, ul.no-style {list-style:none;}
 .active.side .icon .fa {transform:rotate(45deg);}
 .active.side .icon .fa-bars, .icon .fa-plus {opacity:0;}
 .active.side .icon .fa-plus, .icon .fa-bars {opacity:1;}
+
+#nav .title {
+	display:block; margin:0 24px 0 64px; line-height:50px; font-size:24px;
+	transition:transform 0.2s linear; transform:translateY(-50px);
+}
+#nav:not(.transparent) .title {transform:translateY(0);}
+#nav .title .link {color:white;}
 
 /* side drawer */
 #side {z-index:150; background:white; position:fixed; top:0; left:0; width:280px; height:100%;
