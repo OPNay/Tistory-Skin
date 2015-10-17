@@ -246,15 +246,14 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #bot-btn {
 	z-index:40; position:fixed; bottom:0; right:0;
-	box-shadow:0 2px 5px 0 rgba(0,0,0,0.3);
 	transition:all 0.2s ease-in-out;
 	transform:translateY(0);
 	font-size:36px; cursor:pointer;
 }
+#bot-btn .fa {color:white; padding:10px; box-shadow:0 0 6px rgba(0,0,0,0.3); transition:all 0.2s ease-in-out}
+#bot-btn .fa:hover:not(:active) {box-shadow:0 0 24px rgba(0,0,0,0.3);}
 #bot-btn.hidden {transform:translateY(200px);}
-#bot-btn .fa {color:white; padding:10px; transition:all 0.2s ease-in-out}
-#bot-btn .fa.hidden {display:none;}
-
+#bot-btn.hidden .fa {box-shadow:none;}
 
 /* Article */
 article {font-size:14px; line-height:1.8; word-wrap:break-word;}
