@@ -1,0 +1,50 @@
+/*
+ * Primary - green #4CAF50
+ * Dark Primary - #388E3C
+ * Light Primary - #C8E6C9
+ * Text - #FFF
+ * Accent - #8BC34A
+ * Primary Text - #212121
+ * Secondary Text - #727272
+ * Divider - #DADADA
+ */
+
+body, button, input, textarea {
+	 color:#212121; /*Primary Text*/
+}
+a {color:#212121;}
+
+.card-content:not(:last-child),
+.card-border:not(:last-child) {border-bottom:1px solid #DADADA;}
+
+.card .title .info {
+	 color:#727272;
+}
+
+#header,
+#nav:not(.transparent) {background:#4CAF50;}
+
+#side hr {border:none; border-bottom:1px solid #DADADA;}
+
+.comment .write .btn .fa {color:#727272;}
+.comment .write .btn .fa:hover {color:#212121;}
+#secret:checked + .fa:before {color:#8BC34A;}
+
+.comment .list .date,
+.comment .list .desc,
+.comment .list .control a {color:#727272;}
+.comment .list .control a:hover {color:#212121;}
+
+#page .btn.selected {color:#8BC34A;}
+
+#footer {color:#727272;}
+
+#sidebar .module h3 {border-bottom:1px solid #DADADA;}
+#sidebar .name_card a {color:#727272;}
+#sidebar .list span {color:#727272;}
+#sidebar .calendar td:not(:first-child) a {color:#8BC34A;}
+
+#bot-btn .fa {background:#8BC34A;}
+
+article a {color:#8BC34A;}
+article .imageblock > a {background:#8BC34A; color:#FFF;}
