@@ -83,8 +83,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #nav .icon {line-height:50px; text-align:center; cursor:pointer;}
 #nav .icon .fa {top:0; left:0; transition:all 0.3s linear;}
 .active.side .icon .fa {transform:rotate(45deg);}
-.active.side .icon .fa-bars, .icon .fa-plus {opacity:0;}
-.active.side .icon .fa-plus, .icon .fa-bars {opacity:1;}
+.icon .fa-bars {opacity:1;}
 
 #nav .title {
 	display:block; margin:0 24px 0 64px; line-height:50px; font-size:24px;
