@@ -39,7 +39,7 @@ a {color:#212121;}
 
 #footer {color:#727272;}
 
-#side module h3 {border-bottom:1px solid #DADADA;}
+#sidebar .module h3 {border-bottom:1px solid #DADADA;}
 #sidebar .name_card a {color:#727272;}
 #sidebar .list span {color:#727272;}
 #sidebar .calendar td:not(:first-child) a {color:#03A9F4;}
