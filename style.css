@@ -38,7 +38,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .card-list a {padding:24px 32px; transition:background 0.05s linear;}
 .card-list a:hover {background:#EEE;}
 .card-list .date {width:120px;}
-.card-list .none {display:block; padding:32px; color:#F44; line-height:1.75;}
+.card-list .none {display:block; padding:32px; color:#F44; line-height:2; text-align:center;}
+.card-list .none .fa {font-size:48px;}
 
 .card .title:not(:last-child) {margin-bottom:24px;}
 .card .title h2, .card .title h3 {margin:0; line-height:1.5;}
