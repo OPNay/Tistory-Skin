@@ -273,7 +273,7 @@ article a {text-decoration:underline; font-weight:bold;}
 /* Download Button */
 article .imageblock img[src*='.gif'] {display:none;}
 article .imageblock > a {
-	display:inline-block; position:relative; padding:0 15px; padding-left:65px;
+	display:inline-block; position:relative; border-radius:2px; padding:0 15px; padding-left:65px;
 	height:50px; line-height:50px; transition:all 0.15s linear; font-weight:bold;
 }
 article .imageblock > a:before {
