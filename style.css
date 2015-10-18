@@ -95,7 +95,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* side drawer */
 #side {z-index:150; background:white; position:fixed; top:0; left:0; width:280px; height:100%;
-	overflow-x:hidden; overflow-y:scroll; transition:transform 0.2s ease-in, box-shadow 0.2s ease-in; transform:translateX(-100%);}
+	overflow-x:hidden; overflow-y:auto; transition:transform 0.2s ease-in, box-shadow 0.2s ease-in; transform:translateX(-100%);}
 .active.side #side {transform:translateX(0); box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
 
 #side > ul, #side > ol {margin:8px 0;}
