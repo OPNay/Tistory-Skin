@@ -280,10 +280,12 @@ article a {text-decoration:underline; font-weight:bold;}
 article .imageblock img[src*='.gif'] {display:none;}
 article .imageblock > a {
 	display:inline-block; position:relative; border-radius:2px; padding:0 15px; padding-left:65px;
-	height:50px; line-height:50px; transition:background 0.15s linear; font-weight:bold;
+	height:50px; line-height:50px; box-shadow:0 0 4px rgba(0,0,0,0.3);
+	transition:box-shadow 0.15s linear; font-weight:bold;
 }
 article .imageblock > a:before {
 	font:normal normal normal 24px/50px FontAwesome; content:'\f019';
 	background:rgba(0,0,0,0.2); position:absolute; top:0; left:0;
 	width:50px; height:50px; line-height:50px; text-align:center; color:white;
 }
+article .imageblock > a:hover:not(:active) {box-shadow:0 0 8px rgba(0,0,0,0.3);}
