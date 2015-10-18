@@ -274,6 +274,7 @@ article li ul {list-style:circle;}
 
 article img {max-width:100%; height:auto;}
 article blockquote {background:#F4F4F4; margin:0; padding:1em 25px;}
+article a {font-weight:bold;}
 
 /* Download Button */
 article .imageblock img[src*='.gif'] {display:none;}
