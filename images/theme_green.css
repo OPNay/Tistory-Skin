@@ -6,7 +6,6 @@
  * Accent - #8BC34A
  * Primary Text - #212121
  * Secondary Text - #727272
- * Divider - #DADADA
  */
 
 body, button, input, textarea {
@@ -14,17 +13,12 @@ body, button, input, textarea {
 }
 a {color:#212121;}
 
-.card-content:not(:last-child),
-.card-border:not(:last-child) {border-bottom:1px solid #DADADA;}
-
 .card .title .info {
 	 color:#727272;
 }
 
 #header,
 #nav:not(.transparent) {background:#4CAF50;}
-
-#side hr {border:none; border-bottom:1px solid #DADADA;}
 
 .comment .write .btn .fa {color:#727272;}
 .comment .write .btn .fa:hover {color:#212121;}
@@ -39,7 +33,6 @@ a {color:#212121;}
 
 #footer {color:#727272;}
 
-#sidebar .module h3 {border-bottom:1px solid #DADADA;}
 #sidebar .name_card a {color:#727272;}
 #sidebar .list span {color:#727272;}
 #sidebar .calendar td:not(:first-child) a {color:#8BC34A;}

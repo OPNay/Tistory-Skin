@@ -41,6 +41,9 @@ ol.no-style, ul.no-style {list-style:none;}
 .card-list .none {display:block; padding:32px; color:#F44; line-height:2; text-align:center;}
 .card-list .none .fa {font-size:48px;}
 
+.card-content:not(:last-child),
+.card-border:not(:last-child) {border-bottom:1px solid #DADADA;}
+
 .card .title:not(:last-child) {margin-bottom:24px;}
 .card .title h2, .card .title h3 {margin:0; line-height:1.5;}
 .card .title .info {font-size:14px;}
@@ -103,7 +106,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #side li a:hover {background:#EEE;}
 #side ul ul ul a {padding-left:36px; font-weight:normal;}
 
-#side hr {margin:8px 0;}
+#side hr {margin:8px 0; border:none; border-bottom:1px solid #DADADA;}
 
 /* Wrap */
 #wrap {z-index:-10; width:100%; padding:0;}
@@ -217,7 +220,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* Sidebar */
 #sidebar .module {background:#FFFFFF;}
-#sidebar .module h3 {margin:0; padding:12px; font-size:18px; font-weight:normal;}
+#sidebar .module h3 {margin:0; padding:12px; border-bottom:1px solid #DADADA; font-size:18px; font-weight:normal;}
 
 #sidebar .name_card {padding:10px;}
 #sidebar .name_card:after {content:""; display:block; clear:both;}
