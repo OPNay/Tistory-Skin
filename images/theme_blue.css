@@ -13,6 +13,8 @@ body, button, input, textarea {
 }
 a {color:#212121;}
 
+.accent {color:#03A9F4;}
+
 .card .title .info {
 	 color:#727272;
 }

@@ -28,6 +28,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .flex {display:-webkit-flex; display:flex; -webkit-flex-flow:row; flex-flow:row;}
 .flex-1 {-webkit-flex:1; -ms-flex:1; -moz-flex:1; flex:1;}
 
+.accent {font-weight:bold;}
+
 /* card */
 .card, #sidebar .module {
 	background:#FFF; margin:12px 0; padding:0; border-radius:2px;
@@ -102,9 +104,10 @@ ol.no-style, ul.no-style {list-style:none;}
 .active.side #side {transform:translateX(0); box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
 
 #side > ul, #side > ol {margin:8px 0;}
-#side li a {display:block; padding:15px 24px; font-size:14px; font-weight:bold; transition:background 0.05s linear;}
+#side li a {display:block; padding:15px 24px; font-size:14px; transition:background 0.05s linear;}
 #side li a:hover {background:#EEE;}
-#side ul ul ul a {padding-left:36px; font-weight:normal;}
+#side > ul > li > a, #side > ul > li > ul > li > a {font-weight:bold;}
+#side > ul > li > ul > li > ul a {padding-left:36px;}
 
 #side hr {margin:8px 0; border:none; border-bottom:1px solid #DADADA;}
 
