@@ -209,7 +209,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #page {position:relative; text-align:center;}
 #page .btn {display:inline-block; padding:12px; font-size:16px; vertical-align:middle;}
-#page .btn.selected {font-weight:bold; text-decoration:underline;}
+#page .btn.selected {font-weight:bold;}
 #page .btn:not(.selected):hover {background:#EEE;}
 #page .no-more-prev, #page .no-more-next {visibility:hidden;}
 
