@@ -83,8 +83,3 @@ $(document).ready(function () {
 	$(window).scroll(buttom_btn_toggle);
 	buttom_btn_toggle();
 });
-
-// List no-style
-$(document).ready(function () {
-	$('#nav ul, .module.category ul').addClass('no-style');
-});
