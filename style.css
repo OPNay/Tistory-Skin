@@ -71,7 +71,7 @@ ol.no-style, ul.no-style {list-style:none;}
 	.card-content {padding:18px;}
 	.card-list a {padding:16px 18px;}
 	.card-list .flex {flex-direction:column-reverse;}
-	.card-list .date {flex:1; color:#757575; font-size:13px;}
+	.card-list .date {flex:1; font-size:13px;}
 	.card-list .title {flex:2; line-height:1.5;}
 	.card-list .none {padding:18px;}
 }

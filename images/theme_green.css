@@ -14,6 +14,9 @@ a {color:#212121;}
 .accent {color:#8BC34A;}
 
 .card .title .info {color:#727272;}
+@media (max-width:768px) {
+	.card-list .date {color:#727272;}
+}
 
 #header,
 #nav:not(.transparent) {background:#4CAF50;}
