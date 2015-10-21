@@ -15,23 +15,23 @@ function nav_transparent() {
 function updateCover(a) {
 	disableScroll(false);
 	body.toggleClass('active side floating', false);
-	cover.toggleClass('active nav-over', false);
+	cover.toggleClass('active', false);
 
 	switch(a) {
 	case 'side':
 		disableScroll(true);
 		body.toggleClass('active side',true);
-		cover.toggleClass('active nav-over',true);
+		cover.toggleClass('active',true);
 		break;
 	case 'floating':
 		disableScroll(true);
 		body.toggleClass('active floating',true);
-		cover.toggleClass('active nav-over',true);
-		$('.card.floating').html($('.floating-data.use').clone().removeClass('floating-data'));
+		cover.toggleClass('active',true);
+		cover.find('.card.floating')
+		     .html($('.floating-data.use').removeClass('use').clone().removeClass('floating-data'));
 		break;
 	default:
-		$('.card.floating').html('');
-		$('.floating-data.use').removeClass('use');
+		cover.find('.card.floating').html('');
 	}
 };
 

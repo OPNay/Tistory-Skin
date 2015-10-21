@@ -52,19 +52,22 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .card .article:not(:last-child) {margin-bottom:24px;}
 
-.card.floating {z-index:150; position:fixed; top:50%; left:50%; box-shadow:0 12px 24px rgba(0,0,0,0.3);
-	transition:opacity 0.2s linear, transform 0.2s linear;
-	transform:translate(-50%, -50%) scale(0.5); opacity:0;}
-.active .card.floating {transform:translate(-50%, -50%) scale(1); opacity:1;}
-.floating-data {display:none;}
-
 #cover {
 	z-index:50; background:rgba(0,0,0,0.25);
 	position:fixed; top:0; bottom:0; left:0; right:0;
 	transition:opacity 0.2s ease-in; opacity:0; visibility:hidden;
 }
+#cover .card.floating {
+	position:fixed; top:50%; left:50%;
+	box-shadow:0 12px 24px rgba(0,0,0,0.3);
+	transition:transform 0.2s linear;
+	transform:translate(-50%, -50%) scale(0.5);;
+}
+
 #cover.active {visibility:visible; opacity:1;}
-#cover.active.nav-over {z-index:110;}
+#cover.active .card.floating {transform:translate(-50%, -50%) scale(1);}
+.floating-data {display:none;}
+
 /* Mobile */
 @media (max-width:768px) {
 	.card {margin:8px 0;}
