@@ -107,8 +107,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .active.side #side {transform:translateX(0); box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
 
 #side > ul, #side > ol {margin:8px 0;}
-#side li a {display:block; padding:15px 24px; font-size:14px; transition:background 0.05s linear;}
-#side li a:hover {background:#EEE;}
+#side li a {display:block; padding:16px; line-height:20px; font-size:14px; transition:background 0.05s linear;}
+#side li a:hover {background:#EEE; font-weight:bold;}
 #side > ul > li > a, #side > ul > li > ul > li > a {font-weight:bold;}
 #side > ul > li > ul > li > ul a {padding-left:36px;}
 

@@ -20,6 +20,7 @@ a {color:#212121;}
 
 #header,
 #nav:not(.transparent) {background:#2196F3;}
+#side a:hover {color:#03A9F4;}
 
 .comment .write .btn .fa {color:#727272;}
 .comment .write .btn .fa:hover {color:#212121;}
