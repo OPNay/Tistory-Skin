@@ -37,14 +37,14 @@ ol.no-style, ul.no-style {list-style:none;}
 }
 .card-content {padding:32px;}
 
-.card-list a {padding:24px 32px; transition:background 0.05s linear;}
+.card-list {padding:8px 0;}
+.card-list a {padding:18px 32px; line-height:20px; transition:background 0.05s linear;}
 .card-list a:hover {background:#EEE;}
 .card-list .date {width:120px;}
 .card-list .none {display:block; padding:32px; color:#F44; line-height:2; text-align:center;}
 .card-list .none .fa {font-size:48px;}
 
-.card-content:not(:last-child),
-.card-border:not(:last-child) {border-bottom:1px solid #DADADA;}
+.card-content:not(:last-child) {border-bottom:1px solid #DADADA;}
 
 .card .title:not(:last-child) {margin-bottom:24px;}
 .card .title h2, .card .title h3 {margin:0; line-height:1.5;}
@@ -71,8 +71,8 @@ ol.no-style, ul.no-style {list-style:none;}
 	.card-content {padding:18px;}
 	.card-list a {padding:16px 18px;}
 	.card-list .flex {flex-direction:column-reverse;}
-	.card-list .date {flex:1; font-size:13px;}
-	.card-list .title {flex:2; line-height:1.5;}
+	.card-list .date {flex:1; line-height:16px; font-size:14px;}
+	.card-list .title {flex:2; line-height:24px;}
 	.card-list .none {padding:18px;}
 }
 
