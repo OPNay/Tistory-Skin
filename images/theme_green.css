@@ -8,16 +8,12 @@
  * Secondary Text - #727272
  */
 
-body, button, input, textarea {
-	 color:#212121; /*Primary Text*/
-}
+body, button, input, textarea {color:#212121;}
 a {color:#212121;}
 
 .accent {color:#8BC34A;}
 
-.card .title .info {
-	 color:#727272;
-}
+.card .title .info {color:#727272;}
 
 #header,
 #nav:not(.transparent) {background:#4CAF50;}
