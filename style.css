@@ -65,7 +65,7 @@ ol.no-style, ul.no-style {list-style:none;}
 }
 
 #cover.active {visibility:visible; opacity:1;}
-#cover.active .card.floating {transform:translate(-50%, -50%) scale(1);}
+#cover.active.f .card.floating {transform:translate(-50%, -50%) scale(1);}
 .floating-data {display:none;}
 
 /* Mobile */
@@ -91,7 +91,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #nav .icon {line-height:50px; text-align:center; cursor:pointer;}
 #nav .icon .fa {top:0; left:0; transition:transform 0.3s linear,opacity 0.3s linear;}
-.active.side .icon .fa {transform:rotate(45deg);}
+#side.active + #nav .icon .fa {transform:rotate(45deg);}
 .icon .fa-bars {opacity:1;}
 
 #nav .title {
@@ -104,7 +104,7 @@ ol.no-style, ul.no-style {list-style:none;}
 /* side drawer */
 #side {z-index:150; background:white; position:fixed; top:0; left:0; width:280px; height:100%;
 	overflow-x:hidden; overflow-y:auto; transition:transform 0.2s linear, box-shadow 0.2s linear; transform:translateX(-100%);}
-.active.side #side {transform:translateX(0); box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
+#side.active {transform:translateX(0); box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
 
 #side > ul, #side > ol {margin:8px 0;}
 #side li a {display:block; padding:16px; line-height:20px; font-size:14px; transition:background 0.05s linear;}

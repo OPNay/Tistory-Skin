@@ -18,21 +18,20 @@ function nav_transparent() {
 
 function updateCover(a) {
 	disableScroll(false);
-	body.toggleClass('active side floating', false);
-	cover.toggleClass('active', false);
+	cover.toggleClass('active f', false);
+	side.toggleClass('active',false);
 
 	switch(a) {
 	case 'side':
 		disableScroll(true);
-		body.toggleClass('active side',true);
 		cover.toggleClass('active',true);
+		side.toggleClass('active',true);
 		break;
 	case 'floating':
 		disableScroll(true);
-		body.toggleClass('active floating',true);
-		cover.toggleClass('active',true);
+		cover.toggleClass('active f',true);
 		cover.find('.card.floating')
-		     .html($('.floating-data.use').removeClass('use').clone().removeClass('floating-data'));
+			.html($('.floating-data.use').removeClass('use').clone().removeClass('floating-data'));
 		break;
 	default:
 		cover.find('.card.floating').html('');
@@ -45,7 +44,7 @@ $(document).ready(function () {
 	nav_transparent();
 // Nav menu
 	$('#nav .icon').click(function () {
-		if(!body.hasClass('active side'))
+		if(!cover.hasClass('active'))
 			updateCover('side');
 		else
 			updateCover('off');
@@ -54,8 +53,8 @@ $(document).ready(function () {
 
 // Floating
 	$('.admin .fa-bars').click(function () {
-		if(!body.hasClass('active floating')) {
-			$(this).parent().find('.floating-data').addClass('use')
+		if(!cover.hasClass('active')) {
+			$(this).parent().find('.floating-data').addClass('use');
 			updateCover('floating');
 		} else
 			updateCover('off');
