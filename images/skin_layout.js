@@ -1,10 +1,10 @@
-function disableScroll(a) {
-	$('body').toggleClass('scroll-hidden',a);
-}
-
 var body = $('body');
 var cover = $('#cover');
 var nav = $('#nav');
+
+function disableScroll(a) {
+	body.toggleClass('scroll-hidden',a);
+}
 
 function nav_transparent() {
 	if (($(window).scrollTop() >= 100 && nav.hasClass('transparent'))
