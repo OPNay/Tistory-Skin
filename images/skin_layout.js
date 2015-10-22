@@ -59,15 +59,17 @@ $(document).ready(function () {
 });
 
 // Page
-$(document).ready(function () {
-	var page = $('#page'), num = page.find('.num');
+function f_page(a) {
+	var page = a, num = page.find('.num');
 	if(num.length <= 1) { page.remove(); return; }
 	else {
 		var selected = page.find('.selected'), parent = selected.parent();
 		parent.after(selected.addClass('btn num'));
 		parent.remove();
 	}
-});
+}
+
+$('#page').ready(function() {f_page($(this))});
 
 // Bottom button
 function buttom_btn_toggle() {

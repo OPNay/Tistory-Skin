@@ -12,10 +12,12 @@ function t_search() {
 		$.ajax({
 			url: url,
 			success: function(data, textStatus, jqXHR) {
-				var list = $(data).find('#search_list, #page');
+				var list = $(data).find('#search_list, #page').clone();
 				$('#search_list, #search_list + #page').remove();
-				if(list.find('.card-list a').length > 0)
-					$('#search').after(list.clone());
+				f_page(list.filter('#page'));
+				if(list.find('.card-list a').length > 0) {
+					$('#search').after(list);
+				}
 			}
 		});
 	}
