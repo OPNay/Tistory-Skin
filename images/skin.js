@@ -1,7 +1,8 @@
 var body = $('body'),
 	cover = $('#cover'),
 	nav = $('#nav'),
-	page = $('#page');
+	page = $('#page'),
+	botbtn = $('#bot-btn');
 
 function disableScroll(a) {
 	body.toggleClass('scroll-hidden',a);
@@ -74,14 +75,13 @@ page.ready(function() {f_page(page)});
 
 // Bottom button
 function buttom_btn_toggle() {
-	var bottom_btn = $('#bot-btn');
-	if (($(window).scrollTop() != 0 && bottom_btn.hasClass('hidden'))
-		|| $(window).scrollTop() == 0 && !bottom_btn.hasClass('hidden'))
-		bottom_btn.toggleClass('hidden');
+	if (($(window).scrollTop() != 0 && botbtn.hasClass('hidden'))
+		|| $(window).scrollTop() == 0 && !botbtn.hasClass('hidden'))
+		botbtn.toggleClass('hidden');
 }
 
-$(document).ready(function () {
-	var b_arrow_up = $('#bot-btn').find('.fa-arrow-up');
+botbtn.ready(function () {
+	var b_arrow_up = botbtn.find('.fa-arrow-up');
 	b_arrow_up.click(function () {$('html, body').animate({'scrollTop':'0'}, 250); return false;});
 	$(window).scroll(buttom_btn_toggle);
 	buttom_btn_toggle();
