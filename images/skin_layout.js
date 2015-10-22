@@ -1,6 +1,7 @@
-var body = $('body');
-var cover = $('#cover');
-var nav = $('#nav');
+var body = $('body'),
+	cover = $('#cover'),
+	nav = $('#nav'),
+	page = $('#page');
 
 function disableScroll(a) {
 	body.toggleClass('scroll-hidden',a);
@@ -60,16 +61,16 @@ $(document).ready(function () {
 
 // Page
 function f_page(a) {
-	var page = a, num = page.find('.num');
-	if(num.length <= 1) { page.remove(); return; }
+	var num = a.find('.num');
+	if(num.length <= 1) { a.remove(); return; }
 	else {
-		var selected = page.find('.selected'), parent = selected.parent();
+		var selected = a.find('.selected'), parent = selected.parent();
 		parent.after(selected.addClass('btn num'));
 		parent.remove();
 	}
 }
 
-$('#page').ready(function() {f_page($(this))});
+page.ready(function() {f_page(page)});
 
 // Bottom button
 function buttom_btn_toggle() {
