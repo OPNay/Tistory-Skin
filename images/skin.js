@@ -1,6 +1,7 @@
 var body = $('body'),
 	cover = $('#cover'),
 	nav = $('#nav'),
+	side = $('#side'),
 	search = $('#search'),
 	page = $('#page'),
 	botbtn = $('#bot-btn');
@@ -124,17 +125,17 @@ function highlightSide() {
 		case 'category':
 			if(pathname [1]) {
 			var name = pathname[2] ? pathname[2] : pathname[1];
-			$('#side a').each(function (index) {
+			side.find('a').each(function (index) {
 				if(name == $(this).text().replace(/\s\(\d+\)/g,''))
 					$(this).addClass('accent');
 			});
 			} else
-				$('#side a[href="/category"]').addClass('accent');
+				side.find('a[href="/category"]').addClass('accent');
 			break;
 		default:
-			$('#side a[href="/'+pathname[0]+'"]').addClass('accent');
+			side.find('a[href="/'+pathname[0]+'"]').addClass('accent');
 			break;
 	}
 }
 
-$('#side').ready(highlightSide);
+side.ready(highlightSide);
