@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-@import 'images/theme_blue.css';
-
 ::-webkit-scrollbar {width:10px; background-color:#EEE;}
 ::-webkit-scrollbar-button {display:none;}
 ::-webkit-scrollbar-track {background:#EEE; border-left:1px solid #DDD;}
