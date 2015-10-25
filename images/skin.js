@@ -124,7 +124,7 @@ function highlightSide() {
 	if(pathname[0] == 'category' && pathname[1]) {
 		var name = pathname[2] ? pathname[2] : pathname[1];
 		side.find('li a').each(function (index) {
-			if(name == $(this).text().replace(/\s\(\d+\)/g,''))
+			if(name == $(this).text().replace(/\s\(\d+\)$/g,''))
 				$(this).addClass('accent');
 		});
 	} else {
