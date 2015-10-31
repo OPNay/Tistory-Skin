@@ -106,10 +106,10 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #side .title {background:#F4F4F4;display:block; padding:0 16px; line-height:50px; color:#727272; font-size:20px;}
 #side > ul, #side > ol {margin:8px 0;}
-#side li a {display:block; padding:16px; line-height:20px; font-size:14px; transition:background 0.05s linear;}
-#side li a:hover {background:#EEE; font-weight:bold;}
-#side > ul > li > a, #side > ul > li > ul > li > a {font-weight:bold;}
-#side > ul > li > ul > li > ul a {padding-left:36px;}
+#side .item {display:block; padding:16px; line-height:20px; font-size:14px; transition:background 0.05s linear;}
+#side .item:hover {background:#EEE; font-weight:bold;}
+#side .item:not(.subitem) {font-weight:bold;}
+#side .item.subitem {padding-left:36px;}
 
 #side hr {margin:0; border:none; border-bottom:1px solid #DADADA;}
 
