@@ -24,7 +24,8 @@
 ## How to apply
 [다운로드 (v1.0)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.0.zip)<br>
 [다운로드 (v1.1)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.1.zip)<br>
-[다운로드 (v1.2)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.2.zip)
+[다운로드 (v1.2)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.2.zip)<br>
+[다운로드 (v1.3)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.3.zip)
 
 1. 다운받은 스킨을 압축 해제 합니다.
 2. Tistory 블로그 관리자 페이지로 갑니다.
