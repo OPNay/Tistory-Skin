@@ -61,6 +61,16 @@ $(document).ready(function () {
 	});
 });
 
+side.ready(function() {
+	side.find('li[class*="t_menu"]').parent().addClass('blogmenu');
+	side.find('a[href="/category"]').parent().parent().addClass('category');
+	$('.blogmenu a, .category a').addClass('item');
+	
+	$('.category > li > ul > li > ul').addClass('subcategory')
+		.find('a').addClass('subitem');
+});
+
+
 // Page
 function f_page(a) {
 	var num = a.find('.num');
