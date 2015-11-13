@@ -260,7 +260,7 @@ ol.no-style, ul.no-style {list-style:none;}
 }
 #bot-btn .fa {color:white; padding:10px; box-shadow:0 0 6px rgba(0,0,0,0.3); transition:box-shadow 0.2s linear;}
 #bot-btn .fa:hover:not(:active) {box-shadow:0 0 24px rgba(0,0,0,0.3);}
-#bot-btn.hidden {transform:translateY(200px);}
+#bot-btn.hidden {transform:translateY(100%);}
 #bot-btn.hidden .fa {box-shadow:none;}
 
 /* Article */
