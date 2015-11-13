@@ -11,7 +11,7 @@
 body, button, input, textarea {color:#212121;}
 a {color:#212121;}
 
-.accent {color:#607D8B;}
+em, .accent {color:#607D8B;}
 
 .card .title .info {color:#727272;}
 @media (max-width:768px) {

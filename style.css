@@ -13,6 +13,7 @@ body, button, input, textarea {
 	font-family:Roboto,RobotoDraft,arial,sans-serif,'Nanum Gothic';
 }
 a {text-decoration:none; cursor:pointer;}
+em {font-style:normal; font-weight:normal;}
 ul, li {margin:0; padding:0;}
 img {border:none;}
 label:focus, input:focus, button:focus, textarea:focus {outline:none;}
