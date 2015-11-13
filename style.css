@@ -264,35 +264,35 @@ ol.no-style, ul.no-style {list-style:none;}
 #bot-btn.hidden .fa {box-shadow:none;}
 
 /* Article */
-article {font-size:14px; line-height:1.8; word-wrap:break-word;}
+.article {font-size:14px; line-height:1.8; word-wrap:break-word;}
 
-article h1, article h2, article h3, article h4, article h5 {margin:0.75em 0;}
-article h1, article h2 {margin:0.8em 0; padding-bottom:0.5em; border-bottom:1px solid #DDD;}
-article h1 {font-size:2em;}
-article h2 {font-size:1.5em;}
-article h3 {font-size:1.2em;}
-article h4 {font-size:1em;}
-article h5 {font-size:0.8em;}
+.article h1, .article h2, .article h3, .article h4, .article h5 {margin:0.75em 0;}
+.article h1, .article h2 {margin:0.8em 0; padding-bottom:0.5em; border-bottom:1px solid #DDD;}
+.article h1 {font-size:2em;}
+.article h2 {font-size:1.5em;}
+.article h3 {font-size:1.2em;}
+.article h4 {font-size:1em;}
+.article h5 {font-size:0.8em;}
 
-article ol, article ul {margin:0.5em 0; padding-left:1.25em;}
-article ul {list-style:disc;}
-article ol {list-style:decimal;}
-article li ul {list-style:circle;}
+.article ol, .article ul {margin:0.5em 0; padding-left:1.25em;}
+.article ul {list-style:disc;}
+.article ol {list-style:decimal;}
+.article li ul {list-style:circle;}
 
-article img {max-width:100%; height:auto;}
-article blockquote {background:#F4F4F4; margin:0; padding:1em 25px;}
-article a {font-weight:bold;}
+.article img {max-width:100%; height:auto;}
+.article blockquote {background:#F4F4F4; margin:0; padding:1em 25px;}
+.article a {font-weight:bold;}
 
 /* Download Button */
-article .imageblock img[src*='.gif'] {display:none;}
-article .imageblock > a {
+.article .imageblock img[src*='.gif'] {display:none;}
+.article .imageblock > a {
 	display:inline-block; position:relative; border-radius:2px; padding:0 15px; padding-left:65px;
 	height:50px; line-height:50px; box-shadow:0 0 4px rgba(0,0,0,0.3);
 	transition:box-shadow 0.15s linear; font-weight:bold;
 }
-article .imageblock > a:before {
+.article .imageblock > a:before {
 	font:normal normal normal 24px/50px FontAwesome; content:'\f019';
 	background:rgba(0,0,0,0.2); position:absolute; top:0; left:0;
 	width:50px; height:50px; line-height:50px; text-align:center; color:white;
 }
-article .imageblock > a:hover:not(:active) {box-shadow:0 0 8px rgba(0,0,0,0.3);}
+.article .imageblock > a:hover:not(:active) {box-shadow:0 0 8px rgba(0,0,0,0.3);}
