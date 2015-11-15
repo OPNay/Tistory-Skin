@@ -106,7 +106,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #side .title {background:#F4F4F4;display:block; padding:0 16px; line-height:50px; color:#727272; font-size:20px;}
 #side > ul, #side > ol {margin:8px 0;}
 #side .item {display:block; padding:16px; line-height:20px; font-size:14px; transition:background 50ms linear;}
-#side .item:hover {background:#EEE; font-weight:bold;}
+#side .item:hover {background:#EEE;}
 #side .item:not(.subitem) {font-weight:bold;}
 #side .item.subitem {padding-left:36px;}
 
