@@ -37,7 +37,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .card-content {padding:32px;}
 
 .card-list {padding:8px 0;}
-.card-list a {padding:18px 32px; line-height:20px; transition:background 0.05s linear;}
+.card-list a {padding:18px 32px; line-height:20px; transition:background 50ms linear;}
 .card-list a:hover {background:#EEE;}
 .card-list .date {width:120px;}
 .card-list .none {display:block; padding:32px; color:#F44; line-height:2; text-align:center;}
@@ -54,12 +54,12 @@ ol.no-style, ul.no-style {list-style:none;}
 #cover {
 	z-index:50; background:rgba(0,0,0,0.25);
 	position:fixed; top:0; bottom:0; left:0; right:0;
-	transition:opacity 0.2s linear; opacity:0; visibility:hidden;
+	transition:opacity 200ms linear; opacity:0; visibility:hidden;
 }
 #cover .card.floating {
 	position:fixed; top:50%; left:50%;
 	box-shadow:0 12px 24px rgba(0,0,0,0.3);
-	transition:transform 0.2s linear;
+	transition:transform 200ms linear;
 	transform:translate(-50%, -50%) scale(0.5);;
 }
 
@@ -89,25 +89,25 @@ ol.no-style, ul.no-style {list-style:none;}
 #nav .fa {position:absolute; width:50px; line-height:50px; font-size:24px; color:white;}
 
 #nav .icon {line-height:50px; text-align:center; cursor:pointer;}
-#nav .icon .fa {top:0; left:0; transition:transform 0.3s linear,opacity 0.3s linear;}
+#nav .icon .fa {top:0; left:0; transition:transform 300ms linear,opacity 300ms linear;}
 #side.active + #nav .icon .fa {transform:rotate(45deg);}
 .icon .fa-bars {opacity:1;}
 
 #nav .title {
 	display:block; margin:0 24px 0 64px; line-height:50px; font-size:24px;
-	transition:transform 0.2s linear; transform:translateY(-50px);
+	transition:transform 200ms linear; transform:translateY(-50px);
 }
 #nav:not(.transparent) .title {transform:translateY(0);}
 #nav .title .link {color:white;}
 
 /* side drawer */
 #side {z-index:150; background:white; position:fixed; top:0; left:0; width:280px; height:100%;
-	overflow-x:hidden; overflow-y:auto; transition:transform 0.2s linear, box-shadow 0.2s linear; transform:translateX(-100%);}
+	overflow-x:hidden; overflow-y:auto; transition:transform 200ms linear, box-shadow 200ms linear; transform:translateX(-100%);}
 #side.active {transform:translateX(0); box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
 
 #side .title {background:#F4F4F4;display:block; padding:0 16px; line-height:50px; color:#727272; font-size:20px;}
 #side > ul, #side > ol {margin:8px 0;}
-#side .item {display:block; padding:16px; line-height:20px; font-size:14px; transition:background 0.05s linear;}
+#side .item {display:block; padding:16px; line-height:20px; font-size:14px; transition:background 50ms linear;}
 #side .item:hover {background:#EEE; font-weight:bold;}
 #side .item:not(.subitem) {font-weight:bold;}
 #side .item.subitem {padding-left:36px;}
@@ -150,7 +150,7 @@ ol.no-style, ul.no-style {list-style:none;}
 }
 
 .a_list {margin:6px 0;}
-.a_list .a_l_btn {display:block; padding:16px 16px 16px 52px; width:160px; line-height:18px; transition:background 0.05s linear;}
+.a_list .a_l_btn {display:block; padding:16px 16px 16px 52px; width:160px; line-height:18px; transition:background 50ms linear;}
 .a_list .a_l_btn:hover {background:#EEE;}
 .a_list .a_l_btn .fa {position:absolute; margin-left:-36px; width:20px; text-align:center; font-size:18px;}
 
@@ -255,11 +255,11 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #bot-btn {
 	z-index:40; position:fixed; bottom:0; right:0;
-	transition:transform 0.2s linear;
+	transition:transform 200ms linear;
 	transform:translateY(0);
 	font-size:36px; cursor:pointer;
 }
-#bot-btn .fa {color:white; padding:10px; box-shadow:0 0 6px rgba(0,0,0,0.3); transition:box-shadow 0.2s linear;}
+#bot-btn .fa {color:white; padding:10px; box-shadow:0 0 6px rgba(0,0,0,0.3); transition:box-shadow 200ms linear;}
 #bot-btn .fa:hover:not(:active) {box-shadow:0 0 24px rgba(0,0,0,0.3);}
 #bot-btn.hidden {transform:translateY(100%);}
 #bot-btn.hidden .fa {box-shadow:none;}
@@ -289,7 +289,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .article .imageblock > a {
 	display:inline-block; position:relative; border-radius:2px; padding:0 15px; padding-left:65px;
 	height:50px; line-height:50px; box-shadow:0 0 4px rgba(0,0,0,0.3);
-	transition:box-shadow 0.15s linear; font-weight:bold;
+	transition:box-shadow 150ms linear; font-weight:bold;
 }
 .article .imageblock > a:before {
 	font:normal normal normal 24px/50px FontAwesome; content:'\f019';
