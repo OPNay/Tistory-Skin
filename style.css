@@ -103,14 +103,13 @@ ol.no-style, ul.no-style {list-style:none;}
 	overflow-x:hidden; overflow-y:auto; transition:transform 200ms linear, box-shadow 200ms linear; transform:translateX(-100%);}
 #side.active {transform:translateX(0); box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
 
-#side .title {background:#F4F4F4;display:block; padding:0 16px; line-height:50px; color:#727272; font-size:20px;}
 #side > ul, #side > ol {margin:8px 0;}
-#side .item {display:block; padding:16px; line-height:20px; font-size:14px; transition:background 50ms linear;}
-#side .item:hover {background:#EEE;}
-#side .item:not(.subitem) {font-weight:bold;}
-#side .item.subitem {padding-left:36px;}
-
 #side hr {margin:0; border:none; border-bottom:1px solid #DADADA;}
+#side .item {display:block; padding:0 16px; line-height:48px; font-size:14px;}
+#side .item:hover {background:#F4F4F4;}
+#side .item.subitem {padding:0 8px; padding-left:32px; line-height:36px; color:#727272; font-size:12px;}
+
+#side .title {background:#F4F4F4; line-height:50px; color:#727272; font-size:20px;}
 
 /* Wrap */
 #wrap {z-index:-10; width:100%; padding:0;}
