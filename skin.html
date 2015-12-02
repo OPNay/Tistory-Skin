@@ -17,7 +17,6 @@
 	var skin_link = "./images";
 	var rss_url = "[##_rss_url_##]";
 </script>
-<script type="text/javascript" async src="./images/skin_settings.js"></script>
 </head>
 <body>
 <s_t3>
@@ -248,65 +247,6 @@
 			</section>
 		</footer>
 	</section>
-	<aside id="sidebar">
-		<s_sidebar>
-			<s_sidebar_element><!--Name Card-->
-				<div class="module name_card">
-					<script>$('.module.name_card').ready(function(){$('.module.name_card').find('.contact').append($('<a>@' + name_card_data.name + '</a>').attr('href',name_card_data.href));});</script>
-					<img src="/index.gif" alt="[##_desc_##]" />
-					<p class="auther">[##_blogger_##]</p>
-					<p class="contact"></p>
-				</div>
-			</s_sidebar_element>
-			<s_sidebar_element><!--Side Link-->
-				<div class="module link">
-					<script type="text/javascript" defer src="./images/side_link.js"></script>
-				</div>
-			</s_sidebar_element>
-			<s_sidebar_element><!--Notice-->
-				<div class="module list notice">
-					<h3>Notice</h3>
-					<s_rct_notice>
-					<ul class="no-style">
-						<s_rct_notice_rep>
-						<li><a href="[##_notice_rep_link_##]" class="ellipsis">[##_notice_rep_title_##]</a></li>
-						</s_rct_notice_rep>
-					</ul>
-					</s_rct_notice>
-				</div>
-			</s_sidebar_element>
-			<s_sidebar_element><!--Recent Post-->
-				<div class="module list recent_p">
-					<h3>Recent Post</h3>
-					<ul class="no-style">
-						<s_rctps_rep>
-							<li>
-								<a href="[##_rctps_rep_link_##]" class="ellipsis">[##_rctps_rep_title_##]</a>
-							</li>
-						</s_rctps_rep>
-					</ul>
-				</div>
-			</s_sidebar_element>
-			<s_sidebar_element><!--Recent Comment-->
-				<div class="module list recent_c">
-					<h3>Recent Comment</h3>
-					<ul class="no-style">
-						<s_rctrp_rep>
-							<li>
-								<a href="[##_rctrp_rep_link_##]">
-									<p class="ellipsis">[##_rctrp_rep_desc_##]</p>
-									<span>[##_rctrp_rep_name_##]</span>
-								</a>
-							</li>
-						</s_rctrp_rep>
-					</ul>
-				</div>
-			</s_sidebar_element>
-			<s_sidebar_element><!--Calendar-->
-				<div class="module calendar"><h3>Calendar</h3>[##_calendar_##]</div>
-			</s_sidebar_element>
-		</s_sidebar>
-	</aside>
 </section>
 <div id="cover">
 	<div class="card floating"></div>

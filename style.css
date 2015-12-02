@@ -28,7 +28,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .flex-1 {-webkit-flex:1; -ms-flex:1; -moz-flex:1; flex:1;}
 
 /* card */
-.card, #sidebar .module {
+.card {
 	background:#FFF; margin:12px 0; padding:0; border-radius:2px;
 	box-shadow:0 1px 2px rgba(0,0,0,0.3); overflow:hidden;
 }
@@ -133,25 +133,20 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Wrap */
 #wrap {z-index:-10; width:100%; padding:0;}
 #wrap:after {content:""; display:block; clear:both;}
-#container {float:left; margin:0 12px;}
-#sidebar {float:right; margin:0 12px; width:240px;}
 
 /* PC */
 @media (min-width:1216px) {
 #wrap {width:1192px; margin:0 auto;}
-#container {width:940px; margin:0 12px 0 0;}
-#sidebar {margin:0;}
+#container {width:940px; margin:0 auto;}
 }
 
 @media (min-width:1024px) and (max-width:1215px) {
-#container {width:calc(100% - 276px); margin:0 12px;}
-#sidebar {margin:0 12px 0 0;}
+#container {width:calc(100% - 24px); margin:0 12px;}
 }
 
 /* Mobile */
 @media (max-width:1023px) {
 #container {width:calc(100% - 12px); margin:0 6px;}
-#sidebar {display:none;}
 }
 
 #entry {position:relative;}
@@ -238,36 +233,6 @@ ol.no-style, ul.no-style {list-style:none;}
 #footer p:last-child {margin-bottom:0;}
 #footer .visitor {padding:12px;}
 #footer .copy {margin:18px 0;}
-
-
-/* Sidebar */
-#sidebar .module {background:#FFFFFF;}
-#sidebar .module h3 {margin:0; padding:12px; color:white; font-size:18px; font-weight:normal;}
-
-#sidebar .name_card {padding:10px;}
-#sidebar .name_card:after {content:""; display:block; clear:both;}
-#sidebar .name_card img {margin-right:15px; width:64px; border-radius:50%; float:left;}
-#sidebar .name_card p {margin:7px 0;}
-#sidebar .name_card .auther {font-size:18px;}
-#sidebar .name_card .contact {font-size:13px;}
-
-#sidebar .link a {background:none; display:block; margin:0; padding:10px; font-size:22px; text-align:center;}
-#sidebar .link a:hover {color:white !important;}
-#sidebar .link .fa {margin-right:10px;}
-
-#sidebar .list {margin-bottom:10px;}
-#sidebar .list a {display:block; padding:12px; font-size:13px;}
-#sidebar .list a:hover {background:#EEE;}
-#sidebar .list span {font-size:10px;}
-#sidebar .list p {margin:0;}
-
-#sidebar .calendar .tt-calendar {padding:12px;}
-#sidebar .calendar .cal_month {display:none;}
-#sidebar .calendar thead, #sidebar .calendar tbody {text-align:center;}
-#sidebar .calendar thead {font-size:14px; line-height:1.5;}
-#sidebar .calendar tbody {font-size:12px; line-height:2;}
-#sidebar .calendar a {font-weight:bold; text-decoration:underline;}
-#sidebar .calendar td:first-child {color:#F44;}
 
 #bot-btn {
 	z-index:40; position:fixed; bottom:0; right:0;
