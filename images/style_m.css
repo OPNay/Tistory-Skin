@@ -1,4 +1,8 @@
 /* for mobile */
+h1 {font-size:1.75em;}
+h2 {font-size:1.4em;}
+h3 {font-size:1.2em;}
+
 .card {margin:8px 0;}
 .card-content {padding:24px;}
 .card-list a {padding:16px 18px;}
