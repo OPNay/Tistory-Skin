@@ -133,19 +133,10 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Wrap */
 #wrap {z-index:-10; width:100%; padding:0;}
 #wrap:after {content:""; display:block; clear:both;}
-
-/* PC */
-@media (min-width:1216px) {
-#wrap {width:1192px; margin:0 auto;}
 #container {width:940px; margin:0 auto;}
-}
-
-@media (min-width:1024px) and (max-width:1215px) {
-#container {width:calc(100% - 24px); margin:0 12px;}
-}
 
 /* Mobile */
-@media (max-width:1023px) {
+@media (max-width:952px) { /* container width + 12px */
 #container {width:calc(100% - 12px); margin:0 6px;}
 }
 
