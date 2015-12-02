@@ -1,6 +1,6 @@
 /* for mobile */
 .card {margin:8px 0;}
-.card-content {padding:18px;}
+.card-content {padding:24px;}
 .card-list a {padding:16px 18px;}
 .card-list .flex {flex-direction:column-reverse;}
 .card-list .date {flex:1; line-height:16px; font-size:12px;}
