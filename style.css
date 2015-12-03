@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* Scrollbar */
 ::-webkit-scrollbar {width:10px; background-color:#EEE;}
 ::-webkit-scrollbar-button {display:none;}
 ::-webkit-scrollbar-track {background:#EEE; border-left:1px solid #DDD;}
@@ -18,16 +19,18 @@ ul, li {margin:0; padding:0;}
 img {border:none;}
 label:focus, input:focus, button:focus, textarea:focus {outline:none;}
 
+/* Tistory */
 #tistorytoolbarid {display:none;}
 
 .scroll-hidden {overflow:hidden;}
 .ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 ol.no-style, ul.no-style {list-style:none;}
 
+/* Flex */
 .flex {display:-webkit-flex; display:flex; -webkit-flex-flow:row; flex-flow:row;}
 .flex-1 {-webkit-flex:1; -ms-flex:1; -moz-flex:1; flex:1;}
 
-/* card */
+/* Card */
 .card {
 	background:#FFF; margin:12px 0; padding:0; border-radius:2px;
 	box-shadow:0 1px 2px rgba(0,0,0,0.3); overflow:hidden;
@@ -69,7 +72,7 @@ ol.no-style, ul.no-style {list-style:none;}
 }
 .floating-data {display:none;}
 
-/* header */
+/* Header */
 #header {z-index:-30; width:100%;}
 #header .link {width:100%; display:block; font-size:48px; color:white; text-align:center; line-height:150px;}
 
@@ -99,7 +102,7 @@ ol.no-style, ul.no-style {list-style:none;}
 }
 #nav .title .link {color:white;}
 
-/* side drawer */
+/* Side menu drawer */
 #side {z-index:150; background:white; position:fixed; top:0; left:0; width:280px; height:100%;
 	overflow-x:hidden; overflow-y:auto; transition:transform 200ms linear;
 	-webkit-transform:translateX(-100%);
@@ -126,10 +129,12 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #entry {position:relative;}
 
+/* Search */
 #search .input, #search .button {background:none; border:none; font-size:16px; line-height:20px;}
 #search .input {padding:16px 0 16px 24px;}
 #search .button {padding:16px; cursor:pointer;}
 
+/* Entry Admin Menu */
 .admin .fa-bars {
 	width:50px; line-height:50px; padding:0 10px; box-sizing:border-box;
 	font-size:24px; text-align:center;cursor:pointer;
@@ -140,6 +145,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .a_list .a_l_btn:hover {background:#EEE;}
 .a_list .a_l_btn .fa {position:absolute; margin-left:-36px; width:20px; text-align:center; font-size:18px;}
 
+/* Tags */
 #tag .tags {
 	-webkit-flex-wrap:wrap;
 	flex-wrap:wrap;
@@ -187,21 +193,25 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .list .control {font-size:14px; line-height:1.5;}
 .comment .list .control a {padding-right:10px;}
 
+/* Protected Entry */
 #entry_protected p {margin:12px 0; font-size:18px; text-align:center;}
 #entry_protected input, #entry_protected button {background:none; border:none; border-bottom:1px solid #DDD; padding:10px;}
 #entry_protected input {width:260px;}
 #entry_protected button {color:#757575; cursor:pointer;}
 #entry_protected button:hover {color:#212121;}
 
+/* Entry */
 #entry .tags .fa {margin-right:8px;}
 #entry h3 a {display:block;}
 
+/* Page */
 #page {position:relative; text-align:center;}
 #page .btn {display:inline-block; padding:12px; font-size:16px; vertical-align:middle;}
 #page .btn.selected {font-weight:bold;}
 #page .btn:not(.selected):hover {background:#EEE;}
 #page .no-more-prev, #page .no-more-next {visibility:hidden;}
 
+/* Footer */
 #footer {margin-bottom:12px; text-align:center; line-height:1.5; font-size:14px;}
 #footer p {margin:8px 0;}
 #footer p:first-child {margin-top:0;}
@@ -209,6 +219,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #footer .visitor {padding:12px;}
 #footer .copy {margin:18px 0;}
 
+/* Bottom Button */
 #bot-btn {
 	z-index:40; position:fixed; bottom:0; right:0;
 	transition:transform 200ms linear;
@@ -258,6 +269,7 @@ ol.no-style, ul.no-style {list-style:none;}
 }
 .article .imageblock > a:hover:not(:active) {box-shadow:0 0 8px rgba(0,0,0,0.3);}
 
+/* Another Category Plugin */
 .article .another_category {margin:16px 0 0; padding:0; border:none;}
 .article .another_category h4 {margin:0 !important; padding:8px !important; font-size:16px !important; font-weight:normal;}
 .article .another_category table {margin:0 !important; padding:8px; border-collapse:inherit;}
