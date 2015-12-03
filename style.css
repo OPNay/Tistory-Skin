@@ -101,7 +101,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* side drawer */
 #side {z-index:150; background:white; position:fixed; top:0; left:0; width:280px; height:100%;
-	overflow-x:hidden; overflow-y:auto; transition:transform 200ms linear, box-shadow 200ms linear;
+	overflow-x:hidden; overflow-y:auto; transition:transform 200ms linear;
 	-webkit-transform:translateX(-100%);
 	transform:translateX(-100%);
 }
