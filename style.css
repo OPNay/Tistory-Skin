@@ -270,8 +270,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .article .imageblock > a:hover:not(:active) {box-shadow:0 0 8px rgba(0,0,0,0.3);}
 
 /* Another Category Plugin */
-.article .another_category {margin:16px 0 0; padding:0; border:none;}
-.article .another_category h4 {margin:0 !important; padding:8px !important; font-size:16px !important; font-weight:normal;}
-.article .another_category table {margin:0 !important; padding:8px; border-collapse:inherit;}
-.article .another_category th,
-.article .another_category td {padding:0 !important; font-size:14px !important; line-height:1.8;}
+.another_category {margin:16px 0 0; padding:0; border:none;}
+.another_category h4 {margin:0 !important; padding:8px !important; font-size:16px !important; font-weight:normal;}
+.another_category table {margin:0 !important; padding:8px; border-collapse:inherit;}
+.another_category th,
+.another_category td {padding:0 !important; font-size:14px !important; line-height:1.8;}
