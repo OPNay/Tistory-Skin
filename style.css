@@ -140,13 +140,16 @@ ol.no-style, ul.no-style {list-style:none;}
 .a_list .a_l_btn:hover {background:#EEE;}
 .a_list .a_l_btn .fa {position:absolute; margin-left:-36px; width:20px; text-align:center; font-size:18px;}
 
-#tag .tag-ul {margin:0; font-size:14px;}
-#tag .tag-li {width:31%; display:inline-block; padding-bottom:10px;}
-#tag .cloud5,
-#tag .cloud4,
-#tag .cloud3,
-#tag .cloud2,
-#tag .cloud1 {font-size:16px;}
+#tag .tags {
+	-webkit-flex-wrap:wrap;
+	flex-wrap:wrap;
+	-webkit-align-items:baseline;
+	align-items:baseline;
+	line-height:1.75;
+}
+#tag .tags .item {margin-right:12px; color:#212121;}
+#tag .tags .item:hover {color:#727272;}
+#tag .tags .item:before {content:'#'; margin-right:3px;}
 
 /* Comment */
 .comment .write:after {content:""; display:block; clear:both;}
