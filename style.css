@@ -123,9 +123,8 @@ ol.no-style, ul.no-style {list-style:none;}
 #side .title {background:#F4F4F4; line-height:50px; color:#727272; font-size:20px;}
 
 /* Wrap */
-#wrap {z-index:-10; width:100%; padding:0;}
+#wrap {z-index:-10; margin:0 auto; padding:0; width:940px;}
 #wrap:after {content:""; display:block; clear:both;}
-#container {width:940px; margin:0 auto;}
 
 #entry {position:relative;}
 

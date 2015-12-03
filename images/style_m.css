@@ -11,6 +11,6 @@ h3 {font-size:1.2em;}
 .card-list .title {flex:2; line-height:24px;}
 .card-list .none {padding:18px;}
 
-#container {width:calc(100% - 12px); margin:0 6px;}
+#wrap {width:calc(100% - 12px); margin:0 6px;}
 
 .comment .write .input {width:100%;}
