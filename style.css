@@ -256,7 +256,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .article a {font-weight:bold;}
 
 /* Download Button */
-.article .imageblock img[src*='.gif'] {display:none;}
+.article .imageblock > a img[src*='.gif'] {display:none;}
 .article .imageblock > a {
 	display:inline-block; position:relative; border-radius:2px; padding:0 15px; padding-left:65px;
 	height:50px; line-height:50px; box-shadow:0 0 4px rgba(0,0,0,0.3);
