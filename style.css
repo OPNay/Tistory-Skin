@@ -168,9 +168,6 @@ ol.no-style, ul.no-style {list-style:none;}
 }
 #secret + .fa:before {content:'\f09c';}
 #secret:checked + .fa:before {content:'\f023';}
-@media (max-width:758px) {
-.comment .write .input {width:100%;}
-}
 .comment .list p {margin:0; padding:0;}
 .comment .list .li {position:relative; padding:18px 24px 18px 96px; min-height:55px;}
 .comment .list .li.reply {background:#F4F4F4;}
