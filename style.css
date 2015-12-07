@@ -212,10 +212,9 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* Footer */
 #footer {margin-bottom:12px; text-align:center; line-height:1.5; font-size:14px;}
-#footer p {margin:8px 0;}
-#footer p:first-child {margin-top:0;}
-#footer p:last-child {margin-bottom:0;}
+#footer p {margin:0; line-height:2;}
 #footer .visitor {padding:12px;}
+#footer .visitor .total {color:#212121;}
 #footer .copy {margin:18px 0;}
 
 /* Bottom Button */
