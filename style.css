@@ -152,7 +152,7 @@ ol.no-style, ul.no-style {list-style:none;}
 	align-items:baseline;
 	line-height:1.75;
 }
-#tag .tags .item {margin-right:12px; color:#212121;}
+#tag .tags .item {margin-right:18px; color:#212121;}
 #tag .tags .item:hover {color:#727272;}
 #tag .tags .item:before {content:'#'; margin-right:3px;}
 
