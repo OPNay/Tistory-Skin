@@ -5,7 +5,8 @@
 		$side = $('#side'),
 		$search = $('#search'),
 		$page = $('#page'),
-		$botbtn = $('#bot-btn');
+		$botbtn = $('#bot-btn'),
+		blog_link = $(location).attr('protocol') + "//" + $(location).attr('host');
 	
 	$body.scrollable = function (can) {
 		$body.toggleClass('scroll-hidden', !can);
