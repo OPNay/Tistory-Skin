@@ -7,15 +7,8 @@
 ## About
 - 폰트 : Roboto, RobotoDraft, arial, sans-serif, NanumGothic, FontAwesome
 - 반응형 지원
-- 본문 전용 태그 스타일 적용. (Tistory앱에선 적용안됨)
- - p 태그 기본 높이 1.5배.
- - img 태그 자동 비율 맞춤.
- - Tistory 다운로드 버튼 스타일.
+- 1단형 디자인
 - 이미지 대신 [FontAwesome](http://fortawesome.github.io/Font-Awesome/) 폰트를 사용.
-
-## Known Issue
-- 트랙백 없음.
-- 댓글 숨기기 안됨.
 
 ## License
 자유롭게 수정가능하며, 저작권 표시하에 재배포 가능합니다.
@@ -77,16 +70,3 @@
 - skin.html 안에 `<link href="./images/theme_blue.css" rel="stylesheet" />` 태그 수정
 - ./images/theme_blue.css에 blue를 원하는 색상으로 변경
 - blue, gray, green, oragne, purple
-
-#### 사이드바 이름 카드 설정 :
-images폴더 내 skin_settings.js 파일을 메모장, notepad++등 편집기를 통해 열어주세요.
-- "name":"OPNay" 부분은 네임카드 하단 @OPNay의 닉네임 부분입니다.
-- "href":"https://twitter.com..." 부분은 네임카드 하단 @OPNay의 링크 부분입니다.
-
-#### 사이드바 링크 추가 :
-images폴더 내 side_link.js라는 파일을 열어주세요.
-- `var link_data = [` 밑에<br>
-  `{"name": 이름, "fa": 아이콘 이름, "color": 링크 색상, "link":링크주소},`이 형식으로 추가해 주세요.<br>
-- 아이콘 이름은 [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons)에서 확인해 주세요.
-- 색상은 RGB코드`#FFFFFF, #0000FF` 또는 CSS 컬러 이름`black, white, gray 등...`으로 넣으시면 됩니다.
-- 각각 이름, 아이콘 이름, 링크 색상, 링크 주소는 `"`로 묶어주세요.
