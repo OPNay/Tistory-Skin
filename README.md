@@ -1,5 +1,5 @@
 # Simplify Skin
-![미리보기](http://cfile3.uf.tistory.com/image/2314CF3D557D4E7D1D233C)
+![미리보기](http://cfile22.uf.tistory.com/image/23176B44566536491A3434)
 
 이 스킨은 티스토리 전용 스킨입니다. 아직 미흡하거나 미완성인 부분이 많습니다.<br>
 계속해서 수정하여서 더 좋은 스킨을 만들도록 하겠습니다.
@@ -17,14 +17,25 @@
 [다운로드 (v1.0)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.0.zip)<br>
 [다운로드 (v1.1)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.1.zip)<br>
 [다운로드 (v1.2)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.2.zip)<br>
-[다운로드 (v1.3)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.3.zip)
+[다운로드 (v1.3)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.3.zip)<br>
+[다운로드 (v1.3)](https://github.com/OPNay/Tistory-Skin/archive/Simplify-v1.4.zip)
 
 1. 다운받은 스킨을 압축 해제 합니다.
 2. Tistory 블로그 관리자 페이지로 갑니다.
 3. 스킨 - 스킨 등록 버튼을 눌러 업로드 페이지로 이동합니다.
 4. 업로드 페이지에서 하단에 추가 버튼을 눌러서 압축 해제한 스킨 파일들을 전부 업로드 해줍니다. 
 
-## Changelog (v1.3)
+## Changelog
+#### v1.4
+- 사이드바 제거. ([참고(블로그)](http://opnay.tistory.com/110))
+- CSS 일부 최적화.
+- JS 재작성.
+- jquery 2.1.4 내부에 추가. (images/jquery-2.1.4.min.js)
+- Tag 페이지 수정.
+- '카테고리 다른 글' 플러그인 관련 스타일 추가.
+- 모바일 스타일 일부 수정
+
+#### v1.3
 - 폰트 추가 NanumGothic (Roboto, Arial이 한글 지원안하는경우)
 - 테마 기능 추가
  - **블루**
