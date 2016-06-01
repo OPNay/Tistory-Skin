@@ -133,6 +133,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #search .input, #search .button {background:none; border:none; font-size:16px; line-height:20px;}
 #search .input {padding:16px 0 16px 24px;}
 #search .button {padding:16px; cursor:pointer;}
+#search .button:hover {background:#DDD;}
 
 /* Entry Admin Menu */
 .admin .fa-bars {
