@@ -11,13 +11,14 @@
 body {background:#EEE; margin:0; padding:0;}
 body, button, input, textarea {
 	-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-	font-family:Roboto,RobotoDraft,arial,sans-serif,'Nanum Gothic';
+	font-family:Roboto,RobotoDraft,arial,'Nanum Gothic',sans-serif;
 }
 a {text-decoration:none; cursor:pointer;}
 em {font-style:normal; font-weight:normal;}
 ul, li {margin:0; padding:0;}
 img {border:none;}
 label:focus, input:focus, button:focus, textarea:focus {outline:none;}
+code, pre {line-height:1.5; font-family:Consolas, Monaco, monospace;}
 
 /* Tistory */
 #tistorytoolbarid {display:none;}
