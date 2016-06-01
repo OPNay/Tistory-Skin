@@ -273,3 +273,22 @@ ol.no-style, ul.no-style {list-style:none;}
 .another_category table {margin:0 !important; padding:8px; border-collapse:inherit;}
 .another_category th,
 .another_category td {padding:0 !important; font-size:14px !important; line-height:1.8;}
+
+/* Mobile */
+@media screen and (max-width:952px) {
+	h1 {font-size:1.75em;}
+	h2 {font-size:1.4em;}
+	h3 {font-size:1.2em;}
+
+	#wrap {width:calc(100% - 12px); margin:0 6px;}
+
+	.card {margin:8px 0;}
+	.card-content {padding:24px;}
+	.card-list a {padding:16px 18px;}
+	.card-list .flex {flex-direction:column-reverse;}
+	.card-list .date {flex:1; line-height:16px; font-size:12px;}
+	.card-list .title {flex:2; line-height:24px;}
+	.card-list .none {padding:18px;}
+
+	.comment .write .input {width:100%;}
+}
