@@ -282,10 +282,10 @@ ol.no-style, ul.no-style {list-style:none;}
 	h2 {font-size:1.4em;}
 	h3 {font-size:1.2em;}
 
-	#wrap {width:calc(100% - 12px); margin:0 6px;}
+	#wrap {margin:0; width:100%;}
 
-	.card {margin:8px 0;}
-	.card-content {padding:24px;}
+	.card {margin:0; border:none; border-bottom:1px solid #DDD; box-shadow:none;}
+	.card-content {padding:18px;}
 	.card-list a {padding:16px 18px;}
 	.card-list .flex {flex-direction:column-reverse;}
 	.card-list .date {flex:1; line-height:16px; font-size:12px;}
