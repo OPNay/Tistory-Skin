@@ -97,7 +97,6 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #nav .title {
 	display:block; margin:0 24px 0 64px; line-height:50px; font-size:24px;
-	transition:transform 200ms linear;
 	-webkit-transform:translateY(-50px);
 	transform:translateY(-50px);
 }
@@ -109,7 +108,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* Side menu drawer */
 #side {z-index:150; background:white; position:fixed; top:0; left:0; width:280px; height:100%;
-	overflow-x:hidden; overflow-y:auto; transition:transform 200ms linear;
+	overflow-x:hidden; overflow-y:auto;
 	-webkit-transform:translateX(-100%);
 	transform:translateX(-100%);
 }
@@ -226,7 +225,6 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Bottom Button */
 #bot-btn {
 	z-index:40; position:fixed; bottom:0; right:0;
-	transition:transform 200ms linear;
 	-webkit-transform:translateY(0);
 	transform:translateY(0);
 	font-size:36px; cursor:pointer;
