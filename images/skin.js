@@ -7,10 +7,8 @@
 		$page = $('#page'),
 		$botbtn = $('#bot-btn'),
 		blog_link = $(location).attr('protocol') + "//" + $(location).attr('host');
-	
-	$body.scrollable = function (can) {
-		$body.toggleClass('scroll-hidden', !can);
-	};
+
+	$body.scrollable = function (can) {$body.toggleClass('scroll-hidden', !can);};
 
 	$nav.scrollHandler = function () {
 		if ($(window).scrollTop() >= 100 && $nav.hasClass('transparent')) {
@@ -27,7 +25,6 @@
 		$body.scrollable(true);
 		$cover.toggleClass('active f', false).find('.card.floating').html('');
 		$side.toggleClass('active', false);
-
 		return true;
 	};
 	$cover.active = function () {
@@ -99,9 +96,7 @@
 			url = blog_link + '/search/' + query,
 			pathname = decodeURI($(location).attr('pathname').replace(/^\//, '')).split('/');
 
-		if (query === '') {
-			return false;
-		}
+		if (query === '') {return false;}
 
 		if ((pathname === 'search') || (pathname === 'category') || (pathname === 'archive')) {
 			$(location).attr('href', url);
@@ -127,7 +122,7 @@
 
 	$side.ready(function () {
 		var pathname = decodeURI($(location).attr('pathname').replace(/^\//, '')).split('/');
-	
+
 		if (pathname[0] === 'category' && pathname[1]) {
 			var name = (pathname[2] || pathname[1]);
 			$side.find('li a').each(function (index) {
@@ -135,9 +130,7 @@
 					$(this).addClass('accent');
 				}
 			});
-		} else {
-			$side.find('li a[href="/' + pathname[0] + '"]').addClass('accent');
-		}
+		} else {$side.find('li a[href="/' + pathname[0] + '"]').addClass('accent');}
 	});
 	return true;
 }(jQuery));
