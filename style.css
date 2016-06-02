@@ -46,7 +46,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .card-list a {padding:18px 32px; line-height:20px; transition:background 50ms linear;}
 .card-list a:hover {background:#EEE;}
 .card-list .date {width:120px;}
-.card-list .none {display:block; padding:32px; color:#F44; line-height:2; text-align:center;}
+.card-list .none {display:block; padding:32px; color:#F44; line-height:2.5; text-align:center;}
 .card-list .none .fa {font-size:48px;}
 
 .card-content:not(:last-child) {border-bottom:1px solid #DADADA;}
