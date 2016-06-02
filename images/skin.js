@@ -24,9 +24,9 @@
 	$cover.animate = function (run) {
 		if (run === true) {
 			$body.scrollable(false);
-			$body.append($cover);
-			$cover.click(function () {$cover.animate(false);});
-			$cover.toggleClass('animate', true);
+			this.appendTo($body)
+				.click(function () {$cover.animate(false);})
+				.toggleClass('animate', true);
 
 			var tmp = $('.floating-data.use');
 			if (tmp) {
