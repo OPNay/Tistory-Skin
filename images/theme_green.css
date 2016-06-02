@@ -18,8 +18,7 @@ em, .accent {color:#8BC34A;}
 	.card-list .date {color:#727272;}
 }
 
-#header,
-#nav:not(.transparent) {background:#4CAF50;}
+#header, #nav {background:#4CAF50;}
 #side a:hover {color:#8BC34A;}
 
 .comment .write .btn .fa {color:#727272;}
