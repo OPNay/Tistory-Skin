@@ -24,7 +24,7 @@
 	$cover.animate = function (run) {
 		if (run === true) {
 			$body.scrollable(false);
-			$cover.toggleClass('active', true);
+			$cover.toggleClass('animate', true);
 
 			var tmp = $('.floating-data.use');
 			if (tmp) {
@@ -34,8 +34,8 @@
 			}
 		} else if (run === false) {
 			$body.scrollable(true);
-			$cover.toggleClass('active f', false).find('.card.floating').html('');
-			$side.toggleClass('active', false);
+			$cover.toggleClass('animate f', false).find('.card.floating').html('');
+			$side.toggleClass('animate', false);
 		} else {
 			console.log('Error while animte cover');
 		}
@@ -43,13 +43,13 @@
 	$cover.click(function () {$cover.animate(false);});
 
 	$side.active = function (active) {
-		$side.toggleClass('active', active);
+		$side.toggleClass('animate', active);
 		$cover.animate(active);
 	};
 
 	// toggle Side menu
 	$nav.find('.icon').click(function () {
-		return $side.active(!($cover.hasClass('active')));
+		return $side.active(!($cover.hasClass('animate')));
 	});
 
 	// toggle Admin floating menu

@@ -66,8 +66,8 @@ ol.no-style, ul.no-style {list-style:none;}
 	transform:translate(-50%, -50%) scale(0.5);
 }
 
-#cover.active {visibility:visible; opacity:1;}
-#cover.active.f .card.floating {
+#cover.animate {visibility:visible; opacity:1;}
+#cover.animate.f .card.floating {
 	-webkit-transform:translate(-50%, -50%) scale(1);
 	transform:translate(-50%, -50%) scale(1);
 }
@@ -85,7 +85,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #nav .icon {line-height:50px; text-align:center; cursor:pointer;}
 #nav .icon .fa {top:0; left:0; transition:transform 300ms linear,opacity 300ms linear;}
-#side.active + #nav .icon .fa {
+#side.animate + #nav .icon .fa {
 	-webkit-transform:rotate(45deg);
 	transform:rotate(45deg);
 }
@@ -109,7 +109,7 @@ ol.no-style, ul.no-style {list-style:none;}
 	-webkit-transform:translateX(-100%);
 	transform:translateX(-100%);
 }
-#side.active {
+#side.animate {
 	-webkit-transform:translateX(0);
 	transform:translateX(0);
 	box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);
