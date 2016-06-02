@@ -216,12 +216,14 @@ ol.no-style, ul.no-style {list-style:none;}
 #page .btn:not(.selected):hover {background:#EEE;}
 #page .no-more-prev, #page .no-more-next {visibility:hidden;}
 
+#visitor {padding:12px; font-size:14px; line-height:1.5; text-align:center;}
+#visitor p {margin:0;}
+#visitor .total {color:#212121;}
+#visitor .day {color:#727272;}
+
 /* Footer */
-#footer {margin-bottom:12px; text-align:center; line-height:1.5; font-size:14px;}
+#footer {margin:18px; text-align:center; font-size:14px;}
 #footer p {margin:0; line-height:2;}
-#footer .visitor {padding:12px;}
-#footer .visitor .total {color:#212121;}
-#footer .copy {margin:18px 0;}
 
 /* Bottom Button */
 #bot-btn {
