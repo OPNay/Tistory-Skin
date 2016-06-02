@@ -21,31 +21,30 @@
 	$(window).scroll($nav.scrollHandler);
 	$nav.scrollHandler();
 
-	$cover.reset = function () {
-		$body.scrollable(true);
-		$cover.toggleClass('active f', false).find('.card.floating').html('');
-		$side.toggleClass('active', false);
-		return true;
-	};
-	$cover.active = function () {
-		$body.scrollable(false);
-		$cover.toggleClass('active', true);
+	$cover.animate = function (run) {
+		if (run === true) {
+			$body.scrollable(false);
+			$cover.toggleClass('active', true);
 
-		var tmp = $('.floating-data.use');
-		if (tmp) {
-			$cover.toggleClass('f', true);
-			$cover.find('.card.floating')
-				.html(tmp.removeClass('use').clone().removeClass('floating-data'));
+			var tmp = $('.floating-data.use');
+			if (tmp) {
+				$cover.toggleClass('f', true);
+				$cover.find('.card.floating')
+					.html(tmp.removeClass('use').clone().removeClass('floating-data'));
+			}
+		} else if (run === false) {
+			$body.scrollable(true);
+			$cover.toggleClass('active f', false).find('.card.floating').html('');
+			$side.toggleClass('active', false);
+		} else {
+			console.log('Error while animte cover');
 		}
-
-		return true;
-	};
-
-	$cover.click($cover.reset);
+	}
+	$cover.click(function () {$cover.animate(false);});
 
 	$side.active = function (active) {
 		$side.toggleClass('active', active);
-		return active ? $cover.active() : $cover.reset();
+		$cover.animate(active);
 	};
 
 	// toggle Side menu
@@ -56,7 +55,7 @@
 	// toggle Admin floating menu
 	$('.admin .fa-bars').click(function () {
 		$(this).parent().find('.floating-data').addClass('use');
-		return $cover.active();
+		$cover.animate(true);
 	});
 
 	// Side menu init
