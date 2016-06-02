@@ -1,6 +1,6 @@
 (function ($) {
 	var $body = $('body'),
-		$cover = $('#cover'),
+		$cover = $('<div id="cover">'),
 		$nav = $('#nav'),
 		$side = $('#side'),
 		$search = $('#search'),
@@ -24,6 +24,8 @@
 	$cover.animate = function (run) {
 		if (run === true) {
 			$body.scrollable(false);
+			$body.append($cover);
+			$cover.click(function () {$cover.animate(false);});
 			$cover.toggleClass('animate', true);
 
 			var tmp = $('.floating-data.use');
@@ -36,11 +38,11 @@
 			$body.scrollable(true);
 			$cover.toggleClass('animate f', false).find('.card.floating').html('');
 			$side.toggleClass('animate', false);
+			$body.find('#cover').remove();
 		} else {
 			console.log('Error while animte cover');
 		}
 	}
-	$cover.click(function () {$cover.animate(false);});
 
 	$side.animate = function (run) {
 		$side.toggleClass('animate', run);
