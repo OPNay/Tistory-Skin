@@ -31,12 +31,12 @@
 			var tmp = $('.floating-data.use');
 			if (tmp) {
 				$cover.toggleClass('f', true);
-				$cover.find('.card.floating')
+				$cover.append('<div class="card floating">').find('.card.floating')
 					.html(tmp.removeClass('use').clone().removeClass('floating-data'));
 			}
 		} else if (run === false) {
 			$body.scrollable(true);
-			$cover.toggleClass('animate f', false).find('.card.floating').html('');
+			$cover.toggleClass('animate f', false).find('.card.floating').remove();
 			$side.toggleClass('animate', false);
 			$body.find('#cover').remove();
 		} else {
