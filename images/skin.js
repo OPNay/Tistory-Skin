@@ -42,14 +42,14 @@
 	}
 	$cover.click(function () {$cover.animate(false);});
 
-	$side.active = function (active) {
-		$side.toggleClass('animate', active);
-		$cover.animate(active);
+	$side.animate = function (run) {
+		$side.toggleClass('animate', run);
+		$cover.animate(run);
 	};
 
 	// toggle Side menu
 	$nav.find('.icon').click(function () {
-		return $side.active(!($cover.hasClass('animate')));
+		return $side.animate(!($cover.hasClass('animate')));
 	});
 
 	// toggle Admin floating menu
