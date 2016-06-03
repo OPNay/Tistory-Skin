@@ -60,7 +60,7 @@
 			</a>
 			</s_list_rep>
 		</div>
-		<script>if($('.card-list > *').length <= 0)$('.card-list').append('<span class="none"><i class="fa fa-warning"></i><br/>죄송합니다. 글을 찾을수 없습니다.</span>');</script>
+		<script>if($('.card-list > *').length <= 0)$('.card-list').append('<span class="none"><i class="material-icons icon">warning</i><br/>죄송합니다. 글을 찾을수 없습니다.</span>');</script>
 	</section>
 	</s_list>
 	<s_tag>
@@ -143,8 +143,11 @@
 				<span class="info ellipsis">[##_article_rep_date_##]</span>
 			</header>
 			<article class="article">
-				<p><i class="fa fa-lock"></i> 비공개 게시물입니다.</p>
-				<p><input type="password" id="[##_article_password_##]" placeholder="비밀번호"><button class="fa fa-sign-in" onclick="[##_article_dissolve_##]"></button></p>
+				<p><i class="material-icons icon">lock</i> 비공개 게시물입니다.</p>
+				<div>
+					<input type="password" id="[##_article_password_##]" placeholder="Password">
+					<div class="material-icons icon enter" onclick="[##_article_dissolve_##]">exit_to_app</div>
+				</div>
 			</article>
 		</div>
 	</section>

@@ -47,7 +47,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .card-list a:hover {background:#EEE;}
 .card-list .date {width:120px;}
 .card-list .none {display:block; padding:32px; color:#F44; line-height:2.5; text-align:center;}
-.card-list .none .fa {font-size:48px;}
+.card-list .none .icon {font-size:48px;}
 
 .card-content:not(:last-child) {border-bottom:1px solid #DADADA;}
 
@@ -182,11 +182,11 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .list .control .icons {font-size:14px;}
 
 /* Protected Entry */
-#entry_protected p {margin:12px 0; font-size:18px; text-align:center;}
-#entry_protected input, #entry_protected button {background:none; border:none; border-bottom:1px solid #DDD; padding:10px;}
-#entry_protected input {width:260px;}
-#entry_protected button {color:#757575; cursor:pointer;}
-#entry_protected button:hover {color:#212121;}
+#entry_protected .article {text-align:center;}
+#entry_protected p {margin:12px 0; font-size:18px;}
+#entry_protected input {background:none; border:none; border-bottom:1px solid #DDD; padding:12px; width:260px; font-size:20px}
+#entry_protected .icon.enter {position:absolute; border-bottom:1px solid #DDD; padding:12px; color:#727272; cursor:pointer;}
+#entry_protected .icon.enter:hover {color:#212121;}
 
 /* Entry */
 #entry .tags .fa {margin-right:8px;}
