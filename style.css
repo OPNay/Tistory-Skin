@@ -189,7 +189,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #entry_protected .icon.enter:hover {color:#212121;}
 
 /* Entry */
-#entry .tags .fa {margin-right:8px;}
+#entry .tags .icon {margin-right:8px;}
 #entry h3 a {display:block;}
 
 /* Page */
