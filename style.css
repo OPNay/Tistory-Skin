@@ -131,7 +131,6 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .admin.icon {width:64px; line-height:64px; text-align:center; cursor:pointer;}
 
-.a_list {margin:6px 0;}
 .a_list .a_l_btn {display:block; padding:16px 16px 16px 52px; width:160px; line-height:18px; transition:background 50ms linear;}
 .a_list .a_l_btn:hover {background:#EEE;}
 .a_list .a_l_btn .fa {position:absolute; margin-left:-36px; width:20px; text-align:center; font-size:18px;}
