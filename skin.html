@@ -186,10 +186,11 @@
 					</s_rp_guest>
 					</s_rp_member>
 					<textarea id="comment" class="textarea" name="[##_rp_input_comment_##]" placeholder="댓글을 적어주세요." rows="10" cols="50"></textarea>
-					<p class="btn">
-						<input id="secret" name="secret" type="checkbox" hidden="hidden"/>
-						<label for="secret" class="fa"></label><button class="fa fa-pencil" onClick="[##_rp_onclick_submit_##]"></button>
-					</p>
+					<div class="btn">
+						<input id="secret" name="secret" type="checkbox" hidden="hidden"></input>
+						<label class="material-icons icon secret" for="secret">lock_open</label>
+						<div class="material-icons icon comment" onClick="[##_rp_onclick_submit_##]">comment</div>
+					</div>
 					</s_rp_input_form>
 				</section>
 				<s_rp_container>
@@ -197,22 +198,22 @@
 					<ul class="ul no-style">
 						<s_rp_rep>
 							<li id="[##_rp_rep_id_##]" class="li [##_rp_rep_class_##]">
-								<span class="name"><i class="fa"></i>[##_rp_rep_name_##]</span>
+								<span class="name"><i class="material-icons icon"></i>[##_rp_rep_name_##]</span>
 								<span class="date">[##_rp_rep_date_##]</span>
 								<p class="desc">[##_rp_rep_desc_##]</p>
 								<span class="control">
-									<a href="#" onClick="[##_rp_rep_onclick_delete_##]"><i class="fa fa-pencil"></i> 수정</a>
-									<a href="#" onClick="[##_rp_rep_onclick_reply_##]"><i class="fa fa-reply"></i> 댓글</a>
+									<a href="#" onClick="[##_rp_rep_onclick_delete_##]"><i class="material-icons icons">edit</i> 수정</a>
+									<a href="#" onClick="[##_rp_rep_onclick_reply_##]"><i class="material-icons icons">comment</i> 댓글</a>
 								</span>
 							</li>
 							<s_rp2_container>
 							<s_rp2_rep>
 							<li id="[##_rp_rep_id_##]" class="li reply [##_rp_rep_class_##]">
-								<span class="name"><i class="fa"></i>[##_rp_rep_name_##]</span>
+								<span class="name"><i class="material-icons icon"></i>[##_rp_rep_name_##]</span>
 								<span class="date"> [##_rp_rep_date_##]</span>
 								<p class="desc">[##_rp_rep_desc_##]</p>
 								<span class="control">
-									<a href="#" onClick="[##_rp_rep_onclick_delete_##]"><i class="fa fa-pencil"></i> 수정</a>
+									<a href="#" onClick="[##_rp_rep_onclick_delete_##]"><i class="material-icons icons">edit</i> 수정</a>
 								</span>
 							</li>
 							</s_rp2_rep>

@@ -133,5 +133,14 @@
 			});
 		} else {$side.find('li a[href="/' + pathname[0] + '"]').addClass('accent');}
 	});
+	
+	$('#secret').change(function() {
+		if(this.checked){
+			$(this).parent().find('.icon.secret').html('lock');
+		}else{
+			$(this).parent().find('.icon.secret').html('lock_open');
+		}
+	});
+	
 	return true;
 }(jQuery));

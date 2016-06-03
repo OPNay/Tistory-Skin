@@ -158,31 +158,28 @@ ol.no-style, ul.no-style {list-style:none;}
 }
 .comment .write .input {margin-bottom:12px; padding:0 12px 10px; width:50%; border:none; border-bottom:1px solid #DDD;}
 .comment .write .btn {width:100%; margin:5px 0; text-align:right;}
-.comment .write .btn .fa {
-	background:none; margin:0 5px; padding:0; border:none;
-	width:48px; line-height:48px;
-	font-size:24px; text-align:center; cursor:pointer;
-}
-#secret + .fa:before {content:'\f09c';}
-#secret:checked + .fa:before {content:'\f023';}
+.comment .write .btn .icon {margin:0 8px; padding:16px; width:24px; line-height:24px; color:#727272; cursor:pointer;}
+
 .comment .list p {margin:0; padding:0;}
 .comment .list .li {position:relative; padding:18px 24px 18px 96px; min-height:55px;}
 .comment .list .li.reply {background:#F4F4F4;}
 .comment .list .li:after {content:""; display:block; clear:both;}
 .comment .list .tistoryProfileLayerTrigger {display:none;}
 .comment .list .name img,
-.comment .list .name .fa {
+.comment .list .name .icon {
 	position:absolute; margin-left:-80px; border-radius:50%;
 	width:64px; height:64px; overflow:hidden;
+	color:#DDD; font-size:64px; text-align:center;
 }
-.comment .list .name .fa {color:#DDD; font-size:64px; text-align:center;}
-.comment .list .name .fa:before {content:'\f007';/*fa-user*/}
-.rp_secret .name .fa:before, .guest_secret .name .fa:before {content:'\f21b';/*fa-user-secret*/}
-.rp_admin .name .fa:before, .guest_admin .name .fa:before {content:'\f085';/*fa-cogs*/}
+.comment .list .name .icon:before {content:'person';}
+.comment .rp_secret .name .icon:before,
+.comment .guest_secret .name .icon:before {content:'person_outline';}
+.comment .rp_admin .name .icon:before {content:'settings';}
 .comment .list .date {font-size:14px;}
 .comment .list .desc {margin:12px 0; padding:0; line-height:1.5; font-size:14px;}
 .comment .list .control {font-size:14px; line-height:1.5;}
 .comment .list .control a {padding-right:10px;}
+.comment .list .control .icons {font-size:14px;}
 
 /* Protected Entry */
 #entry_protected p {margin:12px 0; font-size:18px; text-align:center;}
