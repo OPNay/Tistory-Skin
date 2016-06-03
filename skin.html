@@ -160,14 +160,14 @@
 				<s_ad_div>
 					<div class="admin">
 						<div class="material-icons admin icon">menu</div>
-						<div class="a_list floating-data">
-							<a href="[##_s_ad_m_link_##]" class="a_l_btn" target="_blank"><i class="fa fa-pencil"></i>수정</a>
-							<a href="#" class="a_l_btn" onclick="[##_s_ad_s2_onclick_##]"><i class="fa fa-unlock-alt"></i>[##_s_ad_s2_label_##]</a>
-							<a href="#" class="a_l_btn" onclick="[##_s_ad_t_onclick_##]"><i class="fa fa-link"></i>관련글(트랙백)</a>
-							<a href="#" class="a_l_btn" onclick="[##_s_ad_d_onclick_##]"><i class="fa fa-trash"></i>삭제</a>
+						<div class="admin_list floating-data">
+							<a href="[##_s_ad_m_link_##]" class="admin_item" target="_blank"><i class="material-icons icon">mode_edit</i>수정</a>
+							<a href="#" class="admin_item" onclick="[##_s_ad_s2_onclick_##]"><i class="material-icons icon">lock_open</i>[##_s_ad_s2_label_##]</a>
+							<a href="#" class="admin_item" onclick="[##_s_ad_t_onclick_##]"><i class="material-icons icon">link</i>관련글(트랙백)</a>
+							<a href="#" class="admin_item" onclick="[##_s_ad_d_onclick_##]"><i class="material-icons icon">delete</i>삭제</a>
 						</div>
 					</div>
-					<script>$('#entry .admin a:contains("비공개") .fa').toggleClass('fa-unlock-alt fa-lock');</script>
+					<script>$('#entry .admin_item:contains("비공개") .material-icons').html('lock');</script>
 				</s_ad_div>
 			</header>
 			<article class="article">[##_article_rep_desc_##]</article>

@@ -131,9 +131,10 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .admin.icon {width:64px; line-height:64px; text-align:center; cursor:pointer;}
 
-.a_list .a_l_btn {display:block; padding:16px 16px 16px 52px; width:160px; line-height:18px; transition:background 50ms linear;}
-.a_list .a_l_btn:hover {background:#EEE;}
-.a_list .a_l_btn .fa {position:absolute; margin-left:-36px; width:20px; text-align:center; font-size:18px;}
+.admin_list {margin:8px 0;}
+.admin_list .admin_item {position:relative; display:block; padding-left:72px; width:180px; line-height:48px; transition:background 50ms linear; font-size:15px;}
+.admin_list .admin_item:hover {background:#EEE;}
+.admin_list .admin_item .icon {position:absolute; top:0; left:0; padding:12px 16px; color:#727272;}
 
 /* Tags */
 #tag .tags {
