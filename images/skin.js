@@ -29,7 +29,7 @@
 				.toggleClass('animate', true);
 
 			var tmp = $('.floating-data.use');
-			if (tmp) {
+			if (tmp.length > 0) {
 				$cover.toggleClass('f', true);
 				$cover.append('<div class="card floating">').find('.card.floating')
 					.html(tmp.removeClass('use').clone().removeClass('floating-data'));
