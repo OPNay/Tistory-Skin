@@ -55,7 +55,7 @@
 	});
 
 	// toggle Admin floating menu
-	$('.admin .fa-bars').click(function () {
+	$('.admin.icon').click(function () {
 		$(this).parent().find('.floating-data').addClass('use');
 		$cover.animate(true);
 	});

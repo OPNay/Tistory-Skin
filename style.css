@@ -129,11 +129,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #search .button {width:64px; line-height:64px; text-align:center; cursor:pointer;}
 #search .button:hover {background:#DDD;}
 
-/* Entry Admin Menu */
-.admin .fa-bars {
-	width:50px; line-height:50px; padding:0 10px; box-sizing:border-box;
-	font-size:24px; text-align:center;cursor:pointer;
-}
+.admin.icon {width:64px; line-height:64px; text-align:center; cursor:pointer;}
 
 .a_list {margin:6px 0;}
 .a_list .a_l_btn {display:block; padding:16px 16px 16px 52px; width:160px; line-height:18px; transition:background 50ms linear;}
