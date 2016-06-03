@@ -84,15 +84,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #nav {z-index:100; height:50px; width:100%; top:0; left:0; position:fixed; overflow:hidden; box-shadow:0 2px 4px 0 rgba(0,0,0,0.3);}
 #nav.transparent {background:transparent; box-shadow:none;}
 
-#nav .fa {position:absolute; width:50px; line-height:50px; font-size:24px; color:white;}
-
-#nav .icon {line-height:50px; text-align:center; cursor:pointer;}
-#nav .icon .fa {top:0; left:0; transition:transform 300ms linear,opacity 300ms linear;}
-#side.animate + #nav .icon .fa {
-	-webkit-transform:rotate(45deg);
-	transform:rotate(45deg);
-}
-.icon .fa-bars {opacity:1;}
+#nav .menu {position:absolute; top:0; left:0; width:50px; line-height:50px; text-align:center; color:white; cursor:pointer;}
 
 #nav .title {
 	display:block; margin:0 24px 0 64px; line-height:50px; font-size:24px;
