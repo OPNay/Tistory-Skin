@@ -210,18 +210,18 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* Bottom Button */
 #bot-btn {
-	z-index:40; position:fixed; bottom:0; right:0;
-	-webkit-transform:translateY(0);
-	transform:translateY(0);
+	z-index:40; position:fixed; bottom:32px; right:32px;
+	-webkit-transform:scale(1);
+	transform:scale(1);
 	font-size:36px; cursor:pointer;
 }
-#bot-btn .icon {color:white; padding:10px; box-shadow:0 0 6px rgba(0,0,0,0.3); transition:box-shadow 200ms linear;}
+#bot-btn .icon {color:white; border-radius:50%; padding:16px; box-shadow:0 0 6px rgba(0,0,0,0.3); transition:box-shadow 200ms linear;}
 #bot-btn .icon:hover:not(:active) {box-shadow:0 0 24px rgba(0,0,0,0.3);}
 #bot-btn.hidden {
-	-webkit-transform:translateY(100%);
-	transform:translateY(100%);
+	-webkit-transform:scale(0);
+	transform:scale(0);
 }
-#bot-btn.hidden .fa {box-shadow:none;}
+#bot-btn.hidden .icon {box-shadow:none;}
 
 /* Article */
 .article {font-size:14px; line-height:1.8; word-wrap:break-word;}
