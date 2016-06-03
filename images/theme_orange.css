@@ -21,9 +21,9 @@ em, .accent {color:#FF5722;}
 #header, #nav {background:#FF9800;}
 #side a:hover {color:#FF5722;}
 
-.comment .write .btn .fa {color:#727272;}
-.comment .write .btn .fa:hover {color:#212121;}
-#secret:checked + .fa:before {color:#FF5722;}
+.comment .write .btn .icon {color:#727272;}
+.comment .write .btn .icon:hover {color:#212121;}
+#secret:checked + .icon.secret:before {color:#FF5722;}
 
 .comment .list .date,
 .comment .list .desc,
@@ -34,7 +34,7 @@ em, .accent {color:#FF5722;}
 
 #footer {color:#727272;}
 
-#bot-btn .fa {background:#FF5722;}
+#bot-btn .icon {background:#FF5722;}
 
 article a {color:#FF5722;}
 article .imageblock > a {background:#FF5722; color:#FFF;}

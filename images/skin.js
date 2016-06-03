@@ -77,7 +77,7 @@
 		}
 	});
 
-	$botbtn.find('.fa-arrow-up').click(function () {
+	$botbtn.find('.to-top').click(function () {
 		$('html, body').animate({'scrollTop': '0'}, 250);
 	});
 
