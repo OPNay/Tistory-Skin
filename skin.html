@@ -87,8 +87,9 @@
 				</s_guest_member>
 				<textarea id="comment" class="textarea" name="[##_guest_textarea_body_##]" placeholder="방명록을 적어주세요." rows="50" cols="6"></textarea>
 				<div class="btn">
-					<input id="secret" name="secret" type="checkbox" hidden="hidden"/>
-					<label for="secret" class="fa"></label><button class="fa fa-pencil" type="button" onClick="[##_guest_onclick_submit_##]"></button>
+						<input id="secret" name="secret" type="checkbox" hidden="hidden"></input>
+						<label class="material-icons icon secret" for="secret">lock_open</label>
+						<div class="material-icons icon comment" onClick="[##_guest_onclick_submit_##]">comment</div>
 				</div>
 			</section>
 			</s_guest_input_form>
@@ -97,22 +98,22 @@
 				<ul class="ul no-style">
 					<s_guest_rep>
 					<li id="[##_guest_rep_id_##]" class="li [##_guest_rep_class_##]">
-						<span class="name"><i class="fa"></i>[##_guest_rep_name_##]</span>
+						<span class="name"><i class="material-icons icon"></i>[##_guest_rep_name_##]</span>
 						<span class="date">[##_guest_rep_date_##]</span>
 						<p class="desc">[##_guest_rep_desc_##]</p>
 						<span class="control">
-							<a href="#" onClick="[##_guest_rep_onclick_delete_##]"><i class="fa fa-pencil"></i> 수정</a>
-							<a href="#" onClick="[##_guest_rep_onclick_reply_##]"><i class="fa fa-reply"></i> 댓글</a>
+							<a href="#" onClick="[##_guest_rep_onclick_delete_##]"><i class="material-icons icons">edit</i> 수정</a>
+							<a href="#" onClick="[##_guest_rep_onclick_reply_##]"><i class="material-icons icons">comment</i> 댓글</a>
 						</span>
 					</li>
 					<s_guest_reply_container>
 					<s_guest_reply_rep>
 					<li id="[##_guest_rep_id_##]" class="li reply [##_guest_rep_class_##]">
-						<span class="name"><i class="fa"></i>[##_guest_rep_name_##]</span>
+						<span class="name"><i class="material-icons icon"></i>[##_guest_rep_name_##]</span>
 						<span class="date">[##_guest_rep_date_##]</span>
 						<p class="desc">[##_guest_rep_desc_##]</p>
 						<span class="control">
-							<a href="#" onClick="[##_guest_rep_onclick_delete_##]"><i class="fa fa-pencil"></i> 수정</a>
+							<a href="#" onClick="[##_guest_rep_onclick_delete_##]"><i class="material-icons icons">edit</i> 수정</a>
 						</span>
 					</li>
 					</s_guest_reply_rep>
