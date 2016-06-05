@@ -52,7 +52,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .card-content:not(:last-child) {border-bottom:1px solid #DADADA;}
 
 .card-title {padding:24px;}
-.card-title h2 {margin:0; line-height:1.5;}
+.card-title h2, .card-title h3 {margin:0; line-height:1.5;}
 .card .title:not(:last-child) {margin-bottom:24px;}
 .card .title h2, .card .title h3 {margin:0; line-height:1.5;}
 .card .title .info {font-size:14px;}
