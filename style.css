@@ -51,6 +51,8 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .card-content:not(:last-child) {border-bottom:1px solid #DADADA;}
 
+.card-title {padding:24px;}
+.card-title h2 {margin:0; line-height:1.5;}
 .card .title:not(:last-child) {margin-bottom:24px;}
 .card .title h2, .card .title h3 {margin:0; line-height:1.5;}
 .card .title .info {font-size:14px;}
@@ -149,25 +151,25 @@ ol.no-style, ul.no-style {list-style:none;}
 #tag .tags .item:before {content:'#'; margin-right:3px;}
 
 /* Comment */
-.comment .write:after {content:""; display:block; clear:both;}
+.comment .write {padding:0 24px;}
 
 .comment .textarea, .comment .input {background:none; box-sizing:border-box; font-size:14px; line-height:1.5;}
 .comment .write .textarea {
-	background:#F4F4F4; width:100%; height:120px; padding:10px;
-	border:none; border-radius:4px; resize:none;
+	background:#F4F4F4; width:100%; height:120px; padding:16px;
+	border:none; resize:none;
 }
 .comment .write .input {margin-bottom:12px; padding:0 12px 10px; width:50%; border:none; border-bottom:1px solid #DDD;}
-.comment .write .btn {width:100%; margin:5px 0; text-align:right;}
+.comment .write .btn {width:100%; text-align:right;}
 .comment .write .btn .icon {margin:0 8px; padding:16px; width:24px; line-height:24px; color:#727272; cursor:pointer;}
 
 .comment .list p {margin:0; padding:0;}
-.comment .list .li {position:relative; padding:18px 24px 18px 96px; min-height:55px;}
+.comment .list .li {position:relative; padding:18px 24px 18px 100px; min-height:55px;}
 .comment .list .li.reply {background:#F4F4F4;}
-.comment .list .li:after {content:""; display:block; clear:both;}
-.comment .list .tistoryProfileLayerTrigger {display:none;}
+.comment .list .name {font-size:18px; margin-right:8px;}
+.comment .list .name .tistoryProfileLayerTrigger {display:none;}
 .comment .list .name img,
 .comment .list .name .icon {
-	position:absolute; margin-left:-80px; border-radius:50%;
+	position:absolute; top:18px; left:18px; border-radius:50%;
 	width:64px; height:64px; overflow:hidden;
 	color:#DDD; font-size:64px; text-align:center;
 }
@@ -176,7 +178,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .guest_secret .name .icon:before {content:'person_outline';}
 .comment .rp_admin .name .icon:before {content:'settings';}
 .comment .list .date {font-size:14px;}
-.comment .list .desc {margin:12px 0; padding:0; line-height:1.5; font-size:14px;}
+.comment .list .desc {margin:8px 0; padding:0; line-height:1.5; font-size:14px;}
 .comment .list .control {font-size:14px; line-height:1.5;}
 .comment .list .control a {padding-right:10px;}
 .comment .list .control .icons {font-size:14px;}
@@ -274,11 +276,13 @@ ol.no-style, ul.no-style {list-style:none;}
 
 	.card {margin:0; border:none; border-bottom:1px solid #DDD; box-shadow:none;}
 	.card-content {padding:18px;}
+	.card-title {padding:18px;}
 	.card-list a {padding:16px 18px;}
 	.card-list .flex {flex-direction:column-reverse;}
 	.card-list .date {flex:1; line-height:16px; font-size:12px;}
 	.card-list .title {flex:2; line-height:24px;}
 	.card-list .none {padding:18px;}
 
+	.comment .write {padding:0 18px;}
 	.comment .write .input {width:100%;}
 }
