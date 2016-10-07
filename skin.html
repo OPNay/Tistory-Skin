@@ -243,15 +243,28 @@
 </section>
 <div id="bot-btn" class="anim-transform hidden"><i class="material-icons icon to-top">arrow_upward</i></div>
 </s_t3>
-	<script>(function ($) {
+	<script>
+		function spanLineNumber(num) {return "<span class='lineNumber'>" + num + "</span> "}
+		(function ($) {
 			hljs.initHighlightingOnLoad();
+
+			var myCode = $('pre code');
+			for (i = 0; i+1 <= myCode.length; i++) {
+				var nLine = 1, curCode = $(myCode[i]);
+				var numCode = spanLineNumber(nLine) + curCode.text();
+				numCode = numCode.replace(/\n/g, function () {
+					nLine++;
+					return "\n" + spanLineNumber(nLine);
+				});
+				curCode.html(numCode);
+			}
 
 			var tstyle = $("<link rel=\"stylesheet\" />");
 			$("head")
 				.append(tstyle.clone().attr('href','https://fonts.googleapis.com/earlyaccess/notosanskr.css'))
 				.append(tstyle.clone().attr('href','https://fonts.googleapis.com/css?family=Roboto'))
 				.append(tstyle.clone().attr('href','https://fonts.googleapis.com/icon?family=Material+Icons'));
-		})(jQuery)
+		})(jQuery);
 	</script>
 </body>
 </html>
