@@ -42,7 +42,7 @@
 		} else {
 			console.log('Error while animte cover');
 		}
-	}
+	};
 
 	$side.animate = function (run) {
 		$side.toggleClass('animate', run);
@@ -117,7 +117,7 @@
 	};
 
 	$search.find('#query').keypress(function (e) {
-		(e.keyCode === 13) && $search.search();
+		if (e.keyCode === 13) {$search.search();}
 	});
 	$search.find('#query ~ .button').click($search.search);
 
