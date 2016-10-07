@@ -120,56 +120,50 @@
 	</s_guest>
 	<s_notice_rep>
 	<section id="notice" class="card">
-		<div class="card-content">
-			<header class="title">
-				<h2 class="ellipsis"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h2>
-				<span class="info ellipsis">[##_notice_rep_date_##]</span>
-			</header>
-			<article class="article">[##_notice_rep_desc_##]</article>
-		</div>
+		<header class="card-title">
+			<h2 class="ellipsis"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h2>
+			<span class="info ellipsis">[##_notice_rep_date_##]</span>
+		</header>
+		<article class="article">[##_notice_rep_desc_##]</article>
 	</section>
 	</s_notice_rep>
 	<s_article_protected>
 	<section id="entry_protected" class="card">
-		<div class="card-content">
-			<header class="title">
+		<header class="card-title">
 				<h2 class="ellipsis">[##_article_rep_title_##]</h2>
 				<span class="info ellipsis">[##_article_rep_date_##]</span>
-			</header>
-			<article class="article">
-				<p><i class="material-icons icon">lock</i> 비공개 게시물입니다.</p>
-				<div>
-					<input type="password" id="[##_article_password_##]" placeholder="Password">
-					<div class="material-icons icon enter" onclick="[##_article_dissolve_##]">exit_to_app</div>
-				</div>
-			</article>
-		</div>
+		</header>
+		<article class="article">
+			<p><i class="material-icons icon">lock</i> 비공개 게시물입니다.</p>
+			<div>
+				<input type="password" id="[##_article_password_##]" placeholder="Password">
+				<div class="material-icons icon enter" onclick="[##_article_dissolve_##]">exit_to_app</div>
+			</div>
+		</article>
 	</section>
 	</s_article_protected>
 	<s_article_rep>
 	<section id="entry" class="card">
-		<div class="card-content">
-			<header class="title flex">
-				<div class="flex-1">
-					<h2 class="ellipsis"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
-					<span class="info ellipsis">[##_article_rep_date_##]</span>
-				</div>
-				<s_ad_div>
-					<div class="admin">
-						<div class="material-icons admin icon">menu</div>
-						<div class="admin_list floating-data">
-							<a href="[##_s_ad_m_link_##]" class="admin_item" target="_blank"><i class="material-icons icon">mode_edit</i>수정</a>
-							<a href="#" class="admin_item" onclick="[##_s_ad_s2_onclick_##]"><i class="material-icons icon">lock_open</i>[##_s_ad_s2_label_##]</a>
-							<a href="#" class="admin_item" onclick="[##_s_ad_t_onclick_##]"><i class="material-icons icon">link</i>관련글(트랙백)</a>
-							<a href="#" class="admin_item" onclick="[##_s_ad_d_onclick_##]"><i class="material-icons icon">delete</i>삭제</a>
-						</div>
+		<header class="card-title flex">
+			<div class="flex-1">
+				<h2 class="ellipsis"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+				<span class="info ellipsis">[##_article_rep_date_##]</span>
+			</div>
+			<s_ad_div>
+				<div class="admin">
+					<div class="material-icons admin icon">menu</div>
+					<div class="admin_list floating-data">
+						<a href="[##_s_ad_m_link_##]" class="admin_item" target="_blank"><i class="material-icons icon">mode_edit</i>수정</a>
+						<a href="#" class="admin_item" onclick="[##_s_ad_s2_onclick_##]"><i class="material-icons icon">lock_open</i>[##_s_ad_s2_label_##]</a>
+						<a href="#" class="admin_item" onclick="[##_s_ad_t_onclick_##]"><i class="material-icons icon">link</i>관련글(트랙백)</a>
+						<a href="#" class="admin_item" onclick="[##_s_ad_d_onclick_##]"><i class="material-icons icon">delete</i>삭제</a>
 					</div>
-					<script>$('#entry .admin_item:contains("비공개") .material-icons').html('lock');</script>
-				</s_ad_div>
-			</header>
-			<article class="article">[##_article_rep_desc_##]</article>
-			<s_tag_label><section class="tags"><i class="material-icons icon">label</i>[##_tag_label_rep_##]</section></s_tag_label>
-		</div>
+				</div>
+				<script>$('#entry .admin_item:contains("비공개") .material-icons').html('lock');</script>
+			</s_ad_div>
+		</header>
+		<article class="article">[##_article_rep_desc_##]</article>
+		<s_tag_label><section class="tags"><i class="material-icons icon">label</i>[##_tag_label_rep_##]</section></s_tag_label>
 		<section id="comment" class="comment">
 			<header class="card-title"><h3>[##_article_rep_rp_cnt_##]개의 댓글이 있습니다.</h3></header>
 			<s_rp>

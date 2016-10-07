@@ -57,8 +57,6 @@ ol.no-style, ul.no-style {list-style:none;}
 .card .title h2, .card .title h3 {margin:0; line-height:1.5;}
 .card .title .info {font-size:14px;}
 
-.card .article:not(:last-child) {margin-bottom:24px;}
-
 #cover {
 	z-index:50; background:rgba(0,0,0,0.25);
 	position:fixed; top:0; bottom:0; left:0; right:0;
@@ -152,7 +150,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #tag .cloud1 {font-weight:bold;}
 
 /* Comment */
-.comment .write {padding:0 24px;}
+.comment .write {padding:0 24px 24px;}
 
 .comment .textarea, .comment .input {background:none; box-sizing:border-box; font-size:14px; line-height:1.5;}
 .comment .write .textarea {
@@ -192,7 +190,9 @@ ol.no-style, ul.no-style {list-style:none;}
 #entry_protected .icon.enter:hover {color:#212121;}
 
 /* Entry */
-#entry .tags .icon {margin-right:8px;}
+#entry .tags {padding:0 24px;}
+#entry .tags .icon {margin-right:8px; vertical-align:middle;}
+#entry .tags a:before {content:'#';}
 #entry h3 a {display:block;}
 
 /* Page */
@@ -227,7 +227,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #bot-btn.hidden .icon {box-shadow:none;}
 
 /* Article */
-.article {font-size:14px; line-height:1.8; word-wrap:break-word;}
+.article {padding:0 24px 24px; font-size:14px; line-height:1.8; word-wrap:break-word;}
 
 .article h1, .article h2, .article h3, .article h4, .article h5 {margin:0.75em 0;}
 .article h1, .article h2 {margin:0.8em 0; padding-bottom:0.5em; border-bottom:1px solid #DDD;}
@@ -249,16 +249,17 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Download Button */
 .article .imageblock > a img[src*='.gif'] {display:none;}
 .article .imageblock > a {
-	display:inline-block; position:relative; border-radius:2px; padding:0 15px; padding-left:65px;
+	display:inline-block; border-radius:2px; padding:0 15px 0 0;
 	height:50px; line-height:50px; box-shadow:0 0 4px rgba(0,0,0,0.3);
 	transition:box-shadow 150ms linear; font-weight:bold;
 }
 .article .imageblock > a:before {
-	font:normal normal normal 24px/50px FontAwesome; content:'\f019';
-	background:rgba(0,0,0,0.2); position:absolute; top:0; left:0;
-	width:50px; height:50px; line-height:50px; text-align:center; color:white;
+	font:normal normal normal 24px/50px 'Material Icons';
+	content:'file_download'; background:rgba(0,0,0,0.2);
+	display:inline-block;	margin-right:8px; width:50px; height:50px;
+	text-align:center; color:white; word-wrap:normal; vertical-align:middle;
 }
-.article .imageblock > a:hover:not(:active) {box-shadow:0 0 8px rgba(0,0,0,0.3);}
+.article .imageblock > a:hover:not(:active) {box-shadow:0 0 8px rgba(0,0,0,0.5);}
 
 /* Another Category Plugin */
 .another_category {margin:16px 0 0; padding:0; border:none;}
@@ -284,6 +285,10 @@ ol.no-style, ul.no-style {list-style:none;}
 	.card-list .title {flex:2; line-height:24px;}
 	.card-list .none {padding:18px;}
 
-	.comment .write {padding:0 18px;}
+	#entry .tags {padding:0 18px;}
+
+	.article {padding:0 18px 18px;}
+
+	.comment .write {padding:0 18px 18px;}
 	.comment .write .input {width:100%;}
 }
