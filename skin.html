@@ -13,9 +13,6 @@
 <script type="text/javascript" src="./images/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" defer src="./images/skin.js"></script>
 <script type="text/javascript" defer src="./images/skin_article.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" />
 <script>
 	var skin_link = "./images";
 	var rss_url = "[##_rss_url_##]";
@@ -248,6 +245,15 @@
 </section>
 <div id="bot-btn" class="anim-transform hidden"><i class="material-icons icon to-top">arrow_upward</i></div>
 </s_t3>
-	<script>hljs.initHighlightingOnLoad();</script>
+	<script>(function ($) {
+			hljs.initHighlightingOnLoad();
+
+			var tstyle = $("<link rel=\"stylesheet\" />");
+			$("head")
+				.append(tstyle.clone().attr('href','https://fonts.googleapis.com/earlyaccess/notosanskr.css'))
+				.append(tstyle.clone().attr('href','https://fonts.googleapis.com/css?family=Roboto'))
+				.append(tstyle.clone().attr('href','https://fonts.googleapis.com/icon?family=Material+Icons'));
+		})(jQuery)
+	</script>
 </body>
 </html>
