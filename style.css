@@ -11,7 +11,7 @@
 body {background:#EEE; margin:0; padding:0;}
 body, button, input, textarea {
 	-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-	font-family:Roboto,RobotoDraft,arial,'Nanum Gothic',sans-serif;
+	font-family:Roboto,RobotoDraft,arial,'Noto Sans KR','Nanum Gothic',sans-serif;
 }
 a {text-decoration:none; cursor:pointer;}
 em {font-style:normal; font-weight:normal;}
