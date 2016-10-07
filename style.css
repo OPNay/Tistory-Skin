@@ -110,7 +110,7 @@ ol.no-style, ul.no-style {list-style:none;}
 }
 
 #side hr {margin:0; border:none; border-bottom:1px solid #DADADA;}
-#side .item {display:block; padding:0 16px; line-height:48px; font-size:14px;}
+#side .item {display:block; margin:0; padding:0 16px; line-height:48px; font-size:14px;}
 #side .item.accent {padding-left:12px; border-left:4px solid;}
 #side .item:hover {background:#F4F4F4;}
 #side .item.subitem {padding:0 8px; padding-left:32px; line-height:36px; color:#727272; font-size:12px;}
