@@ -88,7 +88,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* Side menu drawer */
 #side {z-index:150; background:white; position:fixed; top:0; left:0; width:280px; height:100%;
-	overflow-x:hidden; overflow-y:auto;
+	overflow:hidden;
 	-webkit-transform:translateX(-100%);
 	transform:translateX(-100%);
 }
@@ -99,6 +99,7 @@ ol.no-style, ul.no-style {list-style:none;}
 }
 
 #side hr {margin:0; border:none; border-bottom:1px solid #DADADA;}
+#side .menu {overflow:auto;}
 #side .item {display:block; margin:0; padding:0 16px; line-height:48px; font-size:14px;}
 #side .item.accent {padding-left:12px; border-left:4px solid;}
 #side .item:hover {background:#F5F5F5;}
