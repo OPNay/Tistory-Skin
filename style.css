@@ -258,6 +258,12 @@ ol.no-style, ul.no-style {list-style:none;}
 .another_category th,
 .another_category td {padding:0 !important; font-size:14px !important; line-height:1.8;}
 
+.video_container {margin:0; padding-bottom:75%; max-width:100%; height:0; position:relative; overflow:hidden;}
+.video_container.wide {padding-bottom:56.25%;}
+.video_container iframe,
+.video_container embed,
+.video_container object {position:absolute; top:0; left:0; width:100%; height:100%;}
+
 /* Mobile */
 @media screen and (max-width:952px) {
 	h1 {font-size:1.75em;}
