@@ -104,11 +104,11 @@ ol.no-style, ul.no-style {list-style:none;}
 #side hr {margin:0; border:none; border-bottom:1px solid #DADADA;}
 #side .item {display:block; margin:0; padding:0 16px; line-height:48px; font-size:14px;}
 #side .item.accent {padding-left:12px; border-left:4px solid;}
-#side .item:hover {background:#F4F4F4;}
+#side .item:hover {background:#F5F5F5;}
 #side .item.subitem {padding:0 8px; padding-left:32px; line-height:36px; color:#727272; font-size:12px;}
 #side .item.subitem.accent {padding-left:28px;}
 
-#side .title {background:#F4F4F4; line-height:50px; color:#727272; font-size:20px;}
+#side .title {background:#F5F5F5; line-height:50px; color:#727272; font-size:20px;}
 
 /* Wrap */
 #wrap {z-index:-10; margin:0 auto; padding:0; width:940px;}
@@ -146,7 +146,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .comment .textarea, .comment .input {background:none; box-sizing:border-box; font-size:14px; line-height:1.5;}
 .comment .write .textarea {
-	background:#F4F4F4; width:100%; height:120px; padding:16px;
+	background:#F5F5F5; width:100%; height:120px; padding:16px;
 	border:none; resize:none;
 }
 .comment .write .input {margin-bottom:12px; padding:0 12px 10px; width:50%; border:none; border-bottom:1px solid #DDD;}
@@ -155,7 +155,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .comment .list p {margin:0; padding:0;}
 .comment .list .li {position:relative; padding:18px 24px 18px 100px; min-height:55px;}
-.comment .list .li.reply {background:#F4F4F4;}
+.comment .list .li.reply {background:#F5F5F5;}
 .comment .list .name {font-size:18px; margin-right:8px;}
 .comment .list .name .tistoryProfileLayerTrigger {display:none;}
 .comment .list .name img,
@@ -235,7 +235,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .article li ul {list-style:circle;}
 
 .article img {max-width:100%; height:auto;}
-.article blockquote {background:#F4F4F4; margin:0; padding:1em 25px;}
+.article blockquote {background:#F5F5F5; margin:0; padding:1em 25px;}
 .article a {font-weight:bold;}
 
 /* Download Button */
