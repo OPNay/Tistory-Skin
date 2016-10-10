@@ -32,7 +32,6 @@ ol.no-style, ul.no-style {list-style:none;}
 	background:#FFF; margin:12px 0; padding:0; border-radius:2px;
 	box-shadow:0 1px 2px rgba(0,0,0,0.3); overflow:hidden;
 }
-.card-content {padding:32px;}
 
 .card-list {padding:8px 0;}
 .card-list a {padding:18px 32px; line-height:20px; transition:background 50ms linear;}
@@ -41,14 +40,9 @@ ol.no-style, ul.no-style {list-style:none;}
 .card-list .none {display:block; padding:32px; color:#F44; line-height:2.5; text-align:center;}
 .card-list .none .icon {font-size:48px;}
 
-.card-content:not(:last-child) {border-bottom:1px solid #DADADA;}
-
 .card-title {padding:24px;}
 .card-title.hr {border-bottom:1px solid #DADADA}
 .card-title h2, .card-title h3 {margin:0; line-height:1.5;}
-.card .title:not(:last-child) {margin-bottom:24px;}
-.card .title h2, .card .title h3 {margin:0; line-height:1.5;}
-.card .title .info {font-size:14px;}
 .card-title .info {font-size:14px; color:#727272;}
 
 #cover {
