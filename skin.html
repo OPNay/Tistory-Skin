@@ -252,7 +252,10 @@
 				});
 				curCode.html(numCode);
 			}
-
+		})(jQuery);
+	</script>
+	<script>
+		(function ($) {
 			var tstyle = $("<link rel=\"stylesheet\" />");
 			$("head")
 				.append(tstyle.clone().attr('href','https://fonts.googleapis.com/earlyaccess/notosanskr.css'))
