@@ -106,16 +106,16 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #side .title {background:#F5F5F5; line-height:50px; color:#727272; font-size:20px;}
 
+.search .input, .search .button {background:none; margin:0; padding:0; border:none; line-height:48px;}
+.search .input {font-size:16px; padding:0 0 0 16px;}
+.search .button {width:48px; text-align:center; cursor:pointer;}
+.search .button:hover {background:#F5F5F5;}
+
 /* Wrap */
 #wrap {z-index:-10; margin:0 auto; padding:0; width:940px;}
 #wrap:after {content:""; display:block; clear:both;}
 
 #entry {position:relative;}
-
-/* Search */
-#search .input {background:none; border:none; padding:16px 0 16px 24px; font-size:20px; line-height:24px;}
-#search .button {width:64px; line-height:64px; text-align:center; cursor:pointer;}
-#search .button:hover {background:#F5F5F5;}
 
 .admin.icon {width:64px; line-height:64px; text-align:center; cursor:pointer;}
 

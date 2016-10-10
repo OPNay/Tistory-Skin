@@ -3,7 +3,7 @@
 		$cover = $('<div id="cover">'),
 		$nav = $('#nav'),
 		$side = $('#side'),
-		$search = $('#search'),
+		$search = $('#side .search'),
 		$page = $('#page'),
 		$botbtn = $('#bot-btn'),
 		blog_link = $(location).attr('protocol') + "//" + $(location).attr('host');
@@ -94,26 +94,9 @@
 
 	$search.search = function () {
 		var query = $('#query').val(),
-			url = blog_link + '/search/' + query,
-			pathname = decodeURI($(location).attr('pathname').replace(/^\//, '')).split('/');
+			url = blog_link + '/search/' + query
 
-		if (query === '') {return false;}
-
-		if ((pathname === 'search') || (pathname === 'category') || (pathname === 'archive')) {
-			$(location).attr('href', url);
-		} else {
-			$.ajax({
-				url: url,
-				success: function (data, a, b) {
-					var $s_list = $(data).find('#search_list').clone(),
-						$s_page = $(data).find('#page').clone();
-					$('#search_list, #search_list ~ #page').remove();
-					if ($s_list.find('.card-list a').length > 0) {
-						$search.after($s_list, $s_page);
-					}
-				}
-			});
-		}
+		if (query != '') {$(location).attr('href', url);}
 	};
 
 	$search.find('#query').keypress(function (e) {
