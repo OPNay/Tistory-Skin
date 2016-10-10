@@ -36,7 +36,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .card-list {padding:8px 0;}
 .card-list a {padding:18px 32px; line-height:20px; transition:background 50ms linear;}
-.card-list a:hover {background:#EEE;}
+.card-list a:hover {background:#F5F5F5;}
 .card-list .date {width:120px;}
 .card-list .none {display:block; padding:32px; color:#F44; line-height:2.5; text-align:center;}
 .card-list .none .icon {font-size:48px;}
@@ -119,13 +119,13 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Search */
 #search .input {background:none; border:none; padding:16px 0 16px 24px; font-size:20px; line-height:24px;}
 #search .button {width:64px; line-height:64px; text-align:center; cursor:pointer;}
-#search .button:hover {background:#DDD;}
+#search .button:hover {background:#F5F5F5;}
 
 .admin.icon {width:64px; line-height:64px; text-align:center; cursor:pointer;}
 
 .admin_list {margin:8px 0;}
 .admin_list .admin_item {position:relative; display:block; padding-left:72px; width:180px; line-height:48px; transition:background 50ms linear; font-size:15px;}
-.admin_list .admin_item:hover {background:#EEE;}
+.admin_list .admin_item:hover {background:#F5F5F5;}
 .admin_list .admin_item .icon {position:absolute; top:0; left:0; padding:12px 16px; color:#727272;}
 
 /* Tags */
@@ -191,7 +191,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #page {position:relative; text-align:center;}
 #page .btn {display:inline-block; padding:12px; width:24px; height:24px; line-height:24px;font-size:16px; vertical-align:middle;}
 #page .btn.selected {font-weight:bold;}
-#page .btn:not(.selected):hover {background:#EEE;}
+#page .btn:not(.selected):hover {background:#F5F5F5;}
 #page .no-more-prev, #page .no-more-next {visibility:hidden;}
 
 #visitor {padding:12px; font-size:14px; line-height:1.5; text-align:center;}
