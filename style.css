@@ -132,6 +132,8 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* Tags */
 #tag .tags {
+	margin:0 0 16px;
+	padding:0 24px;
 	-webkit-flex-wrap:wrap;
 	flex-wrap:wrap;
 	-webkit-align-items:baseline;
