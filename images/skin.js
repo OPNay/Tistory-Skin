@@ -50,7 +50,7 @@
 	};
 
 	// toggle Side menu
-	$nav.find('.icon').click(function () {
+	$('#nav .icon, #side .title').click(function () {
 		return $side.animate(!($cover.hasClass('animate')));
 	});
 
