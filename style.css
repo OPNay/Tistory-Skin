@@ -1,16 +1,50 @@
 @charset "utf-8";
 
-body {background:#EEE; margin:0; padding:0;}
-body, button, input, textarea {
+/* Material */
+/*
+ * Default font colors
+ * Primary Text - #000 87%
+ * Secondary Text - #000 54%
+ * Disabled Text - #000 38%
+ */
+html, body, label, button, input, textarea, blockquote, pre, code {
+	color:rgba(0,0,0,0.87);
 	-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
 	font-family:Roboto,RobotoDraft,arial,'Noto Sans KR','Nanum Gothic',sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6 {margin:0; font-weight:normal;}
+h1 {margin:36px 0 12px 0; font-size:42px;}
+h2 {margin:36px 0 12px 0;font-size:36px;}
+h3 {margin:24px 0 12px 0;font-size:28px;}
+h4, h5, h6 {margin:24px 0 12px 0; font-size:16px;}
+
+a {color:#03A9F4; text-decoration:none;}
+p {margin:0 0 12px 0; line-height:1.7;}
+
+ol, ul {padding-left:32px;}
+li {line-height:1.5;}
+
+hr {border:0; border-top:1px solid rgba(0,0,0,0.12);}
+
+fieldset {margin:0; padding:0; border:0;}
+
+table {border-spacing:0;}
+th, td {padding:6px 12px;}
+th {background:#EEE;}
+
+blockquote, pre, code {background:#F5F5F5; margin:0 0 16px; padding:16px;}
+
+.card {background:#FFF; border-radius:2px; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
+.material-icons {vertical-align:middle;}
+/* Skin */
+
+body {background:#EEE; margin:0; padding:0;}
 a {text-decoration:none; cursor:pointer;}
 em {font-style:normal; font-weight:normal;}
 ul, li {margin:0; padding:0;}
 img {border:none;}
 label:focus, input:focus, button:focus, textarea:focus {outline:none;}
-code, pre {line-height:1.5; font-family:Consolas, Monaco, monospace;}
 
 /* Tistory */
 #tistorytoolbarid {display:none;}
