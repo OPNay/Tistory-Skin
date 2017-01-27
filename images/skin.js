@@ -1,7 +1,7 @@
 (function ($) {
 	var $body = $('body'),
 		$cover = $('<div class="cover">'),
-		$nav = $('#nav'),
+		$nav = $('.nav'),
 		$side = $('#side'),
 		$search = $('#side .search'),
 		$page = $('.page'),
@@ -50,7 +50,7 @@
 	};
 
 	// toggle Side menu
-	$('#nav .icon, #side .title').click(function () {
+	$('.nav .icon, #side .title').click(function () {
 		return $side.animate(!($cover.hasClass('animate')));
 	});
 
