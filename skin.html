@@ -41,197 +41,199 @@
 				</div>
 			</aside>
 			<section id="wrap">
-				<s_list>
-				<section id="search_list" class="card">
-					<header class="card-title hr">
-						<h2 class="ellipsis">[##_list_conform_##]</h2>
-						<span class="info ellipsis">총 [##_list_count_##]개의 글을 찾았습니다.</span>
-					</header>
-					<div class="card-list">
-						<s_list_rep>
-						<a href="[##_list_rep_link_##]" class="item flex">
-							<span class="date ellipsis">[##_list_rep_regdate_##]</span>
-							<span class="title flex-1 ellipsis">[##_list_rep_title_##]</span>
-						</a>
-						</s_list_rep>
-					</div>
-					<script>if($('.card-list > *').length <= 0)$('.card-list').append('<span class="none"><i class="material-icons icon">warning</i><br/>죄송합니다. 글을 찾을수 없습니다.</span>');</script>
-				</section>
-				</s_list>
-				<s_tag>
-				<section id="tag" class="card">
-					<header class="card-title"><h2>태그</h2></header>
-					<p class="tags flex">
-						<s_tag_rep><a href="[##_tag_link_##]" class="item [##_tag_class_##]">[##_tag_name_##]</a></s_tag_rep>
-					</p>
-				</section>
-				</s_tag>
-				<s_guest>
-				<section id="g_book" class="card comment">
-					<header class="card-title"><h2>방명록</h2></header>
-					<section class="write">
-						<s_guest_input_form>
-							<s_guest_member>
-							<s_guest_guest>
-								<input id="name" class="input" type="text" placeholder="이름" name="[##_guest_input_name_##]" />
-								<input id="password" class="input" type="password" placeholder="비밀번호" maxlength="8" name="[##_guest_input_password_##]" />
-							</s_guest_guest>
-							</s_guest_member>
-							<textarea id="comment" class="textarea" name="[##_guest_textarea_body_##]" placeholder="방명록을 적어주세요." rows="50" cols="6"></textarea>
-							<div class="btn">
-									<input id="secret" name="secret" type="checkbox" hidden="hidden" />
-									<label class="material-icons icon secret" for="secret">lock_open</label>
-									<div class="material-icons icon comment" onClick="[##_guest_onclick_submit_##]">comment</div>
-							</div>
-						</s_guest_input_form>
-					</section>
-					<section class="list">
-						<s_guest_container>
-							<ul class="ul no-style">
-								<s_guest_rep>
-								<li id="[##_guest_rep_id_##]" class="li [##_guest_rep_class_##]">
-									<span class="name"><i class="material-icons icon"></i>[##_guest_rep_name_##]</span>
-									<span class="date">[##_guest_rep_date_##]</span>
-									<p class="desc">[##_guest_rep_desc_##]</p>
-									<span class="control">
-										<a href="#" onClick="[##_guest_rep_onclick_delete_##]"><i class="material-icons icons">edit</i> 수정</a>
-										<a href="#" onClick="[##_guest_rep_onclick_reply_##]"><i class="material-icons icons">comment</i> 댓글</a>
-									</span>
-								</li>
-								<s_guest_reply_container>
-								<s_guest_reply_rep>
-								<li id="[##_guest_rep_id_##]" class="li reply [##_guest_rep_class_##]">
-									<span class="name"><i class="material-icons icon"></i>[##_guest_rep_name_##]</span>
-									<span class="date">[##_guest_rep_date_##]</span>
-									<p class="desc">[##_guest_rep_desc_##]</p>
-									<span class="control">
-										<a href="#" onClick="[##_guest_rep_onclick_delete_##]"><i class="material-icons icons">edit</i> 수정</a>
-									</span>
-								</li>
-								</s_guest_reply_rep>
-								</s_guest_reply_container>
-								</s_guest_rep>
-							</ul>
-						</s_guest_container>
-					</section>
-				</section>
-				</s_guest>
-				<s_notice_rep>
-				<section id="notice" class="card">
-					<header class="card-title">
-						<h2 class="ellipsis"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h2>
-						<span class="info ellipsis">[##_notice_rep_date_##]</span>
-					</header>
-					<article class="article">[##_notice_rep_desc_##]</article>
-				</section>
-				</s_notice_rep>
-				<s_article_protected>
-				<section id="entry_protected" class="card">
-					<header class="card-title">
-							<h2 class="ellipsis">[##_article_rep_title_##]</h2>
-							<span class="info ellipsis">[##_article_rep_date_##]</span>
-					</header>
-					<article class="article">
-						<p><i class="material-icons icon">lock</i> 비공개 게시물입니다.</p>
-						<div>
-							<input type="password" id="[##_article_password_##]" placeholder="Password">
-							<div class="material-icons icon enter" onclick="[##_article_dissolve_##]">exit_to_app</div>
+				<div class="content">
+					<s_list>
+					<section id="search_list" class="card">
+						<header class="card-title hr">
+							<h2 class="ellipsis">[##_list_conform_##]</h2>
+							<span class="info ellipsis">총 [##_list_count_##]개의 글을 찾았습니다.</span>
+						</header>
+						<div class="card-list">
+							<s_list_rep>
+							<a href="[##_list_rep_link_##]" class="item flex">
+								<span class="date ellipsis">[##_list_rep_regdate_##]</span>
+								<span class="title flex-1 ellipsis">[##_list_rep_title_##]</span>
+							</a>
+							</s_list_rep>
 						</div>
-					</article>
-				</section>
-				</s_article_protected>
-				<s_article_rep>
-				<section id="entry" class="card">
-					<header class="card-title flex">
-						<div class="flex-1">
-							<h2 class="ellipsis"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
-							<span class="info ellipsis">[##_article_rep_date_##]</span>
-						</div>
-						<s_ad_div>
-							<div class="admin">
-								<div class="material-icons admin icon">menu</div>
-								<div class="admin_list floating-data">
-									<a href="[##_s_ad_m_link_##]" class="admin_item" target="_blank"><i class="material-icons icon">mode_edit</i>수정</a>
-									<a href="#" class="admin_item" onclick="[##_s_ad_s2_onclick_##]"><i class="material-icons icon">lock_open</i>[##_s_ad_s2_label_##]</a>
-									<a href="#" class="admin_item" onclick="[##_s_ad_t_onclick_##]"><i class="material-icons icon">link</i>관련글(트랙백)</a>
-									<a href="#" class="admin_item" onclick="[##_s_ad_d_onclick_##]"><i class="material-icons icon">delete</i>삭제</a>
-								</div>
-							</div>
-							<script>$('#entry .admin_item:contains("비공개") .material-icons').html('lock');</script>
-						</s_ad_div>
-					</header>
-					<article class="article">[##_article_rep_desc_##]</article>
-					<s_tag_label><section class="tags"><i class="material-icons icon">label</i>[##_tag_label_rep_##]</section></s_tag_label>
-					<section id="comment" class="comment">
-						<header class="card-title"><h3>[##_article_rep_rp_cnt_##]개의 댓글이 있습니다.</h3></header>
-						<s_rp>
-							<section class="write">
-								<s_rp_input_form>
-								<s_rp_member>
-								<s_rp_guest>
-									<input id="name" class="input" type="text" placeholder="이름" name="[##_rp_input_name_##]" />
-									<input id="password" class="input" type="password" placeholder="비밀번호" maxlength="8" name="[##_rp_input_password_##]" />
-								</s_rp_guest>
-								</s_rp_member>
-								<textarea id="comment" class="textarea" name="[##_rp_input_comment_##]" placeholder="댓글을 적어주세요." rows="10" cols="50"></textarea>
+						<script>if($('.card-list > *').length <= 0)$('.card-list').append('<span class="none"><i class="material-icons icon">warning</i><br/>죄송합니다. 글을 찾을수 없습니다.</span>');</script>
+					</section>
+					</s_list>
+					<s_tag>
+					<section id="tag" class="card">
+						<header class="card-title"><h2>태그</h2></header>
+						<p class="tags flex">
+							<s_tag_rep><a href="[##_tag_link_##]" class="item [##_tag_class_##]">[##_tag_name_##]</a></s_tag_rep>
+						</p>
+					</section>
+					</s_tag>
+					<s_guest>
+					<section id="g_book" class="card comment">
+						<header class="card-title"><h2>방명록</h2></header>
+						<section class="write">
+							<s_guest_input_form>
+								<s_guest_member>
+								<s_guest_guest>
+									<input id="name" class="input" type="text" placeholder="이름" name="[##_guest_input_name_##]" />
+									<input id="password" class="input" type="password" placeholder="비밀번호" maxlength="8" name="[##_guest_input_password_##]" />
+								</s_guest_guest>
+								</s_guest_member>
+								<textarea id="comment" class="textarea" name="[##_guest_textarea_body_##]" placeholder="방명록을 적어주세요." rows="50" cols="6"></textarea>
 								<div class="btn">
-									<input id="secret" name="secret" type="checkbox" hidden="hidden" />
-									<label class="material-icons icon secret" for="secret">lock_open</label>
-									<div class="material-icons icon comment" onClick="[##_rp_onclick_submit_##]">comment</div>
+										<input id="secret" name="secret" type="checkbox" hidden="hidden" />
+										<label class="material-icons icon secret" for="secret">lock_open</label>
+										<div class="material-icons icon comment" onClick="[##_guest_onclick_submit_##]">comment</div>
 								</div>
-								</s_rp_input_form>
-							</section>
-							<section class="list">
-								<s_rp_container>
-									<ul class="ul no-style">
-										<s_rp_rep>
-											<li id="[##_rp_rep_id_##]" class="li [##_rp_rep_class_##]">
-												<span class="name"><i class="material-icons icon"></i>[##_rp_rep_name_##]</span>
-												<span class="date">[##_rp_rep_date_##]</span>
-												<p class="desc">[##_rp_rep_desc_##]</p>
-												<span class="control">
-													<a href="#" onClick="[##_rp_rep_onclick_delete_##]"><i class="material-icons icons">edit</i> 수정</a>
-													<a href="#" onClick="[##_rp_rep_onclick_reply_##]"><i class="material-icons icons">comment</i> 댓글</a>
-												</span>
-											</li>
-											<s_rp2_container>
-											<s_rp2_rep>
-											<li id="[##_rp_rep_id_##]" class="li reply [##_rp_rep_class_##]">
-												<span class="name"><i class="material-icons icon"></i>[##_rp_rep_name_##]</span>
-												<span class="date"> [##_rp_rep_date_##]</span>
-												<p class="desc">[##_rp_rep_desc_##]</p>
-												<span class="control">
-													<a href="#" onClick="[##_rp_rep_onclick_delete_##]"><i class="material-icons icons">edit</i> 수정</a>
-												</span>
-											</li>
-											</s_rp2_rep>
-											</s_rp2_container>
-										</s_rp_rep>
-									</ul>
-								</s_rp_container>
-							</section>
-						</s_rp>
+							</s_guest_input_form>
+						</section>
+						<section class="list">
+							<s_guest_container>
+								<ul class="ul no-style">
+									<s_guest_rep>
+									<li id="[##_guest_rep_id_##]" class="li [##_guest_rep_class_##]">
+										<span class="name"><i class="material-icons icon"></i>[##_guest_rep_name_##]</span>
+										<span class="date">[##_guest_rep_date_##]</span>
+										<p class="desc">[##_guest_rep_desc_##]</p>
+										<span class="control">
+											<a href="#" onClick="[##_guest_rep_onclick_delete_##]"><i class="material-icons icons">edit</i> 수정</a>
+											<a href="#" onClick="[##_guest_rep_onclick_reply_##]"><i class="material-icons icons">comment</i> 댓글</a>
+										</span>
+									</li>
+									<s_guest_reply_container>
+									<s_guest_reply_rep>
+									<li id="[##_guest_rep_id_##]" class="li reply [##_guest_rep_class_##]">
+										<span class="name"><i class="material-icons icon"></i>[##_guest_rep_name_##]</span>
+										<span class="date">[##_guest_rep_date_##]</span>
+										<p class="desc">[##_guest_rep_desc_##]</p>
+										<span class="control">
+											<a href="#" onClick="[##_guest_rep_onclick_delete_##]"><i class="material-icons icons">edit</i> 수정</a>
+										</span>
+									</li>
+									</s_guest_reply_rep>
+									</s_guest_reply_container>
+									</s_guest_rep>
+								</ul>
+							</s_guest_container>
+						</section>
 					</section>
-				</section>
-				</s_article_rep>
-				<s_paging>
-				<section id="page" class="card flex">
-					<a [##_prev_page_##] class="btn [##_no_more_prev_##]"><i class="material-icons icon">chevron_left</i></a>
-					<span class="num_block flex-1">
-					<s_paging_rep>
-						<a [##_paging_rep_link_##] class="btn num">[##_paging_rep_link_num_##]</a>
-					</s_paging_rep>
-					</span>
-					<a [##_next_page_##] class="btn [##_no_more_next_##]"><i class="material-icons icon">chevron_right</i></a>
-				</section>
-				</s_paging>
-				<section id="visitor" class="card">
-					<p class="total">총 [##_count_total_##]명이 방문했어요.</p>
-					<p class="day">오늘 [##_count_today_##]명 | 어제 [##_count_yesterday_##]명</p>
-				</section>
-				<footer id="footer">
-					<p>Blog is powered by <em>Tistory</em> & Simplify is made by <em>OPNay</em></p>
-				</footer>
+					</s_guest>
+					<s_notice_rep>
+					<section id="notice" class="card">
+						<header class="card-title">
+							<h2 class="ellipsis"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h2>
+							<span class="info ellipsis">[##_notice_rep_date_##]</span>
+						</header>
+						<article class="article">[##_notice_rep_desc_##]</article>
+					</section>
+					</s_notice_rep>
+					<s_article_protected>
+					<section id="entry_protected" class="card">
+						<header class="card-title">
+								<h2 class="ellipsis">[##_article_rep_title_##]</h2>
+								<span class="info ellipsis">[##_article_rep_date_##]</span>
+						</header>
+						<article class="article">
+							<p><i class="material-icons icon">lock</i> 비공개 게시물입니다.</p>
+							<div>
+								<input type="password" id="[##_article_password_##]" placeholder="Password">
+								<div class="material-icons icon enter" onclick="[##_article_dissolve_##]">exit_to_app</div>
+							</div>
+						</article>
+					</section>
+					</s_article_protected>
+					<s_article_rep>
+					<section id="entry" class="card">
+						<header class="card-title flex">
+							<div class="flex-1">
+								<h2 class="ellipsis"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+								<span class="info ellipsis">[##_article_rep_date_##]</span>
+							</div>
+							<s_ad_div>
+								<div class="admin">
+									<div class="material-icons admin icon">menu</div>
+									<div class="admin_list floating-data">
+										<a href="[##_s_ad_m_link_##]" class="admin_item" target="_blank"><i class="material-icons icon">mode_edit</i>수정</a>
+										<a href="#" class="admin_item" onclick="[##_s_ad_s2_onclick_##]"><i class="material-icons icon">lock_open</i>[##_s_ad_s2_label_##]</a>
+										<a href="#" class="admin_item" onclick="[##_s_ad_t_onclick_##]"><i class="material-icons icon">link</i>관련글(트랙백)</a>
+										<a href="#" class="admin_item" onclick="[##_s_ad_d_onclick_##]"><i class="material-icons icon">delete</i>삭제</a>
+									</div>
+								</div>
+								<script>$('#entry .admin_item:contains("비공개") .material-icons').html('lock');</script>
+							</s_ad_div>
+						</header>
+						<article class="article">[##_article_rep_desc_##]</article>
+						<s_tag_label><section class="tags"><i class="material-icons icon">label</i>[##_tag_label_rep_##]</section></s_tag_label>
+						<section id="comment" class="comment">
+							<header class="card-title"><h3>[##_article_rep_rp_cnt_##]개의 댓글이 있습니다.</h3></header>
+							<s_rp>
+								<section class="write">
+									<s_rp_input_form>
+									<s_rp_member>
+									<s_rp_guest>
+										<input id="name" class="input" type="text" placeholder="이름" name="[##_rp_input_name_##]" />
+										<input id="password" class="input" type="password" placeholder="비밀번호" maxlength="8" name="[##_rp_input_password_##]" />
+									</s_rp_guest>
+									</s_rp_member>
+									<textarea id="comment" class="textarea" name="[##_rp_input_comment_##]" placeholder="댓글을 적어주세요." rows="10" cols="50"></textarea>
+									<div class="btn">
+										<input id="secret" name="secret" type="checkbox" hidden="hidden" />
+										<label class="material-icons icon secret" for="secret">lock_open</label>
+										<div class="material-icons icon comment" onClick="[##_rp_onclick_submit_##]">comment</div>
+									</div>
+									</s_rp_input_form>
+								</section>
+								<section class="list">
+									<s_rp_container>
+										<ul class="ul no-style">
+											<s_rp_rep>
+												<li id="[##_rp_rep_id_##]" class="li [##_rp_rep_class_##]">
+													<span class="name"><i class="material-icons icon"></i>[##_rp_rep_name_##]</span>
+													<span class="date">[##_rp_rep_date_##]</span>
+													<p class="desc">[##_rp_rep_desc_##]</p>
+													<span class="control">
+														<a href="#" onClick="[##_rp_rep_onclick_delete_##]"><i class="material-icons icons">edit</i> 수정</a>
+														<a href="#" onClick="[##_rp_rep_onclick_reply_##]"><i class="material-icons icons">comment</i> 댓글</a>
+													</span>
+												</li>
+												<s_rp2_container>
+												<s_rp2_rep>
+												<li id="[##_rp_rep_id_##]" class="li reply [##_rp_rep_class_##]">
+													<span class="name"><i class="material-icons icon"></i>[##_rp_rep_name_##]</span>
+													<span class="date"> [##_rp_rep_date_##]</span>
+													<p class="desc">[##_rp_rep_desc_##]</p>
+													<span class="control">
+														<a href="#" onClick="[##_rp_rep_onclick_delete_##]"><i class="material-icons icons">edit</i> 수정</a>
+													</span>
+												</li>
+												</s_rp2_rep>
+												</s_rp2_container>
+											</s_rp_rep>
+										</ul>
+									</s_rp_container>
+								</section>
+							</s_rp>
+						</section>
+					</section>
+					</s_article_rep>
+					<s_paging>
+					<section id="page" class="card flex">
+						<a [##_prev_page_##] class="btn [##_no_more_prev_##]"><i class="material-icons icon">chevron_left</i></a>
+						<span class="num_block flex-1">
+						<s_paging_rep>
+							<a [##_paging_rep_link_##] class="btn num">[##_paging_rep_link_num_##]</a>
+						</s_paging_rep>
+						</span>
+						<a [##_next_page_##] class="btn [##_no_more_next_##]"><i class="material-icons icon">chevron_right</i></a>
+					</section>
+					</s_paging>
+					<section id="visitor" class="card">
+						<p class="total">총 [##_count_total_##]명이 방문했어요.</p>
+						<p class="day">오늘 [##_count_today_##]명 | 어제 [##_count_yesterday_##]명</p>
+					</section>
+					<footer id="footer">
+						<p>Blog is powered by <em>Tistory</em> & Simplify is made by <em>OPNay</em></p>
+					</footer>
+				</div>
 			</section>
 			<div id="bot-btn" class="anim-transform hidden"><i class="material-icons icon to-top">arrow_upward</i></div>
 		</s_t3>
