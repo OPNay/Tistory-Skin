@@ -1,6 +1,6 @@
 (function ($) {
 	var $body = $('body'),
-		$cover = $('<div id="cover">'),
+		$cover = $('<div class="cover">'),
 		$nav = $('#nav'),
 		$side = $('#side'),
 		$search = $('#side .search'),
@@ -38,7 +38,7 @@
 			$body.scrollable(true);
 			$cover.toggleClass('animate f', false).find('.card.floating').remove();
 			$side.toggleClass('animate', false);
-			$body.find('#cover').remove();
+			$body.find('.cover').remove();
 		} else {
 			console.log('Error while animte cover');
 		}
