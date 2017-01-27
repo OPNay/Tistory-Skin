@@ -4,7 +4,7 @@
 		$nav = $('#nav'),
 		$side = $('#side'),
 		$search = $('#side .search'),
-		$page = $('#page'),
+		$page = $('.page'),
 		$botbtn = $('#bot-btn'),
 		blog_link = $(location).attr('protocol') + "//" + $(location).attr('host');
 
