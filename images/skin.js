@@ -126,7 +126,7 @@
 	});
 	
 	// window size
-	$body = $('body'), $win = $(window);
+	$win = $(window);
 	function chkWindow() {
 		if (($win.width() >= 1024) && !$body.hasClass('desktop')) {
 			console.log('Change Window size to Desktop');
