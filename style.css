@@ -324,3 +324,46 @@ ol.no-style, ul.no-style {list-style:none;}
 	.comment .write {padding:0 18px 18px;}
 	.comment .write .input {width:100%;}
 }
+
+/*
+ * Theme Blue
+ *
+ * Primary - Blue #2196F3
+ * Dark Primary - #1976D2
+ * Light Primary - #BBDEFB
+ * Text - #FFF
+ * Accent - #03A9F4
+ * Primary Text - #212121
+ * Secondary Text - #727272
+ */
+
+body, button, input, textarea {color:#212121;}
+a {color:#212121;}
+
+em, .accent {color:#03A9F4;}
+
+.card .title .info {color:#727272;}
+@media (max-width:768px) {
+	.card-list .date {color:#727272;}
+}
+
+#header, #nav {background:#2196F3;}
+#side a:hover {color:#03A9F4;}
+
+.comment .write .btn .icon {color:#727272;}
+.comment .write .btn .icon:hover {color:#212121;}
+#secret:checked + .icon.secret:before {color:#03A9F4;}
+
+.comment .list .date,
+.comment .list .desc,
+.comment .list .control a {color:#727272;}
+.comment .list .control a:hover {color:#212121;}
+
+#page .btn.selected {color:#03A9F4;}
+
+#footer {color:#727272;}
+
+#bot-btn .icon {background:#03A9F4;}
+
+article a {color:#03A9F4;}
+article .imageblock > a {background:#03A9F4; color:#FFF;}
