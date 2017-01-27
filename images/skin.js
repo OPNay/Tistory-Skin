@@ -125,5 +125,21 @@
 		}
 	});
 	
+	// window size
+	$body = $('body'), $win = $(window);
+	function chkWindow() {
+		if (($win.width() >= 1024) && !$body.hasClass('desktop')) {
+			console.log('Change Window size to Desktop');
+			$body.addClass('desktop').removeClass('tablet mobile');
+		} else if (($win.width() >= 768) && ($win.width() < 1024) && !$body.hasClass('tablet')) {
+			console.log('Change Window size to Tablet');
+			$body.addClass('tablet').removeClass('desktop mobile');
+		} else if (($win.width() < 768) && !$body.hasClass('mobile')) {
+			console.log('Change Window size to Mobile');
+			$body.addClass('mobile').removeClass('desktop tablet');
+		}
+	};
+	$win.resize(chkWindow), chkWindow();
+
 	return true;
 }(jQuery));
