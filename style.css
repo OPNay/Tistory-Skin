@@ -305,7 +305,7 @@ ol.no-style, ul.no-style {list-style:none;}
 	h2 {font-size:1.4em;}
 	h3 {font-size:1.2em;}
 
-	#wrap {margin:0; width:100%;}
+	.content {margin:0; width:100%;}
 
 	.card {margin:0; border:none; border-bottom:1px solid #DDD; box-shadow:none;}
 	.card-content {padding:18px;}
