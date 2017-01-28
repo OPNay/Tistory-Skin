@@ -39,7 +39,7 @@ blockquote, pre, code {background:#F5F5F5; margin:0 0 16px; padding:16px;}
 .material-icons {vertical-align:middle;}
 /* Skin */
 
-body {background:#EEE; margin:0; padding:0;}
+html, body, .wrap {margin:0; padding:0; width:100%; height:100%;}
 a {text-decoration:none; cursor:pointer;}
 em {font-style:normal; font-weight:normal;}
 ul, li {margin:0; padding:0;}
@@ -147,6 +147,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .search .button:hover {background:#F5F5F5;}
 
 /* Wrap */
+.wrap {background:#EEE;}
 .content {margin:0 auto; padding:0; width:940px;}
 .content:after {content:""; display:block; clear:both;}
 
