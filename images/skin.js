@@ -2,8 +2,8 @@
 	var $body = $('body'),
 		$cover = $('<div class="cover">'),
 		$nav = $('.nav'),
-		$side = $('#side'),
-		$search = $('#side .search'),
+		$side = $('.side'),
+		$search = $('.side .search'),
 		$page = $('.page'),
 		$botbtn = $('.bot-btn'),
 		blog_link = $(location).attr('protocol') + "//" + $(location).attr('host');
@@ -52,7 +52,7 @@
 	};
 
 	// toggle Side menu
-	$('.nav .icon, #side .title').click(function () {
+	$('.nav .icon, .side .title').click(function () {
 		return $side.animate(!($cover.hasClass('animate')));
 	});
 
