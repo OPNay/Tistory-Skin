@@ -104,19 +104,19 @@ ol.no-style, ul.no-style {list-style:none;}
 #header {width:100%;}
 #header .link {width:100%; display:block; font-size:48px; color:white; text-align:center; line-height:150px;}
 
-.nav {z-index:100; width:100%; height:64px; top:0; left:0; position:fixed; overflow:hidden; box-shadow:0 2px 4px 0 rgba(0,0,0,0.3);}
-.nav.transparent {background:transparent; box-shadow:none;}
+.nav {z-index:100; width:64px; height:64px; top:0; left:0; position:fixed; overflow:hidden;}
+.nav.active {width:100%; box-shadow:0 2px 4px 0 rgba(0,0,0,0.3);}
 .nav .menu {position:absolute; top:0; left:0; margin:14px; width:36px; height:36px; text-align:center;}
 .nav .menu .icon {line-height:36px; color:white;}
 
 .nav .title {
 	display:block; margin:0 24px 0 64px; line-height:64px; font-size:24px;
-	-webkit-transform:translateY(0);
-	transform:translateY(0);
-}
-.nav.transparent .title {
 	-webkit-transform:translateY(-100%);
 	transform:translateY(-100%);
+}
+.nav.active .title {
+	-webkit-transform:translateY(0);
+	transform:translateY(0);
 }
 .nav .title .link {color:white;}
 
@@ -347,7 +347,7 @@ em, .accent {color:#03A9F4;}
 	.card-list .date {color:#727272;}
 }
 
-#header, .nav {background:#2196F3;}
+#header, .nav.active {background:#2196F3;}
 #side a:hover {color:#03A9F4;}
 
 .comment .write .btn .icon {color:#727272;}

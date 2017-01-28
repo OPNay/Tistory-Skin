@@ -11,10 +11,10 @@
 	$body.scrollable = function (can) {$body.toggleClass('scroll-hidden', !can);};
 
 	$nav.scrollHandler = function () {
-		if ($(window).scrollTop() >= 86 && $nav.hasClass('transparent')) {
-			$nav.toggleClass('transparent', false);
-		} else if ($(window).scrollTop() < 86 && !($nav.hasClass('transparent'))) {
-			$nav.toggleClass('transparent', true);
+		if ($(window).scrollTop() >= 86 && !$nav.hasClass('active')) {
+			$nav.toggleClass('active', true);
+		} else if ($(window).scrollTop() < 86 && ($nav.hasClass('active'))) {
+			$nav.toggleClass('active', false);
 		}
 	};
 
