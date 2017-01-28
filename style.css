@@ -208,11 +208,12 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .list .control .icons {font-size:14px;}
 
 /* Protected Entry */
-#entry_protected .article {text-align:center;}
-#entry_protected p {margin:12px 0; font-size:18px;}
-#entry_protected input {background:none; border:none; border-bottom:1px solid #DDD; padding:12px; width:260px; font-size:20px}
-#entry_protected .icon.enter {position:absolute; border-bottom:1px solid #DDD; padding:12px; color:#727272; cursor:pointer;}
-#entry_protected .icon.enter:hover {color:#212121;}
+.entry_protected .article {text-align:center;}
+.entry_protected p {margin:12px 0; font-size:18px;}
+.entry_protected input, .entry_protected .icon.enter {background:none; border:none; border-bottom:1px solid #DDD; padding:12px; height:48px; vertical-align:middle; box-sizing:border-box;}
+.entry_protected input {width:260px; font-size:20px}
+.entry_protected .icon.enter {color:#727272; cursor:pointer;}
+.entry_protected .icon.enter:hover {color:#212121;}
 
 /* Entry */
 #entry .tags {padding:0 24px;}
