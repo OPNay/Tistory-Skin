@@ -10,22 +10,20 @@
 
 	//For debuging
 	$('s_t3').contents().unwrap();
-	$body.scrollable = function (can) {$body.toggleClass('scroll-hidden', !can);};
 
 	$nav.scrollHandler = function () {
-		if ($(window).scrollTop() >= 86 && !$nav.hasClass('active')) {
+		if ($('.wrap').scrollTop() >= 86 && !$nav.hasClass('active')) {
 			$nav.toggleClass('active', true);
-		} else if ($(window).scrollTop() < 86 && ($nav.hasClass('active'))) {
+		} else if ($('.wrap').scrollTop() < 86 && ($nav.hasClass('active'))) {
 			$nav.toggleClass('active', false);
 		}
 	};
 
-	$(window).scroll($nav.scrollHandler);
+	$('.wrap').scroll($nav.scrollHandler);
 	$nav.scrollHandler();
 
 	$cover.animate = function (run) {
 		if (run === true) {
-			$body.scrollable(false);
 			this.appendTo($body)
 				.click(function () {$cover.animate(false);})
 				.toggleClass('animate', true);
@@ -37,7 +35,6 @@
 					.html(tmp.removeClass('use').clone().removeClass('floating-data'));
 			}
 		} else if (run === false) {
-			$body.scrollable(true);
 			$cover.toggleClass('animate f', false).find('.card.floating').remove();
 			$side.toggleClass('animate', false);
 			$body.find('.cover').remove();

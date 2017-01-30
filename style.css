@@ -147,7 +147,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .search .button:hover {background:#F5F5F5;}
 
 /* Wrap */
-.wrap {background:#EEE;}
+.wrap {background:#EEE; overflow-y:auto;}
 .content {margin:0 auto; padding:0; width:940px;}
 .content:after {content:""; display:block; clear:both;}
 
