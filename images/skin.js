@@ -22,30 +22,27 @@
 		}
 	});
 
-	$cover.animate = function (run) {
-		if (run === true) {
-			this.appendTo($body)
-				.click(function () {$cover.animate(false);})
-				.toggleClass('animate', true);
+	$cover.active = function (run) {
+		if(run) {
+			$wrap.prepend($cover.clone());
+			var cover = $('.cover');
+			cover.click(function () {$cover.active(false);})
+				.addClass('animate', true);
 
 			var tmp = $('.floating-data.use');
-			if (tmp.length > 0) {
-				$cover.toggleClass('f', true);
-				$cover.append('<div class="card floating">').find('.card.floating')
-					.html(tmp.removeClass('use').clone().removeClass('floating-data'));
+			if(tmp.length > 0) {
+				cover.addClass('f').append($('<div>').addClass('card floating').append(tmp.removeClass('use').clone().removeClass('floating-data')));
 			}
-		} else if (run === false) {
-			$cover.toggleClass('animate f', false).find('.card.floating').remove();
-			$side.toggleClass('animate', false);
-			$body.find('.cover').remove();
 		} else {
-			console.log('Error while animte cover');
+			$('.cover .floating').removeClass('f');
+			$side.removeClass('animate',false);
+			$('.cover').remove();
 		}
 	};
 
 	$side.animate = function (run) {
 		$side.toggleClass('animate', run);
-		$cover.animate(run);
+		$cover.active(run);
 	};
 
 	// toggle Side menu
@@ -56,7 +53,7 @@
 	// toggle Admin floating menu
 	$('.admin.icon').click(function () {
 		$(this).parent().find('.floating-data').addClass('use');
-		$cover.animate(true);
+		$cover.active(true);
 	});
 
 	// Side menu init
