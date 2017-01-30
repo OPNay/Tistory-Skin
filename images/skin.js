@@ -22,36 +22,36 @@
 		}
 	});
 
-	$cover.active = function (run) {
-		if(run) {
+	$cover.active = function (a, b) {
+		if(a) {
 			$wrap.prepend($cover.clone());
 			var cover = $('.cover');
-			cover.click(function () {$cover.active(false);})
+			cover.click(function () {b(false);})
 				.addClass('animate', true);
 		} else {
 			$('.cover .floating').removeClass('f');
-			$side.removeClass('active',false);
 			$('.cover').remove();
 		}
 	};
 
 	$cover.addFloating = function (a) {
-		cover.addClass('f').append($('<div>').addClass('card floating').append(a.clone().removeClass('floating-data')));
-	};
-
-	$side.active = function (run) {
-		$side.toggleClass('active', run);
-		$cover.active(run);
+		$('.cover').addClass('f').append($('<div>').addClass('card floating').append(a.clone().removeClass('floating-data')));
 	};
 
 	// toggle Side menu
+	$side.active = function (a) {
+		$side.toggleClass('active', a);
+		$cover.active(a,$side.active);
+	};
+
 	$('.nav .icon, .side .title').click(function () {
-		return $side.active(!($cover.hasClass('active')));
+		$side.active(!($cover.hasClass('active')));
 	});
 
 	// toggle Admin floating menu
 	$('.admin.icon').click(function () {
-		$cover.active(true).addFloating($(this).parent().find('floating-data'));
+		$cover.active(true,$cover.active);
+		$cover.addFloating($(this).parent().find('.floating-data'));
 	});
 
 	// Side menu init
