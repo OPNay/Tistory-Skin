@@ -28,16 +28,15 @@
 			var cover = $('.cover');
 			cover.click(function () {$cover.active(false);})
 				.addClass('animate', true);
-
-			var tmp = $('.floating-data.use');
-			if(tmp.length > 0) {
-				cover.addClass('f').append($('<div>').addClass('card floating').append(tmp.removeClass('use').clone().removeClass('floating-data')));
-			}
 		} else {
 			$('.cover .floating').removeClass('f');
 			$side.removeClass('active',false);
 			$('.cover').remove();
 		}
+	};
+
+	$cover.addFloating = function (a) {
+		cover.addClass('f').append($('<div>').addClass('card floating').append(a.clone().removeClass('floating-data')));
 	};
 
 	$side.active = function (run) {
@@ -52,8 +51,7 @@
 
 	// toggle Admin floating menu
 	$('.admin.icon').click(function () {
-		$(this).parent().find('.floating-data').addClass('use');
-		$cover.active(true);
+		$cover.active(true).addFloating($(this).parent().find('floating-data'));
 	});
 
 	// Side menu init
