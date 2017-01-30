@@ -121,15 +121,9 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* Side menu drawer */
 .side {z-index:120; background:white; position:fixed; top:0; left:0; width:280px; height:100%;
-	overflow:hidden;
-	-webkit-transform:translateX(-100%);
-	transform:translateX(-100%);
+	overflow:hidden; transform:translateX(-100%);
 }
-.side.animate {
-	-webkit-transform:translateX(0);
-	transform:translateX(0);
-	box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);
-}
+.side.active {box-shadow:0 8px 16px 0 rgba(0,0,0,0.3); transform:translateX(0);}
 
 .side hr {margin:0; border:none; border-bottom:1px solid #DADADA;}
 .side .menu {overflow:auto;}

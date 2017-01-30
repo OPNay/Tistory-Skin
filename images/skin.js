@@ -35,19 +35,19 @@
 			}
 		} else {
 			$('.cover .floating').removeClass('f');
-			$side.removeClass('animate',false);
+			$side.removeClass('active',false);
 			$('.cover').remove();
 		}
 	};
 
-	$side.animate = function (run) {
-		$side.toggleClass('animate', run);
+	$side.active = function (run) {
+		$side.toggleClass('active', run);
 		$cover.active(run);
 	};
 
 	// toggle Side menu
 	$('.nav .icon, .side .title').click(function () {
-		return $side.animate(!($cover.hasClass('animate')));
+		return $side.active(!($cover.hasClass('active')));
 	});
 
 	// toggle Admin floating menu
