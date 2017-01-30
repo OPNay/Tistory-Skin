@@ -87,7 +87,7 @@
 		var query = $('#query').val(),
 			url = blog_link + '/search/' + query;
 
-		if (query != '') {$(location).attr('href', url);}
+		if (query !== '') {$(location).attr('href', url);}
 	};
 
 	$search.find('#query').keypress(function (e) {
@@ -129,7 +129,7 @@
 			console.log('Change Window size to Mobile');
 			$body.addClass('mobile').removeClass('desktop tablet');
 		}
-	};
+	}
 	$win.resize(chkWindow), chkWindow();
 
 	return true;
