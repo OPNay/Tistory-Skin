@@ -12,16 +12,15 @@
 	//For debuging
 	$('s_t3').contents().unwrap();
 
-	$nav.scrollHandler = function () {
+	function addScroll(a,b) {a.scroll(b), b();}
+
+	addScroll($wrap, $nav.scrollHandler = function () {
 		if ($wrap.scrollTop() >= 86 && !$nav.hasClass('active')) {
 			$nav.toggleClass('active', true);
 		} else if ($wrap.scrollTop() < 86 && ($nav.hasClass('active'))) {
 			$nav.toggleClass('active', false);
 		}
-	};
-
-	$('.wrap').scroll($nav.scrollHandler);
-	$nav.scrollHandler();
+	});
 
 	$cover.animate = function (run) {
 		if (run === true) {
@@ -81,16 +80,13 @@
 		$('.wrap').animate({'scrollTop': '0'}, 250);
 	});
 
-	$action.scrollHandler = function () {
+	addScroll($wrap, $action.scrollHandler = function () {
 		if ($wrap.scrollTop() !== 0 && $action.hasClass('hidden')) {
 			$action.toggleClass('hidden', false);
 		} else if ($wrap.scrollTop() === 0 && !($action.hasClass('hidden'))) {
 			$action.toggleClass('hidden', true);
 		}
-	};
-
-	$wrap.scroll($action.scrollHandler);
-	$action.scrollHandler();
+	});
 
 	$search.search = function () {
 		var query = $('#query').val(),
