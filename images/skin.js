@@ -94,7 +94,7 @@
 
 	$search.search = function () {
 		var query = $('#query').val(),
-			url = blog_link + '/search/' + query
+			url = blog_link + '/search/' + query;
 
 		if (query != '') {$(location).attr('href', url);}
 	};
