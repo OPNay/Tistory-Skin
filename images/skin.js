@@ -1,6 +1,7 @@
 (function ($) {
 	var $body = $('body'),
 		$cover = $('<div class="cover">'),
+		$wrap = $('.wrap'),
 		$nav = $('.nav'),
 		$side = $('.side'),
 		$search = $('.side .search'),
@@ -12,9 +13,9 @@
 	$('s_t3').contents().unwrap();
 
 	$nav.scrollHandler = function () {
-		if ($('.wrap').scrollTop() >= 86 && !$nav.hasClass('active')) {
+		if ($wrap.scrollTop() >= 86 && !$nav.hasClass('active')) {
 			$nav.toggleClass('active', true);
-		} else if ($('.wrap').scrollTop() < 86 && ($nav.hasClass('active'))) {
+		} else if ($wrap.scrollTop() < 86 && ($nav.hasClass('active'))) {
 			$nav.toggleClass('active', false);
 		}
 	};
@@ -77,18 +78,18 @@
 	});
 
 	$botbtn.find('.to-top').click(function () {
-		$('html, body').animate({'scrollTop': '0'}, 250);
+		$('.wrap').animate({'scrollTop': '0'}, 250);
 	});
 
 	$botbtn.scrollHandler = function () {
-		if ($(window).scrollTop() !== 0 && $botbtn.hasClass('hidden')) {
+		if ($wrap.scrollTop() !== 0 && $botbtn.hasClass('hidden')) {
 			$botbtn.toggleClass('hidden', false);
-		} else if ($(window).scrollTop() === 0 && !($botbtn.hasClass('hidden'))) {
+		} else if ($wrap.scrollTop() === 0 && !($botbtn.hasClass('hidden'))) {
 			$botbtn.toggleClass('hidden', true);
 		}
 	};
 
-	$(window).scroll($botbtn.scrollHandler);
+	$wrap.scroll($botbtn.scrollHandler);
 	$botbtn.scrollHandler();
 
 	$search.search = function () {
