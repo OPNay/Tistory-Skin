@@ -6,7 +6,7 @@
 		$side = $('.side'),
 		$search = $('.side .search'),
 		$page = $('.page'),
-		$botbtn = $('.bot-btn'),
+		$action = $('.action'),
 		blog_link = $(location).attr('protocol') + "//" + $(location).attr('host');
 
 	//For debuging
@@ -77,20 +77,20 @@
 		}
 	});
 
-	$botbtn.find('.to-top').click(function () {
+	$action.click(function () {
 		$('.wrap').animate({'scrollTop': '0'}, 250);
 	});
 
-	$botbtn.scrollHandler = function () {
-		if ($wrap.scrollTop() !== 0 && $botbtn.hasClass('hidden')) {
-			$botbtn.toggleClass('hidden', false);
-		} else if ($wrap.scrollTop() === 0 && !($botbtn.hasClass('hidden'))) {
-			$botbtn.toggleClass('hidden', true);
+	$action.scrollHandler = function () {
+		if ($wrap.scrollTop() !== 0 && $action.hasClass('hidden')) {
+			$action.toggleClass('hidden', false);
+		} else if ($wrap.scrollTop() === 0 && !($action.hasClass('hidden'))) {
+			$action.toggleClass('hidden', true);
 		}
 	};
 
-	$wrap.scroll($botbtn.scrollHandler);
-	$botbtn.scrollHandler();
+	$wrap.scroll($action.scrollHandler);
+	$action.scrollHandler();
 
 	$search.search = function () {
 		var query = $('#query').val(),

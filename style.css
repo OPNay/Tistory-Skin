@@ -238,20 +238,20 @@ ol.no-style, ul.no-style {list-style:none;}
 #footer {margin:18px; text-align:center; font-size:14px;}
 #footer p {margin:0; line-height:2;}
 
-/* Bottom Button */
-.bot-btn {
+/* Bottom Action Button */
+.action {
 	z-index:50; position:fixed; bottom:32px; right:32px;
 	-webkit-transform:scale(1);
 	transform:scale(1);
 	font-size:36px; cursor:pointer;
 }
-.bot-btn .icon {color:white; border-radius:50%; padding:16px; box-shadow:0 0 6px rgba(0,0,0,0.3); transition:box-shadow 200ms linear;}
-.bot-btn .icon:hover:not(:active) {box-shadow:0 0 24px rgba(0,0,0,0.3);}
-.bot-btn.hidden {
+.action .icon {color:white; border-radius:50%; padding:16px; box-shadow:0 0 6px rgba(0,0,0,0.3); transition:box-shadow 200ms linear;}
+.action .icon:hover:not(:active) {box-shadow:0 0 24px rgba(0,0,0,0.3);}
+.action.hidden {
 	-webkit-transform:scale(0);
 	transform:scale(0);
 }
-.bot-btn.hidden .icon {box-shadow:none;}
+.action.hidden .icon {box-shadow:none;}
 
 /* Article */
 .article {padding:0 24px 24px; font-size:14px; line-height:1.8; word-wrap:break-word;}
@@ -364,7 +364,7 @@ em, .accent {color:#03A9F4;}
 
 #footer {color:#727272;}
 
-.bot-btn .icon {background:#03A9F4;}
+.action .icon {background:#03A9F4;}
 
 article a {color:#03A9F4;}
 article .imageblock > a {background:#03A9F4; color:#FFF;}
