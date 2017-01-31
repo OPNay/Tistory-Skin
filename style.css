@@ -149,10 +149,10 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .admin.icon {width:64px; line-height:64px; text-align:center; cursor:pointer;}
 
-.admin_list {margin:8px 0;}
-.admin_list .admin_item {position:relative; display:block; padding-left:72px; width:180px; line-height:48px; transition:background 50ms linear; font-size:15px;}
-.admin_list .admin_item:hover {background:#F5F5F5;}
-.admin_list .admin_item .icon {position:absolute; top:0; left:0; padding:12px 16px; color:#727272;}
+.admin_list {margin:8px 0; width:240px;}
+.admin_list .admin_item {display:block; transition:background 50ms;}
+.admin_list .admin_item:hover {background:rgba(0,0,0,0.1);}
+.admin_list .admin_item .icon {padding:16px; width:54px; height:54px; box-sizing:border-box; color:#727272;}
 
 /* Tags */
 #tag .tags {
