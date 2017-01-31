@@ -104,6 +104,8 @@ ol.no-style, ul.no-style {list-style:none;}
 #header .link {width:100%; display:block; font-size:48px; color:white; text-align:center; line-height:150px;}
 
 .nav {z-index:100; width:64px; height:64px; top:0; left:0; position:fixed; overflow:hidden;}
+.desktop .nav {transform:translateY(-100%);}
+.tablet .nav, .mobile .nav {transform:translateY(0);}
 .nav.active {width:100%; box-shadow:0 2px 4px 0 rgba(0,0,0,0.3);}
 .nav .menu {position:absolute; top:0; left:0; margin:14px; width:36px; height:36px; text-align:center;}
 .nav .menu .icon {line-height:36px; color:white;}
@@ -120,10 +122,9 @@ ol.no-style, ul.no-style {list-style:none;}
 .nav .title .link {color:white;}
 
 /* Side menu drawer */
-.side {z-index:120; background:white; position:fixed; top:0; left:0; width:280px; height:100%;
-	overflow:hidden; transform:translateX(-100%);
-}
-.side.active {box-shadow:0 8px 16px 0 rgba(0,0,0,0.3); transform:translateX(0);}
+.side {background:white; width:280px; height:100%; overflow:hidden;}
+.tablet .side, .mobile .side {z-index:120; position:fixed; transform:translateX(-100%);}
+.tablet .side.active, .mobile .side.active {box-shadow:0 8px 16px 0 rgba(0,0,0,0.3); transform:translateX(0);}
 
 .side hr {margin:0; border:none; border-bottom:1px solid #DADADA;}
 .side .menu {overflow:auto;}
