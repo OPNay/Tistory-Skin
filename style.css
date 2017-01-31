@@ -172,35 +172,33 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Comment */
 .comment .write {padding:0 24px 24px;}
 
-.comment .textarea, .comment .input {background:none; box-sizing:border-box; font-size:14px; line-height:1.5;}
-.comment .write .textarea {
-	background:#F5F5F5; width:100%; height:120px; padding:16px;
-	border:none; resize:none;
-}
-.comment .write .input {margin-bottom:12px; padding:0 12px 10px; width:50%; border:none; border-bottom:1px solid #DDD;}
+.comment .textarea, .comment .input {background:none; box-sizing:border-box; font-size:16px; line-height:1.5;}
+.comment .write .input {margin-bottom:12px; padding:0 6px 6px; width:50%; border:none; border-bottom:1px solid #DDD;}
+.comment .write .textarea {background:rgba(0,0,0,0.1); width:100%; height:150px; padding:8px 12px ;border:none; resize:none;}
 .comment .write .btn {width:100%; text-align:right;}
-.comment .write .btn .icon {margin:0 8px; padding:16px; width:24px; line-height:24px; color:#727272; cursor:pointer;}
+.comment .write .btn .icon {margin:0 8px; padding:16px; width:24px; line-height:24px; color:rgba(0,0,0,0.38); cursor:pointer;}
+.comment .write .btn .icon:hover {color:rgba(0,0,0,0.54);}
 
 .comment .list p {margin:0; padding:0;}
 .comment .list .li {position:relative; padding:18px 24px 18px 100px; min-height:55px;}
 .comment .list .li.reply {background:#F5F5F5;}
-.comment .list .name {font-size:18px; margin-right:8px;}
+.comment .list .name {margin-right:8px;}
 .comment .list .name .tistoryProfileLayerTrigger {display:none;}
 .comment .list .name img,
 .comment .list .name .icon {
 	position:absolute; top:18px; left:18px; border-radius:50%;
 	width:64px; height:64px; overflow:hidden;
-	color:#DDD; font-size:64px; text-align:center;
 }
+.comment .list .name .icon {color:#DDD; font-size:64px; text-align:center;}
 .comment .list .name .icon:before {content:'person';}
 .comment .rp_secret .name .icon:before,
 .comment .guest_secret .name .icon:before {content:'person_outline';}
 .comment .rp_admin .name .icon:before {content:'settings';}
-.comment .list .date {font-size:14px;}
+.comment .list .date {font-size:12px;}
 .comment .list .desc {margin:8px 0; padding:0; line-height:1.5; font-size:14px;}
 .comment .list .control {font-size:14px; line-height:1.5;}
 .comment .list .control a {padding-right:10px;}
-.comment .list .control .icons {font-size:14px;}
+.comment .list .control .icons {font-size:16px;}
 
 /* Protected Entry */
 .entry_protected .article {text-align:center;}
@@ -345,8 +343,6 @@ em, .accent {color:#03A9F4;}
 #header, .nav.active {background:#2196F3;}
 .side a:hover {color:#03A9F4;}
 
-.comment .write .btn .icon {color:#727272;}
-.comment .write .btn .icon:hover {color:#212121;}
 #secret:checked + .icon.secret:before {color:#03A9F4;}
 
 .comment .list .date,
