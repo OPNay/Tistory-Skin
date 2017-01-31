@@ -45,7 +45,7 @@
 	};
 
 	$('.nav .icon, .side .title').click(function () {
-		$side.active(!($cover.hasClass('active')));
+		$side.active(!($side.hasClass('active')));
 	});
 
 	// toggle Admin floating menu
