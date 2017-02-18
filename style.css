@@ -122,9 +122,15 @@ ol.no-style, ul.no-style {list-style:none;}
 .nav .title .link {color:white;}
 
 /* Side menu drawer */
+.button {display:block; padding:6px; width:36px; height:36px; box-sizing:border-box; color:white;}
+.button:hover {color:white;}
+
 .side {background:white; width:280px; height:100%; overflow:hidden;}
 .tablet .side, .mobile .side {z-index:120; position:fixed; transform:translateX(-100%);}
 .tablet .side.active, .mobile .side.active {box-shadow:0 8px 16px 0 rgba(0,0,0,0.3); transform:translateX(0);}
+
+.side .close {position:absolute; top:0; left:0; padding:14px; width:64px; height:64px; box-sizing:border-box;}
+.desktop .side .close {display:none;}
 
 .side hr {margin:0; border:none; border-bottom:1px solid #DADADA;}
 .side .menu {overflow:auto;}
@@ -342,7 +348,7 @@ em, .accent {color:#03A9F4;}
 }
 
 #header, .nav.active {background:#2196F3;}
-.side a:hover {color:#03A9F4;}
+.side .menu a:hover {color:#03A9F4;}
 
 #secret:checked + .icon.secret:before {color:#03A9F4;}
 

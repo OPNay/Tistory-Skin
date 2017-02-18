@@ -44,7 +44,7 @@
 		$cover.active(a,$side.active);
 	};
 
-	$('.nav .icon, .side .title').click(function () {
+	$('.nav .icon, .side .close').click(function () {
 		$side.active(!($side.hasClass('active')));
 	});
 
