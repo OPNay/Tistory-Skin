@@ -2,10 +2,10 @@
 
 /* Material */
 /*
- * Default font colors
- * Primary Text - #000 87%
- * Secondary Text - #000 54%
- * Disabled Text - #000 38%
+ * Primary Text - #000 87% / #FFF 100%
+ * Secondary Text - #000 54% / #FFF 70%
+ * Disabled Text - #000 38% / #FFF 50%
+ * Diver - #000, #FFF 12%
  */
 html, body, label, button, input, textarea, blockquote, pre, code {
 	color:rgba(0,0,0,0.87);
@@ -76,7 +76,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .card-title {padding:24px;}
 .card-title h2, .card-title h3 {margin:0; line-height:1.5;}
-.card-title .info {font-size:14px; color:#727272;}
+.card-title .info {font-size:14px; color:rgba(0,0,0,0.54);}
 
 .cover {
 	z-index:110; background:rgba(0,0,0,0.25);
@@ -146,7 +146,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .side .item {display:block; margin:0; padding:0 16px; line-height:48px; font-size:14px;}
 .side .item.accent {padding-left:12px; border-left:4px solid;}
 .side .item:hover {background:#F5F5F5;}
-.side .item.subitem {padding:0 8px; padding-left:32px; line-height:36px; color:#727272; font-size:12px;}
+.side .item.subitem {padding:0 8px; padding-left:32px; line-height:36px; color:rgba(0,0,0,0.54); font-size:12px;}
 .side .item.subitem.accent {padding-left:28px;}
 
 .search .input, .search .button {background:none; margin:0; padding:0; border:none; line-height:48px;}
@@ -170,7 +170,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .admin_list {margin:8px 0; width:240px;}
 .admin_list .admin_item {display:block; transition:background 50ms;}
 .admin_list .admin_item:hover {background:rgba(0,0,0,0.1);}
-.admin_list .admin_item .icon {padding:16px; width:54px; height:54px; box-sizing:border-box; color:#727272;}
+.admin_list .admin_item .icon {padding:16px; width:54px; height:54px; box-sizing:border-box; color:rgba(0,0,0,0.54);}
 
 /* Tags */
 #tag .tags {
@@ -182,8 +182,8 @@ ol.no-style, ul.no-style {list-style:none;}
 	align-items:baseline;
 	line-height:1.75;
 }
-#tag .tags .item {margin-right:18px; color:#212121;}
-#tag .tags .item:hover {color:#727272;}
+#tag .tags .item {margin-right:18px; color:rgba(0,0,0,0.87);}
+#tag .tags .item:hover {color:rgba(0,0,0,0.54);}
 #tag .tags .item:before {content:'#'; margin-right:3px;}
 #tag .cloud1 {font-weight:bold;}
 
@@ -223,8 +223,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .entry_protected p {margin:12px 0; font-size:18px;}
 .entry_protected input, .entry_protected .icon.enter {background:none; border:none; border-bottom:1px solid #DDD; padding:12px; height:48px; vertical-align:middle; box-sizing:border-box;}
 .entry_protected input {width:260px; font-size:20px}
-.entry_protected .icon.enter {color:#727272; cursor:pointer;}
-.entry_protected .icon.enter:hover {color:#212121;}
+.entry_protected .icon.enter {color:rgba(0,0,0,0.54); cursor:pointer;}
+.entry_protected .icon.enter:hover {color:rgba(0,0,0,0.87);}
 
 /* Entry */
 #entry .tags {padding:0 24px;}
@@ -241,8 +241,8 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #visitor {padding:12px; font-size:14px; line-height:1.5; text-align:center;}
 #visitor p {margin:0;}
-#visitor .total {color:#212121;}
-#visitor .day {color:#727272;}
+#visitor .total {color:rgba(0,0,0,0.87);}
+#visitor .day {color:rgba(0,0,0,0.54);}
 
 /* Footer */
 #footer {margin:18px; text-align:center; font-size:14px;}
@@ -341,18 +341,18 @@ ol.no-style, ul.no-style {list-style:none;}
  * Light Primary - #BBDEFB
  * Text - #FFF
  * Accent - #03A9F4
- * Primary Text - #212121
- * Secondary Text - #727272
+ * Primary Text - rgba(0,0,0,0.87)
+ * Secondary Text - rgba(0,0,0,0.54)
  */
 
-body, button, input, textarea {color:#212121;}
-a {color:#212121;}
+body, button, input, textarea {color:rgba(0,0,0,0.87);}
+a {color:rgba(0,0,0,0.87);}
 
 em, .accent {color:#03A9F4;}
 
-.card .title .info {color:#727272;}
+.card .title .info {color:rgba(0,0,0,0.54);}
 @media (max-width:768px) {
-	.card-list .date {color:#727272;}
+	.card-list .date {color:rgba(0,0,0,0.54);}
 }
 
 #header, .nav.active {background:#2196F3;}
@@ -362,12 +362,12 @@ em, .accent {color:#03A9F4;}
 
 .comment .list .date,
 .comment .list .desc,
-.comment .list .control a {color:#727272;}
-.comment .list .control a:hover {color:#212121;}
+.comment .list .control a {color:rgba(0,0,0,0.54);}
+.comment .list .control a:hover {color:rgba(0,0,0,0.87);}
 
 .page .btn.selected {color:#03A9F4;}
 
-#footer {color:#727272;}
+#footer {color:rgba(0,0,0,0.54);}
 
 .action .icon {background:#03A9F4;}
 
