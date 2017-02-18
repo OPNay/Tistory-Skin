@@ -35,7 +35,7 @@ th {background:#EEE;}
 
 blockquote, pre, code {background:#F5F5F5; margin:0 0 16px; padding:16px;}
 
-.card {background:#FFF; border-radius:2px; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
+.card {background:white; border-radius:2px; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
 .material-icons {vertical-align:middle;}
 /* Skin */
 
@@ -63,7 +63,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .flex-1 {-webkit-flex:1; -ms-flex:1; -moz-flex:1; flex:1;}
 
 /* Card */
-.card {background:#FFF; overflow:hidden;}
+.card {background:white; overflow:hidden;}
 .desktop .card {margin:12px 0; border-radius:2px; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
 .mobile .card, .tablet .card {margin:0; border:none; border-bottom:1px solid #DDD; box-shadow:none;}
 
@@ -372,4 +372,4 @@ em, .accent {color:#03A9F4;}
 .action .icon {background:#03A9F4;}
 
 article a {color:#03A9F4;}
-article .imageblock > a {background:#03A9F4; color:#FFF;}
+article .imageblock > a {background:#03A9F4; color:white;}
