@@ -125,8 +125,9 @@ ol.no-style, ul.no-style {list-style:none;}
 .button:hover {color:white;}
 
 .side {background:white; height:100%; overflow:hidden;}
-.desktop .side {width:320px;}
-.tablet .side, .mobile .side {z-index:120; position:fixed; width:100%; transform:translateX(-100%);}
+.desktop .side, .tablet .side {width:320px;}
+.mobile .side {width:100%;}
+.tablet .side, .mobile .side {z-index:120; position:fixed; transform:translateX(-100%);}
 .tablet .side.active, .mobile .side.active {box-shadow:0 8px 16px 0 rgba(0,0,0,0.3); transform:translateX(0);}
 
 .side .close {position:absolute; top:0; left:0; padding:14px; width:64px; height:64px; box-sizing:border-box;}
