@@ -132,6 +132,13 @@ ol.no-style, ul.no-style {list-style:none;}
 .side .close {position:absolute; top:0; left:0; padding:14px; width:64px; height:64px; box-sizing:border-box;}
 .desktop .side .close {display:none;}
 
+.side .profile {background:#2196F3; padding:32px; text-align:center; font-size:32px;}
+.side .profile .link {color:white;}
+.side .profile .img {border-radius:50%; width:128px; height:auto;}
+.side .profile .social {display:inline-block; width:32px; height:32px; fill:white; line-height:1;}
+.side .profile .social:hover {fill:rgba(255,255,255,.75);}
+.side .profile .social svg {width:24px; height:24px;}
+
 .side hr {margin:0; border:none; border-bottom:1px solid #DADADA;}
 .side .menu {overflow:auto;}
 .side .item {display:block; margin:0; padding:0 16px; line-height:48px; font-size:14px;}
@@ -140,12 +147,9 @@ ol.no-style, ul.no-style {list-style:none;}
 .side .item.subitem {padding:0 8px; padding-left:32px; line-height:36px; color:#727272; font-size:12px;}
 .side .item.subitem.accent {padding-left:28px;}
 
-.side .title {background:#F5F5F5; line-height:50px; color:#727272; font-size:20px;}
-
 .search .input, .search .button {background:none; margin:0; padding:0; border:none; line-height:48px;}
 .search .input {font-size:16px; padding:0 0 0 16px;}
-.search .button {width:48px; text-align:center; cursor:pointer;}
-.search .button:hover {background:#F5F5F5;}
+.search .button {width:48px; text-align:center; color:rgba(0,0,0,0.54); cursor:pointer;}
 
 /* Wrap */
 .wrap {background:#EEE; overflow-y:auto;}
