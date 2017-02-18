@@ -132,7 +132,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .side .close {position:absolute; top:0; left:0; padding:14px; width:64px; height:64px; box-sizing:border-box;}
 .desktop .side .close {display:none;}
 
-.side .profile {background:#2196F3; padding:32px; text-align:center; font-size:32px;}
+.side .profile {background:#2196F3; padding:24px; text-align:center; font-size:32px;}
+.side .profile p {margin:0; line-height:1.5;}
 .side .profile .link {color:white;}
 .side .profile .img {border-radius:50%; width:128px; height:auto;}
 .side .profile .social {display:inline-block; width:32px; height:32px; fill:white; line-height:1;}
