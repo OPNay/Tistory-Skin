@@ -156,6 +156,10 @@ ol.no-style, ul.no-style {list-style:none;}
 .desktop .content {margin:0 auto; padding:0; width:940px;}
 .mobile .content, .tablet .content {margin:0; width:100%;}
 
+@media screen and (max-width:1220px) {
+	.desktop .content {width:768px;}
+}
+
 #entry {position:relative;}
 
 .admin.icon {width:64px; line-height:64px; text-align:center; cursor:pointer;}
