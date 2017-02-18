@@ -105,7 +105,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .nav {z-index:100; width:64px; height:64px; top:0; left:0; position:fixed; overflow:hidden;}
 .desktop .nav {transform:translateY(-100%);}
 .tablet .nav, .mobile .nav {transform:translateY(0);}
-.nav.active {width:100%; box-shadow:0 2px 4px 0 rgba(0,0,0,0.3);}
+.tablet .nav.active, .mobile .nav.active {width:100%; box-shadow:0 2px 4px 0 rgba(0,0,0,0.3);}
 .nav .menu {position:absolute; top:0; left:0; margin:14px; width:36px; height:36px; text-align:center;}
 .nav .menu .icon {line-height:36px; color:white;}
 
