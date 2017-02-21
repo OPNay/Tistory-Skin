@@ -1,7 +1,7 @@
 (function ($) {
 	var $body = $('body'),
 		$cover = $('.cover'),
-		$wrap = $('.wrap'),
+		$content = $('.content'),
 		$nav = $('.nav'),
 		$side = $('.side'),
 		$search = $('.side .search'),
@@ -14,10 +14,10 @@
 
 	function addScroll(a,b) {a.scroll(b), b();}
 
-	addScroll($wrap, $nav.scrollHandler = function () {
-		if ($wrap.scrollTop() >= 86 && !$nav.hasClass('active')) {
+	addScroll($content, $nav.scrollHandler = function () {
+		if ($content.scrollTop() >= 86 && !$nav.hasClass('active')) {
 			$nav.toggleClass('active', true);
-		} else if ($wrap.scrollTop() < 86 && ($nav.hasClass('active'))) {
+		} else if ($content.scrollTop() < 86 && ($nav.hasClass('active'))) {
 			$nav.toggleClass('active', false);
 		}
 	});
@@ -71,10 +71,10 @@
 		$('.wrap').animate({'scrollTop': '0'}, 250);
 	});
 
-	addScroll($wrap, $action.scrollHandler = function () {
-		if ($wrap.scrollTop() !== 0 && $action.hasClass('hidden')) {
+	addScroll($content, $action.scrollHandler = function () {
+		if ($content.scrollTop() !== 0 && $action.hasClass('hidden')) {
 			$action.toggleClass('hidden', false);
-		} else if ($wrap.scrollTop() === 0 && !($action.hasClass('hidden'))) {
+		} else if ($content.scrollTop() === 0 && !($action.hasClass('hidden'))) {
 			$action.toggleClass('hidden', true);
 		}
 	});
