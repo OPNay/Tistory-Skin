@@ -6,8 +6,7 @@
 		$side = $('.side'),
 		$search = $('.side .search'),
 		$page = $('.page'),
-		$action = $('.action'),
-		blog_link = $(location).attr('protocol') + "//" + $(location).attr('host');
+		$action = $('.action');
 
 	//For debuging
 	$('s_t3').contents().unwrap();
@@ -81,7 +80,7 @@
 
 	$search.search = function () {
 		var query = $('#query').val(),
-			url = blog_link + '/search/' + query;
+			url = location.origin + '/search/' + query;
 
 		if (query !== '') {$(location).attr('href', url);}
 	};
