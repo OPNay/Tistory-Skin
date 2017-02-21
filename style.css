@@ -94,8 +94,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .floating-data {display:none;}
 
 /* Header */
-#header {width:100%;}
-#header .link {width:100%; display:block; font-size:48px; color:white; text-align:center; line-height:150px;}
+.header {width:100%;}
+.header .link {width:100%; display:block; font-size:48px; color:white; text-align:center; line-height:150px;}
 
 .nav {z-index:100; width:64px; height:64px; top:0; left:0; position:fixed; overflow:hidden;}
 .desktop .nav {transform:translateY(-100%);}
@@ -350,7 +350,7 @@ em, .accent {color:#03A9F4;}
 	.card-list .date {color:rgba(0,0,0,0.54);}
 }
 
-#header, .nav.active {background:#2196F3;}
+.header, .nav.active {background:#2196F3;}
 .side .menu a:hover {color:#03A9F4;}
 
 #secret:checked + .icon.secret:before {color:#03A9F4;}
