@@ -68,7 +68,7 @@
 	});
 
 	$action.click(function () {
-		$('.wrap').animate({'scrollTop': '0'}, 250);
+		$content.animate({'scrollTop': '0'}, 250);
 	});
 
 	addScroll($content, $action.scrollHandler = function () {
