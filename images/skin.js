@@ -82,7 +82,7 @@
 		var query = $('#query').val(),
 			url = location.origin + '/search/' + query;
 
-		if (query !== '') {$(location).attr('href', url);}
+		if (query !== '') {location.href = url;}
 	};
 
 	$search.find('#query').keypress(function (e) {
@@ -91,7 +91,7 @@
 	$search.find('#query ~ .button').click($search.search);
 
 	$side.ready(function () {
-		var pathname = decodeURI($(location).attr('pathname').replace(/^\//, '')).split('/');
+		var pathname = decodeURI(location.pathname.replace(/^\//, '')).split('/');
 
 		if (pathname[0] === 'category' && pathname[1]) {
 			var name = (pathname[2] || pathname[1]);
