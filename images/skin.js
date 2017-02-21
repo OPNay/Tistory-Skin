@@ -1,6 +1,6 @@
 (function ($) {
 	var $body = $('body'),
-		$cover = $('<div class="cover">'),
+		$cover = $('.cover'),
 		$wrap = $('.wrap'),
 		$nav = $('.nav'),
 		$side = $('.side'),
@@ -24,18 +24,14 @@
 
 	$cover.active = function (a, b) {
 		if(a) {
-			$wrap.prepend($cover.clone());
-			var cover = $('.cover');
-			cover.click(function () {b(false);})
-				.addClass('animate', true);
+			$cover.click(function () {b(false);}).addClass('active', true);
 		} else {
-			$('.cover .floating').removeClass('f');
-			$('.cover').remove();
+			$cover.removeClass('active').find('.card').html('');
 		}
 	};
 
 	$cover.addFloating = function (a) {
-		$('.cover').addClass('f').append($('<div>').addClass('card floating').append(a.clone().removeClass('floating-data')));
+		$cover.append($cover.find('.card').append(a.clone().removeClass('floating-data')));
 	};
 
 	// toggle Side menu
