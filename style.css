@@ -35,7 +35,6 @@ th {background:#EEE;}
 
 blockquote, pre, code {background:#F5F5F5; margin:0 0 16px; padding:16px;}
 
-.card {background:white; border-radius:2px; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
 .material-icons {vertical-align:middle;}
 /* Skin */
 
@@ -64,9 +63,10 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* Card */
 .card {background:white; overflow:hidden; box-sizing:border-box;}
-.desktop .card {margin:12px auto; border-radius:2px; width:940px; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
+.desktop .card {margin:12px 0; border-radius:2px; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
+.desktop .content .card {margin:12px auto; width:940px;}
 @media screen and (max-width:1280px) {
-	.desktop .card {width:768px;}
+	.desktop .content .card {width:768px;}
 }
 .mobile .card, .tablet .card {margin:0; width:100%; border:none; border-bottom:1px solid #DDD; box-shadow:none;}
 
@@ -105,10 +105,10 @@ ol.no-style, ul.no-style {list-style:none;}
 .side hr {margin:0; border:none; border-bottom:1px solid #DADADA;}
 .side .menu {overflow:auto;}
 .side .item {display:block; margin:0; padding:0 16px; line-height:48px; font-size:14px;}
-.side .item.accent {padding-left:12px; border-left:4px solid;}
+.side .item.selected {padding-left:12px; border-left:4px solid #03A9F4; color:#03A9F4;}
 .side .item:hover {background:#F5F5F5;}
 .side .item.subitem {padding:0 8px; padding-left:32px; line-height:36px; color:rgba(0,0,0,0.54); font-size:12px;}
-.side .item.subitem.accent {padding-left:28px;}
+.side .item.subitem.selected {padding-left:28px;}
 
 .search .input, .search .button {background:none; margin:0; padding:0; border:none; line-height:48px;}
 .search .input {font-size:16px; padding:0 0 0 16px;}
@@ -332,7 +332,7 @@ ol.no-style, ul.no-style {list-style:none;}
 body, button, input, textarea {color:rgba(0,0,0,0.87);}
 a {color:rgba(0,0,0,0.87);}
 
-em, .accent {color:#03A9F4;}
+em {color:#03A9F4;}
 
 .card .title .info {color:rgba(0,0,0,0.54);}
 @media (max-width:768px) {

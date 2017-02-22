@@ -49,20 +49,12 @@
 		$cover.addFloating($(this).parent().find('.floating-data'));
 	});
 
-	// Side menu init
-	$side.ready(function () {
-		$side.find('ul').addClass('list').find('a').addClass('item');
-		$('.list > li > ul > li > ul').addClass('subcategory').find('a').addClass('subitem');
-	});
-
 	// Page init
 	$page.ready(function () {
 		if ($page.find('.num').length <= 1) {
 			$page.remove();
 		} else {
-			var selected = $page.find('.selected'), parent = selected.parent();
-			parent.after(selected.addClass('btn num selected'));
-			parent.remove();
+			$page.find('.selected').unwrap().addClass('btn num selected');
 		}
 	});
 
@@ -91,18 +83,23 @@
 	$search.find('#query ~ .button').click($search.search);
 
 	$side.ready(function () {
+		// side menu items
+		$side.find('ul').addClass('list').find('a').addClass('item');
+		$('.list > li > ul > li > ul a').addClass('subitem');
+
 		var pathname = decodeURI(location.pathname.replace(/^\//, '')).split('/');
+		$('.side .item').each(function () {$(this).html($(this).html().trim().replace(/\t/g,''));});
 
 		if (pathname[0] === 'category' && pathname[1]) {
 			var name = (pathname[2] || pathname[1]);
 			$side.find('li a').each(function (index) {
-				if (name === $(this).text().replace(/\s\(\d+\)$/g, '')) {
+				if (name === $(this).text().replace(/\s+\(\d+\)$/g, '')) {
 					$(this).addClass('accent');
 				}
 			});
-		} else {$side.find('li a[href="/' + pathname[0] + '"]').addClass('accent');}
+		} else {$side.find('.item[href="/' + pathname[0] + '"]').addClass('accent');}
 	});
-	
+
 	$('#secret').change(function() {
 		if(this.checked){
 			$(this).parent().find('.icon.secret').html('lock');
@@ -110,7 +107,7 @@
 			$(this).parent().find('.icon.secret').html('lock_open');
 		}
 	});
-	
+
 	// window size
 	$win = $(window);
 	function chkWindow() {
