@@ -19,7 +19,9 @@ h2 {margin:36px 0 12px 0;font-size:1.8em;}
 h3 {margin:24px 0 12px 0;font-size:1.4em;}
 h4, h5, h6 {margin:24px 0 12px 0; font-size:1em;}
 
-a {color:#03A9F4; text-decoration:none;}
+a {color:rgba(0,0,0,0.87); text-decoration:none;}
+article a, a.accent, em {color:#03A9F4;}
+
 p {margin:0 0 12px 0; line-height:1.7;}
 
 ol, ul {padding-left:32px;}
@@ -83,7 +85,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .tablet .card-list .flex,
 .mobile .card-list .flex{flex-direction:column-reverse;}
 .tablet .card-list .date,
-.mobile .card-list .date {width:100%; font-size:12px;}
+.mobile .card-list .date {width:100%; font-size:12px; color:rgba(0,0,0,0.54);}
 
 /* Side menu drawer */
 .button {display:block; padding:6px; width:36px; height:36px; box-sizing:border-box; color:white;}
@@ -197,7 +199,6 @@ ol.no-style, ul.no-style {list-style:none;}
 .tablet .comment .write .input,
 .mobile .comment .write .input {width:100%;}
 
-
 .comment .list p {margin:0; padding:0;}
 .comment .list .li {position:relative; padding:18px 24px 18px 100px; min-height:55px;}
 .comment .list .li.reply {background:#F5F5F5;}
@@ -218,6 +219,10 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .list .control {font-size:14px; line-height:1.5;}
 .comment .list .control a {padding-right:10px;}
 .comment .list .control .icons {font-size:16px;}
+.comment .list .date,
+.comment .list .desc,
+.comment .list .control a {color:rgba(0,0,0,0.54);}
+.comment .list .control a:hover {color:rgba(0,0,0,0.87);}
 
 /* Protected Entry */
 .entry_protected .article {text-align:center;}
@@ -236,7 +241,7 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Page */
 .page {position:relative; text-align:center;}
 .page .btn {display:inline-block; padding:12px; width:24px; height:24px; line-height:24px;font-size:16px; vertical-align:middle;}
-.page .btn.selected {font-weight:bold;}
+.page .btn.selected {font-weight:bold; color:#03A9F4;}
 .page .btn:not(.selected):hover {background:#F5F5F5;}
 .page .no-more-prev, .page .no-more-next {visibility:hidden;}
 
@@ -246,7 +251,7 @@ ol.no-style, ul.no-style {list-style:none;}
 #visitor .day {color:rgba(0,0,0,0.54);}
 
 /* Footer */
-#footer {margin:18px; text-align:center; font-size:14px;}
+#footer {margin:18px; text-align:center; font-size:14px; color:rgba(0,0,0,0.54);}
 #footer p {margin:0; line-height:2;}
 
 /* Bottom Action Button */
@@ -256,7 +261,7 @@ ol.no-style, ul.no-style {list-style:none;}
 	transform:scale(1);
 	font-size:36px; cursor:pointer;
 }
-.action .icon {color:white; border-radius:50%; padding:16px; box-shadow:0 0 6px rgba(0,0,0,0.3); transition:box-shadow 200ms linear;}
+.action .icon {background:#03A9F4; border-radius:50%; padding:16px; box-shadow:0 0 6px rgba(0,0,0,0.3); transition:box-shadow 200ms linear; color:white;}
 .action .icon:hover:not(:active) {box-shadow:0 0 24px rgba(0,0,0,0.3);}
 .action.hidden {
 	-webkit-transform:scale(0);
@@ -267,7 +272,6 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Article */
 .article {padding:0 24px 24px; font-size:14px; line-height:1.8; word-wrap:break-word;}
 .tablet .article, .mobile .article {padding:0 18px 18px;}
-
 
 .article h1, .article h2, .article h3, .article h4, .article h5 {margin:0.75em 0;}
 .article h1, .article h2 {margin:0.8em 0; padding-bottom:0.5em; border-bottom:1px solid #DDD;}
@@ -289,9 +293,9 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Download Button */
 .article .imageblock > a img[src*='.gif'] {display:none;}
 .article .imageblock > a {
-	display:inline-block; border-radius:2px; padding:0 15px 0 0;
+	background:#03A9F4; display:inline-block; border-radius:2px; padding:0 15px 0 0;
 	height:50px; line-height:50px; box-shadow:0 0 4px rgba(0,0,0,0.3);
-	transition:box-shadow 150ms linear; font-weight:bold;
+	transition:box-shadow 150ms linear; font-weight:bold; color:white;
 }
 .article .imageblock > a:before {
 	font:normal normal normal 24px/50px 'Material Icons';
@@ -322,42 +326,3 @@ ol.no-style, ul.no-style {list-style:none;}
 
 	#entry .tags {padding:0 18px;}
 }
-
-/*
- * Theme Blue
- *
- * Primary - Blue #2196F3
- * Dark Primary - #1976D2
- * Light Primary - #BBDEFB
- * Text - #FFF
- * Accent - #03A9F4
- * Primary Text - rgba(0,0,0,0.87)
- * Secondary Text - rgba(0,0,0,0.54)
- */
-
-body, button, input, textarea {color:rgba(0,0,0,0.87);}
-a {color:rgba(0,0,0,0.87);}
-
-em {color:#03A9F4;}
-
-.card .title .info {color:rgba(0,0,0,0.54);}
-@media (max-width:768px) {
-	.card-list .date {color:rgba(0,0,0,0.54);}
-}
-.side .menu a:hover {color:#03A9F4;}
-
-#secret:checked + .icon.secret:before {color:#03A9F4;}
-
-.comment .list .date,
-.comment .list .desc,
-.comment .list .control a {color:rgba(0,0,0,0.54);}
-.comment .list .control a:hover {color:rgba(0,0,0,0.87);}
-
-.page .btn.selected {color:#03A9F4;}
-
-#footer {color:rgba(0,0,0,0.54);}
-
-.action .icon {background:#03A9F4;}
-
-article a {color:#03A9F4;}
-article .imageblock > a {background:#03A9F4; color:white;}
