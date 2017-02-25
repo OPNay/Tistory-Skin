@@ -15,12 +15,12 @@ html, body, label, button, input, textarea, blockquote, pre, code {
 
 h1, h2, h3, h4, h5, h6 {margin:0; font-weight:normal;}
 h1 {margin:36px 0 12px 0; font-size:2.0em;}
-h2 {margin:36px 0 12px 0;font-size:1.8em;}
-h3 {margin:24px 0 12px 0;font-size:1.4em;}
+h2 {margin:36px 0 12px 0; font-size:1.8em;}
+h3 {margin:24px 0 12px 0; font-size:1.4em;}
 h4, h5, h6 {margin:24px 0 12px 0; font-size:1em;}
 
 a {color:rgba(0,0,0,0.87); text-decoration:none;}
-article a, a.accent, em {color:#03A9F4;}
+a.accent, em {color:#03A9F4;}
 
 p {margin:0 0 12px 0; line-height:1.7;}
 
@@ -36,21 +36,18 @@ th, td {padding:6px 12px;}
 th {background:#EEE;}
 
 blockquote, pre, code {background:#F5F5F5; margin:0 0 16px; padding:16px;}
+em {font-style:none; font-weight:normal;}
 
-.material-icons {vertical-align:middle;}
 /* Skin */
-
 html, body, .wrap {margin:0; padding:0; width:100%; height:100%;}
-a {text-decoration:none; cursor:pointer;}
-em {font-style:normal; font-weight:normal;}
-ul, li {margin:0; padding:0;}
+ol, ul, li {margin:0; padding:0;}
 img {border:none;}
 label:focus, input:focus, button:focus, textarea:focus {outline:none;}
+.material-icons {vertical-align:middle;}
 
 /* Tistory */
 #tistorytoolbarid {display:none;}
 
-.scroll-hidden {overflow:hidden;}
 .ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 ol.no-style, ul.no-style {list-style:none;}
 
@@ -108,7 +105,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .side .profile .social:hover {fill:rgba(255,255,255,.75);}
 .side .profile .social svg {width:24px; height:24px;}
 
-.side hr {margin:0; border:none; border-bottom:1px solid #DADADA;}
+.side hr {margin:0;}
 .side .menu {overflow:auto;}
 .side .item {display:block; margin:0; padding:0 16px; line-height:48px; font-size:14px;}
 .side .item.selected {padding-left:12px; border-left:4px solid #03A9F4; color:#03A9F4;}
@@ -227,7 +224,7 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Protected Entry */
 .entry_protected .article {text-align:center;}
 .entry_protected p {margin:12px 0; font-size:18px;}
-.entry_protected input, .entry_protected .icon.enter {background:none; border:none; border-bottom:1px solid #DDD; padding:12px; height:48px; vertical-align:middle; box-sizing:border-box;}
+.entry_protected input, .entry_protected .icon.enter {background:none; border:none; border-bottom:1px solid rgba(0,0,0,0.12); padding:12px; height:48px; vertical-align:middle; box-sizing:border-box;}
 .entry_protected input {width:260px; font-size:20px}
 .entry_protected .icon.enter {color:rgba(0,0,0,0.54); cursor:pointer;}
 .entry_protected .icon.enter:hover {color:rgba(0,0,0,0.87);}
@@ -273,14 +270,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .article {padding:0 24px 24px; font-size:14px; line-height:1.8; word-wrap:break-word;}
 .tablet .article, .mobile .article {padding:0 18px 18px;}
 
-.article h1, .article h2, .article h3, .article h4, .article h5 {margin:0.75em 0;}
-.article h1, .article h2 {margin:0.8em 0; padding-bottom:0.5em; border-bottom:1px solid #DDD;}
-.article h1 {font-size:2em;}
-.article h2 {font-size:1.5em;}
-.article h3 {font-size:1.2em;}
-.article h4 {font-size:1em;}
-.article h5 {font-size:0.8em;}
-
+.article h1, .article h2 {padding-bottom:0.5em; border-bottom:1px solid rgba(0,0,0,0.12);}
 .article ol, .article ul {margin:0.5em 0; padding-left:1.25em;}
 .article ul {list-style:disc;}
 .article ol {list-style:decimal;}
@@ -288,7 +278,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .article img {max-width:100%; height:auto;}
 .article blockquote {background:#F5F5F5; margin:0; padding:1em 25px;}
-.article a {font-weight:bold;}
+.article a {font-weight:bold; color:#03A9F4;}
 
 /* Download Button */
 .article .imageblock > a img[src*='.gif'] {display:none;}
