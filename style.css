@@ -192,6 +192,12 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .write .btn .icon {margin:0 8px; padding:16px; width:24px; line-height:24px; color:rgba(0,0,0,0.54); cursor:pointer;}
 .comment .write .btn .icon:hover {color:rgba(0,0,0,0.87);}
 
+.tablet .comment .write,
+.mobile .comment .write {padding:0 18px 18px;}
+.tablet .comment .write .input,
+.mobile .comment .write .input {width:100%;}
+
+
 .comment .list p {margin:0; padding:0;}
 .comment .list .li {position:relative; padding:18px 24px 18px 100px; min-height:55px;}
 .comment .list .li.reply {background:#F5F5F5;}
@@ -260,6 +266,8 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* Article */
 .article {padding:0 24px 24px; font-size:14px; line-height:1.8; word-wrap:break-word;}
+.tablet .article, .mobile .article {padding:0 18px 18px;}
+
 
 .article h1, .article h2, .article h3, .article h4, .article h5 {margin:0.75em 0;}
 .article h1, .article h2 {margin:0.8em 0; padding-bottom:0.5em; border-bottom:1px solid #DDD;}
@@ -313,11 +321,6 @@ ol.no-style, ul.no-style {list-style:none;}
 	h3 {font-size:1.2em;}
 
 	#entry .tags {padding:0 18px;}
-
-	.article {padding:0 18px 18px;}
-
-	.comment .write {padding:0 18px 18px;}
-	.comment .write .input {width:100%;}
 }
 
 /*
