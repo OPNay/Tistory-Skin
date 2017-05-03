@@ -1,6 +1,5 @@
 (function ($) {
 	var $body = $('body'),
-		$cover = $('.cover'),
 		$content = $('.content'),
 		$nav = $('.nav'),
 		$side = $('.side'),
@@ -19,33 +18,33 @@
 			$nav.toggleClass('active', false);
 		}
 	});
-
-	$cover.active = function (a, b) {
-		$cover.toggleClass('active', a);
-		if(a) {
-			$cover.click(function () {b(false);});
-		} else {
-			$cover.find('.card').html('');
+	
+	createCover = function (a) {
+		$side.after("<div class=\"cover\"></div>"), $('.cover').click(destroyCover);
+		console.log(a);
+		if (a) {
+				$('.cover').append($('<div class=\"card\"></div>').html(a.clone().removeClass('floating-data')));
 		}
 	};
 
-	$cover.addFloating = function (a) {
-		$cover.append($cover.find('.card').html(a.clone().removeClass('floating-data')));
+	destroyCover = function () {
+		$('.cover').remove();
 	};
-
+	
 	// Toggle side menu
-	$side_btn = $('.nav .menu, .side .close .button');
-	activeNav = function (a) {
-		console.log(a);
-		$side.toggleClass('active', a);
-		$side.hasClass('active') ? (function () {$side.after("<div class=\"cover\"></div>"), $('.cover').click(activeNav);})() : $('.cover').remove();
+	activeNav = function () {
+		$side.toggleClass('active');
+		if ($side.hasClass('active')) {
+			createCover();
+			$('.cover').click(function () {activeNav(false);});
+		} else
+			destroyCover();
 	};
-	$side_btn.click(function () {activeNav(!$side.hasClass('active'));});
+	$('.nav .menu, .side .close .button').click(activeNav);
 
 	// toggle Admin floating menu
 	$('.admin.icon').click(function () {
-		$cover.active(true,$cover.active);
-		$cover.addFloating($(this).parent().find('.floating-data'));
+		createCover($(this).parent().find('.floating-data'));
 	});
 
 	// Page init
