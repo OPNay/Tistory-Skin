@@ -251,21 +251,6 @@ ol.no-style, ul.no-style {list-style:none;}
 #footer {margin:18px; text-align:center; font-size:14px; color:rgba(0,0,0,0.54);}
 #footer p {margin:0; line-height:2;}
 
-/* Bottom Action Button */
-.action {
-	z-index:50; position:fixed; bottom:32px; right:32px;
-	-webkit-transform:scale(1);
-	transform:scale(1);
-	font-size:36px; cursor:pointer;
-}
-.action .icon {background:#03A9F4; border-radius:50%; padding:16px; box-shadow:0 0 6px rgba(0,0,0,0.3); transition:box-shadow 200ms linear; color:white;}
-.action .icon:hover:not(:active) {box-shadow:0 0 24px rgba(0,0,0,0.3);}
-.action.hidden {
-	-webkit-transform:scale(0);
-	transform:scale(0);
-}
-.action.hidden .icon {box-shadow:none;}
-
 /* Article */
 .article {padding:0 24px 24px; font-size:14px; line-height:1.8; word-wrap:break-word;}
 .tablet .article, .mobile .article {padding:0 18px 18px;}

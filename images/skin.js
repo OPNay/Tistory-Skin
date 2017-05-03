@@ -5,8 +5,7 @@
 		$nav = $('.nav'),
 		$side = $('.side'),
 		$search = $('.side .search'),
-		$page = $('.page'),
-		$action = $('.action');
+		$page = $('.page');
 
 	//For debuging
 	$('s_t3').contents().unwrap();
@@ -57,18 +56,6 @@
 		} else {
 			$page.find('.selected').unwrap().addClass('btn num selected');
 		}
-	});
-
-	$action.ready(function () {
-		$action.click(function () {$content.animate({'scrollTop': '0'}, 250);});
-
-		addScroll($content, function () {
-			if ($content.scrollTop() !== 0 && $action.hasClass('hidden')) {
-				$action.toggleClass('hidden', false);
-			} else if ($content.scrollTop() === 0 && !($action.hasClass('hidden'))) {
-				$action.toggleClass('hidden', true);
-			}
-		});
 	});
 
 	// Search
