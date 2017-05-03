@@ -150,7 +150,7 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Content */
 .content {overflow-y:scroll; margin:0; padding:0;}
 
-.desktop .content .card {margin:12px auto; width:940px;}
+.desktop .content .card {margin:18px auto; width:940px;}
 @media screen and (max-width:1280px) {
 	.desktop .content .card {width:768px;}
 }
