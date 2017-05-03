@@ -33,15 +33,14 @@
 		$cover.append($cover.find('.card').html(a.clone().removeClass('floating-data')));
 	};
 
-	// toggle Side menu
-	$side.active = function (a) {
+	// Toggle side menu
+	$side_btn = $('.nav .menu, .side .close .button');
+	activeNav = function (a) {
+		console.log(a);
 		$side.toggleClass('active', a);
-		$cover.active(a,$side.active);
+		$side.hasClass('active') ? (function () {$side.after("<div class=\"cover\"></div>"), $('.cover').click(activeNav);})() : $('.cover').remove();
 	};
-
-	$('.nav .icon, .side .close').click(function () {
-		$side.active(!($side.hasClass('active')));
-	});
+	$side_btn.click(function () {activeNav(!$side.hasClass('active'));});
 
 	// toggle Admin floating menu
 	$('.admin.icon').click(function () {
