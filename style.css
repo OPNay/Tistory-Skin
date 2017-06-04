@@ -115,7 +115,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .tablet .side, .mobile .side {z-index:120; position:fixed; transform:translateX(-100%);}
 .tablet .side.active, .mobile .side.active {box-shadow:0 8px 16px 0 rgba(0,0,0,0.3); transform:translateX(0);}
 
-.side .close {position:absolute; top:0; left:0; padding:14px; width:64px; height:64px; box-sizing:border-box;}
+.side .close {position:fixed; top:0; left:0; padding:14px; width:64px; height:64px; box-sizing:border-box;}
 .desktop .side .close {display:none;}
 
 .side .profile {padding:24px; text-align:center; font-size:32px;}
