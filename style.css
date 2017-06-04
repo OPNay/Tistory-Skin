@@ -161,8 +161,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .tablet .content, .mobile .content {margin-top:64px; height:calc(100% - 64px);}
 
 .desktop .content .card {margin:18px auto; width:940px;}
-@media screen and (max-width:1280px) {
-	.desktop .content .card {width:768px;}
+@media screen and (max-width:1320px) {
+	.desktop .content .card {width:640px;}
 }
 .tablet .content .card,
 .mobile .content .card {margin:0; width:100%; border:none; border-bottom:1px solid rgba(0,0,0,0.12); box-shadow:none;}
