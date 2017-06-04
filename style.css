@@ -172,9 +172,10 @@ ol.no-style, ul.no-style {list-style:none;}
 .admin.icon {width:64px; line-height:64px; text-align:center; cursor:pointer;}
 
 .admin_list {margin:8px 0; width:240px;}
-.admin_list .item {display:block;}
+.admin_list .item {padding:12px; line-height:24px;}
 .admin_list .item:hover {background:rgba(0,0,0,0.1);}
-.admin_list .item .material-icons {padding:16px; width:54px; height:54px; box-sizing:border-box; color:rgba(0,0,0,0.54);}
+.admin_list .item .material-icons {color:rgba(0,0,0,0.54);}
+.admin_list .item .title {margin-left:12px; line-height:24px;}
 
 /* Tags */
 #tag .tags {
