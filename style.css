@@ -29,6 +29,7 @@ hr {border:none; border-top:1px solid rgba(255,255,255,0.12);}
 hr.diver-black {border-top:1px solid black;}
 
 /* Tag Default */
+* {margin:0; padding:0; box-sizing:border-box;}
 html, body, label, button, input, textarea, blockquote, pre, code {
 	color:rgba(0,0,0,0.87);
 	-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
