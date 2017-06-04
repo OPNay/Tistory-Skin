@@ -142,10 +142,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .wrap {background:#EEE;}
 
 /* Cover */
-.cover {
-	z-index:110; background:rgba(0,0,0,0.25);
-	position:fixed; top:0; bottom:0; left:0; right:0;
-}
+.cover {z-index:110; background:rgba(0,0,0,0.25); position:fixed; width:100%; height:100%;}
 .cover .card {
 	position:fixed; top:50%; left:50%;
 	box-shadow:0 12px 24px rgba(0,0,0,0.3);
