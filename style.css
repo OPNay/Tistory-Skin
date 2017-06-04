@@ -26,7 +26,7 @@
 
 /* Diver - #000, #FFF 12% */
 hr {border:none; border-top:1px solid rgba(255,255,255,0.12);}
-hr.diver-black {border-top:1px solid black;}
+hr.diver-black {border-top:1px solid rgba(0,0,0,0.12);}
 
 /* Tag Default */
 * {margin:0; padding:0; box-sizing:border-box;}
