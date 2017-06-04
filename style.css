@@ -1,12 +1,26 @@
 @charset "utf-8";
 
 /* Material */
-/*
+
+/* Font
+ *
  * Primary Text - #000 87% / #FFF 100%
  * Secondary Text - #000 54% / #FFF 70%
  * Disabled Text - #000 38% / #FFF 50%
- * Diver - #000, #FFF 12%
  */
+.ft-black {color:rgba(0,0,0,0.87);}
+.ft-black-sec {color:rgba(0,0,0,0.54);}
+.ft-black-dis {color:rgba(0,0,0,0.38);}
+
+.ft-white {color:white;}
+.ft-white-sec {color:rgba(255,255,255,0.7);}
+.ft-white-dis {color:rgba(255,255,255,0.5);}
+
+/* Diver - #000, #FFF 12% */
+hr {border:none; border-top:1px solid rgba(255,255,255,0.12);}
+hr.diver-black {border-top:1px solid black;}
+
+/* Tag Default */
 html, body, label, button, input, textarea, blockquote, pre, code {
 	color:rgba(0,0,0,0.87);
 	-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
@@ -26,8 +40,6 @@ p {margin:0 0 12px 0; line-height:1.7;}
 
 ol, ul {padding-left:32px;}
 li {line-height:1.5;}
-
-hr {border:0; border-top:1px solid rgba(0,0,0,0.12);}
 
 fieldset {margin:0; padding:0; border:0;}
 
