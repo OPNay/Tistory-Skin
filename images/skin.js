@@ -33,7 +33,9 @@
 	
 	// Toggle side menu
 	activeNav = function () {
-		$side.toggleClass('active');
+		if ($body.hasClass('desktop')) {$side.toggleClass('active',false);}
+		else {$side.toggleClass('active');}
+
 		if ($side.hasClass('active')) {
 			createCover();
 			$('.cover').click(function () {activeNav(false);});
@@ -97,7 +99,7 @@
 		if (($win.width() >= 1024) && !$body.hasClass('desktop')) {
 			console.log('Change Window size to Desktop');
 			$body.addClass('desktop').removeClass('tablet mobile');
-			$side.active(false);
+			activeNav();
 		} else if (($win.width() >= 768) && ($win.width() < 1024) && !$body.hasClass('tablet')) {
 			console.log('Change Window size to Tablet');
 			$body.addClass('tablet').removeClass('desktop mobile');
