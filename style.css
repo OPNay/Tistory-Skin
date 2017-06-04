@@ -109,7 +109,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .button {display:block; padding:6px; width:36px; height:36px; box-sizing:border-box; color:white;}
 .button:hover {color:white;}
 
-.side {background:white; height:100%; overflow:hidden;}
+.side {background:white; height:100%; overflow-x:hidden; overflow-y:auto;}
 .desktop .side, .tablet .side {width:320px;}
 .mobile .side {width:100%;}
 .tablet .side, .mobile .side {z-index:120; position:fixed; transform:translateX(-100%);}
@@ -127,7 +127,6 @@ ol.no-style, ul.no-style {list-style:none;}
 .side .profile .social svg {width:24px; height:24px;}
 
 .side hr {margin:0;}
-.side .menu {overflow:auto;}
 .side .item {display:block; margin:0; padding:0 16px; line-height:48px; font-size:14px;}
 .side .item.selected {padding-left:12px; border-left:4px solid #03A9F4; color:#03A9F4;}
 .side .item:hover {background:#F5F5F5;}
