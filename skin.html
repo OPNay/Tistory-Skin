@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>[##_title_##]</title>
 		<meta charset="utf-8" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+		<title>[##_title_##]</title>
 		<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
 		<link rel="stylesheet" href="./style.css" />
+
+		<!-- webfonts -->
+		<link rel="stylesheet" href="http://opnay.com/fonts/notosanskr.css" />
+		<link rel="stylesheet" href="http://opnay.com/fonts/roboto.css" />
+		<link rel="stylesheet" href="http://opnay.com/fonts/materialicons.css" />
+
+		<!-- functions -->
 		<script type="text/javascript" src="./images/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" defer src="./images/skin.js"></script>
 		<script type="text/javascript" defer src="./images/skin_article.js"></script>
+
+		<!-- highlightjs -->
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/github.min.css">
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
 	</head>
@@ -259,15 +269,6 @@
 					});
 					curCode.html(numCode);
 				}
-			})(jQuery);
-		</script>
-		<script>
-			(function ($) {
-				var tstyle = $("<link rel=\"stylesheet\" />");
-				$("head")
-					.append(tstyle.clone().attr('href','https://fonts.googleapis.com/earlyaccess/notosanskr.css'))
-					.append(tstyle.clone().attr('href','https://fonts.googleapis.com/css?family=Roboto'))
-					.append(tstyle.clone().attr('href','https://fonts.googleapis.com/icon?family=Material+Icons'));
 			})(jQuery);
 		</script>
 	</body>
