@@ -261,11 +261,9 @@ ol.no-style, ul.no-style {list-style:none;}
 
 #visitor {padding:12px; font-size:14px; line-height:1.5; text-align:center;}
 #visitor p {margin:0;}
-#visitor .total {color:rgba(0,0,0,0.87);}
-#visitor .day {color:rgba(0,0,0,0.54);}
 
 /* Footer */
-#footer {margin:18px; text-align:center; font-size:14px; color:rgba(0,0,0,0.54);}
+#footer {margin:18px; text-align:center; font-size:14px;;}
 #footer p {margin:0; line-height:2;}
 
 /* Article */
