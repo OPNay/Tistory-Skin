@@ -25,6 +25,7 @@
 	</head>
 	<body class="desktop flex">
 		<s_t3>
+			<!-- side -->
 			<aside class="side flex vertical anim-transform">
 				<div class="close">
 					<a class="button" href="#"><i class="material-icons">close</i></a>
@@ -57,14 +58,16 @@
 					<hr>
 					[##_category_list_##]
 				</div>
-			</aside>
-			<section class="wrap flex vertical flex-1">
+			</aside>	<section class="wrap flex vertical flex-1">
+				<!-- Nav -->
 				<nav class="nav anim-transform">
 					<a class="menu material-icons">menu</a>
 					<span class="title"><a class="link ellipsis" href="[##_blog_link_##]">[##_title_##]</a></span>
 				</nav>
+
+				<!-- Content -->
 				<div class="content flex-1">
-					<s_list>
+					<s_list><!-- Search -->
 					<section id="search_list" class="card">
 						<header class="card-title">
 							<h2 class="ellipsis">[##_list_conform_##]</h2>
@@ -81,7 +84,8 @@
 						<script>if($('.card-list > *').length <= 0)$('.card-list').append('<span class="none"><i class="material-icons icon">warning</i><br/>죄송합니다. 글을 찾을수 없습니다.</span>');</script>
 					</section>
 					</s_list>
-					<s_tag>
+
+					<s_tag><!-- Tag -->
 					<section id="tag" class="card">
 						<header class="card-title"><h2>태그</h2></header>
 						<p class="tags flex">
@@ -89,7 +93,8 @@
 						</p>
 					</section>
 					</s_tag>
-					<s_guest>
+
+					<s_guest><!-- Guest Book -->
 					<section id="g_book" class="card comment">
 						<header class="card-title"><h2>방명록</h2></header>
 						<section class="write">
@@ -139,7 +144,8 @@
 						</section>
 					</section>
 					</s_guest>
-					<s_notice_rep>
+
+					<s_notice_rep><!-- Notice -->
 					<section id="notice" class="card">
 						<header class="card-title">
 							<h2 class="ellipsis"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h2>
@@ -148,7 +154,8 @@
 						<article class="article">[##_notice_rep_desc_##]</article>
 					</section>
 					</s_notice_rep>
-					<s_article_protected>
+
+					<s_article_protected><!-- Article Locked -->
 					<section class="entry_protected card">
 						<header class="card-title">
 								<h2 class="ellipsis">[##_article_rep_title_##]</h2>
@@ -160,7 +167,8 @@
 						</article>
 					</section>
 					</s_article_protected>
-					<s_article_rep>
+
+					<s_article_rep><!-- Article -->
 					<section id="entry" class="card">
 						<header class="card-title flex">
 							<div class="flex-1">
@@ -181,6 +189,8 @@
 						</header>
 						<article class="article">[##_article_rep_desc_##]</article>
 						<s_tag_label><section class="tags"><i class="material-icons icon">label</i>[##_tag_label_rep_##]</section></s_tag_label>
+
+						<!-- Comment -->
 						<section class="comment">
 							<header class="card-title"><h3>[##_article_rep_rp_cnt_##]개의 댓글이 있습니다.</h3></header>
 							<s_rp>
@@ -230,10 +240,11 @@
 									</s_rp_container>
 								</section>
 							</s_rp>
-						</section>
+						</section><!-- E.Comment -->
 					</section>
 					</s_article_rep>
-					<s_paging>
+
+					<s_paging><!-- Paging -->
 					<section class="page card flex">
 						<a [##_prev_page_##] class="btn [##_no_more_prev_##]"><i class="material-icons icon">chevron_left</i></a>
 						<span class="num_block flex-1">
@@ -244,10 +255,14 @@
 						<a [##_next_page_##] class="btn [##_no_more_next_##]"><i class="material-icons icon">chevron_right</i></a>
 					</section>
 					</s_paging>
+
+					<!-- Visitor -->
 					<section id="visitor" class="card">
 						<p class="total">총 [##_count_total_##]명이 방문했어요.</p>
 						<p class="day">오늘 [##_count_today_##]명 | 어제 [##_count_yesterday_##]명</p>
 					</section>
+
+					<!-- Footer -->
 					<footer id="footer">
 						<p>Blog is powered by <em>Tistory</em> & Simplify is made by <em>OPNay</em></p>
 					</footer>
