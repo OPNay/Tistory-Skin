@@ -86,7 +86,7 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .card-title {padding:24px;}
 .card-title h2, .card-title h3 {margin:0; line-height:1.5;}
-.card-title .info {font-size:14px; color:rgba(0,0,0,0.54);}
+.card-title .info {font-size:14px;}
 
 .tablet .card-title,
 .mobile .card-title {padding:16px;}
@@ -103,7 +103,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .tablet .card-list .flex,
 .mobile .card-list .flex{flex-direction:column-reverse;}
 .tablet .card-list .date,
-.mobile .card-list .date {width:100%; font-size:12px; color:rgba(0,0,0,0.54);}
+.mobile .card-list .date {width:100%; font-size:12px;}
 
 /* Side menu drawer */
 .button {display:block; padding:6px; width:36px; height:36px; box-sizing:border-box; color:white;}
@@ -226,8 +226,6 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .list .control {font-size:14px; line-height:1.5;}
 .comment .list .control a {padding-right:10px;}
 .comment .list .control .icons {font-size:16px;}
-.comment .list .date,
-.comment .list .desc,
 .comment .list .control a {color:rgba(0,0,0,0.54);}
 .comment .list .control a:hover {color:rgba(0,0,0,0.87);}
 
