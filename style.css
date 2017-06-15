@@ -161,8 +161,6 @@ ol.no-style, ul.no-style {list-style:none;}
 .tablet .content .card,
 .mobile .content .card {margin:0; width:100%; border:none; border-bottom:1px solid rgba(0,0,0,0.12); box-shadow:none;}
 
-#entry {position:relative;}
-
 .admin.icon {width:64px; line-height:64px; text-align:center; cursor:pointer;}
 
 .admin_list {margin:8px 0; width:240px;}
