@@ -42,7 +42,7 @@
 		} else
 			destroyCover();
 	};
-	$('.nav .menu, .side .close .button').click(activeNav);
+	$('.nav .menu, .side .close .btn').click(activeNav);
 
 	// toggle Admin floating menu
 	$('.admin.icon').click(function () {
@@ -68,7 +68,7 @@
 		$search.find('#query').keypress(function (e) {
 			if (e.keyCode === 13) {$search.search();}
 		});
-		$search.find('#query ~ .button').click($search.search);
+		$search.find('#query ~ .btn').click($search.search);
 	});
 	
 	$side.ready(function () {
