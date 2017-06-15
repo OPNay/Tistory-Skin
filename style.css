@@ -128,9 +128,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .side .item.subitem {padding:0 8px; padding-left:32px; line-height:36px; color:rgba(0,0,0,0.54); font-size:12px;}
 .side .item.subitem.selected {padding-left:28px;}
 
-.search .input, .search .button {background:none; border:none; line-height:48px;}
-.search .input {font-size:16px; padding:0 0 0 16px;}
-.search .button {width:48px; text-align:center; color:rgba(0,0,0,0.54); cursor:pointer;}
+.search {padding:6px 6px 6px 12px;}
+.search .input {background:none; border:none; line-height:36px; font-size:16px;}
 
 /* Wrap */
 .wrap {background:#EEE;}
