@@ -11,12 +11,12 @@
 
 	function addScroll(a,b) {a.scroll(b), b();}
 
+	/* Nav shadow */
 	addScroll($content, function () {
-		if ($content.scrollTop() >= 86 && !$nav.hasClass('active')) {
-			$nav.toggleClass('active', true);
-		} else if ($content.scrollTop() < 86 && ($nav.hasClass('active'))) {
-			$nav.toggleClass('active', false);
-		}
+		if (this.scrollTop === 0)
+			$nav.toggleClass('shadow',false);
+		else if (!$nav.hasClass('shadow'))
+			$nav.toggleClass('shadow',true);
 	});
 	
 	createCover = function (a) {
