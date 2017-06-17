@@ -45,7 +45,7 @@
 	$('.nav .menu, .side .close .btn').click(activeNav);
 
 	// toggle Admin floating menu
-	$('.admin.icon').click(function () {
+	$('.admin .btn').click(function () {
 		createCover($(this).parent().find('.floating-data'));
 	});
 
