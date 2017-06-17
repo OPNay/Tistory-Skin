@@ -235,12 +235,10 @@ ol.no-style, ul.no-style {list-style:none;}
 .page .btn.selected {font-weight:bold; color:#03A9F4;}
 .page .no-more-prev, .page .no-more-next {visibility:hidden;}
 
-#visitor {padding:12px; font-size:14px; line-height:1.5; text-align:center;}
-#visitor p {margin:0;}
-
-/* Footer */
-#footer {margin:18px; text-align:center; font-size:14px;;}
-#footer p {margin:0; line-height:2;}
+.footer {font-size:14px; line-height:1.5; text-align:center;}
+.footer .cpright {margin:16px 0;}
+.visitor {padding:16px;}
+.visitor .info {font-size:12px;}
 
 /* Article */
 .article {padding:0 24px 24px; font-size:14px; line-height:1.8; word-wrap:break-word;}
