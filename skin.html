@@ -159,14 +159,14 @@
 					</s_notice_rep>
 
 					<s_article_protected><!-- Article Locked -->
-					<section class="entry_protected card">
+					<section class="entry_lock card">
 						<header class="card-title">
 								<h2 class="ellipsis">[##_article_rep_title_##]</h2>
 								<span class="info ft-black-sec ellipsis">[##_article_rep_date_##]</span>
 						</header>
-						<article class="article">
+						<article class="lock">
 							<p><i class="material-icons icon">lock</i> 비공개 게시물입니다.</p>
-							<p><input type="password" id="[##_article_password_##]" placeholder="Password"><a class="material-icons icon enter" onclick="[##_article_dissolve_##]">exit_to_app</a></p>
+							<p><input id="[##_article_password_##]" class="pswd" type="password" placeholder="Password"><a class="material-icons btn" onclick="[##_article_dissolve_##]">exit_to_app</a></p>
 						</article>
 					</section>
 					</s_article_protected>

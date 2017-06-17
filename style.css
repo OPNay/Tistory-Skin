@@ -214,13 +214,10 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .list .control a {color:rgba(0,0,0,0.54);}
 .comment .list .control a:hover {color:rgba(0,0,0,0.87);}
 
-/* Protected Entry */
-.entry_protected .article {text-align:center;}
-.entry_protected p {margin:12px 0; font-size:18px;}
-.entry_protected input, .entry_protected .icon.enter {background:none; border:none; border-bottom:1px solid rgba(0,0,0,0.12); padding:12px; height:48px; vertical-align:middle;}
-.entry_protected input {width:260px; font-size:20px}
-.entry_protected .icon.enter {color:rgba(0,0,0,0.54); cursor:pointer;}
-.entry_protected .icon.enter:hover {color:rgba(0,0,0,0.87);}
+/* Locked Entry */
+.entry_lock .lock {text-align:center; font-size:18px;}
+.entry_lock .pswd, .entry_lock .btn {background:none; border:none; border-bottom:1px solid rgba(0,0,0,0.12); height:36px; vertical-align:middle;}
+.entry_lock .pswd {padding:8px; width:260px; font-size:16px;}
 
 /* Entry */
 #entry .tags {padding:0 24px;}
