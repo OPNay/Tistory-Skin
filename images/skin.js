@@ -90,7 +90,7 @@
 	});
 	
 	$('#secret').change(function() {
-		$(this).parent().find('.icon.secret').html(this.checked ? 'lock' : 'lock_open');
+		$(this).parent().find('.btn.secret').html(this.checked ? 'lock' : 'lock_open');
 	});
 
 	// window size
