@@ -13,6 +13,7 @@
 
 	/* Nav shadow */
 	addScroll($content, function () {
+		if ($body.hasClass('desktop')) return;
 		if (this.scrollTop === 0)
 			$nav.toggleClass('shadow',false);
 		else if (!$nav.hasClass('shadow'))
