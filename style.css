@@ -270,6 +270,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .another_category th,
 .another_category td {padding:0 !important; font-size:14px !important; line-height:1.8;}
 
+/* Video Container */
 .video_container {padding-bottom:75%; max-width:100%; height:0; position:relative; overflow:hidden;}
 .video_container.wide {padding-bottom:56.25%;}
 .video_container iframe,
