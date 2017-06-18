@@ -71,7 +71,7 @@
 				<!-- Content -->
 				<div class="content flex-1">
 					<s_list><!-- Search -->
-					<section id="search_list" class="card">
+					<section class="card">
 						<header class="card-title">
 							<h2 class="ellipsis">[##_list_conform_##]</h2>
 							<span class="info ft-black-sec ellipsis">총 [##_list_count_##]개의 글을 찾았습니다.</span>
@@ -84,7 +84,9 @@
 							</a>
 							</s_list_rep>
 						</div>
-						<script>if($('.card-list > *').length <= 0)$('.card-list').append('<span class="none"><i class="material-icons icon">warning</i><br/>죄송합니다. 글을 찾을수 없습니다.</span>');</script>
+						<script>
+							(function ($) {if($('.card-list > *').length <= 0) {$('.card-list').parent().html('<div class="list none"><i class="material-icons icon">warning</i><p>죄송합니다. 글을 찾을수 없습니다.</p></div>');}})(jQuery);
+						</script>
 					</section>
 					</s_list>
 

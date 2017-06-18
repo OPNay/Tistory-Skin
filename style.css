@@ -91,15 +91,14 @@ ol.no-style, ul.no-style {list-style:none;}
 .tablet .card-title,
 .mobile .card-title {padding:16px;}
 
-.card-list {padding:8px 0;}
-.card-list a {padding:18px 32px; line-height:20px;}
-.card-list a:hover {background:#F5F5F5;}
+.card-list {margin:8px 0;}
+.card-list .item {padding:16px; line-height:20px;}
+.card-list .item:hover {background:#F5F5F5;}
 .card-list .date {width:120px;}
-.card-list .none {display:block; padding:32px; color:#F44; line-height:2.5; text-align:center;}
-.card-list .none .icon {font-size:48px;}
+.list.none {display:block; padding:28px 0; color:#F44; line-height:2.5; text-align:center;}
+.list.none .icon {font-size:64px;}
 
-.tablet .card-list a,
-.mobile .card-list a {padding:16px;}
+.desktop .card-list .item {padding:14px 28px;}
 .tablet .card-list .flex,
 .mobile .card-list .flex{flex-direction:column-reverse;}
 .tablet .card-list .date,
