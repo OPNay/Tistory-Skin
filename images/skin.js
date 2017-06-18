@@ -94,6 +94,14 @@
 		$(this).parent().find('.btn.secret').html(this.checked ? 'lock' : 'lock_open');
 	});
 
+	// Entry
+	$('.entry').ready(function () {
+		// Tags
+		$tags = $('.tags');
+		$tags.html($tags.html().replace(/\,/,''));
+		$tags.find('a').addClass('item');
+	});
+
 	// window size
 	$win = $(window);
 	function chkWindow() {

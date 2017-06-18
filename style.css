@@ -218,8 +218,8 @@ ol.no-style, ul.no-style {list-style:none;}
 
 /* Entry */
 .entry .tags {padding:0 24px;}
-.entry .tags .icon {margin-right:8px; vertical-align:middle;}
-.entry .tags a:before {content:'#';}
+.entry .tags .item {background:rgba(0,0,0,0.1); margin: 2px 5px 2px 0; padding:2px 4px; border-radius:4px; font-size: 0.9em; line-height: 1.5em;}
+.entry .tags .item:before {content:'#';}
 .entry .div {margin:24px 0;}
 
 /* Page */
