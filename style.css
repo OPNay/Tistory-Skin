@@ -106,7 +106,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .mobile .card-list .date {width:100%; font-size:12px;}
 
 /* Side menu drawer */
-.side {background:white; height:100%; overflow-x:hidden; overflow-y:auto;}
+.side {position:relative; background:white; height:100%; overflow-x:hidden; overflow-y:auto;}
+.desktop .side {box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
 .desktop .side, .tablet .side {width:320px;}
 .mobile .side {width:100%;}
 .tablet .side, .mobile .side {z-index:120; position:fixed; transform:translateX(-100%);}
