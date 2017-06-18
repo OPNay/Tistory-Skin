@@ -191,7 +191,6 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .comment .list .li {position:relative; padding:18px 24px 18px 100px; min-height:55px;}
 .comment .list .li.reply {background:#F5F5F5;}
-.comment .list .name {margin-right:8px;}
 .comment .list .name .tistoryProfileLayerTrigger {display:none;}
 .comment .list .name img,
 .comment .list .name .icon {
