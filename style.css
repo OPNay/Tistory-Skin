@@ -212,7 +212,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .list .control a:hover {color:rgba(0,0,0,0.87);}
 
 /* Locked Entry */
-.entry_lock .lock {text-align:center; font-size:18px;}
+.entry_lock .lock {text-align:center;}
 .entry_lock .pswd, .entry_lock .btn {background:none; border:none; border-bottom:1px solid rgba(0,0,0,0.12); height:36px; vertical-align:middle;}
 .entry_lock .pswd {padding:8px; width:260px; font-size:16px;}
 
