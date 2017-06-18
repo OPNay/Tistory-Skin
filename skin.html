@@ -173,30 +173,32 @@
 					</s_article_protected>
 
 					<s_article_rep><!-- Article -->
-					<section id="entry" class="card">
-						<header class="card-title flex">
-							<div class="flex-1">
-								<h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
-								<span class="info ft-black-sec ellipsis">[##_article_rep_date_##]</span>
-							</div>
-							<s_ad_div>
-								<div class="admin">
-									<a class="material-icons btn">menu</a>
-									<div class="admin_list floating-data">
-										<a href="[##_s_ad_m_link_##]" class="item flex" target="_blank"><div class="material-icons">mode_edit</div><div class="title flex-1">수정</div></a>
-										<a href="#" class="item flex" onclick="[##_s_ad_s2_onclick_##]"><div class="material-icons">lock_open</div><div class="title flex-1">[##_s_ad_s2_label_##]</div></a>
-										<a href="#" class="item flex" onclick="[##_s_ad_d_onclick_##]"><div class="material-icons">delete</div><div class="title flex-1">삭제</div></a>
-									</div>
+					<section class="entry card">
+						<div class="post">
+							<header class="card-title flex">
+								<div class="flex-1">
+									<h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+									<span class="info ft-black-sec ellipsis">[##_article_rep_date_##]</span>
 								</div>
-								<script>$('#entry .admin_item:contains("비공개") .material-icons').html('lock');</script>
-							</s_ad_div>
-						</header>
-						<article class="article">[##_article_rep_desc_##]</article>
-						<s_tag_label><section class="tags"><i class="material-icons icon">label</i>[##_tag_label_rep_##]</section></s_tag_label>
+								<s_ad_div>
+									<div class="admin">
+										<a class="material-icons btn">menu</a>
+										<div class="admin_list floating-data">
+											<a href="[##_s_ad_m_link_##]" class="item flex" target="_blank"><div class="material-icons">mode_edit</div><div class="title flex-1">수정</div></a>
+											<a href="#" class="item flex" onclick="[##_s_ad_s2_onclick_##]"><div class="material-icons">lock_open</div><div class="title flex-1">[##_s_ad_s2_label_##]</div></a>
+											<a href="#" class="item flex" onclick="[##_s_ad_d_onclick_##]"><div class="material-icons">delete</div><div class="title flex-1">삭제</div></a>
+										</div>
+									</div>
+									<script>$('#entry .admin_item:contains("비공개") .material-icons').html('lock');</script>
+								</s_ad_div>
+							</header>
+							<article class="article">[##_article_rep_desc_##]</article>
+							<s_tag_label><section class="tags"><i class="material-icons icon">label</i>[##_tag_label_rep_##]</section></s_tag_label>
+						</div>
 
+						<hr class="div divider-black">
 						<!-- Comment -->
-						<section class="comment">
-							<header class="card-title"><h3>[##_article_rep_rp_cnt_##]개의 댓글이 있습니다.</h3></header>
+						<div class="comment">
 							<s_rp>
 								<section class="write">
 									<s_rp_input_form>
@@ -244,7 +246,7 @@
 									</s_rp_container>
 								</section>
 							</s_rp>
-						</section><!-- E.Comment -->
+						</div><!-- E.Comment -->
 					</section>
 					</s_article_rep>
 

@@ -217,10 +217,10 @@ ol.no-style, ul.no-style {list-style:none;}
 .entry_lock .pswd {padding:8px; width:260px; font-size:16px;}
 
 /* Entry */
-#entry .tags {padding:0 24px;}
-#entry .tags .icon {margin-right:8px; vertical-align:middle;}
-#entry .tags a:before {content:'#';}
-#entry h3 a {display:block;}
+.entry .tags {padding:0 24px;}
+.entry .tags .icon {margin-right:8px; vertical-align:middle;}
+.entry .tags a:before {content:'#';}
+.entry .div {margin:24px 0;}
 
 /* Page */
 .page {text-align:center;}
@@ -281,6 +281,4 @@ ol.no-style, ul.no-style {list-style:none;}
 	h1 {font-size:1.75em;}
 	h2 {font-size:1.4em;}
 	h3 {font-size:1.2em;}
-
-	#entry .tags {padding:0 18px;}
 }
