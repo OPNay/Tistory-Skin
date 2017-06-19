@@ -102,6 +102,12 @@
 		$tags.find('a').addClass('item');
 	});
 
+	// Auto Resize textarea
+	$('.textarea').on('keyup keydown', function () {
+		if (this.scrollHeight > 64)
+			$(this).css('height','1px').css('height', this.scrollHeight + 'px');
+	});
+
 	// window size
 	$win = $(window);
 	function chkWindow() {
