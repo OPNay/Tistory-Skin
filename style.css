@@ -216,7 +216,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .entry_lock .pswd {padding:8px; width:260px; font-size:16px;}
 
 /* Entry */
-.entry .tags {padding:0 24px;}
+.entry .tags {padding:0 18px;}
+.desktop .entry .tags {padding:0 24px;}
 .entry .tags .item {background:rgba(0,0,0,0.1); margin: 2px 5px 2px 0; padding:2px 4px; border-radius:4px; font-size: 0.9em; line-height: 1.5em;}
 .entry .tags .item:before {content:'#';}
 .entry .div {margin:24px 0;}
@@ -234,8 +235,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .visitor .info {font-size:12px;}
 
 /* Article */
-.article {padding:0 24px 24px; font-size:14px; line-height:1.8; word-wrap:break-word;}
-.tablet .article, .mobile .article {padding:0 18px 18px;}
+.article {padding:0 18px 18px; font-size:14px; line-height:1.8; word-wrap:break-word;}
+.desktop .article {padding:0 24px 24px;}
 
 .article h1, .article h2 {padding-bottom:0.5em; border-bottom:1px solid rgba(0,0,0,0.12);}
 .article ol, .article ul {margin:0.5em 0; padding-left:1.25em;}
