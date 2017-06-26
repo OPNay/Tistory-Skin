@@ -13,7 +13,10 @@
 
 	/* Nav shadow */
 	addScroll($content, function () {
-		if ($body.hasClass('desktop')) return;
+		if ($body.hasClass('desktop')) {
+			if ($nav.hasClass('shadow')) $nav.removeClass('shadow');
+			return;
+		}
 		if (this.scrollTop === 0)
 			$nav.toggleClass('shadow',false);
 		else if (!$nav.hasClass('shadow'))
@@ -75,7 +78,7 @@
 	$side.ready(function () {
 		// side menu items
 		$side.find('ul').addClass('list').find('a').addClass('item');
-		$('.list > li > ul > li > ul a').addClass('subitem');
+		$('.list > li > ul > li > ul a').addClass('subitem ft-black-sec');
 
 		var pathname = decodeURI(location.pathname.replace(/^\//, '')).split('/');
 		$('.side .item').each(function () {$(this).html($(this).html().trim().replace(/\t/g,''));});
@@ -98,8 +101,7 @@
 	$('.entry').ready(function () {
 		// Tags
 		$tags = $('.tags');
-		$tags.html($tags.html().replace(/\,/,''));
-		$tags.find('a').addClass('item');
+		$tags.html($tags.html().replace(/\,/,'')).find('a').addClass('item');
 	});
 
 	// Auto Resize textarea
@@ -121,6 +123,12 @@
 		} else if (($win.width() < 768) && !$body.hasClass('mobile')) {
 			console.log('Change Window size to Mobile');
 			$body.addClass('mobile').removeClass('desktop tablet');
+		}
+
+		if (($win.width() >= 1300) && !$body.hasClass('wide')) {
+			$body.addClass('wide');
+		} else if (($win.width() < 1300) && $body.hasClass('wide')) {
+			$body.removeClass('wide');
 		}
 	}
 	$win.resize(chkWindow), chkWindow();
