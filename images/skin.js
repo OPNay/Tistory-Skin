@@ -113,25 +113,27 @@
 	// window size
 	$win = $(window);
 	function chkWindow() {
-		if (($win.width() >= 1024) && !$body.hasClass('desktop')) {
+		let a = $('html');
+		if (($win.width() >= 1024) && !a.hasClass('desktop')) {
 			console.log('Change Window size to Desktop');
-			$body.addClass('desktop').removeClass('tablet mobile');
+			a.addClass('desktop').removeClass('tablet mobile');
 			activeNav();
-		} else if (($win.width() >= 768) && ($win.width() < 1024) && !$body.hasClass('tablet')) {
+			destroyCover();
+		} else if (($win.width() >= 768) && ($win.width() < 1024) && !a.hasClass('tablet')) {
 			console.log('Change Window size to Tablet');
-			$body.addClass('tablet').removeClass('desktop mobile');
-		} else if (($win.width() < 768) && !$body.hasClass('mobile')) {
+			a.addClass('tablet').removeClass('desktop mobile');
+		} else if (($win.width() < 768) && !a.hasClass('mobile')) {
 			console.log('Change Window size to Mobile');
-			$body.addClass('mobile').removeClass('desktop tablet');
+			a.addClass('mobile').removeClass('desktop tablet');
 		}
 
-		if (($win.width() >= 1300) && !$body.hasClass('wide')) {
-			$body.addClass('wide');
-		} else if (($win.width() < 1300) && $body.hasClass('wide')) {
-			$body.removeClass('wide');
+		if (($win.width() >= 1300) && !a.hasClass('wide')) {
+			a.addClass('wide');
+		} else if (($win.width() < 1300) && a.hasClass('wide')) {
+			a.removeClass('wide');
 		}
 	}
-	$win.resize(chkWindow), chkWindow();
+	$win.resize(chkWindow); chkWindow();
 
 	return true;
 }(jQuery));
