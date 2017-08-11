@@ -143,7 +143,9 @@ ol.no-style, ul.no-style {list-style:none;}
 .nav {z-index:10; position:fixed; top:0; padding:14px; width:100%; height:64px; transition:box-shadow linear 200ms;}
 .nav.shadow {box-shadow:0 0 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);}
 .desktop .nav {width:calc(100% - 320px);}
-.nav .title {margin-left:14px; line-height:36px; font-size:1.4em;}
+.desktop .nav .menu {display:none;}
+.nav .menu {margin-right:14px;}
+.nav .title {line-height:36px; font-size:18pt;}
 
 /**********
   Content
