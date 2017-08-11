@@ -120,6 +120,9 @@ ol.no-style, ul.no-style {list-style:none;}
 .side .profile .social:hover {fill:rgba(255,255,255,.75);}
 .side .profile .social svg {width:24px; height:24px;}
 
+.side .social {padding:12px; line-height:1; justify-content:space-around;}
+.side .social a {max-height:24px; line-height:24px; text-decoration:none;}
+
 .side .item {display:block; padding:0 16px; line-height:48px; font-size:14px;}
 .side .item.selected {padding-left:12px; border-left:4px solid #03A9F4; color:#03A9F4;}
 .side .item:hover {background:#F5F5F5;}
