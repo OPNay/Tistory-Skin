@@ -37,7 +37,8 @@
 	
 	// Toggle side menu
 	activeNav = function () {
-		if ($body.hasClass('desktop')) {$side.toggleClass('active',false);}
+		let a = $('html');
+		if (a.hasClass('desktop')) {$side.toggleClass('active',false);}
 		else {$side.toggleClass('active');}
 
 		if ($side.hasClass('active')) {
