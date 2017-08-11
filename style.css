@@ -116,9 +116,6 @@ ol.no-style, ul.no-style {list-style:none;}
 .side .profile {padding:24px; text-align:center; font-size:32px;}
 .side .profile p {margin:0; line-height:1.5;}
 .side .profile .img {border-radius:50%; width:128px; height:auto;}
-.side .profile .social {display:inline-block; width:32px; height:32px; fill:white; line-height:1;}
-.side .profile .social:hover {fill:rgba(255,255,255,.75);}
-.side .profile .social svg {width:24px; height:24px;}
 
 .side .social {padding:12px; line-height:1; justify-content:space-around;}
 .side .social a {max-height:24px; line-height:24px; text-decoration:none;}
