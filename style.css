@@ -67,7 +67,7 @@ em {font-style:normal; font-weight:normal;}
 audio, video {width:100%; height:auto; min-height:32px;}
 
 /* Skin */
-html, body, .wrap {width:100%; height:100%;}
+html, body {width:100%; height:100%;}
 img {border:none;}
 label:focus, input:focus, button:focus, textarea:focus {outline:none;}
 .material-icons {vertical-align:middle;}
@@ -104,9 +104,9 @@ ol.no-style, ul.no-style {list-style:none;}
 .desktop .card-list .date {width:120px; font-size:inherit;}
 
 /* Side menu drawer */
-.side {position:relative; background:white; width:100%; height:100%; overflow-x:hidden; overflow-y:auto;}
+.side {position:fixed; top:0; left:0; background:white; width:100%; height:100%; overflow-x:hidden; overflow-y:auto;}
 .desktop .side {box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
-.desktop .side, .tablet .side {width:320px;}
+.desktop .side, .tablet .side {position:fixed; top:0; left:0; width:320px;}
 .tablet .side, .mobile .side {z-index:120; position:fixed; transform:translateX(-100%);}
 .tablet .side.active, .mobile .side.active {box-shadow:0 8px 16px 0 rgba(0,0,0,0.3); transform:translateX(0);}
 
@@ -130,7 +130,8 @@ ol.no-style, ul.no-style {list-style:none;}
 .search .input {background:none; border:none; line-height:36px; font-size:16px;}
 
 /* Wrap */
-.wrap {background:#EEE;}
+.wrap {background:#EEE; min-height:100%;}
+.desktop .wrap {margin-left:320px;}
 
 /* Cover */
 .cover {z-index:110; background:rgba(0,0,0,0.25); position:fixed; width:100%; height:100%;}
@@ -139,16 +140,15 @@ ol.no-style, ul.no-style {list-style:none;}
 .floating-data {display:none;}
 
 /* Nav */
-.nav {z-index:10; position:fixed; top:0; left:0; padding:14px; width:100%; height:64px; transition:box-shadow linear 200ms;}
+.nav {z-index:10; position:fixed; top:0; padding:14px; width:100%; height:64px; transition:box-shadow linear 200ms;}
 .nav.shadow {box-shadow:0 0 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);}
-.desktop .nav {transform:translateY(-100%);}
+.desktop .nav {width:calc(100% - 320px);}
 .nav .title {margin-left:14px; line-height:36px; font-size:1.4em;}
 
 /**********
   Content
  **********/
-.content {margin:64px 0 0; height:calc(100% - 64px); overflow-x:hidden; overflow-y:scroll;}
-.desktop .content {margin:0; height:100%;}
+.content {padding:64px 0 0;}
 
 .section {margin:16px 12px; width:calc(100% - 24px);}
 .desktop .section {margin:32px auto; width:688px;} /* article width: 640px */
