@@ -104,7 +104,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .desktop .card-list .date {width:120px; font-size:inherit;}
 
 /* Side menu drawer */
-.side {position:fixed; top:0; left:0; background:white; width:100%; height:100%; overflow-x:hidden; overflow-y:auto;}
+.side {z-index:120; position:fixed; top:0; left:0; background:white; width:100%; height:100%; overflow-x:hidden; overflow-y:auto;}
 .desktop .side {box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
 .desktop .side, .tablet .side {position:fixed; top:0; left:0; width:320px;}
 .tablet .side, .mobile .side {z-index:120; position:fixed; transform:translateX(-100%);}
@@ -140,7 +140,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .floating-data {display:none;}
 
 /* Nav */
-.nav {z-index:10; position:fixed; top:0; padding:14px; width:100%; height:64px; transition:box-shadow linear 200ms;}
+.nav {z-index:100; position:fixed; top:0; padding:14px; width:100%; height:64px; transition:box-shadow linear 200ms;}
 .nav.shadow {box-shadow:0 0 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);}
 .desktop .nav {width:calc(100% - 320px);}
 .desktop .nav .menu {display:none;}
