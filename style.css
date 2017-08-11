@@ -5,10 +5,14 @@
 /* Theme
  *
  * Primary - #2196F3
- * Secondary - #B3E5FC
+ * Secondary - #03A9F4
  */
-.bg-primary {background:#2196F3;}
-.bg-secondary {background:#B3E5FC;}
+.bg-p {background:#2196F3;}
+.bg-p-l {background:#6EC6FF;}
+.bg-p-d {background:#0069C0;}
+.bg-s {background:#03A9F4;}
+.bg-s-l {background:#67DAFF;}
+.bg-s-d {background:#007AC1;}
 
 /* Font
  *
