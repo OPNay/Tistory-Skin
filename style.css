@@ -159,7 +159,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .desktop .section {margin:32px auto; width:688px;} /* article width: 640px */
 .desktop.wide .section {width:968px;} /* article width: 920px */
 
-.section .header .title {margin:0; line-height:2; font-size:1.4em;}
+.section .header .title {margin:0; line-height:2; font-size:18pt;}
 .section .header .info {margin-bottom:16px;}
 
 /* Content : Tags */
@@ -203,7 +203,7 @@ ol.no-style, ul.no-style {list-style:none;}
 /* Content : Article Lock */
 .entry_lock {text-align:center;}
 .entry_lock .pswd, .entry_lock .btn {background:none; border:none; border-bottom:rgba(0,0,0,0.12) solid 1px; height:36px; vertical-align:middle;}
-.entry_lock .pswd {padding:8px; width:260px; font-size:16px;}
+.entry_lock .pswd {padding:8px; width:260px; font-size:14pt;}
 
 /* Content : Article Admin */
 .admin {padding:14px;}
@@ -221,10 +221,10 @@ ol.no-style, ul.no-style {list-style:none;}
 .page .no-more-prev, .page .no-more-next {visibility:hidden;}
 
 /* Content : Footer */
-.footer {font-size:14px; line-height:1.5; text-align:center;}
+.footer {line-height:1.5; text-align:center;}
 .footer .cpright {margin:16px 0;}
 .visitor {padding:16px;}
-.visitor .info {font-size:12px;}
+.visitor .info {font-size:14px;}
 
 /* Content : Article Default Tag */
 .article h1, .article h2 {border-bottom:1px solid rgba(0,0,0,0.12);}
