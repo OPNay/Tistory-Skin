@@ -22,10 +22,11 @@
 	});
 	
 	createCover = function (a) {
-		$side.after("<div class=\"cover\"></div>"), $('.cover').click(destroyCover);
-		console.log(a);
+		let tmp = $("<div class='cover'>");
+		tmp.click(destroyCover);
+		$side.after(tmp);
 		if (a) {
-				$('.cover').append($('<div class=\"card\"></div>').html(a.clone().removeClass('floating-data')));
+				$('.cover').append($("<div class='card'>").html(a.clone().removeClass('floating-data')));
 		}
 	};
 
