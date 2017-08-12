@@ -1,7 +1,5 @@
 (function ($) {
-	let $win = $(window),
-		$html = $('html'),
-		$body = $('body'),
+	let $w = $(window), $h = $('html'), $b = $('body'),
 		$content = $('.content'),
 		$nav = $('.nav'),
 		$side = $('.side'),
@@ -14,8 +12,8 @@
 	function addScroll(a,b) {return a.scroll(b) && b();}
 
 	/* Nav shadow */
-	addScroll($win, function () {
-		if ($win.scrollTop() === 0)
+	addScroll($w, function () {
+		if ($w.scrollTop() === 0)
 			$nav.toggleClass('shadow',false);
 		else if (!$nav.hasClass('shadow'))
 			$nav.toggleClass('shadow',true);
@@ -26,7 +24,7 @@
 		tmp.click(destroyCover);
 		$side.after(tmp);
 		if (a) {
-				$('.cover').append($("<div class='card'>").html(a.clone().removeClass('floating-data')));
+				tmp.append($("<div class='card'>").html(a.clone().removeClass('floating-data')));
 		}
 	};
 
@@ -36,8 +34,7 @@
 	
 	// Toggle side menu
 	activeNav = function () {
-		let a = $('html');
-		if (a.hasClass('desktop')) {$side.toggleClass('active',false);}
+		if ($h.hasClass('desktop')) {$side.toggleClass('active',false);}
 		else {$side.toggleClass('active');}
 
 		if ($side.hasClass('active')) {
@@ -111,29 +108,27 @@
 	});
 
 	// window size
-	$win = $(window);
 	function chkWindow() {
-		let a = $('html');
-		if (($win.width() >= 1024) && !a.hasClass('desktop')) {
+		if (($w.width() >= 1024) && !$h.hasClass('desktop')) {
 			console.log('Change Window size to Desktop');
-			a.addClass('desktop').removeClass('tablet mobile');
+			$h.addClass('desktop').removeClass('tablet mobile');
 			activeNav();
 			destroyCover();
-		} else if (($win.width() >= 768) && ($win.width() < 1024) && !a.hasClass('tablet')) {
+		} else if (($w.width() >= 768) && ($w.width() < 1024) && !$h.hasClass('tablet')) {
 			console.log('Change Window size to Tablet');
-			a.addClass('tablet').removeClass('desktop mobile');
-		} else if (($win.width() < 768) && !a.hasClass('mobile')) {
+			$h.addClass('tablet').removeClass('desktop mobile');
+		} else if (($w.width() < 768) && !$h.hasClass('mobile')) {
 			console.log('Change Window size to Mobile');
-			a.addClass('mobile').removeClass('desktop tablet');
+			$h.addClass('mobile').removeClass('desktop tablet');
 		}
 
-		if (($win.width() >= 1300) && !a.hasClass('wide')) {
-			a.addClass('wide');
-		} else if (($win.width() < 1300) && a.hasClass('wide')) {
-			a.removeClass('wide');
+		if (($w.width() >= 1300) && !$h.hasClass('wide')) {
+			$h.addClass('wide');
+		} else if (($w.width() < 1300) && $h.hasClass('wide')) {
+			$h.removeClass('wide');
 		}
 	}
-	$win.resize(chkWindow); chkWindow();
+	$w.resize(chkWindow); chkWindow();
 
 	return true;
 }(jQuery));
