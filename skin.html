@@ -47,11 +47,7 @@
 					<a class="material-icons btn ft-black-sec">search</a>
 				</div>
 				<hr>
-				<div class="menu">
-					[##_blog_menu_##]
-					<hr>
-					[##_category_list_##]
-				</div>
+				<div class="menu">[##_blog_menu_##]<hr>[##_category_list_##]</div>
 			</aside>
 
 			<!-- Wrap -->
@@ -75,9 +71,7 @@
 							</a>
 							</s_list_rep>
 						</div>
-						<script>
-							(function ($) {if($('.card-list > *').length <= 0) {$('.card-list').parent().html('<div class="list none"><i class="material-icons icon">warning</i><p>죄송합니다. 글을 찾을수 없습니다.</p></div>');}})(jQuery);
-						</script>
+						<script>(function ($) {if($('.card-list > *').length <= 0) {$('.card-list').parent().html('<div class="list none"><i class="material-icons icon">warning</i><p>죄송합니다. 글을 찾을수 없습니다.</p></div>');}})(jQuery);</script>
 					</div>
 					</s_list>
 
@@ -244,11 +238,7 @@
 					<s_paging><!-- Paging -->
 					<div class="page section card flex">
 						<a [##_prev_page_##] class="btn material-icons [##_no_more_prev_##]">chevron_left</a>
-						<div class="num_block flex-1">
-						<s_paging_rep>
-							<a [##_paging_rep_link_##] class="btn num">[##_paging_rep_link_num_##]</a>
-						</s_paging_rep>
-						</div>
+						<div class="num_block flex-1"><s_paging_rep><a [##_paging_rep_link_##] class="btn num">[##_paging_rep_link_num_##]</a></s_paging_rep></div>
 						<a [##_next_page_##] class="btn material-icons [##_no_more_next_##]">chevron_right</a>
 					</div>
 					</s_paging>
