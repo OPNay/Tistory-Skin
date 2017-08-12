@@ -22,6 +22,8 @@
  * Secondary Text - #000 54% / #FFF 70%
  * Disabled Text - #000 38% / #FFF 50%
  */
+a {color:#03A9F4;}
+
 .ft-black {color:rgba(0,0,0,0.87);}
 .ft-black-sec {color:rgba(0,0,0,0.54);}
 .ft-black-dis {color:rgba(0,0,0,0.38);}
@@ -41,7 +43,7 @@ html, body, label, button, input, textarea, blockquote, pre, code {
 	font-family:Roboto,RobotoDraft,arial,'Noto Sans KR','Nanum Gothic',sans-serif;
 }
 
-a, label, button, input, textarea {color:rgba(0,0,0,0.87);}
+label, button, input, textarea {color:rgba(0,0,0,0.87);}
 
 h1, h2, h3, h4, h5, h6 {margin:0 0 16px 0; font-weight:normal;}
 h1 {font-size:2.0em;}
