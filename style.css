@@ -22,7 +22,7 @@
  * Secondary Text - #000 54% / #FFF 70%
  * Disabled Text - #000 38% / #FFF 50%
  */
-a {color:#03A9F4;}
+a, em {color:#03A9F4;}
 
 .ft-black {color:rgba(0,0,0,0.87);}
 .ft-black-sec {color:rgba(0,0,0,0.54);}
@@ -52,7 +52,6 @@ h3 {font-size:1.4em;}
 h4, h5, h6 {font-size:1em;}
 
 a {text-decoration:none; cursor:pointer}
-a.accent, em {color:#03A9F4;}
 
 p {margin:0 0 12px 0; line-height:1.7;}
 
