@@ -174,7 +174,6 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .write {padding:18px;}
 .desktop .comment .write {padding:24px;}
 .comment .write .input {margin-bottom:12px; padding:6px; width:100%; border-bottom:#DDD solid 1px; font-size:0.9em;}
-.desktop .comment .write .input {width:50%;}
 .comment .write .textarea {background:rgba(0,0,0,0.1); width:100%; min-height:64px; padding:8px 12px; resize:none; font-size:1em;}
 .comment .write .btn-block {width:100%; text-align:right;}
 .comment .write .btn {margin:0 8px;}
