@@ -179,7 +179,6 @@ ol.no-style, ul.no-style {list-style:none;}
 .comment .write .btn {margin:0 8px;}
 
 .comment .list .item {position:relative; padding:18px 24px 18px 100px; min-height:55px;}
-.comment .list .item.reply {background:#EEEEEE;}
 .comment .list .name img, .comment .list .name .icon {position:absolute; top:18px; left:18px; border-radius:50%; width:64px; height:64px; overflow:hidden;}
 .comment .list .name .icon {color:rgba(0,0,0,0.2); font-size:64px; text-align:center;}
 .comment .list .name .icon:before {content:'person';}
