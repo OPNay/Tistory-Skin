@@ -14,6 +14,8 @@
 .bg-s-l {background:#67DAFF;}
 .bg-s-d {background:#007AC1;}
 
+.bg-gray {background:#EEE}
+
 /* Font
  *
  * Primary Text - #000 87% / #FFF 100%
@@ -130,7 +132,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .search .input {background:none; border:none; line-height:36px; font-size:16px;}
 
 /* Wrap */
-.wrap {background:#EEE; min-height:100%;}
+.wrap {min-height:100%;}
 .desktop .wrap {margin-left:320px;}
 
 /* Cover */
