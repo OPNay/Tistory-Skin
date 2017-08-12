@@ -1,5 +1,7 @@
 (function ($) {
-	var $body = $('body'),
+	let $win = $(window),
+		$html = $('html'),
+		$body = $('body'),
 		$content = $('.content'),
 		$nav = $('.nav'),
 		$side = $('.side'),
@@ -9,15 +11,11 @@
 	//For debuging
 	$('s_t3').contents().unwrap();
 
-	function addScroll(a,b) {a.scroll(b), b();}
+	function addScroll(a,b) {return a.scroll(b) && b();}
 
 	/* Nav shadow */
-	addScroll($content, function () {
-		if ($body.hasClass('desktop')) {
-			if ($nav.hasClass('shadow')) $nav.removeClass('shadow');
-			return;
-		}
-		if (this.scrollTop === 0)
+	addScroll($win, function () {
+		if ($win.scrollTop() === 0)
 			$nav.toggleClass('shadow',false);
 		else if (!$nav.hasClass('shadow'))
 			$nav.toggleClass('shadow',true);
