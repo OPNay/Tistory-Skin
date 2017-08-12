@@ -97,8 +97,8 @@
 	// Entry
 	$('.entry').ready(function () {
 		// Tags
-		$tags = $('.tags');
-		$tags.html($tags.html().replace(/\,/,'')).find('a').addClass('item');
+		let $tags = $('.tag');
+		$tags.html($tags.html().replace(/\,/g,'')).find('a').addClass('item');
 	});
 
 	// Auto Resize textarea
