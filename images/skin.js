@@ -24,15 +24,14 @@
 	/**********
 	 * Cover
 	 **********/
+	let cover = $("<div class='cover'>");
 	createCover = function () {
-		let ea = $("<div class='cover'>");
-		ea.click(function () {destroyCover(true);});
-		$drawer.after(ea);
+		cover.click(function () {destroyCover(true);});
+		$drawer.after(cover);
 	};
 	
 	appendCard = function (a) {
-		let ea = $('.cover');
-		ea.append($("<div  class='card'>").html(a.clone().removeClass('floating-data')));
+		cover.append($("<div  class='card'>").html(a.clone().removeClass('floating-data')));
 	}
 
 	destroyCover = function (a) {
