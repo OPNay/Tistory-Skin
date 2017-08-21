@@ -118,7 +118,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .desktop .drawer .close {display:none;}
 
 .drawer .profile {padding:24px; text-align:center; font-size:32px;}
-.drawer .profile p {margin:0; line-height:1.5;}
+.drawer .profile a {display:block;}
 .drawer .profile .img {border-radius:50%; width:128px; height:auto;}
 
 .drawer .social {padding:12px; line-height:1; justify-content:space-around;}
