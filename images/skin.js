@@ -52,12 +52,16 @@
 	};
 	$('.nav .menu, .drawer .close .btn').click(toggleDrawer);
 
-	// toggle Admin floating menu
+	/**********
+	 * Toggle Admin Menu
+	 **********/
 	$('.admin .btn').click(function () {
 		createCover(); appendCard($(this).parent().find('.floating-data'));
 	});
 
-	// Page init
+	/**********
+	 * Page Indicator
+	 **********/
 	$page.ready(function () {
 		if ($page.find('.num').length <= 1) {
 			$page.remove();
@@ -66,7 +70,9 @@
 		}
 	});
 
-	// Search
+	/**********
+	 * Drawer Search
+	 **********/
 	$search.ready(function () {
 		$search.search = function () {
 			var query = $('#query').val();
@@ -79,6 +85,9 @@
 		$search.find('#query ~ .btn').click($search.search);
 	});
 	
+	/**********
+	 * Drawer Menu
+	 **********/
 	$drawer.ready(function () {
 		// side menu items
 		$drawer.find('ul').addClass('list').find('a').addClass('item');
@@ -97,24 +106,34 @@
 		} else {$drawer.find('.item[href="/' + pathname[0] + '"]').addClass('accent');}
 	});
 	
+	/**********
+	 * Comment Secret Button
+	 **********/
 	$('#secret').change(function() {
 		$(this).parent().find('.btn.secret').html(this.checked ? 'lock' : 'lock_open');
 	});
 
-	// Entry
-	$('.entry').ready(function () {
-		// Tags
-		let $tags = $('.tag');
-		$tags.html($tags.html().replace(/\,/g,'')).find('a').addClass('item');
-	});
-
+	/**********
+	 * Comment Textarea
+	 **********/
 	// Auto Resize textarea
 	$('.textarea').on('keyup keydown', function () {
 		if (this.scrollHeight > 64)
 			$(this).css('height','1px').css('height', this.scrollHeight + 'px');
 	});
 
-	// window size
+	/**********
+	 * Entry
+	 **********/
+	$('.entry').ready(function () {
+		// Tags
+		let $tags = $('.tag');
+		$tags.html($tags.html().replace(/\,/g,'')).find('a').addClass('item');
+	});
+
+	/**********
+	 * Window
+	 **********/
 	function chkWindow() {
 		if (($w.width() >= 1024) && !$h.hasClass('desktop')) {
 			console.log('Change Window size to Desktop');
@@ -135,13 +154,6 @@
 		}
 	}
 	$w.resize(chkWindow); chkWindow();
-
-	function init() {
-		$.getScript('window.resize.js', function () {
-			
-		});
-	}
-	window.skin = this;
 
 	return true;
 }(jQuery));
