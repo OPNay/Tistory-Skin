@@ -83,8 +83,8 @@ label:focus, input:focus, button:focus, textarea:focus {outline:none;}
 ol.no-style, ul.no-style {list-style:none;}
 
 /* animate */
-.anim-transform {transition:transform 200ms linear;}
-.anim-opacity {transition:opacity 200ms linear;}
+.anim-transform {transition:transform 200ms;}
+.anim-opacity {transition:opacity 200ms;}
 
 /* Flex */
 .flex {display:-webkit-flex; display:flex; -webkit-flex-flow:row; flex-flow:row;}
@@ -144,7 +144,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .card-data {display:none;}
 
 /* Nav */
-.nav {z-index:100; position:fixed; top:0; padding:14px; width:100%; height:64px; transition:box-shadow linear 200ms;}
+.nav {z-index:100; position:fixed; top:0; padding:14px; width:100%; height:64px; transition:box-shadow 200ms;}
 .nav.shadow {box-shadow:0 0 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);}
 .desktop .nav {width:calc(100% - 320px);}
 .desktop .nav .menu {display:none;}
@@ -240,7 +240,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .article .imageblock > a {
 	background:#03A9F4; display:inline-block; border-radius:2px; padding:0 15px 0 0;
 	height:50px; line-height:50px; box-shadow:0 0 4px rgba(0,0,0,0.3);
-	transition:box-shadow 150ms linear; font-weight:bold; color:white;
+	transition:box-shadow 150ms; font-weight:bold; color:white;
 }
 .article .imageblock > a:before {
 	font:normal normal normal 24px/50px 'Material Icons';
