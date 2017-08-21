@@ -25,8 +25,9 @@
 	 * Cover
 	 **********/
 	let cover = $("<div class='cover'>");
-	createCover = function () {
-		cover.click(function () {destroyCover(true);});
+	createCover = function (a) {
+		if (typeof a == 'undefined') a = function () {destroyCover(true)};
+		cover.click(a);
 		$drawer.after(cover);
 	};
 	
@@ -41,17 +42,15 @@
 	/**********
 	 * Toggle Drawer
 	 **********/
-	activeDrawer = function () {
-		if ($h.hasClass('desktop')) {$drawer.toggleClass('active',false);}
-		else {$drawer.toggleClass('active');}
+	toggleDrawer = function (a) {
+		$drawer.toggleClass('active',a);
 
 		if ($drawer.hasClass('active')) {
-			createCover();
-			$('.cover').click(function () {activeDrawer(false);});
+			createCover(function () {toggleDrawer(false);});
 		} else
 			destroyCover(true);
 	};
-	$('.nav .menu, .drawer .close .btn').click(activeDrawer);
+	$('.nav .menu, .drawer .close .btn').click(toggleDrawer);
 
 	// toggle Admin floating menu
 	$('.admin .btn').click(function () {
@@ -120,8 +119,7 @@
 		if (($w.width() >= 1024) && !$h.hasClass('desktop')) {
 			console.log('Change Window size to Desktop');
 			$h.addClass('desktop').removeClass('tablet mobile');
-			activeDrawer();
-			destroyCover();
+			toggleDrawer(false);
 		} else if (($w.width() >= 768) && ($w.width() < 1024) && !$h.hasClass('tablet')) {
 			console.log('Change Window size to Tablet');
 			$h.addClass('tablet').removeClass('desktop mobile');
