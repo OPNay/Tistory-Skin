@@ -76,6 +76,9 @@ label:focus, input:focus, button:focus, textarea:focus {outline:none;}
 .material-icons {vertical-align:middle;}
 .btn {display:block; padding:6px; width:36px; height:36px; line-height:24px; cursor:pointer;}
 
+.left {float:left;}
+.right {float:right;}
+
 /* Tistory */
 #tistorytoolbarid, .tistoryProfileLayerTrigger {display:none;}
 
