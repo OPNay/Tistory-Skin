@@ -35,7 +35,7 @@
 	}
 
 	destroyCover = function (a) {
-		$(a ? '.cover' : '.cover .card').remove();
+		a ? cover.html('').remove() : cover.html('');
 	};
 	
 	/**********
