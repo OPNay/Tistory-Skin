@@ -2,8 +2,8 @@
 	let $w = $(window), $h = $('html'), $b = $('body'),
 		$content = $('.content'),
 		$nav = $('.nav'),
-		$side = $('.side'),
-		$search = $('.side .search'),
+		$drawer = $('.drawer'),
+		$search = $('.drawer .search'),
 		$page = $('.page');
 
 	//For debuging
@@ -11,7 +11,9 @@
 
 	function addScroll(a,b) {return a.scroll(b) && b();}
 
-	/* Nav shadow */
+	/**********
+	 * Toolbar Shadow
+	 **********/
 	addScroll($w, function () {
 		if ($w.scrollTop() === 0)
 			$nav.toggleClass('shadow',false);
@@ -19,35 +21,42 @@
 			$nav.toggleClass('shadow',true);
 	});
 	
-	createCover = function (a) {
-		let tmp = $("<div class='cover'>");
-		tmp.click(destroyCover);
-		$side.after(tmp);
-		if (a) {
-				tmp.append($("<div class='card'>").html(a.clone().removeClass('floating-data')));
-		}
-	};
-
-	destroyCover = function () {
-		$('.cover').remove();
+	/**********
+	 * Cover
+	 **********/
+	createCover = function () {
+		let ea = $("<div class='cover'>");
+		ea.click(function () {destroyCover(true);});
+		$drawer.after(ea);
 	};
 	
-	// Toggle side menu
-	activeNav = function () {
-		if ($h.hasClass('desktop')) {$side.toggleClass('active',false);}
-		else {$side.toggleClass('active');}
+	appendCard = function (a) {
+		let ea = $('.cover');
+		ea.append($("<div  class='card'>").html(a.clone().removeClass('floating-data')));
+	}
 
-		if ($side.hasClass('active')) {
-			createCover();
-			$('.cover').click(function () {activeNav(false);});
-		} else
-			destroyCover();
+	destroyCover = function (a) {
+		$(a ? '.cover' : '.cover .card').remove();
 	};
-	$('.nav .menu, .side .close .btn').click(activeNav);
+	
+	/**********
+	 * Toggle Drawer
+	 **********/
+	activeDrawer = function () {
+		if ($h.hasClass('desktop')) {$drawer.toggleClass('active',false);}
+		else {$drawer.toggleClass('active');}
+
+		if ($drawer.hasClass('active')) {
+			createCover();
+			$('.cover').click(function () {activeDrawer(false);});
+		} else
+			destroyCover(true);
+	};
+	$('.nav .menu, .drawer .close .btn').click(activeDrawer);
 
 	// toggle Admin floating menu
 	$('.admin .btn').click(function () {
-		createCover($(this).parent().find('.floating-data'));
+		createCover(); appendCard($(this).parent().find('.floating-data'));
 	});
 
 	// Page init
@@ -72,22 +81,22 @@
 		$search.find('#query ~ .btn').click($search.search);
 	});
 	
-	$side.ready(function () {
+	$drawer.ready(function () {
 		// side menu items
-		$side.find('ul').addClass('list').find('a').addClass('item');
+		$drawer.find('ul').addClass('list').find('a').addClass('item');
 		$('.list > li > ul > li > ul a').addClass('subitem ft-black-sec');
 
 		var pathname = decodeURI(location.pathname.replace(/^\//, '')).split('/');
-		$('.side .item').each(function () {$(this).html($(this).html().trim().replace(/\t/g,''));});
+		$('.drawer .item').each(function () {$(this).html($(this).html().trim().replace(/\t/g,''));});
 
 		if (pathname[0] === 'category' && pathname[1]) {
 			var name = (pathname[2] || pathname[1]);
-			$side.find('li a').each(function (index) {
+			$drawer.find('li a').each(function (index) {
 				if (name === $(this).text().replace(/\s+\(\d+\)$/g, '')) {
 					$(this).addClass('accent');
 				}
 			});
-		} else {$side.find('.item[href="/' + pathname[0] + '"]').addClass('accent');}
+		} else {$drawer.find('.item[href="/' + pathname[0] + '"]').addClass('accent');}
 	});
 	
 	$('#secret').change(function() {
@@ -112,7 +121,7 @@
 		if (($w.width() >= 1024) && !$h.hasClass('desktop')) {
 			console.log('Change Window size to Desktop');
 			$h.addClass('desktop').removeClass('tablet mobile');
-			activeNav();
+			activeDrawer();
 			destroyCover();
 		} else if (($w.width() >= 768) && ($w.width() < 1024) && !$h.hasClass('tablet')) {
 			console.log('Change Window size to Tablet');
@@ -129,6 +138,13 @@
 		}
 	}
 	$w.resize(chkWindow); chkWindow();
+
+	function init() {
+		$.getScript('window.resize.js', function () {
+			
+		});
+	}
+	window.skin = this;
 
 	return true;
 }(jQuery));
