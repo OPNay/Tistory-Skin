@@ -107,17 +107,13 @@
 	});
 	
 	/**********
-	 * Comment Secret Button
+	 * Comment
 	 **********/
 	$('#secret').change(function() {
 		$(this).parent().find('.btn.secret').html(this.checked ? 'lock' : 'lock_open');
 	});
 
-	/**********
-	 * Comment Textarea
-	 **********/
-	// Auto Resize textarea
-	$('.textarea').on('keyup keydown', function () {
+	$('.comment .textarea').on('keyup keydown', function () {
 		if (this.scrollHeight > 64)
 			$(this).css('height','1px').css('height', this.scrollHeight + 'px');
 	});
