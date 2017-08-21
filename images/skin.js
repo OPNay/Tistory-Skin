@@ -32,7 +32,7 @@
 	};
 	
 	appendCard = function (a) {
-		cover.append($("<div  class='card'>").html(a.clone().removeClass('floating-data')));
+		cover.append($("<div  class='card'>").html(a.clone().removeClass('card-data')));
 	}
 
 	destroyCover = function (a) {
@@ -56,7 +56,7 @@
 	 * Toggle Admin Menu
 	 **********/
 	$('.admin .btn').click(function () {
-		createCover(); appendCard($(this).parent().find('.floating-data'));
+		createCover(); appendCard($(this).parent().find('.card-data'));
 	});
 
 	/**********

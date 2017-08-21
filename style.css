@@ -141,7 +141,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .cover {z-index:110; background:rgba(0,0,0,0.25); position:fixed; width:100%; height:100%;}
 .cover .card {position:fixed; top:50%; left:50%; box-shadow:0 12px 24px rgba(0,0,0,0.3); transform:translate(-50%, -50%);}
 
-.floating-data {display:none;}
+.card-data {display:none;}
 
 /* Nav */
 .nav {z-index:100; position:fixed; top:0; padding:14px; width:100%; height:64px; transition:box-shadow linear 200ms;}
