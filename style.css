@@ -78,6 +78,7 @@ label:focus, input:focus, button:focus, textarea:focus {outline:none;}
 
 .left {float:left;}
 .right {float:right;}
+.none {display:none;}
 
 /* Tistory */
 #tistorytoolbarid, .tistoryProfileLayerTrigger {display:none;}
@@ -133,9 +134,6 @@ ol.no-style, ul.no-style {list-style:none;}
 .drawer .item.subitem {padding:0 8px; padding-left:32px; line-height:36px; font-size:12px;}
 .drawer .item.subitem.selected {padding-left:28px;}
 
-.search {padding:6px 6px 6px 12px;}
-.search .input {background:none; border:none; line-height:36px; font-size:16px;}
-
 /* Wrap */
 .wrap {min-height:100%;}
 .desktop .wrap {margin-left:320px;}
@@ -153,6 +151,10 @@ ol.no-style, ul.no-style {list-style:none;}
 .desktop .nav .menu {display:none;}
 .nav .menu {margin-right:14px;}
 .nav .title {line-height:36px; font-size:18pt;}
+
+.search .input {border:none; background:none; outline:none; border-bottom:1px solid rgba(255,255,255,0.75); padding:8px 0; color:white; width:0; transition:width 200ms;}
+.search .input::placeholder {color:white;}
+.search.active .input {padding:8px; width:240px;}
 
 /**********
   Content
