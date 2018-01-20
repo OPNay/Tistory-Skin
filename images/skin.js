@@ -98,7 +98,7 @@
 	 **********/
 	$side.ready(function () {
 		// side menu items
-		$side.find('ul').addClass('list').find('a').addClass('item');
+		$side.find('ul').addClass('list').find('a').addClass('item ft-black');
 		$('.list > li > ul > li > ul a').addClass('subitem ft-black-sec');
 
 		var pathname = decodeURI(location.pathname.replace(/^\//, '')).split('/');
