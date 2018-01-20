@@ -111,16 +111,16 @@ ol.no-style, ul.no-style {list-style:none;}
 .card {position:relative; background:white; border-radius:2px; width:100%; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
 .header ~ .card {margin:8px 0;}
 
-.card-list {margin:8px 0; padding:8px 0;}
-.card-list .item {padding:12px; line-height:20px; flex-direction:column-reverse;}
+.card-list {margin:8px 0; padding:8px 0; font-size:0.9rem;}
+.card-list .item {padding:12px; flex-direction:column-reverse;}
 .card-list .item:hover {background:#F5F5F5;}
-.card-list .title {margin-bottom:0.2rem; word-wrap:break-word; word-break:break-all;}
-.card-list .date {width:100%; font-size:0.9rem;}
+.card-list .title {word-wrap:break-word; word-break:break-all;}
+.card-list .date {display:flex; align-items:center; width:100%; font-size:0.8rem;}
 .list.none {display:block; padding:28px 0; color:#F44; line-height:2.5; text-align:center;}
 .list.none .icon {font-size:64px;}
 
 .desktop .card-list .item {padding:14px 28px; flex-direction:row;}
-.desktop .card-list .date {width:120px; font-size:1rem;}
+.desktop .card-list .date {width:120px; font-size:0.9rem;}
 
 /* Side menu drawer */
 .side {z-index:120; background:white; position:fixed; top:0; bottom:0; width:320px; overflow-x:hidden; overflow-y:auto; transform:translateX(-100%);}
