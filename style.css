@@ -75,8 +75,8 @@ table {border-spacing:0;}
 th, td {padding:6px 12px;}
 th {background:#EEE;}
 
-blockquote, pre {background:#F5F5F5; margin:0 0 16px; padding:8px 12px;}
-code {background:#F5F5F5; margin:4px 6px; font-size:0.9em;}
+blockquote, pre {background:#F5F5F5; margin:0 0 16px; padding:8px 12px; font-size:0.8rem;}
+code {background:#F5F5F5; margin:4px 6px; font-size:0.8em;}
 em {font-style:normal; font-weight:normal;}
 
 audio, video {width:100%; height:auto; min-height:32px;}
