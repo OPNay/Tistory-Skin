@@ -69,8 +69,6 @@ a {text-decoration:none; cursor:pointer}
 
 p {margin:0 0 12px 0; line-height:1.7;}
 
-li {line-height:1.5;}
-
 fieldset {border:0;}
 
 table {border-spacing:0;}
@@ -139,10 +137,10 @@ ol.no-style, ul.no-style {list-style:none;}
 .side .social {padding:12px; line-height:1; justify-content:space-around;}
 .side .social a {max-height:24px; line-height:24px; text-decoration:none;}
 
-.side .item {display:block; padding:0 16px; line-height:48px; font-size:0.9rem;}
+.side .item {display:block; padding:12px; font-size:0.9rem; line-height:24px;}
 .side .item.selected {padding-left:12px; border-left:4px solid #03A9F4; color:#03A9F4;}
 .side .item:hover {background:#F5F5F5;}
-.side .item.subitem {padding:0 8px; padding-left:32px; line-height:36px; font-size:0.8rem;}
+.side .item.subitem {padding:8px 8px 8px 32px; font-size:0.8rem;}
 .side .item.subitem.selected {padding-left:28px;}
 
 /* Wrap */
