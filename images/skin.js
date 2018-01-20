@@ -2,8 +2,8 @@
 	let $w = $(window), $h = $('html'), $b = $('body'),
 		$content = $('.content'),
 		$nav = $('.nav'),
-		$drawer = $('.drawer'),
-		$search = $('.drawer .search'),
+		$side = $('.side'),
+		$search = $('.side .search'),
 		$page = $('.page');
 
 	//For debuging
@@ -28,7 +28,7 @@
 	createCover = function (a) {
 		if (typeof a == 'undefined') a = function () {destroyCover(true)};
 		cover.click(a);
-		$drawer.after(cover);
+		$side.after(cover);
 	};
 	
 	appendCard = function (a) {
@@ -43,14 +43,14 @@
 	 * Toggle Drawer
 	 **********/
 	toggleDrawer = function (a) {
-		$drawer.toggleClass('active',a);
+		$side.toggleClass('active',a);
 
-		if ($drawer.hasClass('active')) {
+		if ($side.hasClass('active')) {
 			createCover(function () {toggleDrawer(false);});
 		} else
 			destroyCover(true);
 	};
-	$('.nav .menu, .drawer .close .btn').click(toggleDrawer);
+	$('.nav .menu, .side .close .btn').click(toggleDrawer);
 
 	/**********
 	 * Toggle Admin Menu
@@ -96,22 +96,22 @@
 	/**********
 	 * Drawer Menu
 	 **********/
-	$drawer.ready(function () {
+	$side.ready(function () {
 		// side menu items
-		$drawer.find('ul').addClass('list').find('a').addClass('item');
+		$side.find('ul').addClass('list').find('a').addClass('item');
 		$('.list > li > ul > li > ul a').addClass('subitem ft-black-sec');
 
 		var pathname = decodeURI(location.pathname.replace(/^\//, '')).split('/');
-		$('.drawer .item').each(function () {$(this).html($(this).html().trim().replace(/\t/g,''));});
+		$('.side .item').each(function () {$(this).html($(this).html().trim().replace(/\t/g,''));});
 
 		if (pathname[0] === 'category' && pathname[1]) {
 			var name = (pathname[2] || pathname[1]);
-			$drawer.find('li a').each(function (index) {
+			$side.find('li a').each(function (index) {
 				if (name === $(this).text().replace(/\s+\(\d+\)$/g, '')) {
 					$(this).addClass('accent');
 				}
 			});
-		} else {$drawer.find('.item[href="/' + pathname[0] + '"]').addClass('accent');}
+		} else {$side.find('.item[href="/' + pathname[0] + '"]').addClass('accent');}
 	});
 	
 	/**********
