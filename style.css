@@ -227,7 +227,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .cover .item .title {margin-left:12px; line-height:24px;}
 
 /* Content : Page Navigator */
-.page {text-align:center;}
+.page {text-align:center; font-size:0.9rem;}
 .page .btn {display:inline-block;}
 .page .btn.num {width:auto;}
 .page .btn.selected {font-weight:bold; color:#03A9F4;}
