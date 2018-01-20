@@ -5,7 +5,7 @@
 		$side = $('.side'),
 		$search = $('.side .search'),
 		$page = $('.page'),
-        $tag = $('.tag');
+		$tag = $('.tag');
 
 	//For debuging
 	$('s_t3').contents().unwrap();
@@ -74,25 +74,25 @@
 	/**********
 	 * Search Function
 	 **********/
-    search = function (ei) {
-        var query = $(ei).val().trim(); // Trim will remove space of start and end position
-        
-        // Tistory search function. (http://blog.tistory.com/search/value%20to%20search)
+	search = function (ei) {
+		var query = $(ei).val().trim(); // Trim will remove space of start and end position
+		
+		// Tistory search function. (http://blog.tistory.com/search/value%20to%20search)
 		if (query !== '') {location.href = encodeURI(location.origin + '/search/' + query);}
-    };
-    
-    $('.search .btn').click(function () {
-        has = $('.search').hasClass('active');
-        $('.search').toggleClass('active', !has);
-        if (!has) {
-            $('.search .input').focus().keypress(function (e) {
-                if (e.keyCode === 13) {search(this);}
-            });
-        }
-        if ($h.hasClass('mobile')) {
-            $('.nav .title').toggleClass('none', !has);
-        }
-    });
+	};
+	
+	$('.search .btn').click(function () {
+		has = $('.search').hasClass('active');
+		$('.search').toggleClass('active', !has);
+		if (!has) {
+			$('.search .input').focus().keypress(function (e) {
+				if (e.keyCode === 13) {search(this);}
+			});
+		}
+		if ($h.hasClass('mobile')) {
+			$('.nav .title').toggleClass('none', !has);
+		}
+	});
 	
 	/**********
 	 * Drawer Menu
