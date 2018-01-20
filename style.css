@@ -51,7 +51,7 @@ hr.divider-white {border-top:rgba(255,255,255,0.12);}
 
 /* Tag Default */
 * {margin:0; padding:0; box-sizing:border-box;}
-html, body, label, button, input, textarea, blockquote, pre, code {
+html, label, button, input, textarea, blockquote, pre, code {
 	-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
 	font-family:Roboto,'Noto Sans','Noto Sans KR',arial,'Nanum Gothic',sans-serif;
     font-size:16pt;
