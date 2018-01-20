@@ -172,7 +172,7 @@ ol.no-style, ul.no-style {list-style:none;}
  **********/
 .content {padding:64px 0 0;}
 
-.section {margin:16px 12px; width:calc(100% - 24px);}
+.section {margin:1.2rem auto; width:calc(100% - 1.2rem);}
 .desktop .section {margin:32px auto; width:688px;} /* article width: 640px */
 .desktop.wide .section {width:968px;} /* article width: 920px */
 
