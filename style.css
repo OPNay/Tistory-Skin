@@ -83,8 +83,7 @@ label:focus, input:focus, button:focus, textarea:focus {outline:none;}
 ol.no-style, ul.no-style {list-style:none;}
 
 /* animate */
-.anim-transform {transition:transform 200ms;}
-.anim-opacity {transition:opacity 200ms;}
+.animate {transition:transform 200ms;}
 
 /* Flex */
 .flex {display:-webkit-flex; display:flex; -webkit-flex-flow:row; flex-flow:row;}
