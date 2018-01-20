@@ -135,29 +135,5 @@
 		$tags.html($tags.html().replace(/\,/g,'')).find('a').addClass('item');
 	});
 
-	/**********
-	 * Window
-	 **********/
-	function chkWindow() {
-		if (($w.width() >= 1024) && !$h.hasClass('desktop')) {
-			console.log('Change Window size to Desktop');
-			$h.addClass('desktop').removeClass('tablet mobile');
-			toggleDrawer(false);
-		} else if (($w.width() >= 768) && ($w.width() < 1024) && !$h.hasClass('tablet')) {
-			console.log('Change Window size to Tablet');
-			$h.addClass('tablet').removeClass('desktop mobile');
-		} else if (($w.width() < 768) && !$h.hasClass('mobile')) {
-			console.log('Change Window size to Mobile');
-			$h.addClass('mobile').removeClass('desktop tablet');
-		}
-
-		if (($w.width() >= 1300) && !$h.hasClass('wide')) {
-			$h.addClass('wide');
-		} else if (($w.width() < 1300) && $h.hasClass('wide')) {
-			$h.removeClass('wide');
-		}
-	}
-	$w.resize(chkWindow); chkWindow();
-
 	return true;
 }(jQuery));
