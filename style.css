@@ -222,7 +222,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .admin {padding:14px;}
 .cover .card {width:240px;}
 .cover .list {margin:8px 0;}
-.cover .item {padding:12px; line-height:24px;}
+.cover .item {padding:12px; line-height:24px; font-size:0.9rem;}
 .cover .item:hover {background:rgba(0,0,0,0.1);}
 .cover .item .title {margin-left:12px; line-height:24px;}
 
