@@ -178,7 +178,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .desktop.wide .section {width:968px;} /* article width: 920px */
 
 .section .header .title {margin:0; line-height:1.5; font-size:1.1rem;}
-.section .header .info {font-size:0.9rem;}
+.section .header .info {font-size:0.8rem;}
 
 /* Content : Tags */
 .tags {padding:16px; line-height:1.25; justify-content:center;}
