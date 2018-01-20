@@ -247,7 +247,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .article li ul {list-style:circle;}
 
 .article img {max-width:100%; height:auto;}
-.article a {font-weight:bold; color:#03A9F4;}
+.article a {color:#03A9F4;}
 
 /* Content : Article Download Button */
 .article .imageblock > a img[src*='.gif'] {display:none;}
