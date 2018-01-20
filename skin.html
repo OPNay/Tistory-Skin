@@ -88,22 +88,6 @@
 					<div class="section">
 						<header class="header"><h2 class="title">방명록</h2></header>
 						<div class="card comment">
-							<section class="write">
-								<s_guest_input_form>
-									<s_guest_member>
-									<s_guest_guest>
-										<input id="name" class="input" type="text" placeholder="이름" name="[##_guest_input_name_##]" />
-										<input id="password" class="input" type="password" placeholder="비밀번호" maxlength="8" name="[##_guest_input_password_##]" />
-									</s_guest_guest>
-									</s_guest_member>
-									<textarea id="comment" class="textarea" name="[##_guest_textarea_body_##]" placeholder="방명록을 적어주세요."></textarea>
-									<div class="btn-block">
-										<input id="secret" name="secret" type="checkbox" hidden="hidden" />
-										<label class="material-icons btn secret ft-black-sec" for="secret">lock_open</label>
-										<div class="material-icons btn ft-black-sec" onClick="[##_guest_onclick_submit_##]">comment</div>
-									</div>
-								</s_guest_input_form>
-							</section>
 							<section class="list">
 								<s_guest_container>
 									<s_guest_rep>
@@ -130,6 +114,22 @@
 										</s_guest_reply_container>
 									</s_guest_rep>
 								</s_guest_container>
+							</section>
+							<section class="write">
+								<s_guest_input_form>
+									<s_guest_member>
+									<s_guest_guest>
+										<input id="name" class="input" type="text" placeholder="이름" name="[##_guest_input_name_##]" />
+										<input id="password" class="input" type="password" placeholder="비밀번호" maxlength="8" name="[##_guest_input_password_##]" />
+									</s_guest_guest>
+									</s_guest_member>
+									<textarea id="comment" class="textarea" name="[##_guest_textarea_body_##]" placeholder="방명록을 적어주세요."></textarea>
+									<div class="btn-block">
+										<input id="secret" name="secret" type="checkbox" hidden="hidden" />
+										<label class="material-icons btn secret ft-black-sec" for="secret">lock_open</label>
+										<div class="material-icons btn ft-black-sec" onClick="[##_guest_onclick_submit_##]">comment</div>
+									</div>
+								</s_guest_input_form>
 							</section>
 						</div>
 					</div>
@@ -185,22 +185,6 @@
 							<!-- Comment -->
 							<div class="comment">
 								<s_rp>
-									<section class="write">
-										<s_rp_input_form>
-										<s_rp_member>
-										<s_rp_guest>
-											<input id="name" class="input" type="text" placeholder="이름" name="[##_rp_input_name_##]" />
-											<input id="password" class="input" type="password" placeholder="비밀번호" maxlength="8" name="[##_rp_input_password_##]" />
-										</s_rp_guest>
-										</s_rp_member>
-										<textarea id="comment" class="textarea" name="[##_rp_input_comment_##]" placeholder="댓글을 적어주세요."></textarea>
-										<div class="btn-block">
-											<input id="secret" name="secret" type="checkbox" hidden="hidden" />
-											<label class="material-icons btn secret ft-black-sec" for="secret">lock_open</label>
-											<div class="material-icons btn ft-black-sec" onClick="[##_rp_onclick_submit_##]">comment</div>
-										</div>
-										</s_rp_input_form>
-									</section>
 									<section class="list">
 										<s_rp_container>
 												<s_rp_rep>
@@ -228,6 +212,23 @@
 												</s_rp_rep>
 										</s_rp_container>
 									</section>
+                                    <hr>
+									<section class="write">
+										<s_rp_input_form>
+										<s_rp_member>
+										<s_rp_guest>
+											<input id="name" class="input" type="text" placeholder="이름" name="[##_rp_input_name_##]" />
+											<input id="password" class="input" type="password" placeholder="비밀번호" maxlength="8" name="[##_rp_input_password_##]" />
+										</s_rp_guest>
+										</s_rp_member>
+										<textarea id="comment" class="textarea" name="[##_rp_input_comment_##]" placeholder="댓글을 적어주세요."></textarea>
+										<div class="btn-block">
+											<input id="secret" name="secret" type="checkbox" hidden="hidden" />
+											<label class="material-icons btn secret ft-black-sec" for="secret">lock_open</label>
+											<div class="material-icons btn ft-black-sec" onClick="[##_rp_onclick_submit_##]">comment</div>
+										</div>
+										</s_rp_input_form>
+									</section>
 								</s_rp>
 							</div><!-- E.Comment -->
 						</div>
@@ -236,9 +237,9 @@
 
 					<s_paging><!-- Paging -->
 					<div class="page section card flex">
-						<a [##_prev_page_##] class="btn material-icons [##_no_more_prev_##]">chevron_left</a>
-						<div class="num_block flex-1"><s_paging_rep><a [##_paging_rep_link_##] class="btn num">[##_paging_rep_link_num_##]</a></s_paging_rep></div>
-						<a [##_next_page_##] class="btn material-icons [##_no_more_next_##]">chevron_right</a>
+						<a [##_prev_page_##] class="btn material-icons ft-black [##_no_more_prev_##]">chevron_left</a>
+						<div class="num_block flex-1"><s_paging_rep><a [##_paging_rep_link_##] class="btn num ft-black">[##_paging_rep_link_num_##]</a></s_paging_rep></div>
+						<a [##_next_page_##] class="btn material-icons ft-black [##_no_more_next_##]">chevron_right</a>
 					</div>
 					</s_paging>
 
