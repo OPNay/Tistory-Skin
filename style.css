@@ -107,11 +107,9 @@ ol.no-style, ul.no-style {list-style:none;}
 .desktop .card-list .date {width:120px; font-size:inherit;}
 
 /* Side menu drawer */
-.side {z-index:120; position:fixed; top:0; left:0; background:white; width:100%; height:100%; overflow-x:hidden; overflow-y:auto;}
+.side {z-index:120; background:white; position:fixed; top:0; bottom:0; width:320px; overflow-x:hidden; overflow-y:auto; transform:translateX(-100%);}
+.side.active, .desktop .side {box-shadow:0 0 16px rgba(0,0,0,0.3); transform:translateX(0);}
 .desktop .side {box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);}
-.desktop .side, .tablet .side {position:fixed; top:0; left:0; width:320px;}
-.tablet .side, .mobile .side {z-index:120; position:fixed; transform:translateX(-100%);}
-.tablet .side.active, .mobile .side.active {box-shadow:0 8px 16px 0 rgba(0,0,0,0.3); transform:translateX(0);}
 
 .side .close {position:absolute; top:0; left:0; padding:14px; width:64px; height:64px;}
 .desktop .side .close {display:none;}
