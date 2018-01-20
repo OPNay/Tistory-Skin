@@ -4,7 +4,8 @@
 		$nav = $('.nav'),
 		$side = $('.side'),
 		$search = $('.side .search'),
-		$page = $('.page');
+		$page = $('.page'),
+        $tag = $('.tag');
 
 	//For debuging
 	$('s_t3').contents().unwrap();
@@ -130,9 +131,7 @@
 	 * Entry
 	 **********/
 	$('.entry').ready(function () {
-		// Tags
-		let $tags = $('.tag');
-		$tags.html($tags.html().replace(/\,/g,'')).find('a').addClass('item');
+		$tags.html($tags.html().replace(/\,/g,''));
 	});
 
 	return true;

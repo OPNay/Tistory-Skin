@@ -212,7 +212,8 @@ ol.no-style, ul.no-style {list-style:none;}
 
 .tag {padding:0 18px 18px; font-size:0.8rem;}
 .desktop .tag {padding:0 24px 24px;}
-.tag .item {background:#EEEEEE; margin:0 8px 8px 0; padding:2px 4px; border-radius:2px;}
+.tag a {background:#EEEEEE; padding:2px 4px; border-radius:2px; color:rgba(0,0,0,0.87);}
+.tag a:not(:first-child) {margin-left:0.4rem;}
 
 /* Content : Article Lock */
 .entry_lock {text-align:center;}
