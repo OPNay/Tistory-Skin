@@ -143,6 +143,9 @@ ol.no-style, ul.no-style {list-style:none;}
 .side .item.subitem {padding:8px 8px 8px 32px; font-size:0.8rem;}
 .side .item.subitem.selected {padding-left:28px;}
 
+.side .copy {padding:0.2rem; font-size:0.6rem;}
+.side .copy p {margin:0; line-height:1.5}
+
 /* Wrap */
 .wrap {min-height:100%;}
 .desktop .wrap {margin-left:320px;}
@@ -234,9 +237,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .page .no-more-prev, .page .no-more-next {visibility:hidden;}
 
 /* Content : Footer */
-.footer {line-height:1.5; text-align:center; font-size:0.8rem;}
-.footer .cpright {margin:1.2rem 0;}
-.visitor {padding:16px;}
+.footer {padding:0.8rem; line-height:1.5; text-align:center; font-size:0.8rem;}
 
 /* Content : Article Default Tag */
 .article h1, .article h2 {border-bottom:1px solid rgba(0,0,0,0.12);}
