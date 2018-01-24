@@ -177,7 +177,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .desktop .section {margin:32px auto; width:688px;} /* article width: 640px */
 .desktop.wide .section {width:968px;} /* article width: 920px */
 
-.section .header .title {margin:0; line-height:1.5; font-size:1.1rem;}
+.section .header .title {border-left:4px solid #2196F3; margin:0; padding-left:0.6rem; line-height:1.5; font-size:1.1rem;}
 .section .header .info {font-size:0.8rem;}
 
 /* Content : Tags */
@@ -240,7 +240,7 @@ ol.no-style, ul.no-style {list-style:none;}
 .footer {padding:0.8rem; line-height:1.5; text-align:center; font-size:0.8rem;}
 
 /* Content : Article Default Tag */
-.article h1, .article h2 {border-bottom:1px solid rgba(0,0,0,0.12);}
+.article h1, .article h2 {border-left:4px solid #2196F3; padding-left:0.6rem;}
 .article ol, .article ul {margin:0.5em 0; padding-left:1.5em;}
 .article ul {list-style:disc;}
 .article ol {list-style:decimal;}
