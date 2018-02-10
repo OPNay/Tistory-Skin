@@ -137,13 +137,12 @@ ol.no-style, ul.no-style {list-style:none;}
 .side .social {padding:12px; line-height:1; justify-content:space-around;}
 .side .social a {max-height:24px; line-height:24px; text-decoration:none;}
 
-.side .item {display:block; padding:12px; font-size:0.9rem; line-height:24px;}
-.side .item.selected {padding-left:12px; border-left:4px solid #03A9F4; color:#03A9F4;}
+.side .menu > ul {padding:0.2rem 0;}
+.side .item {display:block; padding:0.4rem 0.6rem; font-size:0.8rem;}
 .side .item:hover {background:#F5F5F5;}
-.side .item.subitem {padding:8px 8px 8px 32px; font-size:0.8rem;}
-.side .item.subitem.selected {padding-left:28px;}
+.side .item.subitem {padding-left:1.4rem;}
 
-.side .copy {padding:0.2rem; font-size:0.6rem;}
+.side .copy {padding:0.4rem 0.6rem; font-size:0.6rem;}
 .side .copy p {margin:0; line-height:1.5}
 
 /* Wrap */
