@@ -35,7 +35,7 @@ input[type='search']::-webkit-search-cancel-button,textarea{-webkit-appearance:n
 .normal .s_body {margin:0 auto; width:calc(100% - 48px);}
 .wide .s_body {width:1252px;}
 
-.normal .s_size:last-child,
+.s_size:last-child {margin:16px 0;}
 .s_size + .s_size {margin-top:16px;}
 
 /* Theme */
