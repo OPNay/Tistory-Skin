@@ -57,6 +57,12 @@ html, body{height:100%;min-height:100%}
 .func_search .s_input {display:inline-block;}
 .func_search .s_title {display:none;}
 
+.own_info {padding:16px;}
+.profile {margin-right:16px; border-radius:50%; width:64px; height:64px; vertical-align:middle;}
+.blog_info {display:inline-block; vertical-align:middle; line-height:1.5;}
+.blog_info .title {font-size:1.2rem; font-weight:600;}
+.blog_info .owner {font-size:0.8rem;}
+
 .s_list {padding:16px; line-height:1.5;}
 .l_title {font-size:1.5rem;}
 .l_post:not(:first-child) {padding:16px 0 0;}
