@@ -91,6 +91,8 @@ html, body{height:100%;min-height:100%}
 h2.post_title {font-size:1.4rem;}
 .post {margin-top:16px;}
 
+.imageblock img {max-width:100%; height:auto;}
+
 .s_paging {padding:0 16px; width:100%; font-size:1.4rem;}
 .p_btn {color:#F57F17; text-decoration:none;}
 .no-more-prev,
