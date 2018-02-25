@@ -79,7 +79,6 @@ html, body{height:100%;min-height:100%}
 .small .blog_link {text-align:center;}
 
 .s_post {padding:16px; line-height:1.5;}
-.l_title {font-size:1.5rem;}
 .l_post:not(:first-child) {padding:16px 0 0;}
 .post_title {font-size:1.2rem;}
 .post_summary {font-size:0.8rem;}
