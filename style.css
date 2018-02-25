@@ -81,7 +81,7 @@ html, body{height:100%;min-height:100%}
 .post_cat {color:#F57F17;}
 
 .s_paging {padding:0 16px; width:100%; font-size:1.4rem;}
-.p_btn {text-decoration:none;}
+.p_btn {color:#F57F17; text-decoration:none;}
 .no-more-prev,
 .no-more-next {color:rgba(0,0,0,0.38);}
 
