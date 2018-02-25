@@ -33,7 +33,7 @@ input[type='search']::-webkit-search-cancel-button,textarea{-webkit-appearance:n
 .small .card {border-radius:0;}
 
 .normal .s_body {margin:0 auto; width:calc(100% - 48px);}
-.wide .s_body {widdth:1252px;}
+.wide .s_body {width:1252px;}
 
 .normal .s_size:last-child,
 .s_size + .s_size {margin-top:16px;}
