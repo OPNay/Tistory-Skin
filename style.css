@@ -29,6 +29,7 @@ input[type='search']::-webkit-search-cancel-button,textarea{-webkit-appearance:n
 .wide .card {width:1252px;}
 .normal .card {margin:0 auto; width:calc(100% - 48px);}
 .small .card {border-radius:0;}
+.card + .card {margin-top:16px;}
 
 /* Theme */
 .bg-gray {background:#F1F3F4;}
