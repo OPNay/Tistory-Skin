@@ -84,5 +84,4 @@ html, body{height:100%;min-height:100%}
 .no-more-prev,
 .no-more-next {color:rgba(0,0,0,0.38);}
 
-
-.s_footer {padding:16px; text-align:center;}
+.s_footer {text-align:center;}
