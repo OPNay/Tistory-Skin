@@ -76,7 +76,7 @@ html, body{height:100%;min-height:100%}
 .l_title {font-size:1.5rem;}
 .l_post:not(:first-child) {padding:16px 0 0;}
 .post_title {font-size:1.2rem;}
-.post_summary {font-size:1rem;}
+.post_summary {font-size:0.8rem;}
 .post_info {font-size:0.8rem;}
 .post_cat {color:#F57F17;}
 
