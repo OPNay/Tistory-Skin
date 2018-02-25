@@ -25,6 +25,11 @@ input[type='search']::-webkit-search-cancel-button,textarea{-webkit-appearance:n
 .normal {font-size:16px;}
 .wide {font-size:18px;}
 
+.card {background:white; border-radius:8px; overflow:hidden; box-sizing:border-box;}
+.wide .card {width:1252px;}
+.normal .card {margin:0 auto; width:calc(100% - 48px);}
+.small .card {border-radius:0;}
+
 /* Theme */
 .bg-gray {background:#F1F3F4;}
 .bg-white {background:white;}
