@@ -51,3 +51,5 @@ html, body{height:100%;min-height:100%}
 .s_input {background:transparent; display:none; border:none; border-bottom:1px solid #F1F3F4; padding:8px; width:320px; font-size:1.2rem; text-align:center; color:inherit;}
 .func_search .s_input {display:inline-block;}
 .func_search .s_title {display:none;}
+
+.s_footer {padding:16px; text-align:center;}
