@@ -34,5 +34,15 @@
 			location.href = encodeURI(location.origin + '/search/' + query);
 		}
 	});
+	
+	$('.s_btn.menu').on('click', function () {
+		html.toggleClass('func_menu');
+	});
+	
+	$('.s_cover').on('click', function (e) {
+		if (e.target === e.currentTarget) {
+			html.toggleClass('func_menu');
+		}
+	});
 
 }(jQuery));
