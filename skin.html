@@ -134,7 +134,6 @@
 						</div>
 					</s_permalink_article_rep>
 				</s_article_rep>
-				
 				<s_notice_rep>
 					<s_index_article_rep>
 						<div class="l_post">
@@ -189,6 +188,59 @@
 						</article>
 					</s_permalink_article_rep>
 				</s_article_protected>
+				<s_guest>
+					<div class="post_reply guest">
+						<s_rp>
+							<s_guest_input_form>
+								<div class="rw_wrap">
+									<textarea name="[##_guest_input_comment_##]" id="[##_guest_input_comment_##]" class="rw_reply" rows="3" placeholder="여기에 댓글을 입력해주세요."></textarea>
+									<div class="rw_option f_right">
+										<s_guest_member>
+											<s_guest_form>
+												<div class="rw_info">
+													<input type="text" id="[##_guest_input_name_##]" class="rw_name" placeholder="이름">
+													<input type="password" id=[##_guest_input_password_##] class="rw_pwd" placeholder="비밀번호">
+												</div>
+											</s_guest_form>
+										</s_guest_member>
+										<input type="checkbox" id="reply_secret" name="secret" class="rw_secret" hidden>
+										<label for="reply_secret" class="rw_btn rw_sec_lab">Secret</label>
+										<button class="rw_btn rw_submit f-wcolor" onclick="[##_guest_onclick_submit_##]">Send</button>
+									</div>
+								</div>
+							</s_guest_input_form>
+							<s_guest_container>
+								<s_guest_rep>
+									<div id="[##_guest_rep_id_##]" class="l_reply [##_guest_rep_class_##]">
+										<p class="reply_info">
+											<span class="reply_name">[##_guest_rep_name_##]</span>
+											<span class="reply_date">[##_guest_rep_date_##]</span>
+										</p>
+										<p class="reply">[##_guest_rep_desc_##]</p>
+										<div class="reply_admin">
+											<a onclick="[##_guest_rep_onclick_delete_##]" class="reply_delete">수정/삭제</a> ·
+											<a onclick="[##_guest_rep_onclick_reply_##]" class="reply_reply">댓글</a>
+										</div>
+									</div>
+									<s_guest_reply_container>
+										<s_guest_reply_rep>
+											<div id="[##_guest_rep_id_##]" class="l_reply rep_reply [##_guest_rep_class_##]">
+												<p class="reply_info">
+													<span class="reply_name">[##_guest_rep_name_##]</span>
+													<span class="reply_date">[##_guest_rep_date_##]</span>
+												</p>
+												<p class="reply">[##_guest_rep_desc_##]</p>
+												<div class="reply_admin">
+													<a onclick="[##_guest_rep_onclick_delete_##]" class="reply_delete">수정/삭제</a>
+												</div>
+											</div>
+										</s_guest_reply_rep>
+									</s_guest_reply_container>
+								</s_guest_rep>
+							</s_guest_container>
+						</s_rp>
+					</div>
+				</s_guest>
 			</div>
 			<s_paging>
 				<div class="s_size s_paging clear_both">
