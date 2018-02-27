@@ -45,5 +45,7 @@
 			html.toggleClass('func_menu');
 		}
 	});
+	
+	$('.s_head').css('background-image', "url('" + $('meta[property="og:image"]').attr('content').replace(/image/g, "original") + "')");
 
 }(jQuery));
