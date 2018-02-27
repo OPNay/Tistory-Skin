@@ -141,3 +141,11 @@ h2.post_title {font-size:1.4rem;}
 .no-more-next {color:rgba(0,0,0,0.38); cursor:default;}
 
 .s_footer {text-align:center;}
+
+/* article */
+article h1, article h2, article h3 {margin:8px 0;}
+article h4, article h5, article h6 {margin:4px 0;}
+article ul, article ol{margin:8px 0; padding-left:32px;}
+article li {margin:8px 0;}
+
+article a {color:#F57F17;}
