@@ -117,7 +117,7 @@ h2.post_title {font-size:1.4rem;}
 
 .rw_wrap {border-top:1px solid #EEE;}
 .rw_wrap:after {content:''; display:block; clear:both;}
-.rw_wrap input, .rw_wrap textarea {border:none; resize:none; font-size:1rem; border-bottom:1px solid #EEE;}
+.rw_wrap input, .rw_wrap textarea {border:none; resize:none; font-size:0.9rem; border-bottom:1px solid #EEE;}
 
 .rw_reply {padding:16px; width:100%; box-sizing:border-box;}
 .rw_option {text-align:right;}
