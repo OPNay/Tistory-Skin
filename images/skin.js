@@ -46,6 +46,11 @@
 		}
 	});
 	
-	$('.s_head').css('background-image', "url('" + $('meta[property="og:image"]').attr('content').replace(/image/g, "original") + "')");
+	if (window.location.pathname !== "/" || $('.post').length > 0) {
+		var url = $('meta[property="og:image"]').attr('content').replace(/image/g, "original");
+		if (url.indexOf('uf.tistory.com') > 0) {
+			$('.s_head').css('background-image', "url('" + url + "')");
+		}
+	}
 
 }(jQuery));
