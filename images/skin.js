@@ -21,6 +21,7 @@
 			prev = size;
 		}
 
+		$('.s_cover .s_cat').css('max-height', window.innerHeight - 84);
 	}).trigger('resize');
 
 	$('.s_btn.search').on('click', function () {
