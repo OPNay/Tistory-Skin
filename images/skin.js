@@ -23,7 +23,7 @@
 
 	}).trigger('resize');
 
-	$('.s_search .s_btn').on('click', function () {
+	$('.s_btn.search').on('click', function () {
 		html.toggleClass('func_search');
 		$('.s_input').focus();
 	});
