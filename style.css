@@ -76,7 +76,7 @@ html, body{height:100%;min-height:100%}
 .sub_category_list a {padding-left:32px;}
 .s_btn_block {text-align:right;}
 .s_btn.close {display:inline-block; border-radius:8px; margin:8px; padding:8px 12px; overflow:hidden; box-sizing:border-box; transition:background 200ms, box-shadow 200ms; line-height:1.2; vertical-align:middle; font-size:1rem; cursor:pointer;}
-.s_btn.close:hover {background:#e65100; box-shadow:0 2px 4px rgba(0,0,0,0.3); text-decoration:none; color:white;}
+.s_btn.close:hover {background:#bf360c; box-shadow:0 2px 4px rgba(0,0,0,0.3); text-decoration:none; color:white;}
 
 
 .own_info {padding:16px;}
@@ -99,7 +99,7 @@ html, body{height:100%;min-height:100%}
 .post_info {font-size:0.8rem; padding:0 16px;}
 .post_cat {color:#F57F17;}
 
-.admin_edit, .admin_secret, .admin_delete {color:#e65100;}
+.admin_edit, .admin_secret, .admin_delete {color:#bf360c;}
 
 h2.post_title {font-size:1.4rem;}
 .post {padding:16px;}
@@ -110,7 +110,7 @@ h2.post_title {font-size:1.4rem;}
 .rep_reply {background:#EEE}
 .reply {font-size:0.8rem;}
 .reply_admin {font-size:0.8rem;}
-.reply_admin a {color:#e65100;}
+.reply_admin a {color:#bf360c;}
 
 .rw_wrap {border-top:1px solid #EEE;}
 .rw_wrap input, .rw_wrap textarea {border:none; resize:none; font-size:1rem; border-bottom:1px solid #EEE;}
