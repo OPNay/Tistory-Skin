@@ -108,10 +108,12 @@ h2.post_title {font-size:1.4rem;}
 
 .post_etc {padding:0 16px;}
 .post_reply:not(.guest) {margin-top:16px;}
-.l_reply {padding:12px 16px;}
+.l_reply {position:relative; padding:12px 16px 12px 92px; min-height:64px;}
 .l_reply:first-child {border-top:1px solid #EEE;}
 .rep_reply {background:#EEE}
 .reply {font-size:0.8rem;}
+.reply_name img {position:absolute; top:12px; left:15px; border-radius:50%;}
+.reply_date {font-size:0.8rem;}
 .reply_admin {font-size:0.8rem;}
 .reply_admin a {color:#bf360c;}
 
