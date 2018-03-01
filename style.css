@@ -125,7 +125,8 @@ h2.post_title {font-size:1.6rem;}
 .l_reply:first-child {border-top:1px solid #EEE;}
 .rep_reply {background:#EEE}
 .reply {margin:8px 0; font-size:0.9rem;}
-.reply_name img {position:absolute; top:12px; left:15px; border-radius:50%;}
+.reply_ico {background:rgba(0,0,0,0.1); width:64px; height:64px;}
+.reply_name img, .reply_ico {position:absolute; top:12px; left:15px; border-radius:50%;}
 .reply_date {font-size:0.8rem;}
 .reply_admin {font-size:0.8rem;}
 .reply_admin a {color:#bf360c;}
