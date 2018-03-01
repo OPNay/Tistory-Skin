@@ -9,7 +9,7 @@
 
 		if (width >= 1300) {
 			size = 'normal wide';
-		} else if (width >= 768) {
+		} else if (width >= 1024) {
 			size = 'normal';
 		} else {
 			size = 'small';
