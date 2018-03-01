@@ -90,7 +90,7 @@ html, body{height:100%;min-height:100%}
 .sub_category_list a {padding-left:32px;}
 .s_btn_block {text-align:right;}
 .s_btn.close {display:inline-block; border-radius:8px; margin:8px; padding:8px 12px; overflow:hidden; box-sizing:border-box; transition:background 200ms, box-shadow 200ms; line-height:1.2; vertical-align:middle; font-size:1rem; cursor:pointer;}
-.s_btn.close:hover {background:#bf360c; box-shadow:0 2px 4px rgba(0,0,0,0.3); text-decoration:none; color:white;}
+.s_btn.close:hover {background:#bf360c; box-shadow:0 4px 8px rgba(0,0,0,0.3); text-decoration:none; color:white;}
 
 
 .own_info {padding:16px;}
@@ -140,9 +140,9 @@ h2.post_title {font-size:1.6rem;}
 .small .rw_info {display:block;}
 .rw_info input {margin:8px; padding:8px;}
 .rw_btn {display:inline-block; border-radius:8px; margin:16px; padding:8px 12px; overflow:hidden; box-sizing:border-box; transition:background 200ms, box-shadow 200ms; line-height:1.2; vertical-align:middle; font-size:1rem; cursor:pointer;}
-.rw_btn:hover {box-shadow:0 2px 4px rgba(0,0,0,0.3);}
+.rw_btn:hover {box-shadow:0 4px 8px rgba(0,0,0,0.3);}
 .rw_secret:checked + .rw_sec_lab {background:#BDC1C6; box-shadow:0 1px 2px rgba(0,0,0,0.3); color:white;}
-.rw_secret:checked + .rw_sec_lab:hover {background:#5F6368;}
+.rw_secret:checked + .rw_sec_lab:hover {background:#5F6368; box-shadow:0 4px 8px rgba(0,0,0,0.3);}
 .rw_sec_lab:hover {background:#F1F3F4;}
 .rw_submit {background:#F57F17; margin-left:0; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
 .rw_submit:hover {background:#bc5100; color:white;}
