@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <skin>
 	<information>
-		<name>#2</name>
+		<name>Simplify2</name>
 		<version>1.0</version>
 		<description>
-			<![CDATA[ 티스토리의 두번째 반응형 스킨입니다. ]]>
+			<![CDATA[ Simplify 2번째 버전입니다. ]]>
 		</description>
 		<license>
 			<![CDATA[ MIT License ]]>
 		</license>
 	</information>
 	<author>
-		<name>Tistory</name>
-		<homepage>http://www.tistory.com</homepage>
-		<email>tistoryblog@daum.net</email>
+		<name>OPNay</name>
+		<homepage>http://opnay.com</homepage>
+		<email>opnayn@gmail.com</email>
 	</author>
 	<contest>
-		<description>2015 반응형 스킨 공모전 기념스킨2</description>
-		<preview>//t1.daumcdn.net/tistory_admin/static/admin/new/skin_preview_ray2.png</preview>
-		<document>http://notice.tistory.com/2284</document>
+		<description>Simplify 티스토리 스킨 2번째</description>
+		<preview>//cfile28.uf.tistory.com/image/99EDA0435A9EA84B07D61B</preview>
+		<document>http://blog.opnay.com/notice/141</document>
 	</contest>
 	<default>
 		<recentEntries>4</recentEntries>
