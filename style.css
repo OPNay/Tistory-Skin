@@ -103,7 +103,7 @@ html, body{height:100%;min-height:100%}
 .blog_link a {display:inline-block; padding:8px; height:24px; line-height:1; vertical-align:middle;}
 .s_v_list {display:inline-block; max-height:40px; overflow:hidden; vertical-align:middle;}
 
-.s_v_item {transition:margin 200ms;}
+.s_v_item {line-height:1; transition:margin 200ms;}
 .s_v_item.more {margin-top:-40px;}
 .s_btn.more {transition:transform 200ms;}
 .s_btn.more.less {transform:rotate(180deg);}
