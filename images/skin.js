@@ -45,6 +45,11 @@
 			html.toggleClass('func_menu');
 		}
 	});
+	
+	$('.s_btn.more').on('click', function (e) {
+		$(this).toggleClass('less');
+		$('.s_v_item:first-child').toggleClass('more', $(this).hasClass('less'));
+	});
 //	
 //	if (window.location.pathname !== "/" || $('.post').length > 0) {
 //		var url = $('meta[property="og:image"]').attr('content').replace(/image/g, "original");
