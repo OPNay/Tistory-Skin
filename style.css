@@ -105,8 +105,12 @@ html, body{height:100%;min-height:100%}
 .small .blog_link {margin-top:32px; text-align:center;}
 
 .l_post {padding:16px; font-size:0.9rem;}
+.l_thumb {display:inline-block; margin-right:16px; border-radius:50%; width:150px; height:150px; overflow:hidden; vertical-align:middle;}
+.small .l_thumb {width:128px; height:128px;}
+.l_thumb + .l_wrap {display: inline-block; width: calc(100% - 171px); vertical-align: middle;}
+.small .l_thumb + .l_wrap {width:calc(100% - 148px);}
 .l_title {font-size:1.2rem;}
-.l_summary {margin:8px 0;}
+.l_summary {margin:8px 0; max-height:86px; line-height:1.5; overflow:hidden;}
 .post_title {font-size:1.2rem; padding:16px 16px 0;}
 .post_summary {font-size:0.8rem;}
 .post_info {font-size:0.8rem; padding:0 16px;}
