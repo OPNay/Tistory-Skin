@@ -8,7 +8,7 @@
 	if (html.data('images-random')) {
 		$(window).on('load', function () {
 			var images = html.data('images');
-			$('.s_head').css('background-image', 'url(images/' + images[$.now() % images.length] + ')');
+			$('.s_head').css('background-image', 'url(' + resURL + 'images/' + images[$.now() % images.length] + ')');
 		});
 	}
 
