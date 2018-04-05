@@ -110,7 +110,7 @@ html, body{height:100%;min-height:100%}
 .l_post {padding:16px; font-size:0.9rem;}
 .l_thumb {display:inline-block; margin-right:16px; border-radius:50%; width:150px; height:150px; overflow:hidden; vertical-align:middle;}
 .small .l_thumb {width:128px; height:128px;}
-.l_thumb + .l_wrap {display: inline-block; width: calc(100% - 171px); vertical-align: middle;}
+.l_thumb + .l_wrap {display: inline-block; width: calc(100% - 172px); vertical-align: middle;}
 .small .l_thumb + .l_wrap {width:calc(100% - 148px);}
 .l_title {font-size:1.2rem;}
 .l_summary {margin:8px 0; max-height:75px; line-height:25px; overflow:hidden;}
