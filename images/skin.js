@@ -59,9 +59,9 @@
 		}
 	});
 	
-	$('.s_btn.more').on('click', function (e) {
+	$('.s_more').on('click', function (e) {
 		$(this).toggleClass('less');
-		$('.s_v_item:first-child').toggleClass('more', $(this).hasClass('less'));
+		$('.s_v_list').toggleClass('more', $(this).hasClass('less'));
 	});
 //	
 //	if (window.location.pathname !== "/" || $('.post').length > 0) {
