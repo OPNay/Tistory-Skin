@@ -5,6 +5,7 @@
 		html = $('html');
 
 // Header Image
+// Want to use this, Set 'data-images-random' as "true" on skin.html
 	if (html.data('images-random')) {
 		$(window).on('load', function () {
 			var images = html.data('images');
@@ -12,6 +13,7 @@
 		});
 	}
 
+// Resize page width
 	$(window).on('resize', function () {
 		var width = window.innerWidth;
 
@@ -32,18 +34,21 @@
 		$('.s_cover .s_cat').css('max-height', window.innerHeight - 84);
 	}).trigger('resize');
 
+// Search button func
 	$('.s_btn.search').on('click', function () {
 		html.toggleClass('func_search');
 		$('.s_input').focus();
 	});
-	
+
+// Search input func
 	$('.s_input').on('keypress', function (e) {
 		var query = $(this).val().trim();
 		if (e.keyCode === 13 && query !== '') {
 			location.href = encodeURI(location.origin + '/search/' + query);
 		}
 	});
-	
+
+// Category menu func
 	$('.s_btn.menu').on('click', function () {
 		html.toggleClass('func_menu');
 	});
