@@ -2,7 +2,7 @@
 <skin>
 	<information>
 		<name>Simplify2</name>
-		<version>1.0</version>
+		<version>1.1</version>
 		<description>
 			<![CDATA[ Simplify 2번째 버전입니다. ]]>
 		</description>
@@ -18,12 +18,12 @@
 	<contest>
 		<description>Simplify 티스토리 스킨 2번째</description>
 		<preview>//cfile28.uf.tistory.com/image/99EDA0435A9EA84B07D61B</preview>
-		<document>http://blog.opnay.com/notice/141</document>
+		<document>http://blog.opnay.com/143</document>
 	</contest>
 	<default>
-		<recentEntries>4</recentEntries>
-		<recentComments>4</recentComments>
-		<recentTrackbacks>4</recentTrackbacks>
+		<recentEntries>10</recentEntries>
+		<recentComments>10</recentComments>
+		<recentTrackbacks>10</recentTrackbacks>
 		<itemsOnGuestbook>10</itemsOnGuestbook>
 		<tagsInCloud>30</tagsInCloud>
 		<sortInCloud>3</sortInCloud>
