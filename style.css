@@ -11,7 +11,7 @@ html,body,th,td,input,select,textarea,button {font:400 16px/1.8 'Noto Sans KR', 
 a {color:inherit;text-decoration:none;cursor:pointer;}
 a:not(.no_deco):active, a:not(.no_deco):hover {text-decoration:underline}
 a:active {background-color:transparent}
-address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+address,caption,cite,code,dfn,em,var {font-weight:normal}
 input:checked[type='checkbox']{background-color:#666; -webkit-appearance:checkbox}
 input[type='text'],input[type='password'],input[type='submit'],input[type='search'],input[type='tel'],input[type='email'],html input[type='button'],input[type='reset']{-webkit-appearance:none;border-radius:0}
 input[type='search']::-webkit-search-cancel-button,textarea{-webkit-appearance:none}
