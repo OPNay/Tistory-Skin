@@ -7,7 +7,7 @@ blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
 input,select,textarea,button {vertical-align:middle;outline:none}
 input::-ms-clear {display:none}
 button {border:0 none;background-color:transparent;cursor:pointer}
-html,body,th,td,input,select,textarea,button {font:400 16px/1.8 'Noto Sans KR', 'Roboto', 'Arial';}
+html,body,th,td,input,select,textarea,button {font:400 16px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";}
 a {color:inherit;text-decoration:none;cursor:pointer;}
 a:not(.no_deco):active, a:not(.no_deco):hover {text-decoration:underline}
 a:active {background-color:transparent}
