@@ -35,7 +35,7 @@
 	}).trigger('resize');
 
 // Search button func
-	$('.s_btn.search').on('click', function () {
+	$('.blog_link .search').on('click', function () {
 		html.toggleClass('func_search');
 		$('.s_input').focus();
 	});
@@ -49,7 +49,7 @@
 	});
 
 // Category menu func
-	$('.s_btn.menu').on('click', function () {
+	$('.blog_link .menu').on('click', function () {
 		html.toggleClass('func_menu');
 	});
 	
