@@ -129,13 +129,13 @@ h2.post_title {font-size:1.6rem;}
 .post_etc {padding:0 16px;}
 .post_tag a {color:#F57F17;}
 .post_reply:not(.guest) {margin-top:16px;}
-.l_reply {position:relative; padding:12px 16px 12px 92px; min-height:64px;}
+.l_reply {position:relative; padding:12px 16px 12px 92px; min-height:64px; line-height:1.5;}
 .l_reply:first-child {border-top:1px solid #EEE;}
 .rep_reply {background:#EEE}
-.reply {margin:8px 0; font-size:0.9rem;}
+.reply {margin:8px 0;}
 .reply_ico {background:rgba(0,0,0,0.1); width:64px; height:64px;}
 .reply_name img, .reply_ico {position:absolute; top:12px; left:15px; border-radius:50%;}
-.reply_date {font-size:0.8rem;}
+.reply_name {font-weight:bold;}
 .reply_admin {font-size:0.8rem;}
 .reply_admin a {color:#bf360c;}
 
