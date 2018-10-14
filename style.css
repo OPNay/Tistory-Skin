@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /* reset */
-body,div,dl,dt,dd,pre,code,form,fieldset,legend,textarea,p,th,td,input,select,textarea,button{margin:0;padding:0}
+body,div,dl,dt,dd,pre,code,form,fieldset,legend,textarea,p,input,select,textarea,button{margin:0;padding:0}
 fieldset,img{border:0 none}
 input,select,textarea,button {vertical-align:middle;outline:none}
 input::-ms-clear {display:none}
 button {border:0 none;background-color:transparent;cursor:pointer}
-html,body,th,td,input,select,textarea,button {font-size:16px; line-height:1.8; font-weight:400; font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Oxygen","Ubuntu","Cantarell","Open Sans",sans-serif;}
+html,body,input,select,textarea,button {font-size:16px; line-height:1.8; font-weight:400; font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Oxygen","Ubuntu","Cantarell","Open Sans",sans-serif;}
 a {color:inherit;text-decoration:none;cursor:pointer;}
 a:not(.no_deco):active, a:not(.no_deco):hover {text-decoration:underline}
 address,caption,cite,code,dfn,em,var {font-weight:normal}
@@ -28,6 +28,10 @@ ul, ol {margin:16px 0; padding-left:24px;}
 ul ul, ul ol, ol ul, ol ol {margin:8px 0;}
 
 blockquote {background:#f0f2f6; margin:12px 24px; padding:16px;}
+
+table {margin:16px 0; border-spacing:0;}
+th {background:#eee;}
+th,td {padding:4px 12px; font-size:0.9em; line-height:1.5;}
 
 /* global */
 .show {display:block}
