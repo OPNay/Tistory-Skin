@@ -193,4 +193,8 @@ h2.post_title {font-size:1.6rem;}
 article a {color:#F57F17;}
 
 article .imageblock {margin:8px 0;}
+
+.video_container {position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;}
+.video_container iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
 .tt_adsense_top, .tt_adsense_bottom {text-align:center;}
