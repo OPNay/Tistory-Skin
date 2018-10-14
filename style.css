@@ -109,7 +109,7 @@ html, body{height:100%;min-height:100%}
 .s_cat a:hover {background:#F1F3F4; text-decoration:none;}
 .sub_category_list a {padding-left:32px;}
 .s_btn_block {text-align:right;}
-.s_btn {display:inline-block; border-radius:8px; margin:16px; padding:8px 16px; overflow:hidden; box-sizing:border-box; transition:background 0.2s, box-shadow 0.2s; line-height:1.2; vertical-align:middle; font-size:1rem; cursor:pointer;}
+.s_btn {display:inline-block; border-radius:8px; margin:24px; padding:8px 16px; overflow:hidden; box-sizing:border-box; transition:background 0.2s, box-shadow 0.2s; line-height:1.2; vertical-align:middle; font-size:1rem; cursor:pointer;}
 .s_btn:hover {box-shadow:0 4px 8px rgba(0,0,0,0.3);}
 .s_btn.close:hover {background:#bf360c; text-decoration:none; color:white;}
 
@@ -125,7 +125,7 @@ html, body{height:100%;min-height:100%}
 .normal .blog_link {float:right;}
 .small .blog_link {margin-top:32px; text-align:center;}
 
-.l_post {padding:16px; font-size:0.9rem;}
+.l_post {padding:24px; font-size:0.9rem;}
 .l_thumb {display:inline-block; margin-right:16px; border-radius:50%; width:150px; height:150px; overflow:hidden; vertical-align:middle;}
 .l_thumb img {width:150px; height:auto;}
 .small .l_thumb {width:128px; height:128px;}
@@ -146,7 +146,7 @@ h2.post_title {font-size:1.6rem;}
 .protected {text-align:center;}
 .s_pwd {border:none; border-bottom:1px solid #EEE; margin:8px 0; padding:8px; font-size:1.2rem; text-align:center;}
 
-.post_etc {padding:0 16px;}
+.post_etc {padding:0 24px;}
 .post_tag a {color:#F57F17;}
 .post_reply:not(.guest) {margin-top:16px;}
 .l_reply {position:relative; padding:12px 16px 12px 92px; min-height:64px; line-height:1.5;}
@@ -163,7 +163,7 @@ h2.post_title {font-size:1.6rem;}
 .rw_wrap:after {content:''; display:block; clear:both;}
 .rw_wrap input, .rw_wrap textarea {border:none; resize:none; font-size:0.9rem; border-bottom:1px solid #EEE;}
 
-.rw_reply {margin:0; padding:16px; width:100%; box-sizing:border-box;}
+.rw_reply {margin:0; padding:18px 24px; width:100%; box-sizing:border-box;}
 .rw_option {text-align:right;}
 .rw_info {display:inline-block;}
 .small .rw_info {display:block;}
