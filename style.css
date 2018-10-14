@@ -1,9 +1,7 @@
 @charset "UTF-8";
 /* reset */
-body,div,dl,dt,dd,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+body,div,dl,dt,dd,pre,code,form,fieldset,legend,textarea,p,th,td,input,select,textarea,button{margin:0;padding:0}
 fieldset,img{border:0 none}
-blockquote, q {quotes: none}
-blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
 input,select,textarea,button {vertical-align:middle;outline:none}
 input::-ms-clear {display:none}
 button {border:0 none;background-color:transparent;cursor:pointer}
@@ -26,8 +24,10 @@ h4 {font-size:18px;}
 h5 {font-size:16px;}
 h6 {font-size:14px;}
 
-ul, ol {margin:16px 0; padding-left:16px;}
+ul, ol {margin:16px 0; padding-left:24px;}
 ul ul, ul ol, ol ul, ol ol {margin:8px 0;}
+
+blockquote {background:#f0f2f6; margin:12px 24px; padding:16px;}
 
 /* global */
 .show {display:block}
